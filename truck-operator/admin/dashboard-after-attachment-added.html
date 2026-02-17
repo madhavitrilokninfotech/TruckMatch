@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+
+  <title>TruckMatch | Dashboard</title>
+
+  <!-- ================ /FONT Family =================== -->
+  <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="../../assets/font/font-family/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/font/font-awesome/css/font-awesome.min.css">
+  <!-- ================ /FONT Family =================== -->
+
+  <!-- =================== /WEB CSS BOC ==================== -->
+
+  <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/select2.min.css">   
+  <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/media.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/header.css">
+
+  <!-- =================== /WEB CSS EOC ==================== -->
+
+
+</head>
+
+<body>
+
+  <div class="sidebar-show-hide-bck"></div>
+  <!-- ====== /WRAPPER BOC ====== -->
+  <div class="page-wrapper">
+
+    <!-- ====== /CONTENT BOC ====== -->
+    <section class="wrapper-main">
+       <div class="wrapper-content">
+            <!-- Navbar -->
+            <nav class="main-header fixed-top navbar navbar-expand">
+                <div class="headera-logo-wrap sidebar-top-toggle">
+                    <a href="#" class="headera-logo">
+                       <img src="../../assets/images/header-logo.svg" alt="Image">
+                    </a>
+                    <a href="#" class="headera-mlogo">
+                       <img src="../../assets/images/header-logo-m.svg" alt="Image">
+                    </a>                    
+                    <a href="#" class="sidebar-icon sidebar-toggle sidebar-toggle-desk"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                    <a href="#" class="sidebar-icon sidebar-toggle sidebar-toggle-mob"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                </div>
+                <div class="header-left-text">
+                    <div class="dash-txt dash-txt-desk">
+                      Dashboard
+                    </div>
+                </div>
+                <ul class="navbar-nav ms-auto main-header-right">
+                    <li class="ha-dropdown-main h-notification-main nav-item dropdown">
+                        <a class="ha-dropdown-click h-notification-click" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <img src="../../assets/images/notification-icon.svg" alt="#">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end notification-main" aria-labelledby="userDropdown">
+                            <div class="notification-wrap">
+                               <div class="notification-head">
+                                   <div class="notification-tl">
+                                       Notifications
+                                   </div>
+                                   <div class="notification-rd">
+                                       <a href="#" class="notification-rd-link">
+                                           Mark all as read
+                                       </a>
+                                   </div>
+                               </div>
+                               <div class="notification-view">
+                                   <div class="notification-hereb">
+                                       <div class="notification-here-b-inner">
+                                           <a href="#" class="notification-here notification-here-njr">
+                                               <div class="notification-here-icon">
+                                                   <img src="../../assets/images/notification-njr-icon.png" alt="Image">
+                                               </div>
+                                               <div class="notification-here-wrapt">
+                                                   <div class="notification-here-tl">
+                                                       New Job Request
+                                                   </div>
+                                                   <div class="notification-here-txt">
+                                                       Your job request has been accepted by <span class="notification-here-b">Right Way Construction Pvt.</span> Review details and get ready to start.
+                                                   </div>
+                                                   <div class="notification-here-tm">
+                                                       2 m
+                                                   </div>
+                                               </div>                                           
+                                           </a>
+                                       </div>
+                                   </div>
+                                   <div class="notification-hereb">
+                                       <div class="notification-here-b-inner">
+                                           <a href="#" class="notification-here">
+                                               <div class="notification-here-icon">
+                                                   <img src="../../assets/images/notification-jc-icon.png" alt="Image">
+                                               </div>
+                                               <div class="notification-here-wrapt">
+                                                   <div class="notification-here-tl">
+                                                       Job Confirmed
+                                                   </div>
+                                                   <div class="notification-here-txt">
+                                                       Your job request has been accepted, or you have been assigned to a job. Check the details to proceed.
+                                                   </div>
+                                                   <div class="notification-here-tm">
+                                                       6 h
+                                                   </div>
+                                               </div>                                           
+                                           </a>
+                                       </div>
+                                   </div> 
+                                   <div class="notification-hereb">
+                                       <div class="notification-here-b-inner">
+                                           <a href="#" class="notification-here">
+                                               <div class="notification-here-icon">
+                                                   <img src="../../assets/images/notification-da-icon.png" alt="Image">
+                                               </div>
+                                               <div class="notification-here-wrapt">
+                                                   <div class="notification-here-tl">
+                                                       Driver Assigned
+                                                   </div>
+                                                   <div class="notification-here-txt">
+                                                       Driver John Doe has been assigned to job scheduled start on 16 July, 2025 at 03:00 PM.
+                                                   </div>
+                                                   <div class="notification-here-tm">
+                                                       10 h
+                                                   </div>
+                                               </div>                                           
+                                           </a>
+                                       </div>
+                                   </div> 
+                                   <div class="notification-hereb">
+                                       <div class="notification-here-b-inner">
+                                           <a href="#" class="notification-here notification-here-des">
+                                               <div class="notification-here-icon">
+                                                   <img src="../../assets/images/notification-des-icon.png" alt="Image">
+                                               </div>
+                                               <div class="notification-here-wrapt">
+                                                   <div class="notification-here-tl">
+                                                       Document Expire Soon
+                                                   </div>
+                                                   <div class="notification-here-txt">
+                                                       Your vehicle insurance is nearing expiry. Renew soon to stay compliant and protected.
+                                                   </div>
+                                                   <div class="notification-here-tm">
+                                                       1 h
+                                                   </div>
+                                               </div>                                          
+                                           </a>
+                                           <div class="notification-here-btn">
+                                               <a href="#" class="btn notification-here-btn-link">
+                                                   Renew Now
+                                               </a>
+                                           </div>
+                                       </div> 
+
+                                   </div>                                                                                                         
+                               </div>
+                               <div class="notification-all">
+                                   <a href="#" class="notification-all-link">View All Notifications</a>
+                               </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- User Menu -->
+                    <li class="ha-dropdown-main ad-dropdown-main nav-item dropdown">
+                        <a class="ha-dropdown-click dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="user-menu">
+                                <img src="../../assets/images/to-admin-img.png" alt="#">
+                                <div class="h-admin-info">
+                                    <span>Fast Trucks Pvt. Ltd.</span>
+                                    <span>Admin</span>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                            <li>
+                                <a class="dropdown-item" href="profile-settings.html">
+                                    <span class="icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9 9C9.69223 9 10.3689 8.79473 10.9445 8.41015C11.5201 8.02556 11.9687 7.47894 12.2336 6.83939C12.4985 6.19985 12.5678 5.49612 12.4327 4.81719C12.2977 4.13825 11.9644 3.51461 11.4749 3.02513C10.9854 2.53564 10.3618 2.2023 9.68282 2.06725C9.00388 1.9322 8.30015 2.00152 7.66061 2.26642C7.02107 2.53133 6.47444 2.97993 6.08986 3.55551C5.70527 4.13108 5.5 4.80777 5.5 5.5C5.50093 6.42798 5.86997 7.31768 6.52615 7.97385C7.18233 8.63003 8.07203 8.99908 9 9ZM9 3.16667C9.46149 3.16667 9.91262 3.30352 10.2963 3.55991C10.68 3.8163 10.9791 4.18071 11.1557 4.60707C11.3323 5.03343 11.3785 5.50259 11.2885 5.95521C11.1985 6.40784 10.9762 6.8236 10.6499 7.14992C10.3236 7.47624 9.90783 7.69847 9.45521 7.7885C9.00259 7.87853 8.53343 7.83233 8.10707 7.65572C7.68071 7.47912 7.31629 7.18005 7.0599 6.79633C6.80351 6.41262 6.66667 5.96149 6.66667 5.5C6.66667 4.88116 6.9125 4.28767 7.35008 3.85009C7.78767 3.4125 8.38116 3.16667 9 3.16667Z" fill="black"/> <path d="M9 10.1665C7.60809 10.168 6.27363 10.7217 5.28939 11.7059C4.30516 12.6901 3.75154 14.0246 3.75 15.4165C3.75 15.5712 3.81146 15.7196 3.92085 15.829C4.03025 15.9384 4.17862 15.9998 4.33333 15.9998C4.48804 15.9998 4.63642 15.9384 4.74581 15.829C4.85521 15.7196 4.91667 15.5712 4.91667 15.4165C4.91667 14.3335 5.34687 13.2949 6.11265 12.5292C6.87842 11.7634 7.91703 11.3332 9 11.3332C10.083 11.3332 11.1216 11.7634 11.8874 12.5292C12.6531 13.2949 13.0833 14.3335 13.0833 15.4165C13.0833 15.5712 13.1448 15.7196 13.2542 15.829C13.3636 15.9384 13.512 15.9998 13.6667 15.9998C13.8214 15.9998 13.9697 15.9384 14.0791 15.829C14.1885 15.7196 14.25 15.5712 14.25 15.4165C14.2485 14.0246 13.6948 12.6901 12.7106 11.7059C11.7264 10.7217 10.3919 10.168 9 10.1665Z" fill="black"/> </svg></span>
+                                    My Profile
+                                </a>
+                            </li>
+
+<!--                             <li>
+                                <a class="dropdown-item" href="#">
+                                    <span class="icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9 7.3125C8.06802 7.3125 7.3125 8.06802 7.3125 9C7.3125 9.93198 8.06802 10.6875 9 10.6875C9.93198 10.6875 10.6875 9.93198 10.6875 9C10.6875 8.06802 9.93198 7.3125 9 7.3125ZM6.1875 9C6.1875 7.4467 7.4467 6.1875 9 6.1875C10.5533 6.1875 11.8125 7.4467 11.8125 9C11.8125 10.5533 10.5533 11.8125 9 11.8125C7.4467 11.8125 6.1875 10.5533 6.1875 9Z" fill="black"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.20261 2.82773C7.00185 2.49327 6.57907 2.38922 6.2651 2.57602L6.25692 2.58088L4.95938 3.32331C4.54885 3.5579 4.40722 4.08976 4.64205 4.49619L4.155 4.7776L4.64166 4.49552C5.04296 5.18787 5.15084 5.94671 4.79237 6.56877C4.43394 7.19074 3.72359 7.4776 2.925 7.4776C2.45008 7.4776 2.0625 7.86883 2.0625 8.3401V9.6601C2.0625 10.1314 2.45008 10.5226 2.925 10.5226C3.72359 10.5226 4.43394 10.8095 4.79237 11.4314C5.1508 12.0534 5.04299 12.8121 4.64182 13.5044C4.40732 13.9108 4.54868 14.4422 4.95908 14.6767L6.26514 15.4241C6.5791 15.6109 7.00183 15.5069 7.20259 15.1725L7.2832 15.0333C7.68435 14.3412 8.28903 13.8695 9.00656 13.8695C9.72464 13.8695 10.3275 14.3415 10.725 15.0344C10.7251 15.0347 10.7253 15.035 10.7255 15.0354L10.8049 15.1725C11.0056 15.5069 11.4284 15.611 11.7424 15.4242L11.7506 15.4193L13.0481 14.6769C13.4576 14.4429 13.6014 13.9184 13.3648 13.5029C12.9644 12.8111 12.857 12.053 13.2151 11.4314C13.5736 10.8095 14.2839 10.5226 15.0825 10.5226C15.5574 10.5226 15.945 10.1314 15.945 9.6601V8.3401C15.945 7.86518 15.5538 7.4776 15.0825 7.4776C14.2839 7.4776 13.5736 7.19074 13.2151 6.56877C12.8567 5.94683 12.9645 5.18817 13.3656 4.49593C13.6002 4.08953 13.4589 3.55802 13.0484 3.32349L11.7424 2.57609C11.4284 2.38929 11.0056 2.49327 10.8049 2.82773L10.7243 2.96693C10.3231 3.65904 9.71847 4.13072 9.00094 4.13072C8.28293 4.13072 7.68016 3.65878 7.28266 2.966C7.28244 2.96562 7.28222 2.96523 7.282 2.96485L7.20261 2.82773ZM5.69436 1.60654C6.56394 1.09251 7.66693 1.40787 8.17092 2.255L8.17434 2.26075L8.2568 2.40327L8.258 2.40535C8.53551 2.88944 8.82497 3.00572 9.00094 3.00572C9.17775 3.00572 9.4694 2.88846 9.7507 2.40327C9.75075 2.40318 9.75065 2.40335 9.7507 2.40327L9.83655 2.25498C10.3405 1.40785 11.4436 1.09251 12.3132 1.60654L13.6066 2.34671C14.5611 2.89213 14.8847 4.11544 14.3395 5.05901L14.3392 5.05968C14.058 5.54483 14.1021 5.85474 14.1899 6.00706C14.2777 6.15946 14.5236 6.3526 15.0825 6.3526C16.1712 6.3526 17.07 7.24002 17.07 8.3401V9.6601C17.07 10.7488 16.1826 11.6476 15.0825 11.6476C14.5236 11.6476 14.2777 11.8407 14.1899 11.9931C14.1021 12.1455 14.058 12.4554 14.3392 12.9405L14.3409 12.9435C14.8833 13.8927 14.5618 15.1074 13.6069 15.6533C13.6068 15.6534 13.607 15.6533 13.6069 15.6533L12.3131 16.3937C11.4435 16.9077 10.3406 16.5923 9.83658 15.7452L9.83316 15.7395L9.7507 15.5969L9.7495 15.5948C9.47199 15.1108 9.18253 14.9945 9.00656 14.9945C8.82975 14.9945 8.5381 15.1117 8.2568 15.5969C8.25676 15.597 8.25685 15.5969 8.2568 15.5969L8.17095 15.7452C7.66698 16.5923 6.56399 16.9077 5.69443 16.3937L4.40092 15.6535C4.40082 15.6534 4.40102 15.6535 4.40092 15.6535C3.44669 15.108 3.12284 13.8847 3.66795 12.9412L3.66834 12.9405C3.94954 12.4554 3.90541 12.1455 3.81763 11.9931C3.72981 11.8407 3.48391 11.6476 2.925 11.6476C1.82492 11.6476 0.9375 10.7488 0.9375 9.6601V8.3401C0.9375 7.25137 1.82492 6.3526 2.925 6.3526C3.48391 6.3526 3.72981 6.15946 3.81763 6.00706C3.90541 5.85474 3.94954 5.54483 3.66834 5.05968L3.66795 5.05901C3.12284 4.11554 3.44638 2.89238 4.40062 2.34689L5.69436 1.60654Z" fill="black"/> </svg></span>
+                                    Settings
+                                </a>
+                            </li> -->
+                            
+                            <li>
+                                <a class="dropdown-item" href="login.html">
+                                    <span class="icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M6.75096 14.0625H4.16853C4.0416 14.0622 3.93877 13.9594 3.93848 13.8324V4.16755C3.93879 4.04062 4.0416 3.93779 4.16853 3.9375H6.75096C7.21695 3.9375 7.59471 3.55974 7.59471 3.09375C7.59471 2.62776 7.21695 2.25 6.75096 2.25H4.16853C3.10999 2.25124 2.25222 3.10904 2.25098 4.16755V13.8324C2.25222 14.891 3.10999 15.7488 4.16853 15.75H6.75096C7.21695 15.75 7.59471 15.3722 7.59471 14.9062C7.59471 14.4403 7.21695 14.0625 6.75096 14.0625Z" fill="black"/> <path d="M15.058 7.72381L12.987 6.17179C12.6744 5.93745 12.1677 5.93754 11.8552 6.172C11.5428 6.40646 11.5429 6.78649 11.8555 7.02083L13.6757 8.3856L6.42522 8.3968C5.98327 8.3968 5.625 8.6655 5.625 8.99696C5.625 9.32842 5.98327 9.59713 6.42522 9.59713L13.7051 9.58713L11.8555 10.9743C11.5544 11.2169 11.5725 11.5967 11.8959 11.8225C12.2034 12.0372 12.6798 12.037 12.987 11.8221L15.0564 10.2701C15.9939 9.56699 15.9939 8.42698 15.0564 7.72385L15.0564 7.72383L15.058 7.72381Z" fill="black"/> </svg></span>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="content-wrapper-main">
+                <!-- Sidebar -->
+                <aside class="main-sidebar">
+                    <div class="sidebar sidebar-menu-main">
+                        <nav class="sidebar-menu ">
+                            <ul class="nav-sidebar flex-column">
+                                <li class="sb-nav-item active">
+                                    <a href="dashboard.html" class="sb-nav-link">
+                                        <img class="sb-nav-icon" src="../../assets/images/sidebar/dashboard-icon.svg" alt="icon">
+                                        <p>Dashboard</p>
+                                    </a>
+                                </li>
+                                <li class="sb-nav-item">
+                                    <a href="job-feed.html" class="sb-nav-link">
+                                        <img class="sb-nav-icon" src="../../assets/images/sidebar/job-management-icon.svg" alt="icon">
+                                        <p>Job Feed</p>
+                                    </a>
+                                </li>                                
+                                <li class="sb-nav-item">
+                                    <a href="#" class="sb-nav-link">
+                                        <img class="sb-nav-icon" src="../../assets/images/sidebar/job-management-icon.svg" alt="icon">
+                                        <p>Job Management</p>
+                                    </a>
+                                </li>
+                                <li class="sb-nav-item">
+                                    <a href="#" class="sb-nav-link">
+                                        <img class="sb-nav-icon" src="../../assets/images/sidebar/team-management-icon.svg" alt="icon">
+                                        <p>Manage Team Members</p>
+                                    </a>
+                                </li>
+                                <li class="sb-nav-item">
+                                    <a href="#" class="sb-nav-link">
+                                        <img class="sb-nav-icon" src="../../assets/images/sidebar/fleet-management-icon.svg" alt="icon">
+                                        <p>Fleet Management</p>
+                                    </a>
+                                </li>
+                                <li class="sb-nav-item">
+                                    <a href="#" class="sb-nav-link">
+                                        <img class="sb-nav-icon" src="../../assets/images/sidebar/driver-management-icon.svg" alt="icon">
+                                        <p>Driver Management</p>
+                                    </a>
+                                </li>
+                                <li class="sb-nav-item">
+                                    <a href="#" class="sb-nav-link">
+                                        <img class="sb-nav-icon" src="../../assets/images/sidebar/schedule-icon.svg" alt="icon">
+                                        <p>Schedule</p>
+                                    </a>
+                                </li>                                
+                            </ul>
+                        </nav>
+                    </div>
+                </aside>
+               <div class="content-wrapper">
+                  <div class="content">
+                    <div class="dashboard-tl-mob">
+                        <div class="dash-txt dash-txt-mob">
+                          Dashboard
+                        </div>
+                    </div> 
+                    <div class="row gx-2 gx-xl-3">
+                        <div class="col-md-6 col-lg-3 mb-3">
+                            <div class="box-count-main">
+                               <div class="box-count-wrap border2-gray bg-white br14">
+                                    <div class="box-count-top">
+                                        <div class="box-count-top-wrap borderb-gray">
+                                           <div class="box-count-icon">
+                                              <img src="../../assets/images/dashboard/d-job-icon.svg" alt="Image">
+                                           </div> 
+                                           <div class="box-count-txt-wrap ps-2">
+                                               <div class="box-count-head">
+                                                   00
+                                               </div>
+                                               <div class="box-count-shead">
+                                                   Total Jobs
+                                               </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-count-bottom fs-18 cblack1">
+                                        No Job Yet
+                                    </div>
+                               </div>
+                            </div>
+                        </div>                      
+                        <div class="col-md-6 col-lg-3 mb-3">
+                            <div class="box-count-main">
+                               <div class="box-count-wrap border2-gray bg-white br14">
+                                    <div class="box-count-top">
+                                        <div class="box-count-top-wrap borderb-gray">
+                                           <div class="box-count-icon">
+                                              <img src="../../assets/images/dashboard/d-mem-icon.svg" alt="Image">
+                                           </div> 
+                                           <div class="box-count-txt-wrap ps-2">
+                                               <div class="box-count-head">
+                                                   00
+                                               </div>
+                                               <div class="box-count-shead">
+                                                   Total Team Members 
+                                               </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-count-bottom">
+                                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddTeamMemda" aria-controls="offcanvasAddTeamMemda">
+                                            + Add Team Members
+                                        </a>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-3">
+                            <div class="box-count-main">
+                               <div class="box-count-wrap border2-gray bg-white br14">
+                                    <div class="box-count-top">
+                                        <div class="box-count-top-wrap borderb-gray">
+                                           <div class="box-count-icon">
+                                              <img src="../../assets/images/dashboard/d-tf-icon.svg" alt="Image">
+                                           </div> 
+                                           <div class="box-count-txt-wrap ps-2">
+                                               <div class="box-count-head">
+                                                   00
+                                               </div>
+                                               <div class="box-count-shead">
+                                                   Total Fleet 
+                                               </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-count-bottom">
+                                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddFleet" aria-controls="offcanvasAddFleet">
+                                            + Add Fleet 
+                                        </a>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-3">
+                            <div class="box-count-main">
+                               <div class="box-count-wrap border2-gray bg-white br14">
+                                    <div class="box-count-top">
+                                        <div class="box-count-top-wrap borderb-gray">
+                                           <div class="box-count-icon">
+                                              <img src="../../assets/images/dashboard/d-td-icon.svg" alt="Image">
+                                           </div> 
+                                           <div class="box-count-txt-wrap ps-2">
+                                               <div class="box-count-head">
+                                                   00
+                                               </div>
+                                               <div class="box-count-shead">
+                                                   Total Driver 
+                                               </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-count-bottom">
+                                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddNewDriver" aria-controls="offcanvasAddNewDriver">
+                                            + Add Driver
+                                        </a>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>                                                                        
+                    </div>
+
+                    <div class="row gx-2 gx-xl-3">
+                      <div class="col-12 col-md-7 col-lg-7 col-xl-9 mb-3 mb-md-0 dash-to-col-left">
+                          <div class="job-card-main">
+                             <div class="job-card-wrap border2-gray bg-white br14">
+                                  <div class="job-card-title borderb2-gray">
+                                    <div class="job-card-title-t">
+                                        New Bookings
+                                    </div>
+                                  </div>
+                                  <div class="job-card-txt-wrap">
+                                      <div class="job-card-txt-t">
+                                          No new bookings yet
+                                      </div>
+                                      <p class="job-card-txt-p mb-0">
+                                          Once clients send job requests, they will appear here.
+                                      </p>
+                                  </div>
+                             </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-5 col-lg-5 col-xl-3 mb-3 mb-md-0 dash-to-col-right">
+                          <div class="job-card-main">
+                             <div class="job-card-wrap border2-gray bg-white br14">
+                                  <div class="job-card-title borderb2-gray job-card-title-space">
+                                    <div class="job-card-title-t">
+                                        Incoming Jobs
+                                    </div>
+                                  </div>
+                                  <div class="job-card-txt-wrap">
+                                      <div class="job-card-txt-t">
+                                          No Incoming Jobs yet
+                                      </div>
+                                      <p class="job-card-txt-p mb-0">
+                                          No incoming jobs yet. Keep an eye here<br/> for new job requests.
+                                      </p>
+                                  </div>
+                             </div>
+                          </div>
+                      </div>                      
+                    </div>
+                  </div>
+               </div>
+            </div>
+       </div>
+    </section>
+    <!-- ====== /CONTENT EOC ====== -->
+
+  </div>
+  <!-- ====== /WRAPPER EOC ====== -->
+
+
+
+
+
+
+
+<div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasAddTeamMemda" aria-labelledby="offcanvasAddTeamMemdaLabel">
+    <div class="offcanvas-header-cm">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title" id="offcanvasAddTeamMemdaLabel">Add a Team Member</div>
+        <p class="offcanvas-tl-p">Invite a admin team member to help manage jobs, drivers, or fleet operations. They’ll receive login details by email.</p>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+      </div>
+    </div>
+      <form class="offcanvas-form">
+          <div class="offcanvas-body">
+             <div class="offcanvas-form-main">        
+                <div class="offcanvas-body-inner">
+                    <div class="form-group">
+                      <label for="form-full-nme" class="form-label">Full Name</label>
+                      <input type="text" class="form-control border" id="form-full-nme" name="form-full-nme"
+                        placeholder="Enter full name">
+                    </div>
+                    <div class="form-group">
+                      <label for="form-emaddrs" class="form-label">Email Address</label>
+                      <input type="text" class="form-control border" id="form-emaddrs" name="form-emaddrs"
+                        placeholder="max.johnson@truckmatch.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="form-mnum" class="form-label">Mobile Number</label>
+                      <div class="form-mobile-num position-relative">
+                        <input type="phone" class="form-control border mobile-num" id="form-mnum" name="form-mnum">
+                        <div class="country-code position-absolute">+ 61</div>
+                      </div>
+                    </div>
+                    <hr class="mt-2 mb-3">
+                    <div class="form-group agprd-gete">
+                      <label for="form-gen-pasd" class="form-label">Generate Password</label>
+                      <div class="agprd-gete-gepa">
+                          <input type="password" class="form-control border" id="pass-piuesfwde" name="form-gen-pasd"
+                           placeholder="Enter Password">
+                          <span id="ao-ged">Auto Generated</span>
+                      </div>
+                    </div>
+                   <div class="note-wrap note-wrap-rtkm">
+                       <div class="note-wrap-tl text-primary">
+                           Note:
+                       </div>
+                       <p class="note-wrap-txt text-gray">
+                           A temporary password will be sent by email. The team member can reset it on first login.
+                       </p>
+                   </div>                                    
+                </div>     
+             </div>
+          </div>
+        <div class="offcanvas-op-btn text-end">
+          <div class="offcanvas-btn-wrap d-inline-block">
+            <button type="button" class="btn-cancel btn btn-outline" data-bs-dismiss="offcanvas" aria-label="Close">
+                Cancel
+            </button>
+            <!-- <button type="button" class="btn">Invite Team Member</button> -->
+            <a href="team-members.html" class="btn">Invite Team Member </a>
+          </div>
+       </div>
+      </form>
+</div>
+
+
+
+<div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasAddFleet" aria-labelledby="offcanvasAddFleetLabel">
+    <div class="offcanvas-header-cm">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title" id="offcanvasAddFleetLabel">Add New Fleet</div>
+        <p class="offcanvas-tl-p">Provide your truck details and upload the required compliance documents to keep your fleet verified and ready for jobs.</p>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+      </div>
+    </div>
+      <form class="offcanvas-form">
+          <div class="offcanvas-body">
+             <div class="offcanvas-form-main">        
+                <div class="offcanvas-body-inner">
+                    <div class="form-group">
+                        <label class="form-label cblack1 fw-medium">Truck Type</label>
+                        <select id="form-trucktype" class="form-select form-control border" placeholder="Select Truck Type">
+                          <option disabled hidden selected>Select Truck Type</option>
+                          <option>2 - 3 meter</option>
+                          <option>4 - 6 meter</option>
+                          <option>8 - 10 meter</option>
+                          <option>Twin Steer</option>
+                          <option>10 Wheeler</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label cblack1 fw-medium">Attachments</label>
+                      <div class="att-info-wrap d-flex flex-wrap">
+                          <div class="att-box bg-red1 br10 fs-14 text-primary mb-2 fw-medium">
+                              Pipe Clamp - $45 
+                              <button type="button" class="border-0 ms-1 bg-transparent">
+                                <img src="../../assets/images/att-close-icon.png" alt="Image">
+                              </button>
+                          </div>
+                          <div class="att-box bg-red1 br10 fs-14 text-primary mb-2 fw-medium">
+                              Concrete Kibble - $60
+                              <button type="button" class="border-0 ms-1 bg-transparent">
+                                <img src="../../assets/images/att-close-icon.png" alt="Image">
+                              </button>
+                          </div>                          
+                      </div>
+                      <button type="button" class="border-0 bg-transparent d-flex flex-wrap align-items-center text-primary fw-medium fs-14" data-bs-toggle="modal" data-bs-target="#AddNewAttModal">
+                          <img src="../../assets/images/add-att-icon.png" alt="Image" class="pe-1">Add Attachment
+                      </button>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label cblack1 fw-medium">Truck Images</label>
+                      <div class="fs-14 cgray">Only support .jpg, .jpeg, and .png files</div>
+                    </div>                     
+                      <div class="truck-img-wrap d-flex flex-wrap">
+                         <div class="truck-upload-main mb-3 me-2 me-xl-3 bg-red3 br14">
+                            <div class="profile-preview br14">
+                              <div id="imagePreview" class="imagepreview" data-default="../../assets/images/plus-img.png" style="background-image: url('../../assets/images/plus-img.png');"></div>
+                              <button class="remove-img-btn" data-target="imagePreview">×</button>
+                              <label for="imageUpload" class="imageUpload-review"></label> 
+                            </div>
+                            <div class="profile-edit">
+                              <input type="file" id="imageUpload" class="imageUpload" accept=".png, .jpg, .jpeg">
+                            </div>
+                          </div>
+                         <div class="truck-upload-main mb-3 me-2 me-xl-3 bg-red3 br14">
+                            <div class="profile-preview br14">
+                              <div id="imagePreview" class="imagepreview" data-default="../../assets/images/plus-img.png" style="background-image: url('../../assets/images/plus-img.png');"></div>
+                              <button class="remove-img-btn" data-target="imagePreview">×</button>
+                              <label for="imageUpload1" class="imageUpload-review"></label> 
+                            </div>  
+                            <div class="profile-edit">
+                              <input type="file" id="imageUpload1" class="imageUpload" accept=".png, .jpg, .jpeg">
+                            </div>
+                          </div> 
+                         <div class="truck-upload-main mb-3 bg-red3 br14">
+                            <div class="profile-preview br14">
+                              <div id="imagePreview" class="imagepreview" data-default="../../assets/images/plus-img.png" style="background-image: url('../../assets/images/plus-img.png');"></div>
+                              <button class="remove-img-btn" data-target="imagePreview2">×</button>
+                              <label for="imageUpload2" class="imageUpload-review"></label> 
+                            </div>
+                            <div class="profile-edit">
+                              <input type="file" id="imageUpload2" class="imageUpload" accept=".png, .jpg, .jpeg">
+                            </div>
+                          </div>                                                                                             
+                      </div>
+                      <div class="row gx-3">
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label for="form-tnum" class="form-label cblack1 fw-medium">Truck Number</label>
+                              <input type="text" class="form-control border cblack1-placeholder" id="form-tnum" name="form-tnum"
+                                value="741-QLD">
+                            </div>                              
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label for="form-hrate" class="form-label cblack1 fw-medium">Hourly Rate</label>
+                              <input type="number" class="form-control border cblack1-placeholder" id="form-hrate" name="form-hrate"
+                                value="$50">
+                            </div>                              
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label for="form-tchr" class="form-label cblack1 fw-medium">Travel Charge</label>
+                              <input type="number" class="form-control border cblack1-placeholder" id="form-tchr" name="form-tchr"
+                                value="$520">
+                            </div>                              
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label for="form-minhire" class="form-label cblack1 fw-medium">Minimum Hire</label>
+                              <input type="number" class="form-control border cblack1-placeholder" id="form-minhire" name="form-minhire"
+                                value="6 Hours">
+                            </div>                              
+                          </div>
+                      </div>
+                      <hr class="my-3"></hr>
+                      <div class="fs-18 fw-medium cblack mb-3">
+                          Upload Required Documents
+                      </div>
+                      <div class="up-doc-wrap mb-2">
+                          <div class="up-doc-sh mb-1 fs-16 cblack fw-medium">
+                              Common Document
+                          </div> 
+                          <p class="fs-14 cgray mb-2 pb-1 lh-sm">
+                              Please provide the essential documents that confirm your truck’s registration, insurance, and maintenance status.
+                          </p>
+                           <div class="green-box-main mt-1">
+                               <div class="green-box-wrap">
+                                   <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                      Vehicle/Plant Registration Certificate
+                                      <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                   </div>
+                                   
+                                   <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                      Public Liability Insurance
+                                      <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                   </div>
+                                   <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                      Maintenance & Service Records
+                                      <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                   </div>
+                                   <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                      Truck/Equipment Insurance
+                                      <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                   </div>                                                                                         
+                               </div>                                                                     
+                           </div>                                                     
+                      </div>
+                      <div class="up-doc-wrap mb-2">
+                          <div class="up-doc-sh mb-1 fs-16 cblack fw-medium">
+                              Motor vehicle certification
+                          </div> 
+                          <p class="fs-14 cgray mb-2 pb-1 lh-sm">
+                              Attach your current vehicle certification showing this truck has passed all required inspections for safe use.
+                          </p>
+                           <div class="green-box-main mt-1">
+                               <div class="green-box-wrap">
+                                   <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                      Vehicle Registration Certificate
+                                      <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                   </div>
+                                   <div class="orange-box border-orange cb-sm-box br18 fs-14 bg-orange4 corange2">
+                                      SWMS Document
+                                      <img src="../../assets/images/close-oicon.png" class="ms-1" alt="Image">
+                                   </div>
+                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray">
+                                      Vehicle Insurance Document
+                                   </div>                                                                                        
+                               </div>                                                                     
+                           </div>                                                                               
+                      </div>                                                                                                 
+                </div>     
+             </div>
+          </div>
+        <div class="offcanvas-op-btn text-end">
+          <div class="offcanvas-btn-wrap d-inline-block">
+            <button type="button" class="btn-cancel btn btn-outline" data-bs-dismiss="offcanvas" aria-label="Close">
+                Cancel
+            </button>
+            <button type="submit" class="btn">Add New Fleet</button>
+          </div>
+       </div>
+      </form>
+</div>
+
+
+
+<div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasAddNewDriver" aria-labelledby="offcanvasAddNewDriverLabel">
+    <div class="offcanvas-header-cm">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title" id="offcanvasAddNewDriverLabel">Add New Driver</div>
+        <p class="offcanvas-tl-p">Register your drivers by entering their details. Upload necessary documents on their behalf and keep your team verified and ready for jobs.</p>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+      </div>
+    </div>
+      <form class="offcanvas-form">
+          <div class="offcanvas-body">
+             <div class="offcanvas-form-main">        
+                <div class="offcanvas-body-inner">
+                    <div class="form-group">
+                      <label for="form-full-nme" class="form-label">Full Name</label>
+                      <input type="text" class="form-control border" id="form-full-nme" name="form-full-nme"
+                        value="Alex Johnson">
+                    </div>
+                    <div class="form-group">
+                      <label for="form-emaddrs" class="form-label">Email Address</label>
+                      <input type="text" class="form-control border" id="form-emaddrs" name="form-emaddrs"
+                        value="alex.johnson@truckmatch.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="form-mnum" class="form-label">Mobile Number</label>
+                      <div class="form-mobile-num position-relative">
+                        <input type="phone" class="form-control border mobile-num" id="form-mnum" name="form-mnum">
+                        <div class="country-code position-absolute">+ 61</div>
+                      </div>
+                    </div>
+                    <hr class="my-3">
+                    <div class="form-group agprd-gete">
+                      <label for="form-gen-pasd" class="form-label">Generate Password</label>
+                      <div class="agprd-gete-gepa">
+                          <input type="password" class="form-control border" id="pass-piuesfwde1" name="form-gen-pasd"
+                           placeholder="Enter Password">
+                          <span id="ao-ged1">Auto Generated</span>
+                      </div>
+                    </div>
+                    <div class="driver-com-doc-wrap">
+                        <div class="driver-com-doc-tl fs-16 fw-medium cblack mb-2">
+                            Driver Compliance Documents
+                        </div>
+
+                        <p class="fs-14 cgray lh-sm mb-3">
+                            Upload the driver’s required licences and certifications to confirm they are qualified and legally permitted to operate on-site. Make sure all documents are current and valid.
+                        </p>
+
+                       <div class="gray-box-sm-main mt-1">
+                           <div class="gray-box-sm-wrap">
+                               <div class="gray-box-sm border-gray cb-sm-box fs-14 br18 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
+                                  <img src="../../assets/images/up-doc-icon.png" class="me-1" alt="Image">    
+                                  Driver License
+                               </div>
+                               <div class="gray-box-sm border-gray cb-sm-box fs-14 br18 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
+                                  <img src="../../assets/images/up-doc-icon.png" class="me-1" alt="Image">    
+                                  White Card
+                               </div>
+                               <div class="gray-box-sm border-gray cb-sm-box fs-14 br18 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
+                                  <img src="../../assets/images/up-doc-icon.png" class="me-1" alt="Image">    
+                                  VOC (Verification of Competency)
+                               </div>
+                               <div class="gray-box-sm border-gray cb-sm-box fs-14 br18 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
+                                  <img src="../../assets/images/up-doc-icon.png" class="me-1" alt="Image">    
+                                  High Risk Work License
+                               </div>                                                                                         
+                           </div>                                                                     
+                       </div>                        
+                    </div>                                    
+                </div>     
+             </div>
+          </div>
+        <div class="offcanvas-op-btn text-end">
+          <div class="offcanvas-btn-wrap d-inline-block">
+            <button type="button" class="btn-cancel btn btn-outline" data-bs-dismiss="offcanvas" aria-label="Close">
+                Cancel
+            </button>
+            <!-- <button type="button" class="btn">Invite Team Member</button> -->
+            <a href="team-members.html" class="btn">Invite Team Fleet</a>
+          </div>
+       </div>
+      </form>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal modal-cm fade" id="AddNewAttModal" tabindex="-1" aria-labelledby="AddNewAttModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content border-0 br20">
+      <div class="modal-header-cm">
+          <div class="modal-header border-bottom-0 cp-20 pb-0 rounded-0">
+            <div class="modal-title fs-22 fw-bold cblack1" id="AddNewAttModalLabel">
+                Add New Attachment
+            </div>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+      </div>
+      <form class="modal-form">
+          <div class="modal-body cp-20">
+            <p class="fs-18 cgray mb-3">Add the name and price of the attachment you want to include with this truck.</p>
+            <div class="form-group">
+                <label class="form-label fw-medium cblack">Attachment Name</label>
+                <select id="form-select-att" class="form-select form-control border" placeholder="Select attachment">
+                  <option disabled hidden selected>Select attachment</option>
+                  <option>2 - 3 meter</option>
+                  <option>4 - 6 meter</option>
+                  <option>8 - 10 meter</option>
+                  <option>Twin Steer</option>
+                  <option>10 Wheeler</option>
+                </select>
+            </div>
+            <div class="form-group">
+              <label for="form-atta-price" class="form-label fw-medium cblack">Attachment Price</label>
+              <input type="number" class="form-control border" id="form-atta-price" name="form-atta-price"
+                placeholder="Enter price">
+            </div> 
+          </div>
+          <div class="modal-footer pt-0 cp-20 border-0 rounded-0">
+            <div class="row w-100 gx-2">
+                <div class="col-6">
+                    <button type="button" class="btn btn-gray fs-16 fw-semibold cblack1 w-100" data-bs-dismiss="modal">Cancel</button>
+                </div>
+                <div class="col-6">
+                    <button type="submit" class="btn fs-16 fw-semibold text-white w-100">Save Attachment</button>
+                </div>
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal modal-cm fade" id="UploadDocModal" tabindex="-1" aria-labelledby="UploadDocLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content border-0 br20">
+      <div class="modal-header-cm">
+          <div class="modal-header border-bottom-0 cp-20 pb-0 rounded-0">
+            <div class="modal-title fs-22 fw-bold cblack1" id="UploadDocLabel">
+                Upload Document
+            </div>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+      </div>
+      <form class="modal-form">
+          <div class="modal-body cp-20">
+            <p class="fs-18 cgray mb-3">Choose the document you want to upload from your device. Ensure the file is clear, valid, and up to date so we can verify compliance smoothly.</p>
+            <div class="upload-drag-drop-file" id="dropArea">
+              <div class="profile-preview">
+                <div id="imagePreview" class="imagepreview" style="background-image: url('../../assets/images/');"></div>
+
+                <label for="imageUpload" class="imageUpload-review bg-gray1">
+                  <img src="../../assets/images/upload-doc-icon.png" alt="Upload Icon">
+                  <div class="upload-drag-drop-file-tl fs-16 cblack1 fw-semibold">Upload your Document here</div>
+                  <div class="upload-drag-drop-sup-file fs-12 cgray">Supports .jpg, .jpeg, .png, .pdf</div>
+                  <div class="upload-drag-drop-browse-file fs-14 text-primary fw-semibold">Drag & Drop file or Browse Files</div>
+                </label>
+              </div>
+              <input type="file" id="imageUpload" class="imageUpload" accept=".png,.jpg,.jpeg,.pdf">
+            </div> 
+          </div>
+          <div class="modal-footer pt-0 cp-20 border-0 rounded-0">
+            <div class="row w-100 gx-2">
+                <div class="col-6">
+                    <button type="button" class="btn btn-gray fs-16 fw-semibold cblack1 w-100" data-bs-dismiss="modal">Cancel</button>
+                </div>
+                <div class="col-6">
+                    <button type="submit" class="btn fs-16 fw-semibold text-white w-100">Upload File</button>
+                </div>
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- =================== /WEB JS BOC ==================== -->
+  <script src="../../assets/js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/moment.min.js"></script>
+  <script src="../../assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="../../assets/js/select2.min.js" type="text/javascript"></script>   
+  <script src="../../assets/js/custom.js" type="text/javascript"></script>
+
+  <!-- =================== /WEB JS BOC ==================== -->
+
+
+
+  <script>
+
+    // Upload Image PDF start
+
+
+    const dropArea = document.querySelector('.upload-drag-drop-file');
+    const inputFile = dropArea.querySelector('.upload-drag-drop-file input[type="file"]');
+    const preview = dropArea.querySelector('.upload-drag-drop-file .imagepreview');
+
+    function previewFile(file) {
+      // IMAGE UPLOAD
+      if (file.type.startsWith('image/')) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          preview.style.backgroundImage = 'url(' + e.target.result + ')';
+          $(preview).hide().fadeIn(650);
+
+          preview.classList.add('uploaded');
+          preview.classList.remove('pdf-uploaded'); // REMOVE pdf class for images
+        };
+        reader.readAsDataURL(file);
+      }
+
+      // PDF UPLOAD
+      else if (file.type === 'application/pdf') {
+        preview.style.backgroundImage = "url('../../assets/images/pdf-icon.png')";
+        
+        preview.classList.add('uploaded');
+        preview.classList.add('pdf-uploaded');   // ADD pdf-uploaded class
+      }
+    }
+
+    // Input selection
+    inputFile.addEventListener('change', function() {
+      if (this.files.length) previewFile(this.files[0]);
+    });
+
+    // Drag & Drop events
+    ['dragenter', 'dragover'].forEach(eventName => {
+      dropArea.addEventListener(eventName, e => {
+        e.preventDefault();
+        e.stopPropagation();
+        dropArea.classList.add('drag-over');
+      });
+    });
+
+    ['dragleave', 'drop'].forEach(eventName => {
+      dropArea.addEventListener(eventName, e => {
+        e.preventDefault();
+        e.stopPropagation();
+        dropArea.classList.remove('drag-over');
+      });
+    });
+
+    // Drop file
+    dropArea.addEventListener('drop', e => {
+      const files = e.dataTransfer.files;
+      if (files.length) {
+        inputFile.files = files; 
+        previewFile(files[0]);
+      }
+    });
+
+
+
+    // Upload Image PDF end      
+
+  </script>
+
+
+  
+    <script>
+
+      $(function () {
+      $('#form-trucktype').select2({
+        placeholder: "Select Truck Type",
+
+         // closeOnSelect : false,
+         allowClear: true,
+         width: 'auto',
+         tags: true,
+         minimumResultsForSearch: Infinity // ✅ removes search field
+      });
+    });
+
+
+      $(function () {
+      $('#form-select-att').select2({
+        placeholder: "Select attachment",
+
+         // closeOnSelect : false,
+         allowClear: true,
+         width: 'auto',
+         tags: true,
+         minimumResultsForSearch: Infinity // ✅ removes search field
+      });
+    }); 
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,2159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+
+    <title>TruckMatch | Dashboard</title>
+
+    <!-- ================ /FONT Family =================== -->
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../../assets/font/font-family/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/font/font-awesome/css/font-awesome.min.css">
+    <!-- ================ /FONT Family =================== -->
+
+    <!-- =================== /WEB CSS BOC ==================== -->
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/media.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/header.css">
+
+    <!-- =================== /WEB CSS EOC ==================== -->
+
+
+</head>
+
+<body>
+
+    <div class="sidebar-show-hide-bck"></div>
+    <!-- ====== /WRAPPER BOC ====== -->
+    <div class="page-wrapper">
+
+        <!-- ====== /CONTENT BOC ====== -->
+
+        <section class="wrapper-main">
+            <div class="wrapper-content">
+                <!-- Navbar -->
+
+                <a href="#" class="sidebar-icon sidebar-toggle sidebar-toggle-mob"><i class="fa fa-angle-left"
+                        aria-hidden="true"></i></a>
+                <nav class="main-header fixed-top navbar navbar-expand">
+                    <div class="headera-logo-wrap sidebar-top-toggle">
+                        <a href="#" class="headera-logo">
+                            <img src="../../assets/images/header-logo.svg" alt="Image">
+                        </a>
+                        <a href="#" class="headera-mlogo">
+                            <img src="../../assets/images/header-logo-m.svg" alt="Image">
+                        </a>
+                        <a href="#" class="sidebar-icon sidebar-toggle sidebar-toggle-desk"><i class="fa fa-angle-left"
+                                aria-hidden="true"></i></a>
+
+                    </div>
+                    <div class="header-left-text">
+                        <div class="dash-txt dash-txt-desk">
+                            Dashboard
+                        </div>
+                    </div>
+                    <ul class="navbar-nav ms-auto main-header-right">
+                        <li class="ha-dropdown-main h-notification-main nav-item dropdown">
+                            <a class="ha-dropdown-click h-notification-click" href="#" id="userDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../../assets/images/notification-icon.svg" alt="#">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end notification-main"
+                                aria-labelledby="userDropdown">
+                                <div class="notification-wrap">
+                                    <div class="notification-head">
+                                        <div class="notification-tl">
+                                            Notifications
+                                        </div>
+                                        <div class="notification-rd">
+                                            <a href="#" class="notification-rd-link">
+                                                Mark all as read
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="notification-view">
+                                        <div class="notification-hereb">
+                                            <div class="notification-here-b-inner">
+                                                <a href="#" class="notification-here notification-here-njr">
+                                                    <div class="notification-here-icon">
+                                                        <img src="../../assets/images/notification-njr-icon.png"
+                                                            alt="Image">
+                                                    </div>
+                                                    <div class="notification-here-wrapt">
+                                                        <div class="notification-here-tl">
+                                                            New Job Request
+                                                        </div>
+                                                        <div class="notification-here-txt">
+                                                            Your job request has been accepted by <span
+                                                                class="notification-here-b">Right Way Construction
+                                                                Pvt.</span> Review details and get ready to start.
+                                                        </div>
+                                                        <div class="notification-here-tm">
+                                                            2 m
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="notification-hereb">
+                                            <div class="notification-here-b-inner">
+                                                <a href="#" class="notification-here">
+                                                    <div class="notification-here-icon">
+                                                        <img src="../../assets/images/notification-jc-icon.png"
+                                                            alt="Image">
+                                                    </div>
+                                                    <div class="notification-here-wrapt">
+                                                        <div class="notification-here-tl">
+                                                            Job Confirmed
+                                                        </div>
+                                                        <div class="notification-here-txt">
+                                                            Your job request has been accepted, or you have been
+                                                            assigned to a job. Check the details to proceed.
+                                                        </div>
+                                                        <div class="notification-here-tm">
+                                                            6 h
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="notification-hereb">
+                                            <div class="notification-here-b-inner">
+                                                <a href="#" class="notification-here">
+                                                    <div class="notification-here-icon">
+                                                        <img src="../../assets/images/notification-da-icon.png"
+                                                            alt="Image">
+                                                    </div>
+                                                    <div class="notification-here-wrapt">
+                                                        <div class="notification-here-tl">
+                                                            Driver Assigned
+                                                        </div>
+                                                        <div class="notification-here-txt">
+                                                            Driver John Doe has been assigned to job scheduled start on
+                                                            16 July, 2025 at 03:00 PM.
+                                                        </div>
+                                                        <div class="notification-here-tm">
+                                                            10 h
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="notification-hereb">
+                                            <div class="notification-here-b-inner">
+                                                <a href="#" class="notification-here notification-here-des">
+                                                    <div class="notification-here-icon">
+                                                        <img src="../../assets/images/notification-des-icon.png"
+                                                            alt="Image">
+                                                    </div>
+                                                    <div class="notification-here-wrapt">
+                                                        <div class="notification-here-tl">
+                                                            Document Expire Soon
+                                                        </div>
+                                                        <div class="notification-here-txt">
+                                                            Your vehicle insurance is nearing expiry. Renew soon to stay
+                                                            compliant and protected.
+                                                        </div>
+                                                        <div class="notification-here-tm">
+                                                            1 h
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div class="notification-here-btn">
+                                                    <a href="#" class="btn notification-here-btn-link">
+                                                        Renew Now
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="notification-all">
+                                        <a href="#" class="notification-all-link">View All Notifications</a>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="btn btn-primary me-2 btn offcanvas-btn offcanvas-desk" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasSelectFleet"
+                                aria-controls="offcanvasSelectFleet">
+                                Post a New Job
+                            </button>
+                        </li>
+                        <!-- User Menu -->
+                        <li class="ha-dropdown-main ad-dropdown-main nav-item dropdown">
+                            <a class="ha-dropdown-click dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="user-menu">
+                                    <img src="../../assets/images/admin-img.png" alt="#">
+                                    <div class="h-admin-info">
+                                        <span>Build Right Pvt. Ltd.</span>
+                                        <span>Admin</span>
+                                    </div>
+
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="profile-settings.html">
+                                        <span class="icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9 9C9.69223 9 10.3689 8.79473 10.9445 8.41015C11.5201 8.02556 11.9687 7.47894 12.2336 6.83939C12.4985 6.19985 12.5678 5.49612 12.4327 4.81719C12.2977 4.13825 11.9644 3.51461 11.4749 3.02513C10.9854 2.53564 10.3618 2.2023 9.68282 2.06725C9.00388 1.9322 8.30015 2.00152 7.66061 2.26642C7.02107 2.53133 6.47444 2.97993 6.08986 3.55551C5.70527 4.13108 5.5 4.80777 5.5 5.5C5.50093 6.42798 5.86997 7.31768 6.52615 7.97385C7.18233 8.63003 8.07203 8.99908 9 9ZM9 3.16667C9.46149 3.16667 9.91262 3.30352 10.2963 3.55991C10.68 3.8163 10.9791 4.18071 11.1557 4.60707C11.3323 5.03343 11.3785 5.50259 11.2885 5.95521C11.1985 6.40784 10.9762 6.8236 10.6499 7.14992C10.3236 7.47624 9.90783 7.69847 9.45521 7.7885C9.00259 7.87853 8.53343 7.83233 8.10707 7.65572C7.68071 7.47912 7.31629 7.18005 7.0599 6.79633C6.80351 6.41262 6.66667 5.96149 6.66667 5.5C6.66667 4.88116 6.9125 4.28767 7.35008 3.85009C7.78767 3.4125 8.38116 3.16667 9 3.16667Z"
+                                                    fill="black" />
+                                                <path
+                                                    d="M9 10.1665C7.60809 10.168 6.27363 10.7217 5.28939 11.7059C4.30516 12.6901 3.75154 14.0246 3.75 15.4165C3.75 15.5712 3.81146 15.7196 3.92085 15.829C4.03025 15.9384 4.17862 15.9998 4.33333 15.9998C4.48804 15.9998 4.63642 15.9384 4.74581 15.829C4.85521 15.7196 4.91667 15.5712 4.91667 15.4165C4.91667 14.3335 5.34687 13.2949 6.11265 12.5292C6.87842 11.7634 7.91703 11.3332 9 11.3332C10.083 11.3332 11.1216 11.7634 11.8874 12.5292C12.6531 13.2949 13.0833 14.3335 13.0833 15.4165C13.0833 15.5712 13.1448 15.7196 13.2542 15.829C13.3636 15.9384 13.512 15.9998 13.6667 15.9998C13.8214 15.9998 13.9697 15.9384 14.0791 15.829C14.1885 15.7196 14.25 15.5712 14.25 15.4165C14.2485 14.0246 13.6948 12.6901 12.7106 11.7059C11.7264 10.7217 10.3919 10.168 9 10.1665Z"
+                                                    fill="black" />
+                                            </svg></span>
+                                        My Profile
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="login.html">
+                                        <span class="icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.75096 14.0625H4.16853C4.0416 14.0622 3.93877 13.9594 3.93848 13.8324V4.16755C3.93879 4.04062 4.0416 3.93779 4.16853 3.9375H6.75096C7.21695 3.9375 7.59471 3.55974 7.59471 3.09375C7.59471 2.62776 7.21695 2.25 6.75096 2.25H4.16853C3.10999 2.25124 2.25222 3.10904 2.25098 4.16755V13.8324C2.25222 14.891 3.10999 15.7488 4.16853 15.75H6.75096C7.21695 15.75 7.59471 15.3722 7.59471 14.9062C7.59471 14.4403 7.21695 14.0625 6.75096 14.0625Z"
+                                                    fill="black" />
+                                                <path
+                                                    d="M15.058 7.72381L12.987 6.17179C12.6744 5.93745 12.1677 5.93754 11.8552 6.172C11.5428 6.40646 11.5429 6.78649 11.8555 7.02083L13.6757 8.3856L6.42522 8.3968C5.98327 8.3968 5.625 8.6655 5.625 8.99696C5.625 9.32842 5.98327 9.59713 6.42522 9.59713L13.7051 9.58713L11.8555 10.9743C11.5544 11.2169 11.5725 11.5967 11.8959 11.8225C12.2034 12.0372 12.6798 12.037 12.987 11.8221L15.0564 10.2701C15.9939 9.56699 15.9939 8.42698 15.0564 7.72385L15.0564 7.72383L15.058 7.72381Z"
+                                                    fill="black" />
+                                            </svg></span>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="content-wrapper-main">
+                    <!-- Sidebar -->
+                    <aside class="main-sidebar">
+                        <div class="sidebar sidebar-menu-main">
+                            <nav class="sidebar-menu ">
+                                <ul class="nav-sidebar flex-column">
+                                    <li class="sb-nav-item active">
+                                        <a href="dashboard.html" class="sb-nav-link">
+                                            <img class="sb-nav-icon"
+                                                src="../../assets/images/sidebar/dashboard-icon.svg" alt="icon">
+                                            <p>Dashboard</p>
+                                        </a>
+                                    </li>
+                                    <li class="sb-nav-item">
+                                        <a href="job-management-full.html" class="sb-nav-link">
+                                            <img class="sb-nav-icon"
+                                                src="../../assets/images/sidebar/job-management-icon.svg" alt="icon">
+                                            <p>Job Management</p>
+                                        </a>
+                                    </li>
+                                    <li class="sb-nav-item">
+                                        <a href="team-members.html" class="sb-nav-link">
+                                            <img class="sb-nav-icon"
+                                                src="../../assets/images/sidebar/team-management-icon.svg" alt="icon">
+                                            <p>Team Management</p>
+                                        </a>
+                                    </li>
+                                    <li class="sb-nav-item">
+                                        <a href="#" class="sb-nav-link">
+                                            <img class="sb-nav-icon" src="../../assets/images/sidebar/billing-icon.svg"
+                                                alt="icon">
+                                            <p>Billing & Invoicing</p>
+                                        </a>
+                                    </li>
+                                    <li class="sb-nav-item">
+                                        <a href="#" class="sb-nav-link">
+                                            <img class="sb-nav-icon" src="../../assets/images/sidebar/rating-icon.svg"
+                                                alt="icon">
+                                            <p>Rating & Reviews</p>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </aside>
+                    <div class="content-wrapper">
+                        <div class="content">
+                            <div class="dashboard-tl-mob">
+                                <div class="dash-txt dash-txt-mob">
+                                    Dashboard
+                                </div>
+                                <button class="btn offcanvas-btn offcanvas-mob" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasSelectFleet" aria-controls="offcanvasSelectFleet">
+                                    Post a New Job
+                                </button>
+                            </div>
+                            <div class="row gx-2 gx-xl-3">
+                                <div class="col-md-6 mb-3">
+                                    <div class="box-count-main">
+                                        <div class="box-count-wrap border2-gray bg-white br14">
+                                            <div class="box-count-top">
+                                                <div class="box-count-top-wrap borderb-gray">
+                                                    <div class="box-count-icon">
+                                                        <img src="../../assets/images/dashboard/d-job-icon.svg"
+                                                            alt="Image">
+                                                    </div>
+                                                    <div class="box-count-txt-wrap ps-2">
+                                                        <div class="box-count-head">
+                                                            00
+                                                        </div>
+                                                        <div class="box-count-shead">
+                                                            Total Jobs
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-count-bottom">
+                                                <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasSelectFleet"
+                                                    role="button" aria-controls="offcanvasSelectFleet">
+                                                    + Add New Job
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="box-count-main">
+                                        <div class="box-count-wrap border2-gray bg-white br14">
+                                            <div class="box-count-top">
+                                                <div class="box-count-top-wrap borderb-gray">
+                                                    <div class="box-count-icon">
+                                                        <img src="../../assets/images/dashboard/d-mem-icon.svg"
+                                                            alt="Image">
+                                                    </div>
+                                                    <div class="box-count-txt-wrap ps-2">
+                                                        <div class="box-count-head">
+                                                            00
+                                                        </div>
+                                                        <div class="box-count-shead">
+                                                            Total Team Members
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-count-bottom">
+                                                <a href="#" data-bs-toggle="offcanvas"
+                                                    data-bs-target="#offcanvasAddTeamMemda"
+                                                    aria-controls="offcanvasAddTeamMemda">
+                                                    + Add Team Members
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gx-2 gx-xl-3">
+                                <div class="col-12 col-md-7 col-lg-7 col-xl-8 mb-3 mb-md-0">
+                                    <div class="job-card-main">
+                                        <div class="job-card-wrap border2-gray bg-white br14">
+                                            <div class="job-card-title borderb2-gray">
+                                                <div class="job-card-title-t">
+                                                    Running Job
+                                                </div>
+                                            </div>
+                                            <div class="job-card-txt-wrap">
+                                                <div class="job-card-txt-t">
+                                                    No new bookings yet
+                                                </div>
+                                                <p class="job-card-txt-p mb-0">
+                                                    No jobs have been posted yet. Click ‘Post a New Job’ to create one.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 col-lg-5 col-xl-4 mb-3 mb-md-0">
+                                    <div class="job-card-main">
+                                        <div class="job-card-wrap border2-gray bg-white br14">
+                                            <div class="job-card-title borderb2-gray job-card-title-space">
+                                                <div class="job-card-title-t">
+                                                    Jobs Request
+                                                </div>
+                                                <div class="job-card-title-link-wrap">
+                                                    <a href="#" class="job-card-title-link">
+                                                        View All
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="job-card-txt-wrap">
+                                                <div class="job-card-txt-t">
+                                                    No Incoming Job Request yet
+                                                </div>
+                                                <p class="job-card-txt-p mb-0">
+                                                    No incoming jobs yet. Keep an eye here<br /> for new job requests.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ====== /CONTENT EOC ====== -->
+
+    </div>
+    <!-- ====== /WRAPPER EOC ====== -->
+
+
+    <div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasSelectFleet"
+        aria-labelledby="offcanvasSelectFleetLabel">
+        <div class="offcanvas-header-cm">
+            <div class="offcanvas-header">
+                <div class="offcanvas-title" id="offcanvasSelectFleetLabel">Create New Job</div>
+                <p class="offcanvas-tl-p">Quickly define your job, select requirements, and connect with trusted truck
+                    operators.</p>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+            </div>
+        </div>
+        <form class="offcanvas-form">
+            <div class="offcanvas-body">
+                <div class="offcanvas-form-main">
+                    <div class="offcanvas-body-inner">
+                        <div class="offcanvas-body-title">
+                            Select Equipment Type
+                        </div>
+                        <img src="../../assets/truck.png" alt="Image">
+                        <!-- <div class="row gx-2 gx-xxl-3">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype1" name="etype">
+                                <label for="etype1" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/tipper-truck.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Tipper Truck
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype2" name="etype">
+                                <label for="etype2" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/flatbed-truck.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Flatbed Truck
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype3" name="etype">
+                                <label for="etype3" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/tilt-tray.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Tilt Tray
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype4" name="etype">
+                                <label for="etype4" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/water-truck.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Water Truck
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype5" name="etype">
+                                <label for="etype5" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/truck-combo.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Truck Combo
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype6" name="etype">
+                                <label for="etype6" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/float.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Float
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype7" name="etype">
+                                <label for="etype7" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/boom-pump.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Boom Pump
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype8" name="etype">
+                                <label for="etype8" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/line-pump.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Line Pump
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype9" name="etype">
+                                <label for="etype9" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/vacuum-truck.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Vacuum Truck
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype10" name="etype">
+                                <label for="etype10" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/hiab-crane.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Hiab Crane
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype11" name="etype">
+                                <label for="etype11" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/concreate-agitator.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Concrete Agitator
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype12" name="etype">
+                                <label for="etype12" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/skid-steer-combo.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Skid Steer Combo
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                                                                                                                                                                              
+
+            </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-op-btn">
+                <div class="offcanvas-btn-wrap">
+                    <button type="button" class="btn-cancel btn btn-outline" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn" data-offcanvas-next="#offcanvasFleetDetails">Continue to Job
+                        Details</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasFleetDetails"
+        aria-labelledby="offcanvasFleetDetailsLabel">
+        <div class="offcanvas-header-cm">
+            <div class="offcanvas-header">
+                <div class="offcanvas-title" id="offcanvasFleetDetailsLabel">Create New Job</div>
+                <p class="offcanvas-tl-p">Invite a admin team member to help manage jobs, drivers, or fleet operations.
+                    They’ll receive login details by email.</p>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+            </div>
+        </div>
+        <form class="offcanvas-form">
+            <div class="offcanvas-body">
+                <div class="offcanvas-form-main">
+                    <div class="offcanvas-body-inner">
+                        <div class="offcanvas-body-title">
+                            Job Specifications
+                        </div>
+                        <div class="selected-fleet-wrap">
+                            <div class="selected-fleet-tl">
+                                Selected Fleet
+                            </div>
+                            <div class="selected-fleet-nm">
+                                <img src="../../assets/images/selected-fleet-icon.png" class="img-fluid" alt="Image">
+                                <span class="selected-fleet-nm-t">
+                                    Concrete Line Pump
+                                </span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label class="form-label">Line Length Required</label>
+                            <div class="radio-rounded-main">
+                                <div class="radio-rounded-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio" id="linel1" name="linel">
+                                        <label for="linel1" class="mb-0">10-30 m</label>
+                                    </div>
+                                </div>
+                                <div class="radio-rounded-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio" id="linel2" name="linel">
+                                        <label for="linel2" class="mb-0">30-50 m</label>
+                                    </div>
+                                </div>
+                                <div class="radio-rounded-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio" id="linel3" name="linel">
+                                        <label for="linel3" class="mb-0">50-70 m</label>
+                                    </div>
+                                </div>
+                                <div class="radio-rounded-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio" id="linel4" name="linel">
+                                        <label for="linel4" class="mb-0">90 m+</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-vol" class="form-label">Volume (m³)</label>
+                            <input type="number" class="form-control border" id="form-vol" name="form-vol"
+                                placeholder="Enter Volume (m³)">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Aggregate Type</label>
+                            <div class="checkbox-square-main">
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="atype" name="atype">
+                                        <label for="atype" class="mb-0">10 mm</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="atype1" name="atype1">
+                                        <label for="atype1" class="mb-0">20 mm</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="atype2" name="atype2">
+                                        <label for="atype2" class="mb-0">Exposed Aggregate</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="atype3" name="atype3">
+                                        <label for="atype3" class="mb-0">Long line mix</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="atype4" name="atype4">
+                                        <label for="atype4" class="mb-0">Early strength</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Job Details</label>
+                            <div class="checkbox-square-main">
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="jde" name="jde">
+                                        <label for="jde" class="mb-0">Ground slab</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="jde1" name="jde1">
+                                        <label for="jde1" class="mb-0">Suspended slab</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="jde2" name="jde2">
+                                        <label for="jde2" class="mb-0">Retaining walls</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="jde3" name="jde3">
+                                        <label for="jde3" class="mb-0">Footings</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="jde4" name="jde4">
+                                        <label for="jde4" class="mb-0">Columns</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="jde5" name="jde5">
+                                        <label for="jde5" class="mb-0">Lift shaf</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="jde6" name="jde6">
+                                        <label for="jde6" class="mb-0">Stairs</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="jde7" name="jde7">
+                                        <label for="jde7" class="mb-0">Driveway</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="jde8" name="jde8">
+                                        <label for="jde8" class="mb-0">Tight access / long line</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Washout Option</label>
+                            <div class="checkbox-square-main">
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="woption" name="woption">
+                                        <label for="woption" class="mb-0">Supply washout bag</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="woption1" name="woption1">
+                                        <label for="woption1" class="mb-0">Supply washout bag</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-mhire" class="form-label">Minimum Hire</label>
+                            <input type="number" class="form-control border" id="form-mhire" name="form-mhire"
+                                placeholder="Minimum hire is 4 hours  (1 hr travel + 3 hrs work)">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-note" class="form-label">Note</label>
+                            <input type="text" class="form-control border" id="form-note" name="form-note"
+                                placeholder="Add site access notes or special requirements">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Pump Operator Documents</label>
+                            <div class="checkbox-square-main">
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="podoc" name="podoc">
+                                        <label for="podoc" class="mb-0">Driver License</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="podoc1" name="podoc1">
+                                        <label for="podoc1" class="mb-0">White Card</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="podoc2" name="podoc2">
+                                        <label for="podoc2" class="mb-0">Concrete Pumping Ticket or VOC</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-numop" class="form-label">Number of Operator</label>
+                            <input type="number" class="form-control border" id="form-numop" name="form-numop"
+                                placeholder="Enter number of operators">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Compliance Requirements</label>
+                            <div class="checkbox-square-main">
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="comre" name="comre">
+                                        <label for="comre" class="mb-0">Vehicle Insurance</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="comre1" name="comre1">
+                                        <label for="comre1" class="mb-0">Vehicle Registration</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="checkbox" class="checkbox" id="comre2" name="comre2">
+                                        <label for="comre2" class="mb-0">Safe Work Method Statement</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-op-btn">
+                <div class="offcanvas-btn-wrap">
+                    <button type="button" class="offcanvas-btn-back btn btn-outline"
+                        data-offcanvas-prev="#offcanvasSelectFleet">
+                        <span class="btn-outline-arr-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19 11.0001H9L12.29 7.71006C12.3837 7.6171 12.4581 7.5065 12.5089 7.38464C12.5597 7.26278 12.5858 7.13207 12.5858 7.00006C12.5858 6.86805 12.5597 6.73734 12.5089 6.61548C12.4581 6.49362 12.3837 6.38302 12.29 6.29006C12.1026 6.10381 11.8492 5.99927 11.585 5.99927C11.3208 5.99927 11.0674 6.10381 10.88 6.29006L6.59 10.5901C6.21441 10.9634 6.00223 11.4705 6 12.0001C6.00487 12.5262 6.21684 13.0292 6.59 13.4001L10.88 17.7001C10.9732 17.7926 11.0838 17.866 11.2054 17.9158C11.3269 17.9657 11.4571 17.9911 11.5885 17.9906C11.7199 17.9902 11.8499 17.9638 11.9712 17.9131C12.0924 17.8624 12.2024 17.7883 12.295 17.6951C12.3876 17.6018 12.4609 17.4913 12.5107 17.3697C12.5606 17.2481 12.586 17.1179 12.5856 16.9865C12.5851 16.8551 12.5588 16.7251 12.508 16.6039C12.4573 16.4827 12.3832 16.3726 12.29 16.2801L9 13.0001H19C19.2652 13.0001 19.5196 12.8947 19.7071 12.7072C19.8946 12.5196 20 12.2653 20 12.0001C20 11.7348 19.8946 11.4805 19.7071 11.293C19.5196 11.1054 19.2652 11.0001 19 11.0001Z"
+                                    fill="#797979" />
+                            </svg>
+                        </span>
+                        Go Back
+                    </button>
+                    <button type="button" class="offcanvas-btn-next btn"
+                        data-offcanvas-next="#offcanvasSetLocation">Next</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasSetLocation"
+        aria-labelledby="offcanvasSetLocationLabel">
+        <div class="offcanvas-header-cm">
+            <div class="offcanvas-header">
+                <div class="offcanvas-title" id="offcanvasSetLocationLabel">Set Job Location</div>
+                <p class="offcanvas-tl-p">Enter the destination address accurately to ensure the Fleet reaches the right
+                    place without delays</p>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+            </div>
+        </div>
+        <form class="offcanvas-form">
+            <div class="offcanvas-body">
+                <div class="offcanvas-form-main">
+                    <div class="offcanvas-body-inner">
+                        <div class="offcanvas-body-title">
+                            Location Details
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Job location type</label>
+                            <div class="checkbox-square-main select-without-icon">
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="checkbox" id="same-site-work"
+                                            name="job-location-type" checked="checked">
+                                        <label for="same-site-work" class="mb-0">Same site work</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="checkbox" id="pickup-drop-off"
+                                            name="job-location-type">
+                                        <label for="pickup-drop-off" class="mb-0">Pickup & drop-off</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="on-site-location" id="on-site">
+                            <div class="form-group">
+                                <label for="form-search" class="form-label">On Site Location</label>
+                                <input type="search" class="form-control border" id="form-search" name="form-search"
+                                    placeholder="Enter On Site Location">
+                            </div>
+                        </div>
+
+                        <div class="pickup-drop-off" id="pickup-drop">
+                            <div class="form-group">
+                                <label for="form-search" class="form-label">Pickup Location</label>
+                                <input type="search" class="form-control border" id="pickup-search" name="pickup-search"
+                                    placeholder="Enter On Site Location">
+                            </div>
+
+                            <div class="form-group" id="">
+                                <label for="form-search" class="form-label">Drop-off Location</label>
+                                <input type="search" class="form-control border" id="drop-search" name="drop-outsite"
+                                    placeholder="Enter Out Site Location">
+                            </div>
+                        </div>
+
+
+                        <div class="recent-location-main">
+                            <div class="recent-location-tl">
+                                Recent Location
+                            </div>
+                            <div class="recent-location-wrap">
+                                <div class="recent-location-bx">
+                                    <div class="recent-location-micon">
+                                        <img src="../../assets/images/recent-location-icon.png" alt="Image">
+                                    </div>
+                                    <div class="recent-location-txt">
+                                        34 Maple Street, Apt 3B, Newtown, New South Wales, 2042
+                                    </div>
+                                </div>
+                                <div class="recent-location-bx">
+                                    <div class="recent-location-micon">
+                                        <img src="../../assets/images/recent-location-icon.png" alt="Image">
+                                    </div>
+                                    <div class="recent-location-txt">
+                                        12 River Road, House 4, Parramatta, New South Wales, 2150
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-op-btn">
+                <div class="offcanvas-btn-wrap">
+                    <button type="button" class="offcanvas-btn-back btn btn-outline"
+                        data-offcanvas-next="#offcanvasFleetDetails">
+                        <span class="btn-outline-arr-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19 11.0001H9L12.29 7.71006C12.3837 7.6171 12.4581 7.5065 12.5089 7.38464C12.5597 7.26278 12.5858 7.13207 12.5858 7.00006C12.5858 6.86805 12.5597 6.73734 12.5089 6.61548C12.4581 6.49362 12.3837 6.38302 12.29 6.29006C12.1026 6.10381 11.8492 5.99927 11.585 5.99927C11.3208 5.99927 11.0674 6.10381 10.88 6.29006L6.59 10.5901C6.21441 10.9634 6.00223 11.4705 6 12.0001C6.00487 12.5262 6.21684 13.0292 6.59 13.4001L10.88 17.7001C10.9732 17.7926 11.0838 17.866 11.2054 17.9158C11.3269 17.9657 11.4571 17.9911 11.5885 17.9906C11.7199 17.9902 11.8499 17.9638 11.9712 17.9131C12.0924 17.8624 12.2024 17.7883 12.295 17.6951C12.3876 17.6018 12.4609 17.4913 12.5107 17.3697C12.5606 17.2481 12.586 17.1179 12.5856 16.9865C12.5851 16.8551 12.5588 16.7251 12.508 16.6039C12.4573 16.4827 12.3832 16.3726 12.29 16.2801L9 13.0001H19C19.2652 13.0001 19.5196 12.8947 19.7071 12.7072C19.8946 12.5196 20 12.2653 20 12.0001C20 11.7348 19.8946 11.4805 19.7071 11.293C19.5196 11.1054 19.2652 11.0001 19 11.0001Z"
+                                    fill="#797979" />
+                            </svg>
+                        </span>
+                        Go Back
+                    </button>
+                    <button type="button" class="offcanvas-btn-next btn"
+                        data-offcanvas-next="#offcanvasTruckList">Next</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasTruckList"
+        aria-labelledby="offcanvasTruckListLabel">
+        <div class="offcanvas-header-cm">
+            <div class="offcanvas-header">
+                <div class="offcanvas-title" id="offcanvasTruckListLabel">Create New Job</div>
+                <p class="offcanvas-tl-p">Quickly define your job, select requirements, and connect with trusted truck
+                    operators.</p>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+            </div>
+        </div>
+        <form class="offcanvas-form">
+            <div class="offcanvas-body">
+                <div class="offcanvas-form-main">
+                    <div class="offcanvas-body-inner">
+                        <div class="offcanvas-body-title mt-2">
+
+                            <div
+                                class="d-flex flex-wrap flex-md-nowrap align-items-center justify-content-beetwen justify-content-between">
+
+
+                                <div class="content-bbox-txt-wrap w-100 mb-3 mb-md-0">
+                                    <div class="content-bbox-txt--mh mb-1 word-break">
+                                        Truck List
+                                    </div>
+                                    <div class="content-bbox-txt-sh mb-0">
+                                        1 Truck selected
+                                    </div>
+                                </div>
+
+                                <div class="add-more-truck-main flex-shrink-0 flex-grow-1 w-auto">
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSelectFleet"
+                                        class="add-more-truck w-100">Add More truck</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="truck-list-main">
+                            <div class="truck-list-row">
+                                <div class="truck-list-row-top content-bbox-imgtxt d-flex align-items-center w-100">
+                                    <div class="content-bbox-img truck-img-w-105 flex-shrink-0 flex-grow-1">
+                                        <img src="../../assets/images/concrete-line-pump.png" alt="Image">
+                                    </div>
+                                    <div class="content-bbox-txt-wrap w-100">
+
+                                        <div class="content-bbox-txt--mh mb-1 word-break">
+                                            Concrete Line Pump
+                                        </div>
+                                        <div class="content-bbox-txt-sh mb-0">
+                                            30-50 m
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="content-bbox-cn ">
+                                    <div class="loc-de-box-main">
+                                        <div class="content-bbox-txt--mh mb-3">
+                                            Location
+                                        </div>
+                                        <div class="loc-de-box-wrap">
+                                            <div class="loc-de-stet-col w-100">
+                                                <div class="loc-de-stet">
+                                                    <div class="loc-de-im">
+                                                        <img src="../../assets/images/loc-de-map.png" alt="Image">
+                                                    </div>
+                                                    <div class="loc-de-twrap">
+                                                        <div class="loc-de-timadd line-height-1-5">
+                                                            Fremantle Port Authority, Peter Hughes Dr, Fremantle WA 6160
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="truck-edit-delete">
+                                    <ul class="d-flex flex-wrap">
+                                        <li>
+                                            <a href="#" class="ed-click delete" data-bs-toggle="modal"
+                                                data-bs-target="#deletTruckModal">
+                                                <span class="ed-icon">
+                                                    <img src="../../assets/images/delete.svg" alt="Image">
+                                                </span>
+                                                <span class="click-text">Delete</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="ed-click edit"
+                                                data-offcanvas-next="#offcanvasFleetDetails">
+                                                <span class="ed-icon">
+                                                    <img src="../../assets/images/edit.svg" alt="Image">
+                                                </span>
+                                                <span class="click-text">Edit</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="truck-list-row">
+
+                                <div class="truck-list-row-top content-bbox-imgtxt d-flex align-items-center w-100">
+                                    <div class="content-bbox-img truck-img-w-105 flex-shrink-0 flex-grow-1">
+                                        <img src="../../assets/images/tipper-truck.png" alt="Image">
+                                    </div>
+                                    <div class="content-bbox-txt-wrap w-100">
+
+                                        <div class="content-bbox-txt--mh mb-1 word-break">
+                                            Tipper Truck
+                                        </div>
+                                        <div class="content-bbox-txt-sh mb-0">
+                                            30-50 m
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="content-bbox-cn ">
+                                    <div class="loc-de-box-main">
+                                        <div class="content-bbox-txt--mh mb-3">
+                                            Location
+                                        </div>
+                                        <div class="loc-de-box-wrap">
+                                            <div class="loc-de-stet-col">
+                                                <div class="loc-de-stet">
+                                                    <div class="loc-de-im">
+                                                        <img src="../../assets/images/loc-de-img.png" alt="Image">
+                                                    </div>
+                                                    <div class="loc-de-twrap">
+                                                        <!--  <div class="loc-de-tadd">
+                                                    Melbourne Wholesale Market, 55 Produce Dr, Epping VIC 3076
+                                                </div> -->
+                                                        <div class="loc-de-timadd line-height-1-5">
+                                                            Melbourne Wholesale Market, 55 Produce Dr, Epping VIC 3076
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="loc-de-hr-col">
+                                                <div class="loc-de-hr">
+                                                    07 Hours
+                                                </div>
+                                            </div>
+                                            <div class="loc-de-stet-col">
+                                                <div class="loc-de-stet">
+                                                    <div class="loc-de-im">
+                                                        <img src="../../assets/images/loc-de-map.png" alt="Image">
+                                                    </div>
+                                                    <div class="loc-de-twrap">
+                                                        <div class="loc-de-timadd line-height-1-5">
+                                                            Fremantle Port Authority, Peter Hughes Dr, Fremantle WA 6160
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="truck-edit-delete">
+                                    <ul class="d-flex flex-wrap">
+                                        <li>
+                                            <a href="#" class="ed-click delete" data-bs-toggle="modal"
+                                                data-bs-target="#deletTruckModal">
+                                                <span class="ed-icon">
+                                                    <img src="../../assets/images/delete.svg" alt="Image">
+                                                </span>
+                                                <span class="click-text">Delete</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="ed-click edit"
+                                                data-offcanvas-next="#offcanvasFleetDetails">
+                                                <span class="ed-icon">
+                                                    <img src="../../assets/images/edit.svg" alt="Image">
+                                                </span>
+                                                <span class="click-text">Edit</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-op-btn">
+                <div class="offcanvas-btn-wrap">
+                    <button type="button" class="offcanvas-btn-back btn btn-outline"
+                        data-offcanvas-next="#offcanvasFleetDetails">
+                        <span class="btn-outline-arr-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19 11.0001H9L12.29 7.71006C12.3837 7.6171 12.4581 7.5065 12.5089 7.38464C12.5597 7.26278 12.5858 7.13207 12.5858 7.00006C12.5858 6.86805 12.5597 6.73734 12.5089 6.61548C12.4581 6.49362 12.3837 6.38302 12.29 6.29006C12.1026 6.10381 11.8492 5.99927 11.585 5.99927C11.3208 5.99927 11.0674 6.10381 10.88 6.29006L6.59 10.5901C6.21441 10.9634 6.00223 11.4705 6 12.0001C6.00487 12.5262 6.21684 13.0292 6.59 13.4001L10.88 17.7001C10.9732 17.7926 11.0838 17.866 11.2054 17.9158C11.3269 17.9657 11.4571 17.9911 11.5885 17.9906C11.7199 17.9902 11.8499 17.9638 11.9712 17.9131C12.0924 17.8624 12.2024 17.7883 12.295 17.6951C12.3876 17.6018 12.4609 17.4913 12.5107 17.3697C12.5606 17.2481 12.586 17.1179 12.5856 16.9865C12.5851 16.8551 12.5588 16.7251 12.508 16.6039C12.4573 16.4827 12.3832 16.3726 12.29 16.2801L9 13.0001H19C19.2652 13.0001 19.5196 12.8947 19.7071 12.7072C19.8946 12.5196 20 12.2653 20 12.0001C20 11.7348 19.8946 11.4805 19.7071 11.293C19.5196 11.1054 19.2652 11.0001 19 11.0001Z"
+                                    fill="#797979" />
+                            </svg>
+                        </span>
+                        Go Back
+                    </button>
+                    <button type="button" class="offcanvas-btn-next btn"
+                        data-offcanvas-next="#offcanvasRecurring-days">Next</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasRecurring-days"
+        aria-labelledby="offcanvasRecurring-daysLabel">
+        <div class="offcanvas-header-cm">
+            <div class="offcanvas-header">
+                <div class="offcanvas-title" id="offcanvasRecurring-daysLabel">Schedule Your Job</div>
+                <p class="offcanvas-tl-p">Pick a suitable date and time to schedule the job according to your Job’s
+                    needs and convenience.</p>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+            </div>
+        </div>
+        <form class="offcanvas-form">
+            <div class="offcanvas-body">
+                <div class="offcanvas-form-main">
+                    <div class="offcanvas-body-inner">
+                        <div class="recurr-timing-main">
+                            <div class="recurr-timing-wrap">
+                                <div class="recurr-timing-ht">
+                                    <div class="recurr-timing-tl">
+                                        Your Recurring Days
+                                    </div>
+                                    <div class="recurr-timing-txt">
+                                        Add the weekdays and time slots for your recurring job.
+                                    </div>
+                                </div>
+                                <div class="recurr-timing-icon">
+                                    <div class="apple-toggle-wrap">
+                                        <div class="form-group mb-0">
+                                            <input type="checkbox" class="checkbox" id="atoggle" name="atoggle">
+                                            <label for="atoggle" class="mb-0"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recurr-timing-content">
+                                <div class="form-group mb-0">
+                                    <div class="checkbox-round-main">
+                                        <div class="checkbox-round-wrap">
+                                            <div class="form-group mb-0">
+                                                <input type="checkbox" class="checkbox" id="redays" name="redays">
+                                                <label for="redays" class="mb-0">Sunday</label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-round-wrap">
+                                            <div class="form-group mb-0">
+                                                <input type="checkbox" class="checkbox" id="redays1" name="redays1">
+                                                <label for="redays1" class="mb-0">Monday</label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-round-wrap">
+                                            <div class="form-group mb-0">
+                                                <input type="checkbox" class="checkbox" id="redays2" name="redays2">
+                                                <label for="redays2" class="mb-0">Tuesday</label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-round-wrap">
+                                            <div class="form-group mb-0">
+                                                <input type="checkbox" class="checkbox" id="redays3" name="redays3">
+                                                <label for="redays3" class="mb-0">Wednesday</label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-round-wrap">
+                                            <div class="form-group mb-0">
+                                                <input type="checkbox" class="checkbox" id="redays4" name="redays4">
+                                                <label for="redays4" class="mb-0">Thursday</label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-round-wrap">
+                                            <div class="form-group mb-0">
+                                                <input type="checkbox" class="checkbox" id="redays5" name="redays5">
+                                                <label for="redays5" class="mb-0">Friday</label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-round-wrap">
+                                            <div class="form-group mb-0">
+                                                <input type="checkbox" class="checkbox" id="redays6" name="redays6">
+                                                <label for="redays6" class="mb-0">Saturday</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="form-group mb-0">
+
+                            <div class="row gx-3">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <label class="form-label">Start Date</label>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control border datepicker_icon" id="form-sd"
+                                            name="form-sd" placeholder="Select Date">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 recurr-timing-content mt-0">
+                                    <label class="form-label">End Date</label>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control border datepicker_icon" id="form-ed"
+                                            name="form-ed" placeholder="Select Date">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="recurr-timing-content mt-0"> -->
+                        <div class="form-group mb-0">
+                            <div class="row gx-3">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <label class="form-label">Start Time</label>
+                                    <div class="bs-timepicker">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control border timepicker clock_icon"
+                                                id="form-st" name="form-st" placeholder="Select Time">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <label class="form-label">End Time</label>
+                                    <div class="bs-timepicker">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control border timepicker clock_icon"
+                                                id="form-et" name="form-et" placeholder="Select Time">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div>             -->
+                        <hr>
+
+                        <div class="recurr-timing-main">
+                            <div class="recurr-timing-wrap">
+                                <div class="recurr-timing-ht">
+                                    <div class="recurr-timing-tl">
+                                        Exact timing required ?
+                                    </div>
+                                    <div class="recurr-timing-txt">
+                                        Enable this if the job must start at an exact time.
+                                    </div>
+                                </div>
+                                <div class="recurr-timing-icon">
+                                    <div class="apple-toggle-wrap">
+                                        <div class="form-group mb-0">
+                                            <input type="checkbox" class="checkbox" id="atoggle1" name="atoggle1">
+                                            <label for="atoggle1" class="mb-0"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recurr-timing-content1">
+
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label for="form-pbw" class="form-label">Preferred buffer window</label>
+                            <input type="text" class="form-control border" id="form-pbw" name="form-pbw"
+                                placeholder="Enter buffer window">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-op-btn">
+                <div class="offcanvas-btn-wrap">
+                    <button type="button" class="offcanvas-btn-back btn btn-outline"
+                        data-offcanvas-next="#offcanvasSetLocation">
+                        <span class="btn-outline-arr-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19 11.0001H9L12.29 7.71006C12.3837 7.6171 12.4581 7.5065 12.5089 7.38464C12.5597 7.26278 12.5858 7.13207 12.5858 7.00006C12.5858 6.86805 12.5597 6.73734 12.5089 6.61548C12.4581 6.49362 12.3837 6.38302 12.29 6.29006C12.1026 6.10381 11.8492 5.99927 11.585 5.99927C11.3208 5.99927 11.0674 6.10381 10.88 6.29006L6.59 10.5901C6.21441 10.9634 6.00223 11.4705 6 12.0001C6.00487 12.5262 6.21684 13.0292 6.59 13.4001L10.88 17.7001C10.9732 17.7926 11.0838 17.866 11.2054 17.9158C11.3269 17.9657 11.4571 17.9911 11.5885 17.9906C11.7199 17.9902 11.8499 17.9638 11.9712 17.9131C12.0924 17.8624 12.2024 17.7883 12.295 17.6951C12.3876 17.6018 12.4609 17.4913 12.5107 17.3697C12.5606 17.2481 12.586 17.1179 12.5856 16.9865C12.5851 16.8551 12.5588 16.7251 12.508 16.6039C12.4573 16.4827 12.3832 16.3726 12.29 16.2801L9 13.0001H19C19.2652 13.0001 19.5196 12.8947 19.7071 12.7072C19.8946 12.5196 20 12.2653 20 12.0001C20 11.7348 19.8946 11.4805 19.7071 11.293C19.5196 11.1054 19.2652 11.0001 19 11.0001Z"
+                                    fill="#797979" />
+                            </svg>
+                        </span>
+                        Go Back
+                    </button>
+                    <button type="button" class="offcanvas-btn-next btn"
+                        data-offcanvas-next="#offcanvasReviewJob">Next</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasReviewJob"
+        aria-labelledby="offcanvasReviewJobLabel">
+        <div class="offcanvas-header-cm">
+            <div class="offcanvas-header">
+                <div class="offcanvas-title" id="offcanvasReviewJobLabel">Review & Post Job</div>
+                <p class="offcanvas-tl-p">Double-check the details below before posting. You can edit any section if
+                    needed.</p>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+            </div>
+        </div>
+        <form class="offcanvas-form">
+            <div class="offcanvas-body">
+                <div class="offcanvas-form-main">
+                    <div class="offcanvas-body-inner">
+                        <div class="content-bbox-main">
+                            <div class="content-bbox-wrap border2-gray br14">
+                                <div
+                                    class="content-bbox-ht borderb2-gray d-flex flex-wrap justify-content-between align-items-center py-3">
+                                    <div class="content-bbox-tl">
+                                        Recurring Schedule
+                                    </div>
+                                    <div class="content-bbox-hl">
+                                        <a href="#">Edit schedule</a>
+                                    </div>
+                                </div>
+                                <div class="content-bbox-cn cp-20">
+                                    <div class="srdays-wrap">
+                                        <div class="srdays-tl text-primary fw-medium font-14">
+                                            Your Recurring Days
+                                        </div>
+                                        <div class="srdays-list d-flex flex-wrap">
+                                            <div class="srdays-d">
+                                                Sunday
+                                            </div>
+                                            <div class="srdays-d">
+                                                Monday
+                                            </div>
+                                            <div class="srdays-d">
+                                                Tuesday
+                                            </div>
+                                            <div class="srdays-d">
+                                                Wednesday
+                                            </div>
+                                            <div class="srdays-d">
+                                                Saturday
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="my-3">
+                                    <div class="jp-booking-details">
+                                        <div
+                                            class="jp-booking-details-row d-flex justify-content-between gap-1 align-items-center">
+                                            <div class="srdays-tl text-primary fw-medium pe-1 mb-0 font-14">Booking
+                                                Dates</div>
+                                            <div
+                                                class="content-bbox-txt--mh fw-medium text-end ps-1 font-14 flex-shrink-0 flex-grow-1">
+                                                20 Jan 2025 – 30 Jan 2025</div>
+                                        </div>
+                                        <hr class="my-3">
+                                        <div
+                                            class="jp-booking-details-row d-flex justify-content-between gap-1 align-items-center">
+                                            <div class="pe-2">
+                                                <div class="srdays-tl text-primary fw-medium pe-1 mb-1 font-14">Work
+                                                    time</div>
+                                                <div class="content-bbox-txt-sh mb-0 font-12 font-italic"> Must start at
+                                                    exactly 10:00 AM</div>
+                                            </div>
+                                            <div
+                                                class="content-bbox-txt--mh fw-medium text-end ps-1 font-14 flex-shrink-0 flex-grow-1">
+                                                10:00 AM – 06:00 PM</div>
+                                        </div>
+                                        <hr class="my-3">
+                                        <div
+                                            class="jp-booking-details-row d-flex justify-content-between gap-1 align-items-center">
+                                            <div class="srdays-tl text-primary fw-medium pe-1 mb-0 font-14">Preferred
+                                                buffer window</div>
+                                            <div
+                                                class="content-bbox-txt--mh fw-medium text-end ps-1 font-14 flex-shrink-0 flex-grow-1">
+                                                ± 10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-bbox-wrap border2-gray br14">
+                                <div
+                                    class="content-bbox-ht borderb2-gray d-flex flex-wrap justify-content-between align-items-center py-3">
+                                    <div class="content-bbox-tl">
+                                        Trucks Required
+                                    </div>
+                                    <div class="content-bbox-txt-sh m-0 content-bbox-hl">
+                                        <a href="#">Edit Trucks</a>
+                                    </div>
+                                </div>
+                                <div class="row-trucks-required">
+
+                                    <div class="trucks-required-col content-bbox-cn cp-20">
+                                        <div class="d-flex align-items-center justify-content-beetwen ">
+                                            <div class="content-bbox-imgtxt d-flex  align-items-center pe-2 w-100">
+                                                <div class="content-bbox-img truck-img-w-105 flex-shrink-0 flex-grow-1">
+                                                    <img src="../../assets/images/concrete-line-pump.png" alt="Image">
+                                                </div>
+                                                <div class="content-bbox-txt-wrap w-100">
+
+                                                    <div class="content-bbox-txt--mh mb-2">
+                                                        Concrete Line Pump
+                                                    </div>
+                                                    <div class="content-bbox-txt-sh m-0 content-bbox-hl">
+                                                        <a href="#">Edit Details </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex-shrink-0 flex-grow-1">
+                                                <a href="javascript:void(0)" class="truck-view-close ">View</a>
+                                            </div>
+                                        </div>
+                                        <div class="truck-detail-view-main">
+                                            <hr class="my-3">
+                                            <div class="font-14 text-primary fw-medium mb-3">
+                                                Equipment Details
+                                            </div>
+                                            <div class="gray-box-main d-flex flex-wrap justify-content-between">
+                                                <div class="gray-box-wrap">
+                                                    <div class="gray-box-tl">
+                                                        Line Length
+                                                    </div>
+                                                    <div class="gray-box-m">
+                                                        <div class="gray-box">
+                                                            30–50 m
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gray-box-wrap">
+                                                    <div class="gray-box-tl">
+                                                        Volume (m³)
+                                                    </div>
+                                                    <div class="gray-box-m">
+                                                        <div class="gray-box">
+                                                            25 m³
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gray-box-wrap">
+                                                    <div class="gray-box-tl">
+                                                        Operators
+                                                    </div>
+                                                    <div class="gray-box-m">
+                                                        <div class="gray-box">
+                                                            3 Operators
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="gray-box-main">
+                                                <div class="gray-box-wrap gray-box-sm-space">
+                                                    <div class="gray-box-tl">
+                                                        Aggregate
+                                                    </div>
+                                                    <div class="gray-box-m">
+                                                        <div class="gray-box">
+                                                            10 mm
+                                                        </div>
+                                                        <div class="gray-box">
+                                                            Exposed Aggregate
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gray-box-main">
+                                                <div class="gray-box-wrap gray-box-sm-space">
+                                                    <div class="gray-box-tl">
+                                                        Job Details
+                                                    </div>
+                                                    <div class="gray-box">
+                                                        Ground slab
+                                                    </div>
+                                                    <div class="gray-box">
+                                                        Suspended slab
+                                                    </div>
+                                                    <div class="gray-box">
+                                                        Footings
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gray-box-main">
+                                                <div class="gray-box-wrap gray-box-sm-space">
+                                                    <div class="gray-box-tl">
+                                                        Washout Options
+                                                    </div>
+                                                    <div class="gray-box">
+                                                        Off-site washout
+                                                    </div>
+                                                    <div class="gray-box">
+                                                        Supply washout bag
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gray-box-main">
+                                                <div class="gray-box-wrap gray-box-sm-space">
+                                                    <div class="gray-box-tl">
+                                                        Pump Operator Document
+                                                    </div>
+                                                    <div class="gray-box">
+                                                        White Card
+                                                    </div>
+                                                    <div class="gray-box">
+                                                        Concrete Pumping Ticket or VOC
+                                                    </div>
+                                                    <div class="gray-box">
+                                                        Driver License
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="gray-box-main">
+                                                <div class="gray-box-wrap gray-box-sm-space">
+                                                    <div class="gray-box-tl">
+                                                        Compliance Requirements
+                                                    </div>
+                                                    <div class="gray-box">
+                                                        Vehicle Insurance
+                                                    </div>
+                                                    <div class="gray-box">
+                                                        Safe Work Method Statement
+                                                    </div>
+                                                    <div class="gray-box">
+                                                        Vehicle Registration
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="my-3">
+                                            <div class="note-wrap">
+                                                <div class="note-wrap-tl">
+                                                    Note:
+                                                </div>
+                                                <p class="note-wrap-txt">
+                                                    Contact site supervisor on arrival. Use Gate 2 for entry. Ensure
+                                                    safety compliance. Job requires minimum four hours hire.
+                                                </p>
+                                            </div>
+                                            <hr class="my-3">
+                                            <div class="font-14 text-primary fw-medium mb-3">
+                                                Location Details
+                                            </div>
+                                            <div
+                                                class="content-bbox-cn d-flex flex-wrap justify-content-between align-items-center ">
+                                                <div class="loc-de-stet-col w-100 p-0">
+                                                    <div class="loc-de-stet">
+                                                        <div class="loc-de-im">
+                                                            <img src="../../assets/images/loc-de-map.png" alt="Image">
+                                                        </div>
+                                                        <div class="loc-de-twrap">
+                                                            <div class="loc-de-timadd line-height-1-5">
+                                                                Fremantle Port Authority, Peter Hughes Dr, Fremantle WA
+                                                                6160
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-shrink-0 flex-grow-1 w-100 mt-2">
+                                                    <div class="est-durtion">Estimated Duration: <b> 8 Hours</b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="trucks-required-col content-bbox-cn cp-20">
+                                        <div class="d-flex align-items-center justify-content-beetwen ">
+                                            <div class="content-bbox-imgtxt d-flex  align-items-center pe-2 w-100">
+                                                <div class="content-bbox-img truck-img-w-105 flex-shrink-0 flex-grow-1">
+                                                    <img src="../../assets/images/tipper-truck.png" alt="Image">
+                                                </div>
+                                                <div class="content-bbox-txt-wrap w-100">
+
+                                                    <div class="content-bbox-txt--mh mb-2">
+                                                        Tipper Truck
+                                                    </div>
+                                                    <div class="content-bbox-txt-sh m-0 content-bbox-hl">
+                                                        <a href="#">Edit Details </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex-shrink-0 flex-grow-1">
+                                                <a href="javascript:void(0)" class="truck-view-close ">View</a>
+                                            </div>
+                                        </div>
+                                        <div class="truck-detail-view-main">
+                                            <hr class="my-3">
+                                            <div class="font-14 text-primary fw-medium mb-3">
+                                                Equipment Details
+                                            </div>
+                                            <div class="gray-box-main d-flex flex-wrap justify-content-between">
+                                                <div class="gray-box-wrap">
+                                                    <div class="gray-box-tl">
+                                                        Tipper Type
+                                                    </div>
+                                                    <div class="gray-box-m">
+                                                        <div class="gray-box">
+                                                            4-6m Tipper
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gray-box-main">
+                                                <div class="gray-box-wrap gray-box-sm-space">
+                                                    <div class="gray-box-tl">
+                                                        Material
+                                                    </div>
+                                                    <div class="gray-box-m">
+                                                        <div class="gray-box">
+                                                            Road base / crusher dust
+                                                        </div>
+                                                        <div class="gray-box">
+                                                            Aggregate / rock
+                                                        </div>
+                                                        <div class="gray-box">
+                                                            Other
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="font-14 text-primary fw-medium mb-3">
+                                                Body Options
+                                            </div>
+                                            <div class="gray-box-main d-flex flex-wrap justify-content-between">
+                                                <div class="gray-box-wrap">
+                                                    <div class="gray-box-tl">
+                                                        Tarp Required
+                                                    </div>
+                                                    <div class="gray-box-m">
+                                                        <div class="gray-box">
+                                                            Tarp Required
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gray-box-wrap">
+                                                    <div class="gray-box-tl">
+                                                        Tailgate Type
+                                                    </div>
+                                                    <div class="gray-box-m">
+                                                        <div class="gray-box">
+                                                            Fixed
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gray-box-wrap">
+                                                    <div class="gray-box-tl">
+                                                        Tipping Type
+                                                    </div>
+                                                    <div class="gray-box-m">
+                                                        <div class="gray-box">
+                                                            Side
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="note-wrap">
+                                                <div class="note-wrap-tl">
+                                                    Note:
+                                                </div>
+                                                <p class="note-wrap-txt">
+                                                    Contact site supervisor on arrival. Use Gate 2 for entry. Ensure
+                                                    safety compliance. Job requires minimum four hours hire.
+                                                </p>
+                                            </div>
+
+                                            <div class="gray-box-main">
+                                                <div class="gray-box-wrap gray-box-sm-space">
+                                                    <div class="gray-box-tl">
+                                                        Tipper Truck Documents
+                                                    </div>
+                                                    <div class="gray-box-m">
+                                                        <div class="gray-box">
+                                                            Vehicle Registration
+                                                        </div>
+                                                        <div class="gray-box">
+                                                            Maintenance Records
+                                                        </div>
+                                                        <div class="gray-box">
+                                                            Insurance for truck
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="gray-box-main">
+                                                <div class="gray-box-wrap gray-box-sm-space">
+                                                    <div class="gray-box-tl">
+                                                        Driver Documents
+                                                    </div>
+                                                    <div class="gray-box-m">
+                                                        <div class="gray-box">
+                                                            Driver License
+                                                        </div>
+                                                        <div class="gray-box">
+                                                            White Card (Construction Induction Card)
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="my-3">
+                                            <div class="font-14 text-primary fw-medium mb-3">
+                                                Location Details
+                                            </div>
+                                            <div class="content-bbox-cn ">
+                                                <div class="loc-de-box-main">
+                                                    <div class="content-bbox-txt--mh mb-3">
+                                                        Location
+                                                    </div>
+                                                    <div class="loc-de-box-wrap">
+                                                        <div class="loc-de-stet-col">
+                                                            <div class="loc-de-stet">
+                                                                <div class="loc-de-im">
+                                                                    <img src="../../assets/images/loc-de-img.png"
+                                                                        alt="Image">
+                                                                </div>
+                                                                <div class="loc-de-twrap">
+                                                                    <div class="loc-de-timadd line-height-1-5">
+                                                                        Melbourne Wholesale Market, 55 Produce Dr,
+                                                                        Epping VIC 3076
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="loc-de-hr-col">
+                                                            <div class="loc-de-hr">
+                                                                Duration: <b> 8 Hours</b>
+                                                            </div>
+                                                        </div>
+                                                        <div class="loc-de-stet-col">
+                                                            <div class="loc-de-stet">
+                                                                <div class="loc-de-im">
+                                                                    <img src="../../assets/images/loc-de-map.png"
+                                                                        alt="Image">
+                                                                </div>
+                                                                <div class="loc-de-twrap">
+                                                                    <div class="loc-de-timadd line-height-1-5">
+                                                                        Fremantle Port Authority, Peter Hughes Dr,
+                                                                        Fremantle WA 6160
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--  <div class="content-bbox-wrap border2-gray br14">
+                   <div class="content-bbox-ht borderb2-gray d-flex flex-wrap justify-content-between align-items-center py-3">
+                       <div class="content-bbox-tl">
+                           Location Details
+                       </div>
+                       <div class="content-bbox-hl">
+                           <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSetLocation" aria-controls="offcanvasSetLocation">Edit Location Details</a>
+                       </div>
+                   </div>
+                   <div class="content-bbox-cn cp-20">
+                      <div class="loc-de-box-main">
+                          <div class="loc-de-box-wrap">
+                              <div class="loc-de-stet-col">
+                                  <div class="loc-de-stet">
+                                    <div class="loc-de-im">
+                                       <img src="../../assets/images/loc-de-img.png" alt="Image">
+                                    </div>
+                                    <div class="loc-de-twrap">
+                                        <div class="loc-de-tadd">
+                                            Melbourne Wholesale Market, 55 Produce Dr, Epping VIC 3076
+                                        </div>
+                                        <div class="loc-de-timadd">
+                                            Starting at 12 Sep, 2025 12:30 PM
+                                        </div>
+                                    </div>
+                                  </div>                                  
+                              </div>
+                              <div class="loc-de-hr-col">
+                                  <div class="loc-de-hr">
+                                      07 Hours
+                                  </div>                                  
+                              </div>
+                              <div class="loc-de-stet-col">
+                                  <div class="loc-de-stet">
+                                    <div class="loc-de-im">
+                                       <img src="../../assets/images/loc-de-map.png" alt="Image">
+                                    </div>
+                                    <div class="loc-de-twrap">
+                                        <div class="loc-de-tadd">
+                                            Fremantle Port Authority, Peter Hughes Dr, Fremantle WA 6160
+                                        </div>
+                                        <div class="loc-de-timadd">
+                                            Ending at 30 Sep, 2025 08:00 PM
+                                        </div>
+                                    </div>
+                                  </div>                                  
+                              </div>
+                          </div>
+                      </div>
+                   </div>                                                                                               
+                </div> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-op-btn">
+                <div class="offcanvas-btn-wrap">
+                    <button type="button" class="offcanvas-btn-back btn btn-outline"
+                        data-offcanvas-next="#offcanvasSetLocation">
+                        <span class="btn-outline-arr-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19 11.0001H9L12.29 7.71006C12.3837 7.6171 12.4581 7.5065 12.5089 7.38464C12.5597 7.26278 12.5858 7.13207 12.5858 7.00006C12.5858 6.86805 12.5597 6.73734 12.5089 6.61548C12.4581 6.49362 12.3837 6.38302 12.29 6.29006C12.1026 6.10381 11.8492 5.99927 11.585 5.99927C11.3208 5.99927 11.0674 6.10381 10.88 6.29006L6.59 10.5901C6.21441 10.9634 6.00223 11.4705 6 12.0001C6.00487 12.5262 6.21684 13.0292 6.59 13.4001L10.88 17.7001C10.9732 17.7926 11.0838 17.866 11.2054 17.9158C11.3269 17.9657 11.4571 17.9911 11.5885 17.9906C11.7199 17.9902 11.8499 17.9638 11.9712 17.9131C12.0924 17.8624 12.2024 17.7883 12.295 17.6951C12.3876 17.6018 12.4609 17.4913 12.5107 17.3697C12.5606 17.2481 12.586 17.1179 12.5856 16.9865C12.5851 16.8551 12.5588 16.7251 12.508 16.6039C12.4573 16.4827 12.3832 16.3726 12.29 16.2801L9 13.0001H19C19.2652 13.0001 19.5196 12.8947 19.7071 12.7072C19.8946 12.5196 20 12.2653 20 12.0001C20 11.7348 19.8946 11.4805 19.7071 11.293C19.5196 11.1054 19.2652 11.0001 19 11.0001Z"
+                                    fill="#797979" />
+                            </svg>
+                        </span>
+                        Go Back
+                    </button>
+                    <!-- <button type="submit" class="offcanvas-submit btn" id="offcanvas-submit">Submit</button> -->
+                    <a href="new-job-posted.html" class="offcanvas-submit btn">Submit</a>
+
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasAddTeamMemda"
+        aria-labelledby="offcanvasAddTeamMemdaLabel">
+        <div class="offcanvas-header-cm">
+            <div class="offcanvas-header">
+                <div class="offcanvas-title" id="offcanvasAddTeamMemdaLabel">Add a Team Member</div>
+                <p class="offcanvas-tl-p">Invite a admin team member to help manage jobs, drivers, or fleet operations.
+                    They’ll receive login details by email.</p>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+            </div>
+        </div>
+        <form class="offcanvas-form">
+            <div class="offcanvas-body">
+                <div class="offcanvas-form-main">
+                    <div class="offcanvas-body-inner">
+                        <div class="form-group">
+                            <label for="form-full-nme" class="form-label">Full Name</label>
+                            <input type="text" class="form-control border" id="form-full-nme" name="form-full-nme"
+                                placeholder="Enter full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-emaddrs" class="form-label">Email Address</label>
+                            <input type="text" class="form-control border" id="form-emaddrs" name="form-emaddrs"
+                                placeholder="max.johnson@truckmatch.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-mnum" class="form-label">Mobile Number</label>
+                            <div class="form-mobile-num position-relative">
+                                <input type="phone" class="form-control border mobile-num" id="form-mnum"
+                                    name="form-mnum">
+                                <div class="country-code position-absolute">+ 61</div>
+                            </div>
+                        </div>
+                        <hr class="mt-2 mb-3">
+                        <div class="form-group agprd-gete">
+                            <label for="form-gen-pasd" class="form-label">Generate Password</label>
+                            <div class="agprd-gete-gepa">
+                                <input type="password" class="form-control border" id="pass-piuesfwde"
+                                    name="form-gen-pasd" placeholder="Enter Password">
+                                <span id="ao-ged">Auto Generated</span>
+                            </div>
+                        </div>
+                        <div class="note-wrap note-wrap-rtkm">
+                            <div class="note-wrap-tl text-primary">
+                                Note:
+                            </div>
+                            <p class="note-wrap-txt text-gray">
+                                A temporary password will be sent by email. The team member can reset it on first login.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-op-btn text-end">
+                <div class="offcanvas-btn-wrap d-inline-block">
+                    <button type="button" class="btn-cancel btn btn-outline" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                        Cancel
+                    </button>
+                    <!-- <button type="button" class="btn">Invite Team Member</button> -->
+                    <a href="team-members.html" class="btn">Invite Team Member </a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="modal modal-cm fade" id="deletTruckModal" tabindex="-1" aria-labelledby="deletTruckModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 br20">
+                <div class="modal-header-cm">
+                    <div class="modal-header border-bottom-0 cp-30 pb-0 rounded-0">
+                        <div class="modal-title fs-22 fw-bold cblack1 pb-2" id="deletTruckModalLabel">
+                            Delete Truck?
+                        </div>
+                    </div>
+                </div>
+                <form class="modal-form">
+                    <div class="modal-body cp-30 pt-0 mb-2">
+                        <p class="fs-18 fw-medium cgray mb-3">This truck will be permanently removed from this job
+                            posting.</p>
+                    </div>
+                    <div class="modal-footer pt-0 cp-30 border-0 rounded-0">
+                        <div class="row w-100 gx-2">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-gray fs-16 fw-semibold cblack1 w-100"
+                                    data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="submit" class="btn fs-16 fw-semibold text-white w-100">Yes,
+                                    Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =================== /WEB JS BOC ==================== -->
+    <script src="../../assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="../../assets/js/moment.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="../../assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../../assets/js/custom.js" type="text/javascript"></script>
+
+    <!-- =================== /WEB JS BOC ==================== -->
+
+
+
+
+
+    <script>
+        $(function () {
+            /* setting datetime */
+            $("#form-sd").datetimepicker({
+                format: "DD-MM-YYYY"
+            });
+            $("#form-ed").datetimepicker({
+                format: "DD-MM-YYYY"
+            });
+        });
+
+    </script>
+
+    <script>
+
+
+        /* Time Picker Start */
+
+        var firstOpen = true;
+        var time;
+
+        $('.timepicker').datetimepicker({
+            useCurrent: false,
+            format: "hh:mm A",
+            icons: {
+                up: "fa fa-angle-up",
+                down: "fa fa-angle-down"
+            }
+        }).on('dp.show', function () {
+            if (firstOpen) {
+                time = moment().startOf('day');
+                firstOpen = false;
+            } else {
+                time = moment("01:00 PM", "hh:mm A");
+            }
+
+            $(this).data("DateTimePicker").date(time);
+        });
+
+
+        /* Time Picker End */
+
+
+    </script>
+
+    <script>
+
+        $('#atoggle').on('change', function () {
+            if ($(this).is(':checked')) {
+                $('.recurr-timing-content').slideDown(200);
+            } else {
+                $('.recurr-timing-content').slideUp(200);
+            }
+        });
+
+    </script>
+
+
+    <script>
+        const sameSite = document.getElementById("same-site-work");
+        const pickupDrop = document.getElementById("pickup-drop-off");
+
+        const onSiteDiv = document.getElementById("on-site");
+        const pickupDropDiv = document.getElementById("pickup-drop");
+
+        function toggleLocation() {
+            if (sameSite.checked) {
+                onSiteDiv.style.display = "block";
+                pickupDropDiv.style.display = "none";
+            } else {
+                onSiteDiv.style.display = "none";
+                pickupDropDiv.style.display = "block";
+            }
+        }
+
+        // Run on page load
+        toggleLocation();
+
+        // Add event listeners
+        sameSite.addEventListener("change", toggleLocation);
+        pickupDrop.addEventListener("change", toggleLocation);
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.truck-view-close').on('click', function (e) {
+                e.preventDefault();
+
+                var $this = $(this);
+                var $parentCol = $this.closest('.trucks-required-col');
+                var $detailSection = $parentCol.find('.truck-detail-view-main');
+
+                $detailSection.slideToggle(300);
+
+                // Text change logic
+                if ($detailSection.is(':visible')) {
+                    $this.text('Close');
+                } else {
+                    $this.text('View');
+                }
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>
