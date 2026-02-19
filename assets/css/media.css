@@ -734,6 +734,11 @@ h6,.h6 { font-size:14px; }
 .new-post-jwrap{height:auto;}
 .job-card-content .stacat-wrap{top:-15px;right:-15px;text-align:right;position:relative;}
 .job-card-content .stacat-wrap .stacat{position:relative;top:0px;right:0px;display:inline-block;}
+.infocard.job-card-content .stacat-wrap .stacat{position:absolute;}
+.info-action {
+    width: 26px;
+    height: 26px;
+}
 
 
 /*==== team management empty ===*/
@@ -919,7 +924,87 @@ p { font-size: 14px; }
 /*==== Dashboard with upcoming and all job ======*/
 
 
-.box-count-br{border-right:0px;border-bottom:1px solid #E4E4E4;}
+/* .box-count-br{border-right:0px;border-bottom:1px solid #E4E4E4;} */
+.box-count-br .box-count-br-num {
+    font-size: 14px!important;
+}
+.box-count-head {
+    font-size: 18px;
+}
+.box-count-icon {
+    width: 40px;
+    height: 40px;
+}
+.box-count-shead {
+    font-size: 12px;
+}
+.stacat {
+    font-size: 10px !important;
+    padding: 8px 12px 8px 14px !important;
+    min-width: auto;
+}
+.fs-12,
+.font-12 {
+    font-size: 11px !important;
+}
+.ru-job-posted-img-txt.d-flex.flex-wrap {
+    flex-direction: column;
+    gap: 10px;
+}
+.infocard .info-link{
+    font-size: 13px !important;
+}
+.infocard .post-njobby-txt {
+    width: 100%;
+}
+.info-row-wrap {
+    gap: 6px;
+}
+.info-card-footer {
+    padding: 10px 15px;
+}
+.infocard .post-njobby-txt {
+    padding: 0 !important;
+}
+.content-bbox-imgtxt{
+    flex-direction: column;
+    align-items: start !important;
+}
+.content-bbox-txt-wrap{
+    padding-left: 0;
+}
+.truck-view-close {
+    padding: 6px 15px;
+    font-size: 12px;
+}
+.content-bbox-txt--mh {
+    font-size: 14px;
+}
+.rcl-re-acc-wrap {
+    margin-left: 0 !important;
+}
+.rcl-tb-main {
+    flex-direction: column;
+    align-items: start !important;
+    gap: 16px;
+}
+.post-njob-statd-wp.cp-15 {
+    padding: 8px;
+}
+.request-group-wrap {
+    gap: 6px;
+}
+.wh-30 {
+    width: 22px;
+    height: 22px;
+}
+.job-details-pb-catst {
+    width: 80px;
+}
+.content-bbox-hl a {
+    font-size: 12px;
+}
+
 .box-count-br:last-child{border-bottom:0;}
 .box-count-br-2col-wrap .box-count-br{border-bottom:0px;border-right:1px solid #E4E4E4;}
 .box-count-br-2col-wrap .box-count-br:last-child{border-right:0px;}
@@ -970,13 +1055,14 @@ p { font-size: 14px; }
 
 
     .btn.btn-outline-bs{text-align:left;}
+    .schedule-days-col{width:100%;}
 
 
-     /*== Dashboard with upcoming and all job ====*/
-
-	.schedule-days-col{width:100%;}
-
-
+    /*== Dashboard with upcoming and all job ====*/
+     .truck-img-w-105 {
+        width: 80px;
+        height: 52px;
+    }
 
 }
 
