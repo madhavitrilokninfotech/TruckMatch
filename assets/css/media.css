@@ -1030,6 +1030,9 @@ p { font-size: 14px; }
     padding-left: 15px;
     padding-right: 15px;
 }
+.br20 {
+    border-radius: 12px;
+}
 
 .box-count-br:last-child{border-bottom:0;}
 .box-count-br-2col-wrap .box-count-br{border-bottom:0px;border-right:1px solid #E4E4E4;}
