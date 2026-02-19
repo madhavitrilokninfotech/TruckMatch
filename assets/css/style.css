@@ -1421,6 +1421,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 }
 .assi-fdriver-details{
     justify-content: space-between;
+    gap: 10px;
 }
 .bd-details-offcanvas .custom-table-main.custom-table-main-v1{
     padding: 0;
@@ -1438,6 +1439,34 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .bd-details-offcanvas .jm-table.custom-table-main.custom-table-main-v1 tr:nth-last-child(2) th,
 .bd-details-offcanvas .jm-table.custom-table-main.custom-table-main-v1 tr:nth-last-child(2) td{
     padding-bottom: 20px;
+}
+
+/* inprogress screen */
+.job-accepter-profile span{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #D74315;
+    font-weight: 600;
+}
+.job-accepter-profile{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.job-accepter-details .rcl-nm-tl-rt{
+    border: 1px solid #D74315; 
+    font-weight: 500;
+}
+.assign-chat-btn.info-action{
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+}
+.assign-work-row .assi-fdriver-ww {
+    width: 26%;
+}
+.assign-work-row .assi-fdriver-chat{
+    width: calc(100% - 52%);
 }
 /* end */
 

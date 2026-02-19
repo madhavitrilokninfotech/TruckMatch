@@ -659,7 +659,11 @@ h6,.h6 { font-size:14px; }
 .assi-fdriver-ant-box .assi-fdriver-ww{width:42%;}
 .assi-fdriver-ant-box .assi-fdriver-ant-ww{width:16%;}
 
-
+/* job management flow */
+.btn-underline {
+    text-underline-offset: 2px;
+    font-size: 12px;
+}
 
 }
 
@@ -1003,6 +1007,13 @@ p { font-size: 14px; }
 }
 .content-bbox-hl a {
     font-size: 12px;
+}
+.jm-tab-content .rcl-nm-tl-rt {
+    padding: 6px 10px 6px 7px;
+}
+.custom-table-main.custom-table-main-v1 {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .box-count-br:last-child{border-bottom:0;}
