@@ -789,21 +789,16 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="form-label">Washout Option</label>
-                            <div class="checkbox-square-main">
-                                <div class="checkbox-square-wrap">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <label class="form-label w-100 pe-3">Washout Option</label>
+                                <div class="form-toggle-wrap flex-shrink-0 flex-grow-0">
                                     <div class="form-group mb-0">
-                                        <input type="checkbox" class="checkbox" id="woption" name="woption">
-                                        <label for="woption" class="mb-0">Supply washout bag</label>
+                                        <input type="checkbox" class="checkbox" id="wasout" name="wasout">
+                                        <label for="wasout" class="mb-0"></label>
                                     </div>
-                                </div>
-                                <div class="checkbox-square-wrap">
-                                    <div class="form-group mb-0">
-                                        <input type="checkbox" class="checkbox" id="woption1" name="woption1">
-                                        <label for="woption1" class="mb-0">Supply washout bag</label>
-                                    </div>
-                                </div>
+                                </div>  
                             </div>
+                            
                         </div>
                         <div class="form-group">
                             <label for="form-mhire" class="form-label">Minimum Hire</label>
@@ -839,9 +834,15 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="form-numop" class="form-label">Number of Operator</label>
-                            <input type="number" class="form-control border" id="form-numop" name="form-numop"
-                                placeholder="Enter number of operators">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <label for="form-numop" class="form-label pe-2 mb-0">Number of Operator</label>
+                                <div class="no-count">
+                                    <span class="count-minus no-count-btn flex-shrink-0 flex-grow-0">−</span>
+                                    <input type="text" class="form-control text-center no-count-input wh-70 h-auto" id="form-r-name" name="form-n-operator"placeholder="0" maxlength="3">
+                                    <span class="count-plus no-count-btn flex-shrink-0 flex-grow-0">+</span>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="form-group">
                             <label class="form-label">Compliance Requirements</label>
@@ -2153,6 +2154,26 @@
         });
     </script>
 
+    <script>
+        $(document).ready(function () {
+
+          $('.no-count').on('click', '.count-plus', function () {
+            let input = $(this).siblings('.no-count-input');
+            let value = parseInt(input.val()) || 0;
+            input.val(value + 1);
+          });
+
+          $('.no-count').on('click', '.count-minus', function () {
+            let input = $(this).siblings('.no-count-input');
+            let value = parseInt(input.val()) || 0;
+
+            if (value > 0) {
+              input.val(value - 1);
+            }
+          });
+
+        });
+        </script>
 
 </body>
 

@@ -1333,6 +1333,28 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .truck-detail-view-main {display: none; }
 
 
+
+.no-count{display:flex;align-items:center;gap:12px;}
+.no-count .no-count-btn{width:32px;height:32px;border-radius:50%;border: 1px solid #d74316;background: #d74316;font-size:18px;line-height:0;text-align:center;cursor:pointer;display: flex;justify-content: center;align-items: center;color: #fff;}
+.no-count .no-count-btn:hover{background: #d74316;}
+
+/* form toggle start */
+
+.form-toggle-wrap .checkbox{position:absolute;opacity:0;width:0;height:0;display:none;}
+.form-toggle-wrap label{width:60px;height:30px;display:inline-block;background:#e6e6e6;border-radius:30px;position:relative;cursor:pointer;transition:background 0.2s ease;box-sizing:border-box;padding:4px; /* spacing for thumb */}
+.form-toggle-wrap label::after{content:"";width:22px;height:22px;background:#fff;border-radius:50%;position:absolute;top:50%;left:4px;transform:translateY(-50%);box-shadow:0 2px 4px rgba(0,0,0,0.15);transition:transform 0.2s cubic-bezier(.2,.9,.3,1);}
+.form-toggle-wrap .checkbox:checked + label{background:#15994B; /* iOS green */}
+.form-toggle-wrap .checkbox:checked + label::after{transform:translate(30px,-50%);  /* 46 - 22 - 6 (pads) = 18 */}
+
+.form-toggle-wrap .checkbox:focus + label{box-shadow:0 0 0 4px rgba(52,199,89,0.15);outline:none;}
+.form-toggle-wrap .checkbox:disabled + label{opacity:0.45;cursor:not-allowed;}
+
+
+/* form toggle end */
+
+
+
+
 /*===============================================================================
     running & upcoming job css
 =================================================================================*/
