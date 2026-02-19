@@ -35,6 +35,9 @@ Large devices
 
 
 @media(max-width:1699px) {
+.w-240 {
+    width: 190px;
+}
 
 .box-count-br .box-count-br-txt{font-size:12px!important;}
 .box-count-br .box-count-br-num{font-size:16px!important;}
@@ -49,6 +52,12 @@ Large devices
 
 
 @media (max-width:1599px) { 
+.assign-opp {
+    flex: 0 0 auto;
+}
+.assign-opp {
+    margin-top: 14px;
+}
 
 
 h1,.h1 { font-size:34px; }
@@ -601,6 +610,12 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 1199.98px) { 
+.w-240 {
+    width: 160px;
+}
+.assign-opp {
+    margin-top: 0;
+}
 
 
 h1,.h1 { font-size:26px; }
