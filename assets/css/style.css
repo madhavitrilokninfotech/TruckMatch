@@ -1330,8 +1330,6 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .truck-view-close {border-radius: 50px; border: 1px solid #E4E4E4; padding: 8px 20px; font-size: 14px; color: #555555; background-color: #F5F7F9; display: inline-flex; align-items: center; z-index: 1; position: relative; }
 .row-trucks-required .trucks-required-col{border-bottom:2px solid #ECECEC;}
 .row-trucks-required .trucks-required-col:last-child{border-bottom:none;}
-.truck-detail-view-main {display: none; }
-
 
 
 .no-count{display:flex;align-items:center;gap:12px;}
