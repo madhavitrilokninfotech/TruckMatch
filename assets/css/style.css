@@ -1699,6 +1699,12 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .fleet-de-main{
     margin-bottom: 20px;
 }
+.fleet-de-truck-num-row {
+    padding: 20px 0;
+}
+.fleet-de-truck-num-row .row{
+    gap: 10px 0;
+}
 /* end */
 
 

@@ -522,6 +522,18 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 1399px) { 
+.fleet-mana-bx-wp .fleet-mana-ft-cat{
+    padding: 8px 12px;
+    width: auto;
+    height: auto;
+}
+.fleet-mana-ft-img{
+    width: 28%;
+    border-radius: 10px !important;
+}
+.fleet-mana-ft-img-txt {
+    width: calc(100% - 110px);
+}
 
 
 h1,.h1 { font-size:30px; }
@@ -616,12 +628,47 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 1199.98px) { 
+.flet-des-img-bx img {
+    border-radius: 10px !important;
+}
+.fleet-de-truck-num-col {
+    width: 50%;
+}
 .w-240 {
     width: 160px;
 }
 .assign-opp {
     margin-top: 0;
 }
+.fleet-mana-bx-wp .fleet-mana-ft-cat {
+    font-size: 10px !important;
+}
+
+.fleet-mana-bx-wp .fleet-mana-ft-cat {
+    position: absolute;
+    right: 12px;
+    top: 15px;
+}
+
+.fleet-mana-ft-img-txt {
+    width: 100%;
+    flex-direction: column;
+    align-items: start !important;
+    gap: 12px 0;
+}
+
+.fleet-mana-bx-img-txt {
+    position: relative;
+}
+
+.fleet-mana-ft-img {
+    width: 20%;
+}
+.wh-55-txt {
+    width: 100%;
+    padding: 0;
+}
+
 
 
 h1,.h1 { font-size:26px; }
@@ -697,6 +744,15 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 991.98px) {
+.fleet-mana-ft-img {
+    width: auto;
+}
+.fleet-mana-hr-wrap {
+    padding-right: 12px;
+}
+.fleet-mana-hr-tc-main {
+    gap: 12px;
+}
 
 
 h1,.h1 { font-size:26px; }
@@ -927,6 +983,17 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.fleet-mana-ft-img {
+    width: 46px;
+}
+.fleet-mana-hr-tc-main {
+    flex-direction: column;
+    align-items: start;
+}
+.fleet-mana-hr-wrap {
+    padding-right: 0;
+    border-right: none;
+}
 
 
 h1,.h1 { font-size:22px; }
@@ -1046,6 +1113,22 @@ p { font-size: 14px; }
 .w-150 {
     width: 100px;
 }
+.fleet-de-truck-num-col {
+    width: 100%;
+}
+.flet-des-img-bx img {
+    border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -ms-border-radius: 4px !important;
+    -o-border-radius: 4px !important;
+}
+.fleet-de-rt-et-main{
+    gap: 10px 0;
+}
+.fleet-rt-et-wrap{
+    margin: 0 !important;
+}
 
 .box-count-br:last-child{border-bottom:0;}
 .box-count-br-2col-wrap .box-count-br{border-bottom:0px;border-right:1px solid #E4E4E4;}
@@ -1154,7 +1237,7 @@ label.form-label{font-size:14px;margin-bottom:8px;}
 
 /*== Fleet Management ==*/
 
-.fleet-de-truck-num-col{width:20%;}
+
 
 
 }
