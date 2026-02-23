@@ -1562,8 +1562,38 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .w-130{
     width: 130px;
 }
+.w-150{
+    width: 150px;
+}
 /* end */
 
+
+
+
+/*===============================================================================
+    Add Attachment (for fleet management)
+=================================================================================*/
+.addnewattachment .checkbox-square-wrap .checkbox + label{
+    background: transparent;
+    border: none;
+}
+.addnewattachment .checkbox-square-main{
+    align-items: center;
+    justify-content: space-between;
+}
+.addnewattachment .form-group {
+    margin-bottom: 12px;
+}
+.addnewattachment .checkbox-square-main .checkbox-square-wrap {
+    padding-right: 0;
+    padding-bottom: 12px;
+}
+.available-line-lengths {
+    border-bottom: 2px solid #ECECEC;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+}
+/* end */
 
 /* ------ Media CSS  ------- */
 

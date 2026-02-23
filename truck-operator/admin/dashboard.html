@@ -516,7 +516,8 @@
                     </div>
                     <div class="form-group">
                       <label class="form-label cblack1 fw-medium">Attachments</label>
-                      <button type="button" class="border-0 bg-transparent d-flex flex-wrap align-items-center text-primary fw-medium fs-14" data-bs-toggle="modal" data-bs-target="#AddNewAttModal">
+                      <button type="button" class="border-0 bg-transparent d-flex flex-wrap align-items-center text-primary fw-medium fs-14" 
+                      data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddNewAttachment" aria-controls="offcanvasAddNewAttachment">
                           <img src="../../assets/images/add-att-icon.png" alt="Image" class="pe-1">Add Attachment
                       </button>
                     </div>
@@ -656,7 +657,292 @@
       </form>
 </div>
 
+<div class="offcanvas offcanvas-end offcanvas-cm addnewattachment" tabindex="-1" id="offcanvasAddNewAttachment"
+        aria-labelledby="offcanvasAddFleetLabel">
+    <div class="offcanvas-header-cm">
+        <div class="offcanvas-header">
+            <div class="offcanvas-title" id="offcanvasAddFleetLabel">Add New Attachment</div>
+            <p class="offcanvas-tl-p">Add the name and price of the attachment you want to include with this truck.</p>
+        </div>
+    </div>
+    <form class="offcanvas-form">
+        <div class="offcanvas-body">
+            <div class="offcanvas-form-main">
+                <div class="offcanvas-body-inner">
+                    <!-- row 1 -->
+                    <div class="available-line-lengths">
+                        <h6 class="text-primary fw-medium fs-18">Available Line Lengths</h6>
+                        <hr class="my-3">
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="line_10_30" name="line_10_30">
+                                    <label for="line_10_30" class="mb-0 cblack1 fw-medium fs-16">10 - 30m</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="line_30_50" name="line_30_50" checked>
+                                    <label for="line_30_50" class="mb-0 cblack1 fw-medium fs-16">30 - 50m</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price" value="$250">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="line_50_70" name="line_50_70">
+                                    <label for="line_50_70" class="mb-0 cblack1 fw-medium fs-16">50 - 70m</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="line_90_plus" name="line_90_plus">
+                                    <label for="line_90_plus" class="mb-0 cblack1 fw-medium fs-16">90m+</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                    </div>
+                    
+                    <!-- row 2 -->
+                    <div class="available-line-lengths">
+                        <h6 class="text-primary fw-medium fs-18">Available Aggregates</h6>
+                        <hr class="my-3">
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="line_10_mm" name="line_10_mm" checked>
+                                    <label for="line_10_mm" class="mb-0 cblack1 fw-medium fs-16">10 mm</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price" value="$250">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="line_20_mm" name="line_20_mm">
+                                    <label for="line_20_mm" class="mb-0 cblack1 fw-medium fs-16">20 mm</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="" name="">
+                                    <label for="" class="mb-0 cblack1 fw-medium fs-16">Long Line MIx</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="line_90_plus" name="line_90_plus">
+                                    <label for="line_90_plus" class="mb-0 cblack1 fw-medium fs-16">Exposed Aggregate</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="line_90_plus" name="line_90_plus">
+                                    <label for="line_90_plus" class="mb-0 cblack1 fw-medium fs-16">Early Strength</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                    </div>
 
+                    <!-- row 3 -->
+                    <div class="available-line-lengths">
+                        <h6 class="text-primary fw-medium fs-18">Available Washout Options</h6>
+                        <hr class="my-3">
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="supply_washout_bag" name="supply_washout_bag" checked>
+                                    <label for="supply_washout_bag" class="mb-0 cblack1 fw-medium fs-16">Supply washout bag</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price" value="$250">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="off_site_washout" name="off_site_washout">
+                                    <label for="off_site_washout" class="mb-0 cblack1 fw-medium fs-16">Off-site washout</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                       
+                    </div>
+
+                    <!-- row 4 -->
+                    <div class="available-line-lengths">
+                        <h6 class="text-primary fw-medium fs-18">Available Job Details</h6>
+                        <hr class="my-3">
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="supply_washout_bag" name="supply_washout_bag" checked>
+                                    <label for="supply_washout_bag" class="mb-0 cblack1 fw-medium fs-16">Ground slab</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price" value="$250">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="suspended_slab" name="suspended_slab">
+                                    <label for="suspended_slab" class="mb-0 cblack1 fw-medium fs-16">Suspended slab</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="tight_access_long_line" name="tight_access_long_line">
+                                    <label for="tight_access_long_line" class="mb-0 cblack1 fw-medium fs-16">Tight access / long line</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="retaining_walls" name="retaining_walls" checked>
+                                    <label for="retaining_walls" class="mb-0 cblack1 fw-medium fs-16">Retaining walls</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price" value="$250">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="lift_shaf" name="lift_shaf">
+                                    <label for="lift_shaf" class="mb-0 cblack1 fw-medium fs-16">Lift Shaf</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="stairs" name="stairs">
+                                    <label for="stairs" class="mb-0 cblack1 fw-medium fs-16">Stairs</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="footings" name="footings">
+                                    <label for="footings" class="mb-0 cblack1 fw-medium fs-16">Footings</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="columns" name="columns">
+                                    <label for="columns" class="mb-0 cblack1 fw-medium fs-16">Columns</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="driveway" name="driveway">
+                                    <label for="driveway" class="mb-0 cblack1 fw-medium fs-16">Driveway</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                    </div>
+
+                    <!-- row 5 -->
+                    <div class="available-line-lengths">
+                        <h6 class="text-primary fw-medium fs-18">Other Attachment</h6>
+                        <hr class="my-3">
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="pump_primer_charge" name="pump_primer_charge" checked>
+                                    <label for="pump_primer_charge" class="mb-0 cblack1 fw-medium fs-16">Pump Primer Charge</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price" value="$250">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="additional_lines_man_charge" name="additional_lines_man_charge">
+                                    <label for="additional_lines_man_charge" class="mb-0 cblack1 fw-medium fs-16">Additional Lines Man Charge</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="washout_bag_charges" name="washout_bag_charges">
+                                    <label for="washout_bag_charges" class="mb-0 cblack1 fw-medium fs-16">Washout Bag Charges</label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-op-btn text-end">
+            <div class="offcanvas-btn-wrap d-inline-block">
+                <button type="button" class="btn-cancel btn btn-outline" data-offcanvas-prev="#offcanvasAddFleet">
+                    Cancel
+                </button>
+                <button type="submit" class="btn">Add Attachments</button>
+            </div>
+        </div>
+    </form>
+</div>
 
 <div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasAddNewDriver" aria-labelledby="offcanvasAddNewDriverLabel">
     <div class="offcanvas-header-cm">

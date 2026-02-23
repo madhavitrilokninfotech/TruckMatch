@@ -758,6 +758,9 @@ h6,.h6 { font-size:14px; }
     width: 26px;
     height: 26px;
 }
+.addnewattachment .form-group {
+    margin-bottom: 4px;
+}
 
 
 /*==== team management empty ===*/
@@ -1032,6 +1035,10 @@ p { font-size: 14px; }
 }
 .br20 {
     border-radius: 12px;
+}
+
+.w-150 {
+    width: 100px;
 }
 
 .box-count-br:last-child{border-bottom:0;}
