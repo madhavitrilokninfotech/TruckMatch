@@ -747,12 +747,12 @@ h6,.h6 { font-size:14px; }
 .fleet-mana-ft-img {
     width: auto;
 }
-.fleet-mana-hr-wrap {
+/* .fleet-mana-hr-wrap {
     padding-right: 12px;
-}
-.fleet-mana-hr-tc-main {
+} */
+/* .fleet-mana-hr-tc-main {
     gap: 12px;
-}
+} */
 
 
 h1,.h1 { font-size:26px; }
@@ -995,6 +995,9 @@ Extra small devices (portrait phones, less than 576px)
     border-right: none;
 }
 
+.fleet-mana-hr-tc-main {
+    gap: 12px;
+} 
 
 h1,.h1 { font-size:22px; }
 h2,.h2 { font-size:20px; }
