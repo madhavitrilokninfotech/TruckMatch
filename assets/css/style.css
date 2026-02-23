@@ -159,6 +159,8 @@ hr{border-bottom:2px dashed #ECECEC;margin-top:20px;margin-bottom:20px;width:100
 .btn.btn-orange1{background-color:#FFD7C0; color: #E6620A;}
 .btn.btn-blu2{background-color:#D9ECFF; color: #1E88E5;}
 
+
+
 .btn.btn-outline-bs:hover,.btn.btn-outline-bs:focus,.btn.btn-outline-bs:active{background-color:#D74315!important;border-color:#D74315!important;}
 .btn.btn-gray:hover,.btn.btn-gray:focus,.btn.btn-gray:active{background-color:#161212;border-color:#161212;color:#fff;}
 .btn-unstyled{background-color:transparent;padding:5px 20px;}
@@ -1394,6 +1396,12 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
     display: flex;
     flex-direction: column;
 }
+.infocard.job-card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .infocard .post-njobby-txt{
     padding-right: 56px;
 }
@@ -1649,6 +1657,53 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
     margin-bottom: 20px;
 }
 /* end */
+
+
+
+/*===============================================================================
+    for fleet management edit fleet details
+=================================================================================*/
+.cert-doc-hist-main .custom-table-main th{
+    padding: 10px 20px;
+    background-color: #FFDBD0;
+}
+.cert-doc-hist-main .custom-table-main th,
+.cert-doc-hist-main .custom-table-main td{
+    border-style: solid;
+    /* white-space: nowrap; */
+}
+.cert-doc-his-wrap button{
+    border-color: transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    min-width: auto;
+    padding: 8px 14px;
+}
+.cert-doc-his-wrap {
+    display: inline-flex;
+    align-items: center;
+}
+.cert-doc-hist-main .custom-table-main tr:last-child td {
+    font-size: inherit;
+    color: inherit;
+}
+.cert-doc-hist-main .table-responsive {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+.fleet-de-main{
+    margin-bottom: 20px;
+}
+/* end */
+
+
+
+
 
 /* ------ Media CSS  ------- */
 

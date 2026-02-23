@@ -573,7 +573,11 @@ h6,.h6 { font-size:14px; }
 
 .btn.btn-outline-bs.btn-outline-lg{padding:8px 10px;}
 
-
+/* fleet details */
+.cert-doc-hist-main .custom-table-main th,
+.cert-doc-hist-main .custom-table-main td{
+    white-space: nowrap;
+}
 }
 
 
