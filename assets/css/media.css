@@ -499,7 +499,9 @@ h6,.h6 { font-size:14px; }
 .wh-65-txt{width:calc(100% - 40px);}
 
 .btn.btn-outline-bs.btn-outline-lg {padding-left: 20px;padding-right: 20px;}
-
+.width-p-35 {
+    width: 30%;
+}
 
 /*=== Job Feed ====*/
 
