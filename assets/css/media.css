@@ -628,6 +628,9 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 1199.98px) { 
+.attachmentpill {
+    padding: 8px 14px;
+}
 .flet-des-img-bx img {
     border-radius: 10px !important;
 }
@@ -983,6 +986,9 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.attachmentpill {
+    padding: 6px 10px;
+}
 .fleet-mana-ft-img {
     width: 46px;
 }

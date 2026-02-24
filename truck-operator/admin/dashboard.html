@@ -515,7 +515,51 @@
                         </select>
                     </div>
                     <div class="form-group">
-                      <label class="form-label cblack1 fw-medium">Attachments</label>
+                        <div class="edit-attachment-group d-flex align-items-center justify-content-between">
+                            <label class="form-label cblack1 fw-medium fs-14">Attachments</label>
+                            <button class="btn-primary-hover border-0 bg-white fs-14 text-primary fw-medium mb-2 mt-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddNewAttachment">
+                                <span class="d-inline-block">Edit Attachment</span>
+                            </button>
+                        </div>
+                        <div class="available-lengths-group">
+                            <div class="mb-3">
+                                <label class="form-label fs-14 fw-normal cgray">Available Line Lengths</label>
+                                <div class="wrap-attachmentpill d-flex flex-wrap align-items-center gap-2">
+                                
+                                    <div class="attachmentpill fs-14 cgray fw-normal border1-gray br50">
+                                        10 - 30m <span>$250</span>
+                                    </div>
+                                    <div class="attachmentpill fs-14 cgray fw-normal border1-gray br50">
+                                        50 - 70m <span>$250</span>
+                                    </div>
+                                    <div class="attachmentpill fs-14 cgray fw-normal border1-gray br50">
+                                        90m+ <span>$250</span>
+                                    </div>
+                                    <!-- Add more btn -->
+                                    <button class="attachmentpill fs-14 cgray fw-normal border1-gray br50 bg-transparent" type="button">
+                                        5 more
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fs-14 fw-normal cgray">Available Aggregates</label>
+                                <div class="wrap-attachmentpill d-flex flex-wrap align-items-center gap-2">
+                                
+                                    <div class="attachmentpill fs-14 cgray fw-normal border1-gray br50">
+                                        10 mm <span>$250</span>
+                                    </div>
+                                    <div class="attachmentpill fs-14 cgray fw-normal border1-gray br50">
+                                        Exposed Aggregate <span>$250</span>
+                                    </div>
+
+                                    <!-- Add more btn -->
+                                    <!-- <button class="attachmentpill fs-14 cgray fw-normal border1-gray br50 bg-transparent" type="button">
+                                        5 more
+                                    </button> -->
+                                </div>
+                            </div>
+                        </div>
+
                       <button type="button" class="border-0 bg-transparent d-flex flex-wrap align-items-center text-primary fw-medium fs-14" 
                       data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddNewAttachment" aria-controls="offcanvasAddNewAttachment">
                           <img src="../../assets/images/add-att-icon.png" alt="Image" class="pe-1">Add Attachment

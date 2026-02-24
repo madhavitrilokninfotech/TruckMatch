@@ -172,6 +172,17 @@ hr{border-bottom:2px dashed #ECECEC;margin-top:20px;margin-bottom:20px;width:100
 
 .btn.btn-primary1{background-color:#FEEFEB;border-color:#FEEFEB;font-size:14px;color:#D74315;min-width:auto!important;padding:8px 16px 7px 16px;font-weight:normal;}
 
+.btn-primary-hover{
+  transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+}
+.btn-primary-hover:hover{
+  color: #161212!important;
+}
+
 /*** Buttton Varilation CSS BOF ***/
 
 /* Hover State CSS BOF */
@@ -1020,7 +1031,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .truck-img-wrap .profile-preview .imageUpload-review{width:100px!important;height:100px!important;border-radius:14px;}
 .truck-img-wrap .imagepreview{border-radius:14px;border:1px dashed #D74315;}
 .truck-img-wrap .imagepreview.uploaded{border-color:transparent;}
-.truck-img-wrap .remove-img-btn{position:absolute;top:5px;right:5px;background:rgba(255,255,255,0.40);color:#797979;border:none;width:18px;height:18px;font-size:18px;line-height:18px;text-align:center;cursor:pointer;display:none; /* hidden until image uploaded */border-radius:20px;}
+.truck-img-wrap .remove-img-btn{position:absolute;top:5px;right:5px;background:rgba(255, 255, 255, 0.8);color:#797979;border:none;width:18px;height:18px;font-size:18px;line-height:18px;text-align:center;cursor:pointer;display:none; /* hidden until image uploaded */border-radius:20px;}
 .truck-img-wrap .imagepreview.uploaded + .remove-img-btn{display:block;z-index:999;}
 .att-box{padding:8px 14px 7px 14px;margin-right:5px;}
 .att-box:last-child{margin-right:0px;}
@@ -1661,7 +1672,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 
 
 /*===============================================================================
-    for fleet management edit fleet details
+    for Truck Operator Dashboard
 =================================================================================*/
 .cert-doc-hist-main .custom-table-main th{
     padding: 10px 20px;
@@ -1704,6 +1715,14 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 }
 .fleet-de-truck-num-row .row{
     gap: 10px 0;
+}
+.attachmentpill span{
+    color: rgba(215, 67, 21, 1);
+    font-weight: 700;
+    margin-left: 6px;
+}
+.attachmentpill{
+    padding: 8px 18px;
 }
 /* end */
 
