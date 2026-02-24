@@ -2474,18 +2474,18 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <!-- chat -->
-                                                                            <div class="assi-fdriver-chat">
-                                                                                <button class="assign-chat-btn info-action bg-red3 border-0">
-                                                                                    <img src="../../assets/images/chat-icon.png" alt="Image">
-                                                                                </button>
+                                                                            <!-- completed status -->
+                                                                            <div class="assigned-status">
+                                                                                <div class="stacat completed bg-green2 cgreen1 rounded-tr-0 fs-12 px-2 py-2">
+                                                                                    Completed
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                         
                                                                     </div>
 
                                                                     <hr class="my-3">
-                                                                    <div class="assign-work-row">
+                                                                    <div class="assign-work-row position-relative overflow-hidden">
                                                                         <div class="row align-items-center flex-wrap">
                                                                             <div class="assi-fdriver-ww w-240">
                                                                                 <div class="d-flex flex-wrap assi-fdriver-wp align-items-center">
@@ -2511,9 +2511,13 @@
                                                                                     <span class="fs-14 ellipsis-1"> Flona Green</span>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="assi-fdriver-chat d-flex">
-                                                                                <div class="assign-chat-btn info-action bg-red3">
-                                                                                    <img src="../../assets/images/chat-icon.png" alt="Image">
+                                                                            <div class="assign-opp">
+                                                                            
+                                                                            </div>
+                                                                            <!-- completed status -->
+                                                                            <div class="assigned-status">
+                                                                                <div class="stacat completed bg-green2 cgreen1 rounded-tr-0 fs-12 px-2 py-2">
+                                                                                    Completed
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -2537,13 +2541,13 @@
                                                                                 <tbody>
                                                                                     <tr>
                                                                                         <th colspan="2">
-                                                                                            <div class="assi-fdriver-details d-flex flex-wrap align-items-center">
+                                                                                           <div class="assi-fdriver-details d-flex flex-wrap align-items-center">
                                                                                                 <div class="d-flex flex-wrap assi-fdriver-wp align-items-center">
                                                                                                     <div class="wh-60 wh-custom">
                                                                                                     <img src="../../assets/images/ass-fdriver-con-img.png" alt="Image"> 
                                                                                                     </div>
                                                                                                     <div class="ps-2 wh-60-txt">
-                                                                                                    <div class="fs-14 text-primary mb-1">
+                                                                                                    <div class="fs-16 text-primary mb-1 ellipsis-1">
                                                                                                         Concreate Line Pump
                                                                                                     </div>
                                                                                                     <div class="assi-fdriver-ass-flets-dri fs-14 fw-medium cgray d-flex flex-wrap align-items-center">
@@ -2551,6 +2555,9 @@
                                                                                                     </div>
                                                                                                     </div>
                                                                                                 </div>
+                                                                                                <button class="btn-underline m-0 content-bbox-hl d-inline-flex align-items-center gap-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasbdDetails" type="button">
+                                                                                                    <span>View Details</span>
+                                                                                                </button>
                                                                                             </div>
                                                                                         </th>
                                                                                     </tr>
@@ -2584,7 +2591,7 @@
                                                                                                 <img src="../../assets/images/ass-fdriver-con-img.png" alt="Image"> 
                                                                                                 </div>
                                                                                                 <div class="ps-2 wh-60-txt">
-                                                                                                <div class="fs-14 text-primary mb-1">
+                                                                                                <div class="fs-16 text-primary mb-1 ellipsis-1">
                                                                                                     Concreate Line Pump
                                                                                                 </div>
                                                                                                 <div class="assi-fdriver-ass-flets-dri fs-14 fw-medium cgray d-flex flex-wrap align-items-center">
@@ -2592,6 +2599,9 @@
                                                                                                 </div>
                                                                                                 </div>
                                                                                             </div>
+                                                                                            <button class="btn-underline m-0 content-bbox-hl d-inline-flex align-items-center gap-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasbdDetails" type="button">
+                                                                                                <span>View Details</span>
+                                                                                            </button>
                                                                                         </div>
                                                                                         </th>
                                                                                     </tr>
@@ -2613,8 +2623,17 @@
                                                                                     </tr>                            
                                                                                 </tbody>
                                                                             </table>
+
+                                                                            <!-- payment summary alert -->
+                                                                            <div class="payment-summary">
+                                                                                <div class="bg-green5 br10 d-flex flex-wrap align-items-center cp-15 fs-16 fw-normal cgreen2 doc-up-suc-wrap mb-2 mt-1 mb-0">
+                                                                                    Please pay the extended charge to complete this job.
+                                                                                    <button class="cp-1020 text-white bg-green fs-16 fw-medium br10 border-0">Pay $100</button>
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
-                                                                        <div class=" custom-table-main custom-table-main-v1 bg-red1 totalAmountPayable-main">
+
+                                                                        <div class="custom-table-main custom-table-main-v1 bg-red1 totalAmountPayable-main">
                                                                             <table class="table budget-detail-table mb-0 ">
                                                                             <tbody>
                                                                                 <tr>
@@ -2623,6 +2642,7 @@
                                                                                 </tr>                            
                                                                             </tbody>
                                                                             </table>
+
                                                                         </div>
                                                                     </div>
                                                                 </div>                                                                                               
@@ -2636,6 +2656,13 @@
                                                                 <p class="job-active-subtitle fs-16 cgray mb-0">
                                                                     Completion review will be available once the accepter submit Completion.
                                                                 </p>
+                                                            </div>
+
+                                                            <div class="my-3 my-lg-4 d-flex flex-wrap justify-content-end">
+                                                                <button type="button" class="btn btn-outline m-1 me-lg-4" data-bs-dismiss="offcanvas" aria-label="Close">
+                                                                    Cancel
+                                                                </button>
+                                                                <button type="button" class="btn m-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasbdDetails" aria-controls="offcanvasbdDetails">Confirm Completion</button>
                                                             </div>
                                                             <!-- end -->
                                                         </div>
@@ -5412,7 +5439,7 @@
                                                                     </div>
 
                                                                     <hr class="my-3">
-                                                                    <div class="assign-work-row">
+                                                                    <div class="assign-work-row position-relative overflow-hidden">
                                                                         <div class="row align-items-center flex-wrap">
                                                                             <div class="assi-fdriver-ww w-240">
                                                                                 <div class="d-flex flex-wrap assi-fdriver-wp align-items-center">
@@ -5438,15 +5465,18 @@
                                                                                     <span class="fs-14 ellipsis-1"> Flona Green</span>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="assi-fdriver-chat d-flex">
-                                                                                <div class="assign-chat-btn info-action bg-red3">
+                                                                            <div class="assign-opp">
+                                                                            
+                                                                            </div>
+                                                                            <!-- chat -->
+                                                                            <div class="assi-fdriver-chat">
+                                                                                <button class="assign-chat-btn info-action bg-red3 border-0">
                                                                                     <img src="../../assets/images/chat-icon.png" alt="Image">
-                                                                                </div>
+                                                                                </button>
                                                                             </div>
                                                                         </div>
                                                                     
                                                                     </div>
-
                                                                 </div>
                                                             </div>
 
