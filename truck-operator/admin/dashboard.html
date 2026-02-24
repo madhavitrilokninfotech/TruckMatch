@@ -631,6 +631,7 @@
                             </div>                              
                           </div>
                       </div>
+                     
                       <hr class="my-3"></hr>
                       <div class="fs-18 fw-medium cblack mb-3">
                           Upload Required Documents
@@ -644,19 +645,19 @@
                           </p>
                            <div class="gray-box-main mt-1">
                                <div class="gray-box-wrap">
-                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray">
+                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
                                       <img src="../../assets/images/upl-re-doc.png" alt="Image">
                                       Vehicle/Plant Registration Certificate
                                    </div>
-                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray">
+                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
                                       <img src="../../assets/images/upl-re-doc.png" alt="Image">
                                       Public Liability Insurance
                                    </div>                                    
-                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray">
+                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
                                       <img src="../../assets/images/upl-re-doc.png" alt="Image">
                                       Maintenance & Service Records
                                    </div>
-                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray">
+                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
                                       <img src="../../assets/images/upl-re-doc.png" alt="Image">
                                       Truck/Equipment Insurance
                                    </div>                                                                                        
@@ -672,21 +673,22 @@
                           </p>
                            <div class="green-box-main mt-1">
                                <div class="green-box-wrap">
-                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray">
+                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
                                       <img src="../../assets/images/upl-re-doc.png" alt="Image">
                                       Vehicle Registration Certificate
                                    </div>
-                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray">
+                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
                                       <img src="../../assets/images/upl-re-doc.png" alt="Image">
                                       Vehicle Insurance Document
                                    </div>                                    
-                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray">
+                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
                                       <img src="../../assets/images/upl-re-doc.png" alt="Image">
                                       SWMS Document
                                    </div>                                                                                       
                                </div>                                                                     
                            </div>                                                                               
-                      </div>                                                                                                 
+                      </div>    
+
                 </div>     
              </div>
           </div>
@@ -1150,6 +1152,27 @@
               </div>
               <input type="file" id="imageUpload" class="imageUpload" accept=".png,.jpg,.jpeg,.pdf">
             </div> 
+            <div class="bg-green5 br10 d-flex flex-wrap align-items-center cp-15 fs-14 fw-medium cgreen2 doc-up-suc-wrap mt-3 mb-0">
+                <div class="doc-up-suc-icon me-1">
+                   <img src="../../assets/images/doc-up-suc-icon.png" alt="Image">
+                </div>   
+                Document uploaded successfully.
+            </div>
+            <div class="bg-orange4 d-flex flex-wrap align-items-center br10 cp-15 fs-14 fw-medium corange2 doc-up-suc-wrap mt-3 mb-0">
+                <div class="doc-up-suc-icon me-1">
+                    <img src="../../assets/images/doc-exp-soon-icon.png" alt="Image">
+                </div>
+                This document will expire in 48 hours.
+            </div>
+            <div class="bg-red4 d-flex flex-wrap align-items-center br10 cp-15 fs-14 fw-medium cred2 doc-up-suc-wrap mt-3 mb-0">
+                <div class="doc-up-suc-icon me-1">
+                    <img src="../../assets/images/doc-expire-icon.png" alt="Image">
+                </div>
+                This document has expired.
+                <div class="doc-up-suc-icon ms-auto">
+                    <img src="../../assets/images/doc-ex-load-icon.png" alt="Image">
+                </div>
+            </div>
           </div>
           <div class="modal-footer pt-0 cp-20 border-0 rounded-0">
             <div class="row w-100 gx-2">
