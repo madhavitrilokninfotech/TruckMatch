@@ -337,7 +337,7 @@
                                         </div>
                                     </div>
                                     <div class="box-count-bottom">
-                                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddFleet" aria-controls="offcanvasAddFleet">
+                                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSelectFleet" aria-controls="offcanvasSelectFleet">
                                             + Add Fleet 
                                         </a>
                                     </div>
@@ -504,16 +504,19 @@
              <div class="offcanvas-form-main">        
                 <div class="offcanvas-body-inner">
                     <div class="form-group">
-                        <label class="form-label cblack1 fw-medium">Truck Type</label>
-                        <select id="form-trucktype" class="form-select form-control border" placeholder="Select Truck Type">
-                          <option disabled hidden selected>Select Truck Type</option>
-                          <option>2 - 3 meter</option>
-                          <option>4 - 6 meter</option>
-                          <option>8 - 10 meter</option>
-                          <option>Twin Steer</option>
-                          <option>10 Wheeler</option>
-                        </select>
+                        <div class="selected-fleet-wrap">
+                            <div class="selected-fleet-tl form-label cblack1 fw-medium">
+                                Selected Fleet
+                            </div>
+                            <div class="selected-fleet-nm">
+                                <img src="../../assets/images/selected-fleet-icon.png" class="img-fluid" alt="Image">
+                                <span class="selected-fleet-nm-t">
+                                    Concrete Line Pump
+                                </span>
+                            </div>
+                        </div>
                     </div>
+                   
                     <div class="form-group">
                         <div class="edit-attachment-group d-flex align-items-center justify-content-between">
                             <label class="form-label cblack1 fw-medium">Attachments</label>
@@ -1073,6 +1076,218 @@
       </form>
 </div>
 
+
+<div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasSelectFleet" aria-labelledby="offcanvasSelectFleetLabel">
+<div class="offcanvas-header-cm">
+  <div class="offcanvas-header">
+    <div class="offcanvas-title" id="offcanvasSelectFleetLabel">Create New Job</div>
+    <p class="offcanvas-tl-p">Quickly define your job, select requirements, and connect with trusted truck operators.</p>
+    <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+  </div>
+</div>
+<form class="offcanvas-form">
+  <div class="offcanvas-body">
+     <div class="offcanvas-form-main">        
+        <div class="offcanvas-body-inner">
+            <div class="offcanvas-body-title">
+                Select Equipment Type
+            </div> 
+            <div class="row gx-2 gx-xxl-3">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype1" name="etype">
+                                <label for="etype1" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/tipper-truck.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Tipper Truck
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype2" name="etype">
+                                <label for="etype2" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/flatbed-truck.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Flatbed Truck
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype3" name="etype">
+                                <label for="etype3" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/tilt-tray.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Tilt Tray
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype4" name="etype">
+                                <label for="etype4" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/water-truck.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Water Truck
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype5" name="etype">
+                                <label for="etype5" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/truck-combo.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Truck Combo
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype6" name="etype">
+                                <label for="etype6" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/float.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Float
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype7" name="etype">
+                                <label for="etype7" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/boom-pump.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Boom Pump
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype8" name="etype">
+                                <label for="etype8" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/line-pump.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Line Pump
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype9" name="etype">
+                                <label for="etype9" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/vacuum-truck.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Vacuum Truck
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype10" name="etype">
+                                <label for="etype10" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/hiab-crane.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Hiab Crane
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype11" name="etype">
+                                <label for="etype11" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/concreate-agitator.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Concrete Agitator
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype12" name="etype">
+                                <label for="etype12" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/skid-steer-combo.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Skid Steer Combo
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                                                                                                                                                                              
+
+            </div>
+        </div>     
+     </div>
+  </div>
+  <div class="offcanvas-op-btn">
+      <div class="offcanvas-btn-wrap">
+        <button type="button" class="btn-cancel btn btn-outline" data-bs-dismiss="offcanvas" aria-label="Close">
+            Cancel
+        </button>
+        <button type="button" class="btn" data-offcanvas-next="#offcanvasAddFleet">Continue to Job Details</button>
+      </div>
+   </div>
+  </form>
+</div>
 
 
 
