@@ -636,9 +636,7 @@ h6,.h6 { font-size:14px; }
 .flet-des-img-bx img {
     border-radius: 10px !important;
 }
-.fleet-de-truck-num-col {
-    width: 50%;
-}
+
 .w-240 {
     width: 160px;
 }
@@ -1203,7 +1201,11 @@ p { font-size: 14px; }
 }
 
 
-
+@media(min-width:992px) and (max-width:1200px){
+    .fleet-de-truck-num-col {
+        width: 50%;
+    }
+}
 
 
 @media(min-width:1200px) and (max-height:700px) {
