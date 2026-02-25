@@ -422,4 +422,38 @@ $('.abn-num').on('input', function () {
 
 });
 
+$(document).ready(function(){
+  // selected truck slider js
+  $(".selectedTruckSlider").slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: false,
+    dots: false,
 
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2.5,
+            slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1.8,
+            slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1.4,
+            slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});

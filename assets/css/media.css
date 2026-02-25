@@ -747,15 +747,20 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 991.98px) {
+.selected-truck-slidewrap .slick-track,
+.selected-truck-slidewrap .slick-list.draggable {
+  display: block;
+}
+.selected-truck-slide{
+    padding: 0 4px;
+}
+.selectedTruckSlider{ 
+    margin: 0 -4px;
+}
+
 .fleet-mana-ft-img {
     width: auto;
 }
-/* .fleet-mana-hr-wrap {
-    padding-right: 12px;
-} */
-/* .fleet-mana-hr-tc-main {
-    gap: 12px;
-} */
 
 
 h1,.h1 { font-size:26px; }
@@ -986,6 +991,13 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.payment-summary .doc-up-suc-wrap {
+    gap: 0;
+    padding: 10px;
+}
+.payment-summary .payment-summary-text {
+    width: calc(100% - 106px);
+}
 .attachmentpill {
     padding: 6px 10px;
 }

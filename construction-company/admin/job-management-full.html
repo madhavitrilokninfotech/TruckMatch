@@ -22,6 +22,7 @@
 
   <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap-datetimepicker.min.css"> 
+  <link rel="stylesheet" type="text/css" href="../../assets/css/slick.min.css">
   <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="../../assets/css/media.css">
   <link rel="stylesheet" type="text/css" href="../../assets/css/sidebar.css">
@@ -2624,10 +2625,21 @@
                                                                                 </tbody>
                                                                             </table>
 
+                                                                            <!-- successfully paid message -->
+                                                                            <div class="payment-summary">
+                                                                                <div class="bg-green5 br10 d-flex flex-wrap align-items-center cp-15 fs-16 fw-normal cgreen2 doc-up-suc-wrap mb-2 mt-1 mb-0">
+                                                                                     <span class="payment-summary-text w-100">
+                                                                                        Your $100 extended charge has been successfully paid.
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+
                                                                             <!-- payment summary alert -->
                                                                             <div class="payment-summary">
                                                                                 <div class="bg-green5 br10 d-flex flex-wrap align-items-center cp-15 fs-16 fw-normal cgreen2 doc-up-suc-wrap mb-2 mt-1 mb-0">
-                                                                                    Please pay the extended charge to complete this job.
+                                                                                     <span class="payment-summary-text">
+                                                                                        Please pay the extended charge to complete this job.
+                                                                                    </span>
                                                                                     <button class="cp-1020 text-white bg-green fs-16 fw-medium br10 border-0">Pay $100</button>
                                                                                 </div>
                                                                             </div>
@@ -6255,6 +6267,22 @@
         <div class="offcanvas-body-inner">
             <div class="content-bbox-main">
                <div class="content-bbox-wrap overflow-hidden mbot16 bg-white mb-3">
+                    <!-- selected truck slider -->
+                    <div class="selected-truck-slider cp-1520">
+                        <div class="selected-truck-slidewrap selectedTruckSlider">
+                            <div class="selected-truck-slide">
+                                <img src="../../assets/images/selected-truck-img.png" alt="Image"> 
+                            </div>
+                            <div class="selected-truck-slide">
+                                 <img src="../../assets/images/selected-truck-img.png" alt="Image"> 
+                            </div>
+                            <div class="selected-truck-slide">
+                                 <img src="../../assets/images/selected-truck-img.png" alt="Image"> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Table -->
                     <div class="content-bbox-cn">
                         <div class="table-responsive">
                             <div class="custom-table-main custom-table-main-v1 jm-table">
@@ -6339,28 +6367,40 @@
                                             $80
                                         </td>
                                     </tr>
-                                    <tr>
+
+                                    <!-- <tr>
                                         <th class="width-p-45 min-width-210 text-primary border-bottom-0 bg-red1 pt-3 pb-3">
                                             Total Amount
                                         </th>
                                         <td class="width-p-10 min-width-100 text-primary border-bottom-0 bg-red1 text-end pt-3 pb-3">
                                             $1290
                                         </td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
+                                </table>
+
+
+                                <!-- Inprogress payment summary -->
+                                <div class="payment-summary">
+                                    <div class="bg-green5 br10 d-flex flex-wrap align-items-center cp-15 fs-16 fw-normal cgreen2 doc-up-suc-wrap m-2">
+                                        <span class="payment-summary-text">
+                                            Please pay the extended charge to complete this job.
+                                        </span>
+                                        <button class="cp-1020 text-white bg-green fs-16 fw-medium br10 border-0">Pay $100</button>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                            </div>
+                           <div class="custom-table-main custom-table-main-v1 bg-red1 jm-table totalAmountPayable-main">
+                                <table class="table budget-detail-table mb-0 ">
+                                    <tbody>
+                                        <tr>
+                                            <th class="width-p-45 min-width-210 text-primary bg-red1"> Total Amount</th>
+                                            <td class="width-p-10 min-width-100 text-primary bg-red1"> $1290</td>
+                                        </tr>                            
+                                    </tbody>
                                 </table>
                             </div>
-                           
-                            <!-- <div class="custom-table-main custom-table-main-v1 bg-red1 totalAmountPayable-main">
-                                <table class="table budget-detail-table mb-0 ">
-                                <tbody>
-                                    <tr>
-                                        <th class="width-p-45 min-width-210 text-primary bg-red1">Amount Payable</th>
-                                        <td class="width-p-10 min-width-100 text-primary bg-red1">$2060</td>
-                                    </tr>                            
-                                </tbody>
-                                </table>
-                            </div> -->
                         </div>
                     </div>                                                                                               
                 </div>
@@ -7651,6 +7691,7 @@
   <script src="../../assets/js/moment.min.js"></script>
   <script src="../../assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
   <script src="../../assets/js/bootstrap-datetimepicker.min.js"></script> 
+  <script src="../../assets/js/slick.min.js"></script> 
   <script src="../../assets/js/custom.js" type="text/javascript"></script>
 
   <!-- =================== /WEB JS BOC ==================== -->
