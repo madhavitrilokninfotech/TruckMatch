@@ -648,6 +648,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .sidebar-show-hide .content-wrapper{margin-left:calc(84px + 30px);}
 .box-count-top-wrap{padding:16px 20px;display:flex;align-items:center;flex-wrap:wrap;}
 .box-count-txt-wrap{width:calc(100% - 70px);}
+.borderwh-1{border-width: 1px;}
 .border1-gray{border:1px solid #ECECEC;}
 .border2-gray{border:2px solid #ECECEC;}
 .border2-green1{border:2px solid #15D739;}
@@ -1512,6 +1513,23 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .selectedTruckSlider{ 
     margin: 0 -7px;
 }
+.countbadge{
+    background-color: #D74315;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1;
+    margin-left: 4px;
+}
 
 /* inprogress screen */
 .job-accepter-profile span{
@@ -1640,17 +1658,25 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .addnewattachment .checkbox-square-wrap .checkbox + label{
     background: transparent;
     border: none;
+    padding: 10px 15px 10px 30px;
+}
+.addnewattachment .form-group {
+    margin-bottom: 0;
+}
+.addnewattachment .checkbox-square-wrap .checkbox + label::before{
+    left: 0;
+}
+.addnewattachment .checkbox-square-wrap .checkbox + label::after{
+    left: 0;
 }
 .addnewattachment .checkbox-square-main{
     align-items: center;
     justify-content: space-between;
-}
-.addnewattachment .form-group {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 .addnewattachment .checkbox-square-main .checkbox-square-wrap {
     padding-right: 0;
-    padding-bottom: 12px;
+    padding-bottom: 0;
 }
 .available-line-lengths {
     border-bottom: 2px solid #ECECEC;
@@ -1755,6 +1781,9 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 }
 .attachmentpill{
     padding: 8px 18px;
+}
+.truck-op-row .infocard .post-njobby-txt {
+    padding-right: 70px;
 }
 /* end */
 

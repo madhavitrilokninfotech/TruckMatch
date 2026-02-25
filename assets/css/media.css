@@ -52,6 +52,12 @@ Large devices
 
 
 @media (max-width:1599px) { 
+.addnewattachment .checkbox-square-wrap .checkbox + label {
+    padding: 8px 13px 8px 25px;
+}
+.addnewattachment .checkbox-square-wrap .checkbox:checked + label:after{
+    left: 1px;
+}
 .assign-opp {
     flex: 0 0 auto;
 }
@@ -991,6 +997,11 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.countbadge {
+    width: 18px;
+    height: 18px;
+    font-size: 9px;
+}
 .payment-summary .doc-up-suc-wrap {
     gap: 0;
     padding: 10px;
