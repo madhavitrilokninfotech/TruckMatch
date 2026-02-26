@@ -718,7 +718,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 
 .selected-fleet-tl{font-size:16px;color:#000;font-weight:600;margin-bottom:10px;}
 .selected-fleet-nm {background-color: #FEEFEB; border-radius: 11px; padding: 8px 16px; display: inline-flex; font-size: 16px; color: #D74315; border: 1px solid #D74315; align-items: center; }
-.selected-fleet-nm img{margin-right:10px;width:24px;height:24px;}
+.selected-fleet-nm img{margin-right:10px;width:24px;height:24px;object-fit: contain; transform: scale(1.5);}
 .selected-fleet-nm-t{width:calc(100% - 34px);}
 
 
