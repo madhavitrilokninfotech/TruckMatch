@@ -64,6 +64,12 @@ Large devices
 .addnewattachment .checkbox-square-wrap .checkbox + label {
     padding: 8px 13px 8px 25px;
 }
+.dollar_symbol .form-control {
+    padding-left: 22px !important;
+}
+.dollar_symbol::before {
+    left: 12px;
+}
 .addnewattachment .checkbox-square-wrap .checkbox:checked + label:after{
     left: 1px;
 }
@@ -884,6 +890,9 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 767.98px) {  
+.dollar_symbol::before {
+    font-size: 12px;
+}
 .assign-work-row .wh-60 {
     width: 70px;
     height: 70px;
@@ -1018,6 +1027,13 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.com-de-review-bx .review-bx-title{
+    flex-direction: column;
+    align-items: start;
+}
+.job-details-pb-jobst-wp .com-de-review-bx .wh-50-txt{
+    width: 100% !important;
+}
 .payment-summary button{
     padding: 8px 12px;
 }

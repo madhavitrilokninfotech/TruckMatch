@@ -820,7 +820,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .cp-1020{padding:10px 20px;}
 .cp-15{padding:15px;}
 .cp-20{padding:20px;}
-.cp-10{padding:10px;}
+.cp-10{padding:10px !important;}
 .cp-1520{padding:15px 20px;}
 .cp-2015{padding:20px 15px;}
 .pad-content{padding:20px;}
@@ -1146,7 +1146,8 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 
 .asign-supp-op-wrap:last-child{margin-right:0px;}
 
-.br50{border-radius:50px;}
+.br50{ border-radius:50px !important; -webkit-border-radius:50px !important; -moz-border-radius:50px !important; -ms-border-radius:50px !important; -o-border-radius:50px !important; } 
+.br_circle50{ border-radius:50% !important; -webkit-border-radius:50% !important; -moz-border-radius:50% !important; -ms-border-radius:50% !important; -o-border-radius:50% !important; } 
 
 .td-details-box-tdd {
     width:calc(100% - 100px);
@@ -1443,7 +1444,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 }
 .requestimg{
     border-radius: 50%;
-    margin-left: -10px;
+    margin-left: -15px;
 }
 .request-group .requestimg:nth-of-type(1){
     margin-left: 0px;
@@ -1602,6 +1603,10 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .rate-review textarea.form-control::placeholder{
     color: #BEB9B9;
 }
+.circlewidth{
+    width: 50px;
+    height: 50px;
+}
 /* end */
 
 
@@ -1690,6 +1695,23 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
     border-bottom: 2px solid #ECECEC;
     margin-bottom: 20px;
     padding-bottom: 8px;
+}
+.dollar_symbol::before {
+    content: "$";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #797979;
+    pointer-events: none;
+    font-size: 14px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.dollar_symbol .form-control{
+    padding-left: 25px !important;
 }
 /* end */
  
