@@ -1597,6 +1597,11 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
     -ms-border-radius: 14px !important;
     -o-border-radius: 14px !important;
 }
+
+/* completed screen */
+.rate-review textarea.form-control::placeholder{
+    color: #BEB9B9;
+}
 /* end */
 
 
