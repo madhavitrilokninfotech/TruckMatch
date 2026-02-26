@@ -126,6 +126,7 @@ img { margin-bottom:0; } /*margin-bottom:5px*/
 
 /* 08 : Linedivider Style CSS BOF
 =================================================== */  
+.hr_line{border-top:1.5px dashed #ECECEC;width:100%;opacity:1;}
 
 hr{border-bottom:2px dashed #ECECEC;margin-top:20px;margin-bottom:20px;width:100%;border-top:0;opacity:1;}
 
@@ -1563,11 +1564,12 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 }
 .assign-opp-list{
     gap: 4px 16px;
+    padding-right: 50px;
 }
 .assi-fdriver-chat {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 10px;
     text-align: right;
     max-width: max-content;
     padding-right: 0;
@@ -1586,6 +1588,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
     justify-content: center;
     align-items: center;
     margin-right: 6px;
+    min-width: 20px;
 }
 .assigned-status .completed{
     border-radius: 14px !important;

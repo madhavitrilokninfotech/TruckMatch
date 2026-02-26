@@ -52,6 +52,15 @@ Large devices
 
 
 @media (max-width:1599px) { 
+.assign-chat-btn.info-action {
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+}
+.custom-table-main.custom-table-main-v1 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .addnewattachment .checkbox-square-wrap .checkbox + label {
     padding: 8px 13px 8px 25px;
 }
@@ -753,6 +762,12 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 991.98px) {
+.assign-opp-list {
+    padding-right: 0;
+}
+.jm-table.custom-table-main tbody th, .jm-table.custom-table-main tbody td {
+    white-space: nowrap;
+}
 .selected-truck-slidewrap .slick-track,
 .selected-truck-slidewrap .slick-list.draggable {
   display: block;
@@ -869,7 +884,13 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 767.98px) {  
-
+.assign-work-row .wh-60 {
+    width: 70px;
+    height: 70px;
+}
+.assigned-status .completed {
+    position: absolute;
+}
 
 h1,.h1 { font-size:24px; }
 h2,.h2 { font-size:20px; }
@@ -997,6 +1018,27 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.payment-summary button{
+    padding: 8px 12px;
+}
+.assigned-status .completed {
+    padding: 6px 8px 6px 9px !important;
+    font-size: 10px !important;
+}
+.assign-work-row {
+    padding-right: 0;
+}
+.assign-work-row .assi-fdriver-ww {
+    flex: 0 0 100%;
+    width: 100%;
+}
+.assign-work-row .assi-fdriver-wp{
+    padding-right: 75px;
+}
+.assign-work-row .ass-title-name {
+    width: 100%;
+    flex: 1;
+}
 .countbadge {
     width: 18px;
     height: 18px;
@@ -1186,7 +1228,16 @@ p { font-size: 14px; }
 
 
 @media (max-width:399px) {
-
+.assign-work-row .assi-fdriver-wp{
+    flex-direction: column;
+    align-items: start !important;
+}
+.assign-work-row .wh-custom{
+    padding-right: 75px;
+}
+.assign-work-row .assi-fdriver-wp{
+    padding-right: 0;
+}
 	/*=== Login ===*/
 
 
