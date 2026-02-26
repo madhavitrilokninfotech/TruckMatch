@@ -9789,50 +9789,50 @@
                                <div class="checkbox-round-main d-flex flex-wrap justify-content-md-between gap-1">
                                     <div class="checkbox-round-wrap p-0">
                                         <div class="form-group mb-0">
-                                            <input type="checkbox" class="checkbox" id="rbday-sun" name="days[]">
-                                            <label for="rbday-sun" class="mb-0">Sunday</label>
+                                            <input type="checkbox" class="checkbox" id="redays-v1" name="redays-v1">
+                                            <label for="redays-v1" class="mb-0">Sunday</label>
                                         </div>
                                     </div>
 
                                     <div class="checkbox-round-wrap p-0">
                                         <div class="form-group mb-0">
-                                            <input type="checkbox" class="checkbox" id="rbday-mon" name="days[]">
-                                            <label for="rbday-mon" class="mb-0">Monday</label>
+                                            <input type="checkbox" class="checkbox" id="redays1-v2" name="redays1-v2">
+                                            <label for="redays1-v2" class="mb-0">Monday</label>
                                         </div>
                                     </div>
 
                                     <div class="checkbox-round-wrap p-0">
                                         <div class="form-group mb-0">
-                                            <input type="checkbox" class="checkbox" id="rbday-tue" name="days[]">
-                                            <label for="rbday-tue" class="mb-0">Tuesday</label>
+                                            <input type="checkbox" class="checkbox" id="redays2-v3" name="redays2-v3">
+                                            <label for="redays2-v3" class="mb-0">Tuesday</label>
                                         </div>
                                     </div>
 
                                     <div class="checkbox-round-wrap p-0">
                                         <div class="form-group mb-0">
-                                            <input type="checkbox" class="checkbox" id="rbday-wed" name="days[]">
-                                            <label for="rbday-wed" class="mb-0">Wednesday</label>
+                                            <input type="checkbox" class="checkbox" id="redays3-v4" name="redays3-v4">
+                                            <label for="redays3-v4" class="mb-0">Wednesday</label>
                                         </div>
                                     </div>
 
                                     <div class="checkbox-round-wrap p-0">
                                         <div class="form-group mb-0">
-                                            <input type="checkbox" class="checkbox" id="rbday-thu" name="days[]">
-                                            <label for="rbday-thu" class="mb-0">Thursday</label>
+                                            <input type="checkbox" class="checkbox" id="redays4-v5" name="redays4-v5">
+                                            <label for="redays4-v5" class="mb-0">Thursday</label>
                                         </div>
                                     </div>
 
                                     <div class="checkbox-round-wrap p-0">
                                         <div class="form-group mb-0">
-                                            <input type="checkbox" class="checkbox" id="rbday-fri" name="days[]">
-                                            <label for="rbday-fri" class="mb-0">Friday</label>
+                                            <input type="checkbox" class="checkbox" id="redays5-v6" name="redays5-v6">
+                                            <label for="redays5-v6" class="mb-0">Friday</label>
                                         </div>
                                     </div>
 
                                     <div class="checkbox-round-wrap p-0">
                                         <div class="form-group mb-0">
-                                            <input type="checkbox" class="checkbox" id="rbday-sat" name="days[]">
-                                            <label for="rbday-sat" class="mb-0">Saturday</label>
+                                            <input type="checkbox" class="checkbox" id="redays6-v7" name="redays6-v7">
+                                            <label for="redays6-v7" class="mb-0">Saturday</label>
                                         </div>
                                     </div>
 
@@ -9848,15 +9848,15 @@
                             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                                 <label class="form-label">Start Date</label>
                                 <div class="form-group">
-                                    <input type="text" class="form-control border datepicker_icon" id="form-sd"
-                                        name="form-sd" placeholder="Select Date">
+                                    <input type="text" class="form-control border datepicker_icon date-picker" id="form-sd-vv1"
+                                        name="form-sd-vv1" placeholder="Select Date">
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 recurr-timing-content mt-0">
                                 <label class="form-label">End Date</label>
                                 <div class="form-group">
-                                    <input type="text" class="form-control border datepicker_icon" id="form-ed"
-                                        name="form-ed" placeholder="Select Date">
+                                    <input type="text" class="form-control border datepicker_icon date-picker" id="form-ed-vv1"
+                                        name="form-ed-vv1" placeholder="Select Date">
                                 </div>
                             </div>
                         </div>
@@ -9964,7 +9964,19 @@
     });                        
     }); 
 
+    $(document).on('focus', '.date-picker', function () {
+    if (!$(this).data("DateTimePicker")) {
+        $(this).datetimepicker({
+            format: "DD-MM-YYYY"
+        });
+    }
+
+    
+});
+
 </script>
+
+
 
 <script>
 
