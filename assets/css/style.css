@@ -797,6 +797,10 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .inprogress{color:#2196F3;background-color:#d9ebfd;}
 .new-post-jwrap{display:flex;flex-direction:column;height:calc(100vh - (104px + 20px));overflow:hidden;position:sticky;top:104px;}
 .postnjob-tabbing-wrap{overflow-y:auto;height:calc(100% - 220px);scrollbar-width:thin;}
+.incoming_alert{
+    background-color: rgba(220, 38, 38, 0.2);
+    color: #D74315;
+}
 
 
 
