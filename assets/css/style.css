@@ -800,6 +800,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .incoming_alert{
     background-color: rgba(220, 38, 38, 0.2);
     color: #D74315;
+    padding: 8px 10px !important;
 }
 
 

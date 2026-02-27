@@ -409,7 +409,13 @@ label.form-label{font-size:14px;margin-bottom:8px;}
 
 
 @media(max-width:1499px) {
-
+.pendingjob_main .infocard .post-njobby-txt{
+    padding: 8px 0 0 0 !important;
+    width: 100%;
+}
+.pendingjob_main .ru-job-posted-img-txt{
+    flex-direction: column;
+}
 
 h1,.h1 { font-size:32px; }
 h2,.h2 { font-size:22px; }
@@ -1027,6 +1033,9 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.pendingjob_main .infocard .post-njobby-txt {
+    padding: 0 0 0 0 !important;
+}
 .com-de-review-bx .review-bx-title{
     flex-direction: column;
     align-items: start;
