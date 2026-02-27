@@ -1674,7 +1674,8 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .min-width-180{
     width: 200px;
 }
-.addnewattachment .checkbox-square-wrap .checkbox + label{
+.addnewattachment .checkbox-square-wrap .checkbox + label,
+.addnewattachment .radio-rounded-wrap .radio + label{
     background: transparent;
     border: none;
     padding: 10px 15px 10px 30px;
@@ -1682,18 +1683,25 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .addnewattachment .form-group {
     margin-bottom: 0;
 }
-.addnewattachment .checkbox-square-wrap .checkbox + label::before{
+.addnewattachment .checkbox-square-wrap .checkbox + label::before,
+.addnewattachment .radio-rounded-wrap .radio + label::before{
     left: 0;
 }
 .addnewattachment .checkbox-square-wrap .checkbox + label::after{
     left: 0;
 }
-.addnewattachment .checkbox-square-main{
+.addnewattachment .radio-rounded-wrap .radio + label::after{
+    left: 4px;
+}
+.addnewattachment .checkbox-square-main,
+.addnewattachment .radio-rounded-main{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
+    flex-wrap: unset;
 }
-.addnewattachment .checkbox-square-main .checkbox-square-wrap {
+.addnewattachment .checkbox-square-main .checkbox-square-wrap,
+.addnewattachment .radio-rounded-main .radio-rounded-wrap {
     padding-right: 0;
     padding-bottom: 0;
 }

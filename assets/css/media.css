@@ -61,7 +61,8 @@ Large devices
     padding-left: 15px;
     padding-right: 15px;
 }
-.addnewattachment .checkbox-square-wrap .checkbox + label {
+.addnewattachment .checkbox-square-wrap .checkbox + label,
+.addnewattachment .radio-rounded-wrap .radio + label  {
     padding: 8px 13px 8px 25px;
 }
 .dollar_symbol .form-control {
