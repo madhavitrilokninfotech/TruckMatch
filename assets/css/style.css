@@ -1902,6 +1902,9 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .flex_item{
     flex: 1;
 }
+.tm-card-act-content .content-bbox-cn{
+    gap: 12px;
+}
 /* ------ Media CSS  ------- */
 
 @media(max-width:767px) {
