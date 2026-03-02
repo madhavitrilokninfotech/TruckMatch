@@ -907,6 +907,9 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 767.98px) {  
+.font-14 {
+    font-size: 13px !important;
+}
 .dollar_symbol::before {
     font-size: 12px;
 }
@@ -1054,9 +1057,6 @@ Extra small devices (portrait phones, less than 576px)
 .content-bbox-cn{
     flex-direction: column;
     align-items: start !important;
-}
-.tm-card-act-content .jp-booking-details .font-14 {
-    font-size: 11px!important;
 }
 .tm-d-container .tm-de-et-wrap {
     margin-left: 0 !important;
