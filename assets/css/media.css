@@ -778,6 +778,13 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 991.98px) {
+.tm-d-container .tm-de-et-wrap {
+    flex-grow: 1;
+    justify-content: end;
+}
+.team-member-back-arrw-btn {
+    width: 26px;
+}
 .assign-opp-list {
     padding-right: 0;
 }
@@ -1037,6 +1044,9 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.tm-d-container .tm-de-et-wrap {
+    justify-content: start;
+}
 .tm-card-act-content .loc-de-twrap {
     width: auto;
     flex: 1;
