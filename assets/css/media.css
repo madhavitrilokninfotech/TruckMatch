@@ -290,7 +290,6 @@ label.form-label{font-size:14px;margin-bottom:8px;}
 /*=== team management empty =====*/
 
 .new-team-manwrap .postnjob-tabbing-wrap{height:calc(100% - 145px);}
-.td-detail-box-tm-card-wp .td-details-tdt{font-size:18px!important;}
 .td-detail-box-tm-card-wp .td-details-cat{font-size:14px!important;}
 .tm-de-et-wrap .btn{padding:7px 15px;}
 
@@ -552,6 +551,10 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 1399px) { 
+.select_dropdown {
+    font-size: 12px;
+    padding: 7px 33px 8px 18px;
+}
 .fleet-mana-bx-wp .fleet-mana-ft-cat{
     padding: 8px 12px;
     width: auto;
@@ -1034,6 +1037,41 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.tm-card-act-content .loc-de-twrap {
+    width: auto;
+    flex: 1;
+}
+.content-bbox-cn{
+    flex-direction: column;
+    align-items: start !important;
+}
+.tm-card-act-content .jp-booking-details .font-14 {
+    font-size: 11px!important;
+}
+.tm-d-container .tm-de-et-wrap {
+    margin-left: 0 !important;
+    gap: 6px 0;
+}
+.select_dropdown {
+    padding: 8px 30px 8px 10px;
+    background-position: 92% center;
+}
+.loc-de-box-wrap .loc-de-stet{
+    align-items: center;
+}
+.flagreview .tm-act-com-reotp-img{
+    flex-direction: column;
+    align-items: start !important;
+    gap: 2px;
+}
+.flagreview .flex_item{
+    flex: auto;
+    order: 2;
+    padding: 14px 0 10px;
+}
+.flagreview .gray-box{
+    order: 1;
+}
 .pendingjob_main .infocard .post-njobby-txt {
     padding: 0 0 0 0 !important;
 }
@@ -1254,6 +1292,19 @@ p { font-size: 14px; }
 
 
 @media (max-width:399px) {
+.team-member-de-act-wrap .job-details-pb-jobst-wrap{
+    flex-direction: column;
+    align-items: start !important;
+    gap: 12px;
+}
+.select_dropdown {
+    background-position: 95% center;
+    width: 100%;
+    padding-left: 15px;
+}
+.alljobs-filter-dropdown {
+    width: 100%;
+}
 .assign-work-row .assi-fdriver-wp{
     flex-direction: column;
     align-items: start !important;

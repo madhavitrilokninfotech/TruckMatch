@@ -786,6 +786,13 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .search-set{border:2px solid #ECECEC;background-color:#F9FAFB;border-radius:12px;height:52px;width:52px;}
 .btn.btn-outline-bs{min-width:auto!important;border-style:dashed;border-width:2px;background-color:transparent;font-size:18px;color:#D74315;padding:12px;border-radius:10px;display:flex;align-items:center;width:100%;justify-content:center;}
 .post-njob-icon{padding-right:5px;}
+.post-njob-icon svg path{
+    transition: all .4s ease-in-out 0s;
+    -webkit-transition: all .4s ease-in-out 0s;
+    -moz-transition: all .4s ease-in-out 0s;
+    -ms-transition: all .4s ease-in-out 0s;
+    -o-transition: all .4s ease-in-out 0s;
+}
 .search-set{border:2px solid #ECECEC;background-color:#F9FAFB;border-radius:12px;height:52px;width:52px;}
 .post-njob-statd-wrap{border:2px solid #ECECEC;border-radius:14px;padding:15px;background-color:#fff;cursor:pointer;}
 .post-njob-statd-wrap.active{border-color:#D74315;background-color:#fefcfb;}
@@ -1086,7 +1093,9 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 
 .team-member-back-arrw-btn{width:40px;height:40px;margin-bottom:10px;}
 .td-detail-box-tm-card-wp-nmem .nav-pills .td-detail-box-tm-card-wp.nav-link{width:100%;text-align:left;border-radius:14px;}
-.td-detail-box-tm-card-wp-nmem .nav-pills .td-detail-box-tm-card-wp.nav-link.active{border-color:#D74315;}
+.td-detail-box-tm-card-wp-nmem .nav-pills .td-detail-box-tm-card-wp.nav-link.active,
+.td-detail-box-tm-card-wp-nmem .nav-pills .td-detail-box-tm-card-wp.nav-link:focus-visible
+{border-color:#D74315; box-shadow: none;}
 
 
 
@@ -1832,9 +1841,67 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 /* end */
 
 
+/*===============================================================================
+    for Team Management Dashboard
+=================================================================================*/
+.select_dropdown{
+    color: #797979;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 44px 10px 18px;
+    border-color: #ECECEC;
+    border-width: 2px;
+    cursor: pointer;
+}
+.select_dropdown:focus,
+.select_dropdown:active,
+.select_dropdown option:checked{
+    color: #797979;
+    border-color: #D74315;
+    box-shadow: none;
+}
 
+/* .select-arrow-wrap{
+    position: relative;
+}
+.select-arrow-wrap::after{
+    content: "\f107";
+    position: absolute;
+    font-size: 19px;
+    right: 15px;
+    top: 0px;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 10px;
+    margin-left: 0px;
+    color: #000;
+    border: none;
+    font-family: FontAwesome;
+    line-height: 11px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+} */
 
-
+.ru-job-posted-icon{
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.ru-job-posted-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.flex_item{
+    flex: 1;
+}
 /* ------ Media CSS  ------- */
 
 @media(max-width:767px) {
