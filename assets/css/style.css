@@ -762,7 +762,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 
 .loc-de-twrap{padding-left:8px;width:calc(100% - 24px);}
 .loc-de-stet{display:flex;flex-wrap:wrap;}
-.loc-de-tadd{font-size:14px;font-weight:600;color:#161212;margin-bottom:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding-top:4px;}
+.loc-de-tadd{font-size:14px;font-weight:600;color:#161212;margin-bottom:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding-top:4px;line-height: 1.4;}
 .loc-de-timadd{font-size:14px;color:#797979;}
 .loc-de-box-wrap{display:flex;flex-wrap:wrap;justify-content:space-between;margin:0px -10px;align-items:center;}
 .tm-act-com-reotp-img img{margin:4px 0px;}
@@ -985,7 +985,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .pwd-text{line-height:20px;}
 .shpassword-active .toggle-shpassword{margin-top:-4px;}
 .tm-card-act-content{cursor:pointer;}
-.tm-card-act-content:last-child{border-bottom:0px!important;}
+/* .tm-card-act-content:last-child{border-bottom:0px!important;} */
 .asssup-ope-bx{border:1px solid #D74315;border-radius:50px;padding:5px 3px;margin-right:5px;margin-bottom:7px;background-color:#FEF0EB;}
 .tm-de-et-wrap .btn{padding:8px 20px;font-weight:400;margin-right:10px;}
 
