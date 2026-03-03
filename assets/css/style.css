@@ -1477,6 +1477,9 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .post-njob-statd-main.nav-link.active .infocard{
     border-color: #D74315;
 }
+.post-njob-statd-main.nav-link .infocard{
+    cursor: pointer;
+}
 .jm-table.custom-table-main tbody th,
 .jm-table.custom-table-main tbody td{
     padding: 6px 0;
@@ -1929,6 +1932,21 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .ratingstar input:checked + label,
 .ratingstar input:checked + label ~ label {
     color: #FFA500;
+}
+.backarrow_main_layout {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 30px;
+    justify-content: center;
+    text-align: center;
+}
+.backarrow_main_layout .dash-txt {
+    flex: 1;
+    padding-right: 26px;
+}
+.backarrow_main_layout .team-member-back-arrw-btn{
+    padding: 2px 5px 5px !important;
+    height: auto;
 }
 /* ------ Media CSS  ------- */
 

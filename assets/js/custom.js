@@ -365,9 +365,24 @@ $(document).on("click", ".team-member-back-arrw-btn", function () {
     wrapper.removeClass("active");
 });
 
-
 // Team Member Details & Activity Active Class End
 
+
+// job management - open sidebar tab pane JS
+$(".jobd-dash-act-wrp").on("click", ".parentopen-sidebar", function () {
+    $(".jobd-dash-act-wrp").removeClass("onclick"); // remove from all
+    $(this).closest(".jobd-dash-act-wrp").addClass("onclick"); // add to its wrapper
+});
+
+
+$(document).on("click", ".team-member-back-arrw-btn", function () {
+    // Find the related wrapper
+    const wrapper = $(this).closest(".jobd-dash-act-wrp");
+
+    // Remove onclick class only from this wrapper
+    wrapper.removeClass("onclick");
+});
+// end
 
 
 // mobile number START
