@@ -11020,7 +11020,26 @@
                     <div class="font-14 cgray fw-medium mb-3">
                         Commercial & Residential Construction
                     </div>
-                    <img src="../../assets/images/ratejexp-rate.png" class="img-fluid" alt="Image">
+                    <!-- <img src="../../assets/images/ratejexp-rate.png" class="img-fluid" alt="Image"> -->
+
+                    <!-- Review Rating Star -->
+                    <div class="ratingstar d-flex justify-content-center align-items-center gap-sm-3 gap-2 flex-row-reverse">
+                        <input type="radio" name="rating" id="rstar1" value="1">
+                        <label for="rstar1">★</label>
+
+                        <input type="radio" name="rating" id="rstar2" value="2">
+                        <label for="rstar2">★</label>
+
+                        <input type="radio" name="rating" id="rstar3" value="3">
+                        <label for="rstar3">★</label>
+
+                        <input type="radio" name="rating" id="rstar4" value="4" checked>
+                        <label for="rstar4">★</label>
+
+                        <input type="radio" name="rating" id="rstar5" value="5">
+                        <label for="rstar5">★</label>
+
+                    </div>
                 </div>
             </div>
             <div class="form-group">
@@ -12481,6 +12500,16 @@
   <!-- =================== /WEB JS BOC ==================== -->
 
 
+<script>
+    // Review Rating Click JS
+    const reviewSection = document.querySelector('.ratingstar');
+
+    reviewSection.querySelectorAll('input[name="rating"]').forEach(radio => {
+        radio.addEventListener('change', function () {
+            console.log("Selected Rating:", this.value);
+        });
+    });
+</script>
 
 <script>
     $(function () {            

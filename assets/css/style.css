@@ -1908,6 +1908,28 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .tm-card-act-content .content-bbox-cn{
     gap: 12px;
 }
+/* Rating Star CSS */
+.ratingstar input {
+    display: none;
+}
+
+.ratingstar label {
+    font-size: 30px;
+    cursor: pointer;
+    color: #E8E8E8;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+.ratingstar input:checked ~ label {
+    color: #E8E8E8;
+}
+.ratingstar input:checked + label,
+.ratingstar input:checked + label ~ label {
+    color: #FFA500;
+}
 /* ------ Media CSS  ------- */
 
 @media(max-width:767px) {
