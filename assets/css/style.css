@@ -2001,6 +2001,17 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .custom-table-main.removelastchild .budget-detail-table tr:last-child td{
     padding: 6px 0 16px;
 }
+img.completeicon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 26px;
+}
+.assign-work-row .assi-fdriver-wp .wh-60{
+    width: 60px;
+    height: auto;
+}
+
 /* ------ Media CSS  ------- */
 
 @media(max-width:767px) {
