@@ -52,6 +52,18 @@ Large devices
 
 
 @media (max-width:1599px) { 
+.wh-236 {
+    width: 200px;
+}
+.td-details-box-tdd.second.wh-236{
+    width: 140px;
+}
+.job-details-temt-jl-wrap .td-details-box {
+    gap: 10px;
+}
+.ComJobReDri .td-details-box-tdd-hr {
+    font-size: 14px !important;
+}
 .assign-chat-btn.info-action {
     width: 34px;
     height: 34px;
@@ -409,6 +421,11 @@ label.form-label{font-size:14px;margin-bottom:8px;}
 
 
 @media(max-width:1499px) {
+.td-details-box-tdd.second.wh-236,
+.td-details-box-tdd.first.wh-236 {
+    width: 48%;
+    flex: 0 0 auto;
+}
 .pendingjob_main .infocard .post-njobby-txt{
     padding: 8px 0 0 0 !important;
     width: 100%;
@@ -1109,6 +1126,14 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.completion-redirect {
+    flex-direction: column;
+    align-items: start !important;
+    gap: 10px;
+}
+.td-details-box-tdd.second.wh-236, .td-details-box-tdd.first.wh-236 {
+    width: 100%;
+}
 .assign-letter {
     margin-right: 2px;
 }
