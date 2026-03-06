@@ -1583,7 +1583,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 }
 .assign-opp-list{
     gap: 4px 16px;
-    padding-right: 50px;
+    /* padding-right: 50px; */
 }
 .assi-fdriver-chat {
     position: absolute;
