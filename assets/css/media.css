@@ -421,6 +421,12 @@ label.form-label{font-size:14px;margin-bottom:8px;}
 
 
 @media(max-width:1499px) {
+.assign-work-row .assi-fdriver-wp .wh-60 {
+    width: 70px;
+}
+/* .assign-work-row .assi-fdriver-ww {
+    width: 50%;
+} */
 .td-details-box-tdd.second.wh-236,
 .td-details-box-tdd.first.wh-236 {
     width: 48%;
