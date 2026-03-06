@@ -1983,6 +1983,18 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .job-details-temt-jl-wp{
     margin-bottom: 16px;
 }
+.d-completion-view .truck-view-close{
+    transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+}
+.d-completion-view .truck-view-close:hover {
+    color: #D74315;
+}
+
+
 /* ------ Media CSS  ------- */
 
 @media(max-width:767px) {
