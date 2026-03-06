@@ -1568,7 +1568,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
     font-weight: 500;
 }
 .assign-work-row{
-    padding-right: 44px;
+    /* padding-right: 44px; */
 }
 .assign-chat-btn.info-action{
     width: 40px;
@@ -2012,7 +2012,7 @@ img.completeicon{
     height: auto;
 }
 .select-repl-driver{
-    
+
 }
 /* ------ Media CSS  ------- */
 
