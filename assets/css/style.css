@@ -1661,7 +1661,8 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
     border: none;
     font-weight: 500;
 }
-.btn-underline:hover{
+.btn-underline:hover,
+.completion-btn:hover{
     text-decoration: none;
 }
 .w-240{
@@ -1948,6 +1949,39 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .backarrow_main_layout .team-member-back-arrw-btn{
     padding: 2px 5px 5px !important;
     height: auto;
+}
+
+/*===============================================================================
+    Truck op. for Team Management Dashboard
+=================================================================================*/
+.w-220 {
+    width: 220px;
+}
+.w-150 {
+    width: 150px;
+}
+.wh-236{
+    width: 236px;
+}
+.completion-btn{
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-size: 14px;
+    color: #D74315;
+}
+.job-details-temt-jl-wrap .td-details-box {
+    gap: 20px;
+}
+.job-details-temt-jl-wp:last-child{
+    margin-bottom: 0;
+}
+.job-details-temt-jl-wp{
+    margin-bottom: 16px;
 }
 /* ------ Media CSS  ------- */
 

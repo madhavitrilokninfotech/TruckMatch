@@ -1109,6 +1109,9 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.assign-letter {
+    margin-right: 2px;
+}
 .team-member-de-act-cl-right-wrap,
 .jobd-dash-act-wrp .jobd-right .tab-content {
     padding: 10px 7px;
