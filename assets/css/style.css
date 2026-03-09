@@ -1952,7 +1952,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 }
 
 /*===============================================================================
-    Truck op. for Team Management Dashboard
+    Truck op. for Job Management Dashboard
 =================================================================================*/
 .w-220 {
     width: 220px;
@@ -2011,9 +2011,55 @@ img.completeicon{
     width: 60px;
     height: auto;
 }
-.select-repl-driver{
+/* end */
 
+
+/*===============================================================================
+    Truck op. for Team Management Dashboard
+=================================================================================*/
+.check-availability button img{
+    vertical-align: text-top;
 }
+
+.dm-details-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.doc-file {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.doc-preview{
+    aspect-ratio: 316 / 200;
+    /* max-width: 316px; */
+    min-height: 140px;
+    width: 100%;
+}
+
+.certi-doc-wrap{
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.certi-doc-overlay {
+    padding: 18px 16px;
+    background-color: rgba(226, 226, 226, 0.1);
+    backdrop-filter: blur(50px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.certi-doc-item{
+    cursor: pointer;
+}
+
 /* ------ Media CSS  ------- */
 
 @media(max-width:767px) {
