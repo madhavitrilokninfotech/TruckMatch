@@ -2389,7 +2389,7 @@
 
 
 
-
+<!-- Add Team Member Form -->
 <div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasAddTeamMemda" aria-labelledby="offcanvasAddTeamMemdaLabel">
     <div class="offcanvas-header-cm">
     <div class="offcanvas-header">
@@ -2399,55 +2399,168 @@
     </div>
     </div>
     <form class="offcanvas-form">
-  <div class="offcanvas-body">
-     <div class="offcanvas-form-main">        
-        <div class="offcanvas-body-inner">
-            <div class="form-group">
-              <label for="form-full-nme" class="form-label">Full Name</label>
-              <input type="text" class="form-control border" id="form-full-nme" name="form-full-nme"
-                placeholder="Enter full name">
-            </div>
-            <div class="form-group">
-              <label for="form-emaddrs" class="form-label">Email Address</label>
-              <input type="text" class="form-control border" id="form-emaddrs" name="form-emaddrs"
-                placeholder="max.johnson@truckmatch.com">
-            </div>
-            <div class="form-group">
-              <label for="form-mnum" class="form-label">Mobile Number</label>
-              <div class="form-mobile-num position-relative">
-                <input type="phone" class="form-control border mobile-num" id="form-mnum" name="form-mnum">
-                <div class="country-code position-absolute">+ 61</div>
-              </div>
-            </div>
-            <hr class="mt-2 mb-3">
-            <div class="form-group agprd-gete">
-              <label for="form-gen-pasd" class="form-label">Generate Password</label>
-              <div class="agprd-gete-gepa">
-                  <input type="password" class="form-control border" id="pass-piuesfwde" name="form-gen-pasd"
-                   placeholder="Enter Password">
-                  <span id="ao-ged">Auto Generated</span>
-              </div>
-            </div>
-           <div class="note-wrap note-wrap-rtkm">
-               <div class="note-wrap-tl text-primary">
-                   Note:
-               </div>
-               <p class="note-wrap-txt text-gray">
-                   A temporary password will be sent by email. The team member can reset it on first login.
-               </p>
-           </div>                                    
-        </div>     
-     </div>
-  </div>
-  <div class="offcanvas-op-btn text-end">
-      <div class="offcanvas-btn-wrap d-inline-block">
-        <button type="button" class="btn-cancel btn btn-outline" data-bs-dismiss="offcanvas" aria-label="Close">
-            Cancel
-        </button>
-        <button type="button" class="btn">Invite Team Member</button>
-      </div>
-   </div>
-  </form>
+    <div class="offcanvas-body">
+        <div class="offcanvas-form-main">        
+            <div class="offcanvas-body-inner">
+                <!-- select role -->
+                <div class="form-group">
+                    <label class="form-label">Select Role</label>
+                    <div class="radio-rounded-main">
+                        <div class="radio-rounded-wrap pb-0">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio" id="job-accepter-role" name="role-ja-driver">
+                                <label for="job-accepter-role" class="mb-0">Job Accepter</label>
+                            </div>
+                        </div>
+                        <div class="radio-rounded-wrap pb-0">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio" id="driver-role" name="role-ja-driver">
+                                <label for="driver-role" class="mb-0">Driver</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Job Accepter Form -->
+                <div class="job-accepter-form" id="job-accepter-content">
+                    <div class="form-group">
+                    <label for="form-full-nme" class="form-label">Full Name</label>
+                    <input type="text" class="form-control border" id="form-full-nme" name="form-full-nme"
+                        placeholder="Enter full name">
+                    </div>
+                    <div class="form-group">
+                    <label for="form-emaddrs" class="form-label">Email Address</label>
+                    <input type="text" class="form-control border" id="form-emaddrs" name="form-emaddrs"
+                        placeholder="max.johnson@truckmatch.com">
+                    </div>
+                    <div class="form-group">
+                    <label for="form-mnum" class="form-label">Mobile Number</label>
+                    <div class="form-mobile-num position-relative">
+                        <input type="phone" class="form-control border mobile-num" id="form-mnum" name="form-mnum">
+                        <div class="country-code position-absolute">+ 61</div>
+                    </div>
+                    </div>
+                    <hr class="mt-2 mb-3">
+                    <div class="form-group agprd-gete">
+                    <label for="form-gen-pasd" class="form-label">Generate Password</label>
+                    <div class="agprd-gete-gepa">
+                        <input type="password" class="form-control border" id="pass-piuesfwde" name="form-gen-pasd"
+                        placeholder="Enter Password">
+                        <span id="ao-ged">Auto Generated</span>
+                    </div>
+                    </div>
+                    <div class="note-wrap note-wrap-rtkm">
+                        <div class="note-wrap-tl text-primary">
+                            Note:
+                        </div>
+                        <p class="note-wrap-txt text-gray">
+                            A temporary password will be sent by email. The team member can reset it on first login.
+                        </p>
+                    </div>    
+                </div>        
+
+                <!-- Driver Form -->
+                <div class="driver-form" id="driver-content">
+                    <div class="form-group">
+                        <label for="form-full-nme" class="form-label">Full Name</label>
+                        <input type="text" class="form-control border" id="form-full-nme" name="form-full-nme"
+                            placeholder="Enter full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-emaddrs" class="form-label">Email Address</label>
+                        <input type="text" class="form-control border" id="form-emaddrs" name="form-emaddrs"
+                            placeholder="max.johnson@truckmatch.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-mnum" class="form-label">Mobile Number</label>
+                        <div class="form-mobile-num position-relative">
+                            <input type="phone" class="form-control border mobile-num" id="form-mnum" name="form-mnum">
+                            <div class="country-code position-absolute">+ 61</div>
+                        </div>
+                    </div>
+                    <div class="form-group agprd-gete">
+                        <label for="form-gen-pasd" class="form-label">Generate Password</label>
+                        <div class="agprd-gete-gepa">
+                            <input type="password" class="form-control border" id="pass-piuesfwde" name="form-gen-pasd"
+                            placeholder="Enter Password">
+                            <span id="ao-ged">Auto Generated</span>
+                        </div>
+                    </div>
+                    <div class="note-wrap note-wrap-rtkm">
+                        <div class="note-wrap-tl text-primary">
+                            Note:
+                        </div>
+                        <p class="note-wrap-txt text-gray">
+                            A temporary password will be sent by email. The team member can reset it on first login.
+                        </p>
+                    </div>  
+                    <hr class="mt-2 mb-3">
+                    <div class="driver-com-doc-wrap">
+                        <div class="driver-com-doc-tl fs-16 fw-medium cblack mb-2">
+                            Driver Compliance Documents
+                        </div>
+                        <p class="fs-14 cgray lh-sm mb-3">
+                            Upload the driver’s required licences and certifications to confirm they are qualified and legally permitted to operate on-site. Make sure all documents are current and valid.                    
+                        </p>
+
+                        <div class="gray-box-sm-main mt-1">
+                            <div class="gray-box-sm-wrap">
+                                <div class="gray-box-sm border-gray cb-sm-box fs-14 br18 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
+                                    <img src="../../assets/images/up-doc-icon.png" class="me-1" alt="Image">    
+                                    Driver License
+                                </div>
+                                <div class="gray-box-sm border-gray cb-sm-box fs-14 br18 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
+                                    <img src="../../assets/images/up-doc-icon.png" class="me-1" alt="Image">    
+                                    High Risk Work License
+                                </div>
+                                <div class="gray-box-sm border-gray cb-sm-box fs-14 br18 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
+                                    <img src="../../assets/images/up-doc-icon.png" class="me-1" alt="Image">    
+                                    VOC (Verification of Competency)
+                                </div>
+                                <div class="gray-box-sm border-gray cb-sm-box fs-14 br18 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
+                                    <img src="../../assets/images/up-doc-icon.png" class="me-1" alt="Image">    
+                                    White Card
+                                </div>                                                                                         
+                            </div>                                                                     
+                        </div>    
+                        <div class="green-box-main mt-1">
+                            <div class="green-box-wrap">
+                                <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                    <img src="../../assets/images/up-doc-icon-green.png" class="me-1" alt="Image">
+                                    Driver License
+                                    <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                </div>
+                                
+                                <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                    <img src="../../assets/images/up-doc-icon-green.png" class="me-1" alt="Image">
+                                    High Risk Work License
+                                    <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                </div>
+                                <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                    <img src="../../assets/images/up-doc-icon-green.png" class="me-1" alt="Image">
+                                    VOC (Verification of Competency)
+                                    <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                </div>
+                                <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                    <img src="../../assets/images/up-doc-icon-green.png" class="me-1" alt="Image">
+                                    White Card
+                                    <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                </div>                                                                                         
+                            </div>                                                                     
+                        </div>                    
+                    </div>     
+                </div>    
+            </div>     
+        </div>
+    </div>
+    <div class="offcanvas-op-btn text-end">
+        <div class="offcanvas-btn-wrap d-inline-block">
+            <button type="button" class="btn-cancel btn btn-outline" data-bs-dismiss="offcanvas" aria-label="Close">
+                Cancel
+            </button>
+            <button type="button" class="btn">Invite Member</button>
+        </div>
+    </div>
+    </form>
 </div>
 
 
@@ -5784,6 +5897,71 @@
   </div>
 </div>
 
+<!-- Upload Doc Modal -->
+<div class="modal modal-cm fade" id="UploadDocModal" tabindex="-1" aria-labelledby="UploadDocLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content border-0 br20">
+      <div class="modal-header-cm">
+          <div class="modal-header border-bottom-0 cp-20 pb-0 rounded-0">
+            <div class="modal-title fs-22 fw-bold cblack1" id="UploadDocLabel">
+                Upload Document
+            </div>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+      </div>
+      <form class="modal-form">
+          <div class="modal-body cp-20">
+            <p class="fs-18 cgray mb-3">Choose the document you want to upload from your device. Ensure the file is clear, valid, and up to date so we can verify compliance smoothly.</p>
+            <div class="upload-drag-drop-file" id="dropArea">
+              <div class="profile-preview">
+                <div id="imagePreview" class="imagepreview" style="background-image: url('../../assets/images/');"></div>
+
+                <label for="imageUpload" class="imageUpload-review bg-gray1">
+                  <img src="../../assets/images/upload-doc-icon.png" alt="Upload Icon">
+                  <div class="upload-drag-drop-file-tl fs-16 cblack1 fw-semibold">Upload your Document here</div>
+                  <div class="upload-drag-drop-sup-file fs-12 cgray">Supports .jpg, .jpeg, .png, .pdf</div>
+                  <div class="upload-drag-drop-browse-file fs-14 text-primary fw-semibold">Drag & Drop file or Browse Files</div>
+                </label>
+              </div>
+              <input type="file" id="imageUpload" class="imageUpload" accept=".png,.jpg,.jpeg,.pdf">
+            </div> 
+            <div class="bg-green5 br10 d-flex flex-wrap align-items-center cp-15 fs-14 fw-medium cgreen2 doc-up-suc-wrap mt-3 mb-0">
+                <div class="doc-up-suc-icon me-1">
+                   <img src="../../assets/images/doc-up-suc-icon.png" alt="Image">
+                </div>   
+                Document uploaded successfully.
+            </div>
+            <div class="bg-orange4 d-flex flex-wrap align-items-center br10 cp-15 fs-14 fw-medium corange2 doc-up-suc-wrap mt-3 mb-0">
+                <div class="doc-up-suc-icon me-1">
+                    <img src="../../assets/images/doc-exp-soon-icon.png" alt="Image">
+                </div>
+                This document will expire in 48 hours.
+            </div>
+            <div class="bg-red4 d-flex flex-wrap align-items-center br10 cp-15 fs-14 fw-medium cred2 doc-up-suc-wrap mt-3 mb-0">
+                <div class="doc-up-suc-icon me-1">
+                    <img src="../../assets/images/doc-expire-icon.png" alt="Image">
+                </div>
+                This document has expired.
+                <div class="doc-up-suc-icon ms-auto">
+                    <img src="../../assets/images/doc-ex-load-icon.png" alt="Image">
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer pt-0 cp-20 border-0 rounded-0">
+            <div class="row w-100 gx-2">
+                <div class="col-6">
+                    <button type="button" class="btn btn-gray fs-16 fw-semibold cblack1 w-100" data-bs-dismiss="modal">Cancel</button>
+                </div>
+                <div class="col-6">
+                    <button type="submit" class="btn fs-16 fw-semibold text-white w-100">Submit Document</button>
+                </div>
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+
 
 
   <!-- =================== /WEB JS BOC ==================== -->
@@ -5800,13 +5978,16 @@
     const JobAccepterRole = document.getElementById("job-accepter-role");
     const DriverRole = document.getElementById("driver-role");
 
+    const JobAccepterRoleDiv = document.getElementById("job-accepter-content");
+    const DriverRoleDiv = document.getElementById("driver-content");
+
     function toggleLocation() {
-        if (sameSite.checked) {
+        if (JobAccepterRole.checked) {
             JobAccepterRoleDiv.style.display = "block";
-            pDriverRoleDiv.style.display = "none";
+            DriverRoleDiv.style.display = "none";
         } else {
             JobAccepterRoleDiv.style.display = "none";
-            pDriverRoleDiv.style.display = "block";
+            DriverRoleDiv.style.display = "block";
         }
     }
 
