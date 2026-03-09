@@ -22,6 +22,7 @@
 
   <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap-datetimepicker.min.css"> 
+  <link rel="stylesheet" type="text/css" href="../../assets/css/slick.min.css">
   <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="../../assets/css/media.css">
   <link rel="stylesheet" type="text/css" href="../../assets/css/sidebar.css">
@@ -278,148 +279,214 @@
                                                 Add New Team Member
                                             </button>
                                         </div>
-                                    </div>                               
-                                    <div class="postnjob-tabbing-wrap td-detail-box-tm-card-wp-nmem cp-15">
-                                        <div class="tm-card-bx-ww">
-                                            <div class="td-details-box-wp">
+                                    </div>      
+                                    <div class="cp-15 py-0">
+                                        <!-- Tabs -->
+                                        <ul class="nav nav-tabs custom-tabs horizontal-scroll"
+                                            id="myCustomTab" role="tablist">
 
-                                            <div class="nav flex-column nav-pills" id="v-tabs" role="tablist" aria-orientation="vertical">
-
-                                                <button class="td-detail-box-tm-card-wp br14 border2-gray d-block nav-link" id="tab1-tab" data-bs-toggle="pill" data-bs-target="#tab1" type="button" role="tab">
-                                                    <div class="td-details-box d-flex flex-wrap p-14 borderb-gray">
-                                                        <div class="td-details-nm bg-red1 br38 wh-50 p-1 text-primary fs-20 fw-semibold d-flex align-items-center justify-content-center">
-                                                            JS
-                                                        </div>
-                                                        <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
-                                                            <div class="mb-1 fw-semibold fs-18 cblack1">
-                                                                Max Johnson
-                                                            </div>
-                                                            <div class="td-details-catnum d-flex flex-wrap">
-                                                                <div class="fs-14 cgray">
-                                                                    +61 409 684 302
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="td-details-box d-flex flex-wrap p-14">
-                                                        <div class="td-details-nm wh-50 wh-custom">
-                                                            <img src="../../assets/images/tm-micon.png" alt="Image">
-                                                        </div>
-                                                        <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
-                                                            <div class="mb-1 fs-14 cgray">
-                                                                Email Address
-                                                            </div>
-                                                            <div class="td-details-catnum d-flex flex-wrap">
-                                                                <div class="fs-18 cblack fw-medium text-break">
-                                                                    max.johnson@gmail.com
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="all-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#all" type="button"
+                                                    role="tab">
+                                                    All
                                                 </button>
-
-                                                <button class="td-detail-box-tm-card-wp br14 border2-gray d-block nav-link active" id="tab2-tab" data-bs-toggle="pill" data-bs-target="#tab2" type="button" role="tab">
-                                                    <div class="td-details-box d-flex flex-wrap p-14 borderb-gray">
-                                                        <div class="td-details-nm bg-red1 br38 wh-50 p-1 text-primary fs-20 fw-semibold d-flex align-items-center justify-content-center">
-                                                            JS
-                                                        </div>
-                                                        <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
-                                                            <div class="mb-1 fw-semibold fs-18 cblack1">
-                                                                Ava Carter
-                                                            </div>
-                                                            <div class="td-details-catnum d-flex flex-wrap">
-                                                                <div class="fs-14 cgray">
-                                                                    +61 478 523 917
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="td-details-box d-flex flex-wrap p-14">
-                                                        <div class="td-details-nm wh-50 wh-custom">
-                                                            <img src="../../assets/images/tm-micon.png" alt="Image">
-                                                        </div>
-                                                        <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
-                                                            <div class="mb-1 fs-14 cgray">
-                                                                Email Address
-                                                            </div>
-                                                            <div class="td-details-catnum d-flex flex-wrap">
-                                                                <div class="fs-18 cblack fw-medium text-break">
-                                                                    ava.carter@example.com
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            </li>
+                                            <!-- Job accepter -->
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="jobaccepter-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#jobacceptertab"
+                                                    type="button" role="tab">
+                                                    Job Accepter
                                                 </button>
-
-                                                <button class="td-detail-box-tm-card-wp br14 border2-gray d-block nav-link" id="tab3-tab" data-bs-toggle="pill" data-bs-target="#tab3" type="button" role="tab">
-                                                    <div class="td-details-box d-flex flex-wrap p-14 borderb-gray">
-                                                        <div class="td-details-nm bg-red1 br38 wh-50 p-1 text-primary fs-20 fw-semibold d-flex align-items-center justify-content-center">
-                                                            JS
-                                                        </div>
-                                                        <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
-                                                            <div class="mb-1 fw-semibold fs-18 cblack1">
-                                                                Nolan Stanton
-                                                            </div>
-                                                            <div class="td-details-catnum d-flex flex-wrap">
-                                                                <div class="fs-14 cgray">
-                                                                    +61 258 854 651
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="td-details-box d-flex flex-wrap p-14">
-                                                        <div class="td-details-nm wh-50 wh-custom">
-                                                            <img src="../../assets/images/tm-micon.png" alt="Image">
-                                                        </div>
-                                                        <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
-                                                            <div class="mb-1 fs-14 cgray">
-                                                                Email Address
-                                                            </div>
-                                                            <div class="td-details-catnum d-flex flex-wrap">
-                                                                <div class="fs-18 cblack fw-medium text-break">
-                                                                    nolan.stanton@gmail.com
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            </li>
+                                            <!-- Driver -->
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="driver-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#drivertab" type="button" role="tab">
+                                                    Driver
                                                 </button>
+                                            </li>
+                                        </ul>
+                                    </div>                         
+                                    <div class="postnjob-tabbing-wrap td-detail-box-tm-card-wp-nmem cp-15 h-100">
+                                        <!-- Tab pane -->
+                                        <div class="tab-content parentopen-sidebar" id="myCustomTabContent">
+                                            <div class="tab-pane fade show active" id="all" role="tabpanel">
 
-                                                <button class="td-detail-box-tm-card-wp br14 border2-gray d-block nav-link" id="tab4-tab" data-bs-toggle="pill" data-bs-target="#tab4" type="button" role="tab">
-                                                    <div class="td-details-box d-flex flex-wrap p-14 borderb-gray">
-                                                        <div class="td-details-nm bg-red1 br38 wh-50 p-1 text-primary fs-20 fw-semibold d-flex align-items-center justify-content-center">
-                                                            JS
-                                                        </div>
-                                                        <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
-                                                            <div class="mb-1 fw-semibold fs-18 cblack1">
-                                                                Kira Reynolds
+                                                <!-- All tab-pane -->
+                                                <ul class="nav nav-pills" id="childTabs" role="tablist" aria-orientation="vertical">
+                                                    <li class="nav-item">
+                                                        <div class="td-detail-box-tm-card-wp position-relative post-njob-statd-main mb-3 br14 border2-gray d-block nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">
+                                                            <div class="stacat-wrap">
+                                                                <div class="stacat cancel bg-red1 cred1rounded-tr-0 px-3 fs-14 py-2">
+                                                                    Job Accepter
+                                                                </div>
                                                             </div>
-                                                            <div class="td-details-catnum d-flex flex-wrap">
-                                                                <div class="fs-14 cgray">
-                                                                    +61 455 839 213
+                                                            <div class="td-details-box d-flex flex-wrap p-14 borderb-gray">
+                                                                <div class="td-details-nm bg-red1 br38 wh-50 p-1 text-primary fs-20 fw-semibold d-flex align-items-center justify-content-center">
+                                                                    JS
+                                                                </div>
+                                                                <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
+                                                                    <div class="mb-1 fw-semibold fs-18 cblack1">
+                                                                        Max Johnson
+                                                                    </div>
+                                                                    <div class="td-details-catnum d-flex flex-wrap">
+                                                                        <div class="fs-14 cgray">
+                                                                            +61 409 684 302
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="td-details-box d-flex flex-wrap p-14">
+                                                                <div class="td-details-nm wh-50 wh-custom">
+                                                                    <img src="../../assets/images/tm-micon.png" alt="Image">
+                                                                </div>
+                                                                <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
+                                                                    <div class="mb-1 fs-14 cgray">
+                                                                        Email Address
+                                                                    </div>
+                                                                    <div class="td-details-catnum d-flex flex-wrap">
+                                                                        <div class="fs-18 cblack fw-medium text-break">
+                                                                            max.johnson@gmail.com
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="td-details-box d-flex flex-wrap p-14">
-                                                        <div class="td-details-nm wh-50 wh-custom">
-                                                            <img class="wh-custom" src="../../assets/images/tm-micon.png" alt="Image">
-                                                        </div>
-                                                        <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
-                                                            <div class="td-details-tdt mb-1 fs-14 cgray">
-                                                                Email Address
+                                                    </li>
+                                               
+                                                    <li class="nav-item">
+                                                        <div class="td-detail-box-tm-card-wp position-relative post-njob-statd-main mb-3 br14 border2-gray d-block nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">
+                                                            <div class="stacat-wrap">
+                                                                <div class="stacat cancel bg-red1 cred1rounded-tr-0 px-3 fs-14 py-2">
+                                                                    Driver
+                                                                </div>
                                                             </div>
-                                                            <div class="td-details-catnum d-flex flex-wrap">
-                                                                <div class="fs-18 cblack fw-medium text-break">
-                                                                    kira.reynolds@yahoo.com
+                                                            <div class="td-details-box d-flex flex-wrap p-14 borderb-gray">
+                                                                <div class="td-details-nm bg-red1 br38 wh-50 p-1 text-primary fs-20 fw-semibold d-flex align-items-center justify-content-center">
+                                                                    JS
+                                                                </div>
+                                                                <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
+                                                                    <div class="mb-1 fw-semibold fs-18 cblack1">
+                                                                        Ava Carter
+                                                                    </div>
+                                                                    <div class="td-details-catnum d-flex flex-wrap">
+                                                                        <div class="fs-14 cgray">
+                                                                            +61 478 523 917
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="td-details-box d-flex flex-wrap p-14">
+                                                                <div class="td-details-nm wh-50 wh-custom">
+                                                                    <img src="../../assets/images/tm-micon.png" alt="Image">
+                                                                </div>
+                                                                <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
+                                                                    <div class="mb-1 fs-14 cgray">
+                                                                        Email Address
+                                                                    </div>
+                                                                    <div class="td-details-catnum d-flex flex-wrap">
+                                                                        <div class="fs-18 cblack fw-medium text-break">
+                                                                            ava.carter@example.com
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </button>
-
+                                                    </li>
+                                                </ul>    
+                                            </div>  
+                                            
+                                            <!-- job accepter tab-pane -->
+                                            <div class="tab-pane fade" id="jobacceptertab" role="tabpanel">
+                                                <ul class="nav nav-pills" id="childTabs" role="tablist">
+                                                    <li class="nav-item">
+                                                        <div class="td-detail-box-tm-card-wp position-relative post-njob-statd-main mb-3 br14 border2-gray d-block nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">
+                                                            <div class="stacat-wrap">
+                                                                <div class="stacat cancel bg-red1 cred1rounded-tr-0 px-3 fs-14 py-2">
+                                                                    Job Accepter
+                                                                </div>
+                                                            </div>
+                                                            <div class="td-details-box d-flex flex-wrap p-14 borderb-gray">
+                                                                <div class="td-details-nm bg-red1 br38 wh-50 p-1 text-primary fs-20 fw-semibold d-flex align-items-center justify-content-center">
+                                                                    JS
+                                                                </div>
+                                                                <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
+                                                                    <div class="mb-1 fw-semibold fs-18 cblack1">
+                                                                        Max Johnson
+                                                                    </div>
+                                                                    <div class="td-details-catnum d-flex flex-wrap">
+                                                                        <div class="fs-14 cgray">
+                                                                            +61 409 684 302
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="td-details-box d-flex flex-wrap p-14">
+                                                                <div class="td-details-nm wh-50 wh-custom">
+                                                                    <img src="../../assets/images/tm-micon.png" alt="Image">
+                                                                </div>
+                                                                <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
+                                                                    <div class="mb-1 fs-14 cgray">
+                                                                        Email Address
+                                                                    </div>
+                                                                    <div class="td-details-catnum d-flex flex-wrap">
+                                                                        <div class="fs-18 cblack fw-medium text-break">
+                                                                            max.johnson@gmail.com
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
 
-                                            </div>                                                                               
+                                            <!-- driver tab-pane -->
+                                            <div class="tab-pane fade" id="drivertab" role="tabpanel">
+                                                <ul class="nav nav-pills" id="childTabs" role="tablist">
+                                                    <li class="nav-item">
+                                                        <div class="td-detail-box-tm-card-wp position-relative post-njob-statd-main mb-3 br14 border2-gray d-block nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">
+                                                            <div class="stacat-wrap">
+                                                                <div class="stacat cancel bg-red1 cred1rounded-tr-0 px-3 fs-14 py-2">
+                                                                    Driver
+                                                                </div>
+                                                            </div>
+                                                            <div class="td-details-box d-flex flex-wrap p-14 borderb-gray">
+                                                                <div class="td-details-nm bg-red1 br38 wh-50 p-1 text-primary fs-20 fw-semibold d-flex align-items-center justify-content-center">
+                                                                    JS
+                                                                </div>
+                                                                <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
+                                                                    <div class="mb-1 fw-semibold fs-18 cblack1">
+                                                                        Ava Carter
+                                                                    </div>
+                                                                    <div class="td-details-catnum d-flex flex-wrap">
+                                                                        <div class="fs-14 cgray">
+                                                                            +61 478 523 917
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="td-details-box d-flex flex-wrap p-14">
+                                                                <div class="td-details-nm wh-50 wh-custom">
+                                                                    <img src="../../assets/images/tm-micon.png" alt="Image">
+                                                                </div>
+                                                                <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
+                                                                    <div class="mb-1 fs-14 cgray">
+                                                                        Email Address
+                                                                    </div>
+                                                                    <div class="td-details-catnum d-flex flex-wrap">
+                                                                        <div class="fs-18 cblack fw-medium text-break">
+                                                                            ava.carter@example.com
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>                                  
                                     </div> 
                                 </div> 
@@ -427,14 +494,22 @@
                             <div class="col-12 col-lg-7 col-xl-8 jobd-right team-member-de-act-cl-right">
 
                                 <div class="team-member-de-act-cl-right-wrap">
-                                    <div class="team-member-back-arrw d-lg-none d-block">
-                                        <button class="bg-transparent border-0 p-2 team-member-back-arrw-btn">
-                                            <img src="../../assets/images/tm-back-arrow.png" alt="Image">
-                                        </button>
-                                    </div>
+                                    <div class="tab-content jm-tab-content" id="childTabsContent">
+                                        <!-- Back Navigation arrow -->
+                                        <div class="backarrow_main_layout d-lg-none d-flex">
+                                            <div class="team-member-back-arrw">
+                                                <button class="bg-transparent border-0 p-2 mb-0 ps-0 team-member-back-arrw-btn">
+                                                    <img src="../../assets/images/tm-back-arrow.png" alt="Image">
+                                                </button>
+                                            </div>
+                                            <div class="dash-txt m-0">
+                                                Job Details
+                                            </div>
+                                        </div>
+                                        <!-- Back Navigation arrow end -->
 
-                                    <div class="tab-content" id="v-tabs-content">
-                                        <div class="tab-pane fade" id="tab1" role="tabpanel">
+                                        <!-- job accepter content -->
+                                        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
 
                                             <div class="team-member-de-act-main">
                                                 <div class="team-member-de-act-wrap">
@@ -918,8 +993,8 @@
 
                                         </div>
 
-
-                                        <div class="tab-pane fade show active" id="tab2" role="tabpanel">
+                                        <!-- driver content -->
+                                        <div class="tab-pane fade" id="tab2" role="tabpanel">
 
                                             <div class="team-member-de-act-main">                               
                                                 <div class="team-member-de-act-wrap">
@@ -1403,975 +1478,6 @@
 
                                         </div>
 
-
-                                        <div class="tab-pane fade" id="tab3" role="tabpanel">
-
-                                            <div class="team-member-de-act-main">
-                                                <div class="team-member-de-act-wrap">
-                                                    <div class="tm-d-container mbot16 bg-white border2-gray br14">
-                                                        <div class="cp-0815 d-flex flex-wrap justify-content-between align-items-center borderb-gray">
-                                                            <div class="m-1 fs-18 fw-medium cblack1">
-                                                                Team Member Details
-                                                            </div>
-                                                            <div class="m-1 d-flex flex-wrap tm-de-et-wrap">
-                                                                <button class="btn btn-primary offcanvas-btn1 btn-gray1 fs-14" type="button" data-bs-toggle="modal" data-bs-target="#RemTeamMemModal">
-                                                                    Delete Team Member
-                                                                </button>
-                                                                <button class="btn btn-primary offcanvas-btn1 fs-14" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEditTeamMember" aria-controls="offcanvasEditTeamMember">
-                                                                    Edit Team Member
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cp-20">
-                                                            <div class="td-details-box d-flex flex-wrap p-0">
-                                                                    <div class="td-details-nm bg-red1 br38 wh-65 p-1 text-primary fs-20 fw-semibold d-flex align-items-center justify-content-center">
-                                                                    JS
-                                                                    </div>
-                                                                    <div class="td-details-tdtxt wh-65-txt align-self-center ps-2">
-                                                                        <div class="td-details-tdt mb-2 fs-14 cgray">
-                                                                        Full Name
-                                                                        </div>
-                                                                        <div class="td-details-catnum d-flex flex-wrap">
-                                                                            <div class="td-details-cat fs-16 cblack1 fw-medium">
-                                                                            Nolan Stanton
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                            </div>
-                                                            <hr class="my-3">
-                                                            <div class="row gx-2">
-                                                                <div class="col-md-12 col-xl-4 d-flex flex-wrap flex-column my-2">
-                                                                    <div class="cgray fs-14 mb-2">
-                                                                        Email Address
-                                                                    </div>
-                                                                    <div class="fs-16 mjc-wrap fw-medium cblack1 text-break">
-                                                                        nolan.stanton@email.com
-                                                                    </div> 
-                                                                </div>
-                                                                <div class="col-md-12 col-xl-4 d-flex flex-wrap flex-column my-2">
-                                                                    <div class="cgray mjc-wrap fs-14 mb-2">
-                                                                        Phone Number
-                                                                    </div>
-                                                                    <div class="fs-16 mjc-wrap fw-medium cblack1">
-                                                                        +61 409 684 302
-                                                                    </div> 
-                                                                </div>
-                                                                <div class="col-md-12 col-xl-4 d-flex flex-wrap flex-column my-2">
-                                                                    <div class="cgray mjc-wrap fs-14 mb-2">
-                                                                        Password
-                                                                    </div>
-                                                                    <div class="fs-16 fw-medium cblack1 shpassword d-flex flex-wrap mjc-wrap">
-                                                                        <div class="pwd-text" data-password="**********">TruCk!2025#Test</div>
-                                                                        <i class="fa fa-regular fa-eye toggle-shpassword ms-2"></i>
-                                                                    </div>
-                                                                </div>                                                                               
-                                                            </div>                                    
-                                                        </div>                                
-                                                    </div>
-                                                    <hr class="my-3">
-                                                        <div class="tm-d-container mbot16 bg-white border2-gray br14">
-                                                        <div class="cp-0815 d-flex flex-wrap justify-content-between align-items-center borderb-gray">
-                                                            <div class="m-1 fs-18 fw-medium cblack1">
-                                                                Team Member Activity
-                                                            </div>
-                                                        </div>
-                                                        <div class="cp-20 tm-card-act-content position-relative borderb2-gray" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJobDetailsInp" aria-controls="offcanvasJobDetailsInp">
-                                                            <div class="stacat-wrap">
-                                                                <div class="stacat inprogress bg-blue1 cblue1 rounded-tr-0">
-                                                                    Inprogress
-                                                                </div> 
-                                                            </div>                                    
-                                                            <div class="tm-act-wrap">
-                                                                <div class="job-details-pb-jobst-wrap d-flex flex-wrap justify-content-between align-items-center mb-2">
-                                                                        <div class="job-details-pb-jobst mx-1 my-2">
-                                                                        <div class="post-njobby-img-txt d-flex flex-wrap">
-                                                                                <div class="post-njobby-icon wh60 wh-custom">
-                                                                                <img src="../../assets/images/tmac1.png" alt="Image">    
-                                                                                </div>
-                                                                                <div class="align-self-center wh60-txt ps-2">
-                                                                                    <div class="post-njobby-tl fs-16 fw-semibold cblack mb-1">
-                                                                                        Fleet Nova Logistics
-                                                                                    </div>
-                                                                                    <div class="post-njobby-dt fs-14 fw-medium cgray">
-                                                                                        +61 422 555 777
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                </div>
-                                                                    <div class="gray-box-main d-flex flex-wrap">
-                                                                    <div class="gray-box-wrap">
-                                                                        <div class="gray-box fs-14">
-                                                                            Booking Type: <span class="fw-medium cblack1">One-Time</span>
-                                                                        </div>
-                                                                        <div class="gray-box fs-14">
-                                                                            Exact Timing: <span class="fw-medium cblack1">Yes</span>
-                                                                        </div>                                                       
-                                                                    </div>                                                                     
-                                                                    </div> 
-                                                                    <hr class="my-3">
-                                                                    <div class="loc-de-box-main">
-                                                                        <div class="loc-de-box-wrap loc-de-box-wrapl">
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-img.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Sydney Opera House, Bennelong Point, Sydney NSW 2000
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Starting at 15 Oct 2025, 10:00 AM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-hr-col">
-                                                                                <div class="gray-box fs-14 mb-0">
-                                                                                Duration: <span class="fw-medium cblack1">14 Hours</span>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-map.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Blue Mountains National Park, NSW 2777
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Ending at 16 Oct 2025, 06:00 PM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                                                                                                       
-                                                            </div>                                    
-                                                        </div>
-                                                        <div class="cp-20 tm-card-act-content position-relative borderb2-gray" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJobDetailsPen" aria-controls="offcanvasJobDetailsPen">
-                                                            <div class="stacat-wrap">
-                                                                <div class="stacat pending bg-red1 cred1 rounded-tr-0">
-                                                                    Pending
-                                                                </div> 
-                                                            </div>                                    
-                                                            <div class="tm-act-wrap">
-                                                                <div class="job-details-pb-jobst-wrap d-flex flex-wrap justify-content-between align-items-center mb-2">
-                                                                        <div class="job-details-pb-jobst mx-1 my-2">
-                                                                        <div class="post-njobby-img-txt d-flex flex-wrap">
-                                                                                <div class="post-njobby-icon wh60 wh-custom">
-                                                                                <img src="../../assets/images/tm-jd3fg.png" alt="Image">    
-                                                                                </div>
-                                                                                <div class="align-self-center wh60-txt ps-2">
-                                                                                    <div class="post-njobby-tl fs-16 fw-semibold cblack mb-1">
-                                                                                        PrimeWay Transport Service
-                                                                                    </div>
-                                                                                    <div class="post-njobby-dt fs-14 fw-medium cgray">
-                                                                                        +61 8XX XXX XX6
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                </div>
-                                                                    <div class="gray-box-main d-flex flex-wrap">
-                                                                    <div class="gray-box-wrap">
-                                                                        <div class="gray-box fs-14">
-                                                                            Booking Type: <span class="fw-medium cblack1">One-Time</span>
-                                                                        </div>
-                                                                        <div class="gray-box fs-14">
-                                                                            Exact Timing: <span class="fw-medium cblack1">Yes</span>
-                                                                        </div>                                                       
-                                                                    </div>                                                                     
-                                                                    </div> 
-                                                                    <hr class="my-3">
-                                                                    <div class="loc-de-box-main">
-                                                                        <div class="loc-de-box-wrap loc-de-box-wrapl">
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-img.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Melbourne Wholesale Market, 55 Produce Dr, Epping VIC 3076
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Starting at 12 Sep 2025, 12:30 PM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-hr-col">
-                                                                                <div class="gray-box fs-14 mb-0">
-                                                                                Duration: <span class="fw-medium cblack1">8 Hours</span>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-map.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Fremantle Port Authority, Peter Hughes Dr, Fremantle WA 6160
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Ending at 05 Oct 2025, 09:00 AM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                                                                                                       
-                                                            </div>                                     
-                                                        </div>                                                
-                                                        <div class="cp-20 tm-card-act-content position-relative borderb2-gray" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJobDetailsUpc" aria-controls="offcanvasJobDetailsUpc">
-                                                            <div class="stacat-wrap">
-                                                                <div class="stacat upcoming bg-orange1 corange1 rounded-tr-0">
-                                                                    Upcoming
-                                                                </div> 
-                                                            </div>                                    
-                                                            <div class="tm-act-wrap">
-                                                                <div class="job-details-pb-jobst-wrap d-flex flex-wrap justify-content-between align-items-center mb-2">
-                                                                        <div class="job-details-pb-jobst mx-1 my-2">
-                                                                        <div class="post-njobby-img-txt d-flex flex-wrap">
-                                                                                <div class="post-njobby-icon wh60 wh-custom">
-                                                                                <img src="../../assets/images/tmac2.png" alt="Image">    
-                                                                                </div>
-                                                                                <div class="align-self-center wh60-txt ps-2">
-                                                                                    <div class="post-njobby-tl fs-16 fw-semibold cblack mb-1">
-                                                                                        Fleet Nova Logistics
-                                                                                    </div>
-                                                                                    <div class="post-njobby-dt fs-14 fw-medium cgray">
-                                                                                        +61 482 912 964
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                </div>
-                                                                    <div class="gray-box-main d-flex flex-wrap">
-                                                                    <div class="gray-box-wrap">
-                                                                        <div class="gray-box fs-14">
-                                                                            Booking Type: <span class="fw-medium cblack1">One-Time</span>
-                                                                        </div>
-                                                                        <div class="gray-box fs-14">
-                                                                            Exact Timing: <span class="fw-medium cblack1">Yes</span>
-                                                                        </div>                                                       
-                                                                    </div>                                                                     
-                                                                    </div> 
-                                                                    <hr class="my-3">
-                                                                    <div class="loc-de-box-main">
-                                                                        <div class="loc-de-box-wrap loc-de-box-wrapl">
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-img.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Royal Botanic Garden, Mrs Macquaries Rd, Sydney NSW 2000
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Starting at 02 Nov 2025, 03:30 PM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-hr-col">
-                                                                                <div class="gray-box fs-14 mb-0">
-                                                                                Duration: <span class="fw-medium cblack1">14 Hours</span>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-map.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Bondi Beach, Bondi Beach, NSW 2026
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Ending at 05 Dec 2025, 07:00 PM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                                                                                                       
-                                                            </div>                                    
-                                                        </div>                                
-                                                        <div class="cp-20 tm-card-act-content position-relative borderb2-gray" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJobDetailsCom" aria-controls="offcanvasJobDetailsCom">
-                                                            <div class="stacat-wrap">
-                                                                <div class="stacat complete bg-green2 cgreen1 rounded-tr-0">
-                                                                    Completed
-                                                                </div> 
-                                                            </div>                                    
-                                                            <div class="tm-act-wrap">
-                                                                <div class="job-details-pb-jobst-wrap d-flex flex-wrap justify-content-between align-items-center mb-2">
-                                                                        <div class="job-details-pb-jobst mx-1 my-2">
-                                                                        <div class="post-njobby-img-txt d-flex flex-wrap">
-                                                                                <div class="post-njobby-icon wh60 wh-custom">
-                                                                                <img src="../../assets/images/tmac4.png" alt="Image">    
-                                                                                </div>
-                                                                                <div class="align-self-center wh60-txt ps-2">
-                                                                                    <div class="post-njobby-tl fs-16 fw-semibold cblack mb-1">
-                                                                                        HeayLoad Logistic
-                                                                                    </div>
-                                                                                    <div class="post-njobby-dt fs-14 fw-medium cgray">
-                                                                                        +61 412 345 678
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                </div>
-                                                                    <div class="gray-box-main d-flex flex-wrap">
-                                                                    <div class="gray-box-wrap">
-                                                                        <div class="gray-box fs-14">
-                                                                            Booking Type: <span class="fw-medium cblack1">Recurring</span>
-                                                                        </div>
-                                                                        <div class="gray-box fs-14">
-                                                                            Exact Timing: <span class="fw-medium cblack1">No</span>
-                                                                        </div>                                                       
-                                                                    </div>                                                                     
-                                                                    </div> 
-                                                                    <hr class="my-3">
-                                                                    <div class="loc-de-box-main">
-                                                                        <div class="loc-de-box-wrap loc-de-box-wrapl">
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-img.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Queen Victoria Market, Queen St, Melbourne VIC 3000
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Starting at 28 Sep 2025, 01:30 PM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-hr-col">
-                                                                                <div class="gray-box fs-14 mb-0">
-                                                                                Duration: <span class="fw-medium cblack1">10 Hours</span>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-map.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Sydney Opera House, Bennelong Point, Sydney NSW 2000
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Ending at 30 Sep, 2025 10:30 AM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <hr class="my-3">
-                                                                    <div class="bg-gray1 cp-20 border2-gray tm-act-com-reotp br12">
-                                                                        <div class="d-flex flex-wrap align-items-center fs-14 cblack tm-act-com-reotp-img mb-2">
-                                                                            <img src="../../assets/images/team-act-rating.png" class="me-2" alt="Image">
-                                                                            01 October, 2025
-                                                                        </div>
-                                                                        <p class="fs-14 cblack lh-base mb-2">
-                                                                            We've worked with this truck operator across multiple construction sites. Their team consistently delivers on time, communicates clearly, and handles materials with care. Their reliability has helped us maintain project timelines and reduce on-site delays.                                              
-                                                                        </p>
-                                                                        <div class="d-flex flex-wrap">
-                                                                            <div class="tm-act-com-reotp-bx bg-red3 fs-12 text-primary br34">
-                                                                                Respectful
-                                                                            </div>
-                                                                            <div class="tm-act-com-reotp-bx bg-red3 fs-12 text-primary br34">
-                                                                                On-time payment
-                                                                            </div>                                              
-                                                                        </div>
-                                                                    </div>                                                                                                                                       
-                                                            </div>                                     
-                                                        </div>
-                                                        <div class="cp-20 tm-card-act-content position-relative borderb2-gray" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJobDetailsCan" aria-controls="offcanvasJobDetailsCan">
-                                                            <div class="stacat-wrap">
-                                                                <div class="stacat cancel bg-red1 cred1 rounded-tr-0">
-                                                                    Cancelled
-                                                                </div> 
-                                                            </div>                                    
-                                                            <div class="tm-act-wrap">
-                                                                <div class="job-details-pb-jobst-wrap d-flex flex-wrap justify-content-between align-items-center mb-2">
-                                                                        <div class="job-details-pb-jobst mx-1 my-2">
-                                                                        <div class="post-njobby-img-txt d-flex flex-wrap">
-                                                                                <div class="post-njobby-icon wh60 wh-custom">
-                                                                                <img src="../../assets/images/tmac5.png" alt="Image">    
-                                                                                </div>
-                                                                                <div class="align-self-center wh60-txt ps-2">
-                                                                                    <div class="post-njobby-tl fs-16 fw-semibold cblack mb-1">
-                                                                                        SwiftFleet Transport
-                                                                                    </div>
-                                                                                    <div class="post-njobby-dt fs-14 fw-medium cgray">
-                                                                                        +61 432 987 654
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                </div>
-                                                                    <div class="gray-box-main d-flex flex-wrap">
-                                                                    <div class="gray-box-wrap">
-                                                                        <div class="gray-box fs-14">
-                                                                            Booking Type: <span class="fw-medium cblack1">Recurring</span>
-                                                                        </div>
-                                                                        <div class="gray-box fs-14">
-                                                                            Exact Timing: <span class="fw-medium cblack1">Yes</span>
-                                                                        </div>                                                       
-                                                                    </div>                                                                     
-                                                                    </div> 
-                                                                    <hr class="my-3">
-                                                                    <div class="loc-de-box-main">
-                                                                        <div class="loc-de-box-wrap loc-de-box-wrapl">
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-img.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Great Barrier Reef, Queensland, Australia
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Starting at 27 Aug 2026, 06:30 AM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-hr-col">
-                                                                                <div class="gray-box fs-14 mb-0">
-                                                                                Duration: <span class="fw-medium cblack1">14 Hours</span>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-map.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Uluru, Yulara Dr, Yulara NT 0872
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Ending at 03 Sep 2025, 11:00 AM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <hr class="my-3">
-                                                                    <div class="cp-20 bg-red2 br12">
-                                                                        <div class="fw-bold fs-16 cblack mb-2">
-                                                                            SwiftFleet Transport
-                                                                        </div>
-                                                                        <div class="cred2 fs-14 lh-base">
-                                                                            The booking has been cancelled due to unforeseen operational issues, including urgent vehicle maintenance and unavailability of an alternate driver. We regret the inconvenience caused and appreciate your understanding as we work to avoid such disruptions in future.
-                                                                        </div>
-                                                                    </div>
-                                                            </div>                                     
-                                                        </div>                                                                                                                                                                                                
-                                                    </div>                                    
-                                                </div>
-                                            </div>
-
-                                        </div>                                 
-
-
-                                        <div class="tab-pane fade" id="tab4" role="tabpanel">
-
-                                            <div class="team-member-de-act-main">
-                                                <div class="team-member-de-act-wrap">
-                                                    <div class="tm-d-container mbot16 bg-white border2-gray br14">
-                                                        <div class="cp-0815 d-flex flex-wrap justify-content-between align-items-center borderb-gray">
-                                                            <div class="m-1 fs-18 fw-medium cblack1">
-                                                                Team Member Details
-                                                            </div>
-                                                            <div class="m-1 d-flex flex-wrap tm-de-et-wrap">
-                                                                <button class="btn btn-primary offcanvas-btn1 btn-gray1 fs-14" type="button" data-bs-toggle="modal" data-bs-target="#RemTeamMemModal">
-                                                                    Delete Team Member
-                                                                </button>
-                                                                <button class="btn btn-primary offcanvas-btn1 fs-14" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEditTeamMember" aria-controls="offcanvasEditTeamMember">
-                                                                    Edit Team Member
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cp-20">
-                                                            <div class="td-details-box d-flex flex-wrap p-0">
-                                                                    <div class="td-details-nm bg-red1 br38 wh-65 p-1 text-primary fs-20 fw-semibold d-flex align-items-center justify-content-center">
-                                                                    JS
-                                                                    </div>
-                                                                    <div class="td-details-tdtxt wh-65-txt align-self-center ps-2">
-                                                                        <div class="td-details-tdt mb-2 fs-14 cgray">
-                                                                        Full Name
-                                                                        </div>
-                                                                        <div class="td-details-catnum d-flex flex-wrap">
-                                                                            <div class="td-details-cat fs-16 cblack1 fw-medium">
-                                                                            Kira Reynolds
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                            </div>
-                                                            <hr class="my-3">
-                                                            <div class="row gx-2">
-                                                                <div class="col-md-12 col-xl-4 d-flex flex-wrap flex-column my-2">
-                                                                    <div class="cgray fs-14 mb-2">
-                                                                        Email Address
-                                                                    </div>
-                                                                    <div class="fs-16 mjc-wrap fw-medium cblack1 text-break">
-                                                                        kira.reynolds@email.com
-                                                                    </div> 
-                                                                </div>
-                                                                <div class="col-md-12 col-xl-4 d-flex flex-wrap flex-column my-2">
-                                                                    <div class="cgray mjc-wrap fs-14 mb-2">
-                                                                        Phone Number
-                                                                    </div>
-                                                                    <div class="fs-16 mjc-wrap fw-medium cblack1">
-                                                                        +61 409 684 302
-                                                                    </div> 
-                                                                </div>
-                                                                <div class="col-md-12 col-xl-4 d-flex flex-wrap flex-column my-2">
-                                                                    <div class="cgray mjc-wrap fs-14 mb-2">
-                                                                        Password
-                                                                    </div>
-                                                                    <div class="fs-16 fw-medium cblack1 shpassword d-flex flex-wrap mjc-wrap">
-                                                                        <div class="pwd-text" data-password="**********">TruCk!2025#Test</div>
-                                                                        <i class="fa fa-regular fa-eye toggle-shpassword ms-2"></i>
-                                                                    </div>
-                                                                </div>                                                                               
-                                                            </div>                                    
-                                                        </div>                                
-                                                    </div>
-                                                    <hr class="my-3">
-                                                        <div class="tm-d-container mbot16 bg-white border2-gray br14">
-                                                        <div class="cp-0815 d-flex flex-wrap justify-content-between align-items-center borderb-gray">
-                                                            <div class="m-1 fs-18 fw-medium cblack1">
-                                                                Team Member Activity
-                                                            </div>
-                                                        </div>
-                                                        <div class="cp-20 tm-card-act-content position-relative borderb2-gray" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJobDetailsInp" aria-controls="offcanvasJobDetailsInp">
-                                                            <div class="stacat-wrap">
-                                                                <div class="stacat inprogress bg-blue1 cblue1 rounded-tr-0">
-                                                                    Inprogress
-                                                                </div> 
-                                                            </div>                                    
-                                                            <div class="tm-act-wrap">
-                                                                <div class="job-details-pb-jobst-wrap d-flex flex-wrap justify-content-between align-items-center mb-2">
-                                                                        <div class="job-details-pb-jobst mx-1 my-2">
-                                                                        <div class="post-njobby-img-txt d-flex flex-wrap">
-                                                                                <div class="post-njobby-icon wh60 wh-custom">
-                                                                                <img src="../../assets/images/tmac1.png" alt="Image">    
-                                                                                </div>
-                                                                                <div class="align-self-center wh60-txt ps-2">
-                                                                                    <div class="post-njobby-tl fs-16 fw-semibold cblack mb-1">
-                                                                                        Fleet Nova Logistics
-                                                                                    </div>
-                                                                                    <div class="post-njobby-dt fs-14 fw-medium cgray">
-                                                                                        +61 422 555 777
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                </div>
-                                                                    <div class="gray-box-main d-flex flex-wrap">
-                                                                    <div class="gray-box-wrap">
-                                                                        <div class="gray-box fs-14">
-                                                                            Booking Type: <span class="fw-medium cblack1">One-Time</span>
-                                                                        </div>
-                                                                        <div class="gray-box fs-14">
-                                                                            Exact Timing: <span class="fw-medium cblack1">Yes</span>
-                                                                        </div>                                                       
-                                                                    </div>                                                                     
-                                                                    </div> 
-                                                                    <hr class="my-3">
-                                                                    <div class="loc-de-box-main">
-                                                                        <div class="loc-de-box-wrap loc-de-box-wrapl">
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-img.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Sydney Opera House, Bennelong Point, Sydney NSW 2000
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Starting at 15 Oct 2025, 10:00 AM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-hr-col">
-                                                                                <div class="gray-box fs-14 mb-0">
-                                                                                Duration: <span class="fw-medium cblack1">14 Hours</span>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-map.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Blue Mountains National Park, NSW 2777
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Ending at 16 Oct 2025, 06:00 PM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                                                                                                       
-                                                            </div>                                    
-                                                        </div>
-                                                        <div class="cp-20 tm-card-act-content position-relative borderb2-gray" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJobDetailsPen" aria-controls="offcanvasJobDetailsPen">
-                                                            <div class="stacat-wrap">
-                                                                <div class="stacat pending bg-red1 cred1 rounded-tr-0">
-                                                                    Pending
-                                                                </div> 
-                                                            </div>                                    
-                                                            <div class="tm-act-wrap">
-                                                                <div class="job-details-pb-jobst-wrap d-flex flex-wrap justify-content-between align-items-center mb-2">
-                                                                        <div class="job-details-pb-jobst mx-1 my-2">
-                                                                        <div class="post-njobby-img-txt d-flex flex-wrap">
-                                                                                <div class="post-njobby-icon wh60 wh-custom">
-                                                                                <img src="../../assets/images/tm-jd3fg.png" alt="Image">    
-                                                                                </div>
-                                                                                <div class="align-self-center wh60-txt ps-2">
-                                                                                    <div class="post-njobby-tl fs-16 fw-semibold cblack mb-1">
-                                                                                        PrimeWay Transport Service
-                                                                                    </div>
-                                                                                    <div class="post-njobby-dt fs-14 fw-medium cgray">
-                                                                                        +61 8XX XXX XX6
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                </div>
-                                                                    <div class="gray-box-main d-flex flex-wrap">
-                                                                    <div class="gray-box-wrap">
-                                                                        <div class="gray-box fs-14">
-                                                                            Booking Type: <span class="fw-medium cblack1">One-Time</span>
-                                                                        </div>
-                                                                        <div class="gray-box fs-14">
-                                                                            Exact Timing: <span class="fw-medium cblack1">Yes</span>
-                                                                        </div>                                                       
-                                                                    </div>                                                                     
-                                                                    </div> 
-                                                                    <hr class="my-3">
-                                                                    <div class="loc-de-box-main">
-                                                                        <div class="loc-de-box-wrap loc-de-box-wrapl">
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-img.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Melbourne Wholesale Market, 55 Produce Dr, Epping VIC 3076
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Starting at 12 Sep 2025, 12:30 PM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-hr-col">
-                                                                                <div class="gray-box fs-14 mb-0">
-                                                                                Duration: <span class="fw-medium cblack1">8 Hours</span>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-map.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Fremantle Port Authority, Peter Hughes Dr, Fremantle WA 6160
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Ending at 05 Oct 2025, 09:00 AM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                                                                                                       
-                                                            </div>                                     
-                                                        </div>                                                
-                                                        <div class="cp-20 tm-card-act-content position-relative borderb2-gray" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJobDetailsUpc" aria-controls="offcanvasJobDetailsUpc">
-                                                            <div class="stacat-wrap">
-                                                                <div class="stacat upcoming bg-orange1 corange1 rounded-tr-0">
-                                                                    Upcoming
-                                                                </div> 
-                                                            </div>                                    
-                                                            <div class="tm-act-wrap">
-                                                                <div class="job-details-pb-jobst-wrap d-flex flex-wrap justify-content-between align-items-center mb-2">
-                                                                        <div class="job-details-pb-jobst mx-1 my-2">
-                                                                        <div class="post-njobby-img-txt d-flex flex-wrap">
-                                                                                <div class="post-njobby-icon wh60 wh-custom">
-                                                                                <img src="../../assets/images/tmac2.png" alt="Image">    
-                                                                                </div>
-                                                                                <div class="align-self-center wh60-txt ps-2">
-                                                                                    <div class="post-njobby-tl fs-16 fw-semibold cblack mb-1">
-                                                                                        Fleet Nova Logistics
-                                                                                    </div>
-                                                                                    <div class="post-njobby-dt fs-14 fw-medium cgray">
-                                                                                        +61 482 912 964
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                </div>
-                                                                    <div class="gray-box-main d-flex flex-wrap">
-                                                                    <div class="gray-box-wrap">
-                                                                        <div class="gray-box fs-14">
-                                                                            Booking Type: <span class="fw-medium cblack1">One-Time</span>
-                                                                        </div>
-                                                                        <div class="gray-box fs-14">
-                                                                            Exact Timing: <span class="fw-medium cblack1">Yes</span>
-                                                                        </div>                                                       
-                                                                    </div>                                                                     
-                                                                    </div> 
-                                                                    <hr class="my-3">
-                                                                    <div class="loc-de-box-main">
-                                                                        <div class="loc-de-box-wrap loc-de-box-wrapl">
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-img.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Royal Botanic Garden, Mrs Macquaries Rd, Sydney NSW 2000
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Starting at 02 Nov 2025, 03:30 PM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-hr-col">
-                                                                                <div class="gray-box fs-14 mb-0">
-                                                                                Duration: <span class="fw-medium cblack1">14 Hours</span>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-map.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Bondi Beach, Bondi Beach, NSW 2026
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Ending at 05 Dec 2025, 07:00 PM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                                                                                                       
-                                                            </div>                                    
-                                                        </div>                                
-                                                        <div class="cp-20 tm-card-act-content position-relative borderb2-gray" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJobDetailsCom" aria-controls="offcanvasJobDetailsCom">
-                                                            <div class="stacat-wrap">
-                                                                <div class="stacat complete bg-green2 cgreen1 rounded-tr-0">
-                                                                    Completed
-                                                                </div> 
-                                                            </div>                                    
-                                                            <div class="tm-act-wrap">
-                                                                <div class="job-details-pb-jobst-wrap d-flex flex-wrap justify-content-between align-items-center mb-2">
-                                                                        <div class="job-details-pb-jobst mx-1 my-2">
-                                                                        <div class="post-njobby-img-txt d-flex flex-wrap">
-                                                                                <div class="post-njobby-icon wh60 wh-custom">
-                                                                                <img src="../../assets/images/tmac4.png" alt="Image">    
-                                                                                </div>
-                                                                                <div class="align-self-center wh60-txt ps-2">
-                                                                                    <div class="post-njobby-tl fs-16 fw-semibold cblack mb-1">
-                                                                                        HeayLoad Logistic
-                                                                                    </div>
-                                                                                    <div class="post-njobby-dt fs-14 fw-medium cgray">
-                                                                                        +61 412 345 678
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                </div>
-                                                                    <div class="gray-box-main d-flex flex-wrap">
-                                                                    <div class="gray-box-wrap">
-                                                                        <div class="gray-box fs-14">
-                                                                            Booking Type: <span class="fw-medium cblack1">Recurring</span>
-                                                                        </div>
-                                                                        <div class="gray-box fs-14">
-                                                                            Exact Timing: <span class="fw-medium cblack1">No</span>
-                                                                        </div>                                                       
-                                                                    </div>                                                                     
-                                                                    </div> 
-                                                                    <hr class="my-3">
-                                                                    <div class="loc-de-box-main">
-                                                                        <div class="loc-de-box-wrap loc-de-box-wrapl">
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-img.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Queen Victoria Market, Queen St, Melbourne VIC 3000
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Starting at 28 Sep 2025, 01:30 PM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-hr-col">
-                                                                                <div class="gray-box fs-14 mb-0">
-                                                                                Duration: <span class="fw-medium cblack1">10 Hours</span>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-map.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Sydney Opera House, Bennelong Point, Sydney NSW 2000
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Ending at 30 Sep, 2025 10:30 AM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <hr class="my-3">
-                                                                    <div class="bg-gray1 cp-20 border2-gray tm-act-com-reotp br12">
-                                                                        <div class="d-flex flex-wrap align-items-center fs-14 cblack tm-act-com-reotp-img mb-2">
-                                                                            <img src="../../assets/images/team-act-rating.png" class="me-2" alt="Image">
-                                                                            01 October, 2025
-                                                                        </div>
-                                                                        <p class="fs-14 cblack lh-base mb-2">
-                                                                            We've worked with this truck operator across multiple construction sites. Their team consistently delivers on time, communicates clearly, and handles materials with care. Their reliability has helped us maintain project timelines and reduce on-site delays.                                              
-                                                                        </p>
-                                                                        <div class="d-flex flex-wrap">
-                                                                            <div class="tm-act-com-reotp-bx bg-red3 fs-12 text-primary br34">
-                                                                                Respectful
-                                                                            </div>
-                                                                            <div class="tm-act-com-reotp-bx bg-red3 fs-12 text-primary br34">
-                                                                                On-time payment
-                                                                            </div>                                              
-                                                                        </div>
-                                                                    </div>                                                                                                                                       
-                                                            </div>                                     
-                                                        </div>
-                                                        <div class="cp-20 tm-card-act-content position-relative borderb2-gray" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJobDetailsCan" aria-controls="offcanvasJobDetailsCan">
-                                                            <div class="stacat-wrap">
-                                                                <div class="stacat cancel bg-red1 cred1 rounded-tr-0">
-                                                                    Cancelled
-                                                                </div> 
-                                                            </div>                                    
-                                                            <div class="tm-act-wrap">
-                                                                <div class="job-details-pb-jobst-wrap d-flex flex-wrap justify-content-between align-items-center mb-2">
-                                                                        <div class="job-details-pb-jobst mx-1 my-2">
-                                                                        <div class="post-njobby-img-txt d-flex flex-wrap">
-                                                                                <div class="post-njobby-icon wh60 wh-custom">
-                                                                                <img src="../../assets/images/tmac5.png" alt="Image">    
-                                                                                </div>
-                                                                                <div class="align-self-center wh60-txt ps-2">
-                                                                                    <div class="post-njobby-tl fs-16 fw-semibold cblack mb-1">
-                                                                                        SwiftFleet Transport
-                                                                                    </div>
-                                                                                    <div class="post-njobby-dt fs-14 fw-medium cgray">
-                                                                                        +61 432 987 654
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                </div>
-                                                                    <div class="gray-box-main d-flex flex-wrap">
-                                                                    <div class="gray-box-wrap">
-                                                                        <div class="gray-box fs-14">
-                                                                            Booking Type: <span class="fw-medium cblack1">Recurring</span>
-                                                                        </div>
-                                                                        <div class="gray-box fs-14">
-                                                                            Exact Timing: <span class="fw-medium cblack1">Yes</span>
-                                                                        </div>                                                       
-                                                                    </div>                                                                     
-                                                                    </div> 
-                                                                    <hr class="my-3">
-                                                                    <div class="loc-de-box-main">
-                                                                        <div class="loc-de-box-wrap loc-de-box-wrapl">
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-img.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Great Barrier Reef, Queensland, Australia
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Starting at 27 Aug 2026, 06:30 AM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-hr-col">
-                                                                                <div class="gray-box fs-14 mb-0">
-                                                                                Duration: <span class="fw-medium cblack1">14 Hours</span>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                            <div class="loc-de-stet-col">
-                                                                                <div class="loc-de-stet">
-                                                                                <div class="loc-de-im">
-                                                                                    <img src="../../assets/images/loc-de-map.png" alt="Image">
-                                                                                </div>
-                                                                                <div class="loc-de-twrap">
-                                                                                    <div class="loc-de-tadd">
-                                                                                        Uluru, Yulara Dr, Yulara NT 0872
-                                                                                    </div>
-                                                                                    <div class="loc-de-timadd">
-                                                                                        Ending at 03 Sep 2025, 11:00 AM
-                                                                                    </div>
-                                                                                </div>
-                                                                                </div>                                  
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <hr class="my-3">
-                                                                    <div class="cp-20 bg-red2 br12">
-                                                                        <div class="fw-bold fs-16 cblack mb-2">
-                                                                            SwiftFleet Transport
-                                                                        </div>
-                                                                        <div class="cred2 fs-14 lh-base">
-                                                                            The booking has been cancelled due to unforeseen operational issues, including urgent vehicle maintenance and unavailability of an alternate driver. We regret the inconvenience caused and appreciate your understanding as we work to avoid such disruptions in future.
-                                                                        </div>
-                                                                    </div>
-                                                            </div>                                     
-                                                        </div>                                                                                                                                                                                                
-                                                    </div>                                                                       
-                                                </div>
-                                            </div>
-
-                                        </div>
                                     </div> 
                                 </div>
                             </div>
@@ -5969,6 +5075,7 @@
   <script src="../../assets/js/moment.min.js"></script>
   <script src="../../assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
   <script src="../../assets/js/bootstrap-datetimepicker.min.js"></script> 
+  <script src="../../assets/js/slick.min.js"></script> 
   <script src="../../assets/js/custom.js" type="text/javascript"></script>
 
   <!-- =================== /WEB JS BOC ==================== -->
