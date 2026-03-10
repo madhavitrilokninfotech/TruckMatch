@@ -2059,7 +2059,90 @@ img.completeicon{
 .certi-doc-item{
     cursor: pointer;
 }
-
+.dot{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.bgborderleft-green{
+    border-left: 3px solid #15994B;
+}
+.bgborderleft-red{
+    border-left: 3px solid #EF4444;
+}
+.bglightblue{
+    background-color: #EBF3FF;
+}
+.dgreen{
+    background-color: #15994B;
+}
+.dred{
+    background-color: #EF4444;
+}
+.dblue{
+    background-color: #3B82F6;
+}
+.dgreentext{
+    color: #15994B;
+}
+.dredtext{
+    color: #EF4444;
+}
+.dbluetext{
+    color: #3B82F6;
+}
+.legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.status-legend .legend-item:last-child{
+    margin-right: 0;
+}
+.status-legend .legend-item{
+    margin-right: 14px;
+}
+.status-legend {
+    margin: 20px 0 16px;
+}
+.dbooking-card.bglightblue{
+    border-left: 3px solid #3B82F6;
+}
+.h-temp{
+    max-height: 310px;
+    overflow-y: scroll;
+}
+.dbooking-card .btn-underline{
+    text-decoration-color: #797979;
+    -moz-text-decoration-color: #797979;
+}
+.driverstatusmodal .radio-checkbox-flagg-rev-fgtsrw-label::before {
+    width: 20px;
+    height: 20px;
+    left: 6px;
+}
+.driverstatusmodal .radio-checkbox-flagg-rev-fgtsrw-label::after{
+    width: 14px;
+    height: 14px;
+    left: 9px;
+}
+.driverstatusmodal .reason-wrap .radio-checkbox-flagg-rev-fgtsrw-label::after {
+    top: 18px;
+}
+.driverstatusmodal .reason-wrap .radio-checkbox-flagg-rev-fgtsrw-label::before {
+    top: 15px;
+}
+.driverstatusmodal .radio-checkbox-flagg-rev-fgtsrw-label{
+    padding-left: 35px;
+}
+.reason-main-view{
+    display: none;
+}
 /* ------ Media CSS  ------- */
 
 @media(max-width:767px) {

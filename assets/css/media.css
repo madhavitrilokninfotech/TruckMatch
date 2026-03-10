@@ -696,6 +696,27 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 1199.98px) { 
+.driverstatusmodal .radio-checkbox-flagg-rev-fgtsrw-label::after {
+    width: 12px;
+    height: 12px;
+}
+.driverstatusmodal .radio-checkbox-flagg-rev-fgtsrw-label::before {
+    width: 18px;
+    height: 18px;
+}
+.driverstatusmodal .reason-wrap .radio-checkbox-flagg-rev-fgtsrw-label::before {
+    left: 10px;
+}
+.driverstatusmodal .reason-wrap .radio-checkbox-flagg-rev-fgtsrw-label::after {
+    left: 13px;
+}
+.dot {
+    width: 12px;
+    height: 12px;
+}
+.status-legend .legend-item {
+    margin-right: 10px;
+}
 .certi-doc-overlay {
     padding: 10px 12px;
 }
@@ -819,6 +840,9 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 991.98px) {
+.status-legend {
+    margin: 14px 0 10px;
+}
 .tm-d-container .tm-de-et-wrap {
     flex-grow: 1;
     justify-content: end;
@@ -1153,6 +1177,34 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.modal-dialog {
+    margin-right: auto;
+    margin-left: auto;
+}
+.reason-wrap {
+    flex-wrap: wrap;
+}
+.driverstatusmodal .radio-checkbox-flagg-rev-fgtsrw-label::after {
+    width: 10px;
+    height: 10px;
+}
+.driverstatusmodal .radio-checkbox-flagg-rev-fgtsrw-label::before {
+    width: 16px;
+    height: 16px;
+}
+.driverstatusmodal .radio-checkbox-flagg-rev-fgtsrw-label {
+    padding-left: 30px;
+}
+.driverstatusmodal .reason-wrap .radio-checkbox-flagg-rev-fgtsrw-label{
+    
+}
+.dot {
+    width: 10px;
+    height: 10px;
+}
+.legend-item {
+    gap: 5px;
+}
 .certi-doc-wrap {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -1432,6 +1484,9 @@ p { font-size: 14px; }
 
 
 @media (max-width:399px) {
+.dbooking-card .btn-underline {
+    font-size: 11px !important;
+}
 .certi-doc-wrap {
     grid-template-columns: 1fr;
 }
