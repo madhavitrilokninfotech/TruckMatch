@@ -309,7 +309,7 @@
                                             </li>
                                         </ul>
                                     </div>                         
-                                    <div class="postnjob-tabbing-wrap td-detail-box-tm-card-wp-nmem cp-15 h-100">
+                                    <div class="postnjob-tabbing-wrap td-detail-box-tm-card-wp-nmem cp-15 h-100 ja-d-parent">
                                         <!-- Tab pane -->
                                         <div class="tab-content parentopen-sidebar" id="myCustomTabContent">
                                             <div class="tab-pane fade show active" id="all" role="tabpanel">
@@ -328,7 +328,7 @@
                                                                     NS
                                                                 </div>
                                                                 <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
-                                                                    <div class="mb-1 fw-semibold fs-18 cblack1">
+                                                                    <div class="t-name mb-1 fw-semibold fs-18 cblack1">
                                                                         Nolan Stanton
                                                                     </div>
                                                                     <div class="td-details-catnum d-flex flex-wrap">
@@ -368,7 +368,7 @@
                                                                     JS
                                                                 </div>
                                                                 <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
-                                                                    <div class="mb-1 fw-semibold fs-18 cblack1">
+                                                                    <div class="t-name mb-1 fw-semibold fs-18 cblack1">
                                                                         Ava Carter
                                                                     </div>
                                                                     <div class="td-details-catnum d-flex flex-wrap">
@@ -413,7 +413,7 @@
                                                                     NS
                                                                 </div>
                                                                 <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
-                                                                    <div class="mb-1 fw-semibold fs-18 cblack1">
+                                                                    <div class="t-name mb-1 fw-semibold fs-18 cblack1">
                                                                         Nolan Stanton
                                                                     </div>
                                                                     <div class="td-details-catnum d-flex flex-wrap">
@@ -458,7 +458,7 @@
                                                                     JS
                                                                 </div>
                                                                 <div class="td-details-tdtxt wh-50-txt align-self-center ps-2">
-                                                                    <div class="mb-1 fw-semibold fs-18 cblack1">
+                                                                    <div class="t-name mb-1 fw-semibold fs-18 cblack1">
                                                                         Ava Carter
                                                                     </div>
                                                                     <div class="td-details-catnum d-flex flex-wrap">
@@ -496,7 +496,7 @@
                                 <div class="team-member-de-act-cl-right-wrap">
                                     <div class="tab-content jm-tab-content" id="childTabsContent">
                                         <!-- Back Navigation arrow -->
-                                        <div class="backarrow_main_layout d-lg-none d-flex">
+                                        <!-- <div class="backarrow_main_layout d-lg-none d-flex">
                                             <div class="team-member-back-arrw">
                                                 <button class="bg-transparent border-0 p-2 mb-0 ps-0 team-member-back-arrw-btn">
                                                     <img src="../../assets/images/tm-back-arrow.png" alt="Image">
@@ -505,7 +505,7 @@
                                             <div class="dash-txt m-0">
                                                 Team Memebr Details
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <!-- Back Navigation arrow end -->
 
                                         <!-- job accepter content -->
@@ -1005,16 +1005,21 @@
                                                 <div class="team-member-de-act-wrap">
                                                     <!-- Team Member Details -->
                                                     <div class="tm-d-container mbot16 bg-white border2-gray br14">
-                                                        <div class="cp-0815 d-flex flex-wrap justify-content-between align-items-center borderb-gray">
+                                                        <div class="cp-0815 d-flex flex-wrap justify-content-lg-between align-items-center borderb-gray">
+                                                            <div class="team-member-back-arrw d-lg-none d-block">
+                                                                <button class="bg-transparent border-0 p-2 mb-0 ps-0 team-member-back-arrw-btn">
+                                                                    <img src="../../assets/images/tm-back-arrow.png" alt="Image">
+                                                                </button>
+                                                            </div>
                                                             <div class="m-1 cblack1 fw-semibold fs-18">
                                                                 Team Member Details
                                                             </div>
-                                                            <div class="m-1 d-flex flex-wrap tm-de-et-wrap">
+                                                            <div class="m-1 flex-wrap tm-de-et-wrap desktop d-sm-flex d-none">
                                                                 <button class="btn btn-primary offcanvas-btn1 btn-gray1 fs-14" type="button" data-bs-toggle="modal" data-bs-target="#RemTeamMemModal">
-                                                                   Delet Member
+                                                                Delete Member
                                                                 </button>
                                                                 <button class="btn btn-primary offcanvas-btn1 fs-14" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEditTeamMember" aria-controls="offcanvasEditTeamMember">
-                                                                    Edit Member
+                                                                Edit Member
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -1078,7 +1083,15 @@
                                                                                 <i class="fa fa-regular fa-eye toggle-shpassword ms-2"></i>
                                                                         </div>
                                                                     </div>                                                                            
-                                                                </div>                                    
+                                                                </div>  
+                                                                <div class="m-1 d-flex flex-wrap tm-de-et-wrap mobile d-sm-none d-flex">
+                                                                    <button class="btn btn-primary offcanvas-btn1 btn-gray1 fs-14" type="button" data-bs-toggle="modal" data-bs-target="#RemTeamMemModal">
+                                                                        Delete Member
+                                                                    </button>
+                                                                    <button class="btn btn-primary offcanvas-btn1 fs-14" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEditTeamMember" aria-controls="offcanvasEditTeamMember">
+                                                                        Edit Member
+                                                                    </button>
+                                                                </div>                                  
                                                             </div>
                                                         </div>  
  
@@ -5463,23 +5476,23 @@
                                 <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
                                     <img src="../../assets/images/up-doc-icon-green.png" class="me-1" alt="Image">
                                     Driver License
-                                    <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                    <img src="../../assets/images/close-gicon.png" class="ms-1 close-doc" alt="Image">
                                 </div>
                                 
                                 <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
                                     <img src="../../assets/images/up-doc-icon-green.png" class="me-1" alt="Image">
                                     High Risk Work License
-                                    <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                    <img src="../../assets/images/close-gicon.png" class="ms-1 close-doc" alt="Image">
                                 </div>
                                 <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
                                     <img src="../../assets/images/up-doc-icon-green.png" class="me-1" alt="Image">
                                     VOC (Verification of Competency)
-                                    <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                    <img src="../../assets/images/close-gicon.png" class="ms-1 close-doc" alt="Image">
                                 </div>
                                 <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
                                     <img src="../../assets/images/up-doc-icon-green.png" class="me-1" alt="Image">
                                     White Card
-                                    <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                    <img src="../../assets/images/close-gicon.png" class="ms-1 close-doc" alt="Image">
                                 </div>                                                                                         
                             </div>                                                                     
                         </div>                    
@@ -10289,16 +10302,21 @@
 </script>
 
 <script>
-
-$(document).ready(function () {
-  
-    $('input[name="radio-checkbox-driver-available"]').change(function () {
-        if($('#radio-checkbox-driver-not-available').is(':checked')){
-            $('.reason-main-view').show();
-        } else {
-            $('.reason-main-view').hide();
-        }
+    $(document).ready(function () {
+    
+        $('input[name="radio-checkbox-driver-available"]').change(function () {
+            if($('#radio-checkbox-driver-not-available').is(':checked')){
+                $('.reason-main-view').show();
+            } else {
+                $('.reason-main-view').hide();
+            }
+        });
     });
+</script>
+
+<script>
+    $(document).on("click", ".close-doc", function () {
+    $(this).closest(".green-box").remove();
 });
 </script>
 

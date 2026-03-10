@@ -1034,6 +1034,12 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 767.98px) {  
+.ja-d-parent .stacat-wrap{
+    position: initial;
+}
+.ja-d-parent .stacat{
+    position: absolute;
+}
 .doc-preview {
     min-height: 110px;
 }
@@ -1177,6 +1183,12 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.ja-d-parent .td-details-tdtxt .t-name {
+    padding-right: 80px;
+}
+.dm-details-top {
+    gap: 16px;
+}
 .modal-dialog {
     margin-right: auto;
     margin-left: auto;
@@ -1194,9 +1206,6 @@ Extra small devices (portrait phones, less than 576px)
 }
 .driverstatusmodal .radio-checkbox-flagg-rev-fgtsrw-label {
     padding-left: 30px;
-}
-.driverstatusmodal .reason-wrap .radio-checkbox-flagg-rev-fgtsrw-label{
-    
 }
 .dot {
     width: 10px;

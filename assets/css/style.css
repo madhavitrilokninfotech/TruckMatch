@@ -2019,6 +2019,7 @@ img.completeicon{
 =================================================================================*/
 .check-availability button img{
     vertical-align: text-top;
+    width: 13px;
 }
 
 .dm-details-top{
@@ -2026,6 +2027,7 @@ img.completeicon{
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .doc-file {
@@ -2142,6 +2144,12 @@ img.completeicon{
 }
 .reason-main-view{
     display: none;
+}
+.ja-d-parent .td-details-tdtxt .t-name {
+    padding-right: 105px;
+}
+.close-doc{
+    cursor: pointer;
 }
 /* ------ Media CSS  ------- */
 
