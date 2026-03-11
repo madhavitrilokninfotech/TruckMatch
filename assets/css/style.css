@@ -2222,11 +2222,7 @@ img.completeicon{
 .cal-cell.active {
     background-color: #FFEBE6;
 }
-/* .cal-cell:focus-visible,
-.cal-cell{
-    border-color: #D74315;
-} */
-/* end */
+
 /* ------ Media CSS  ------- */
 
 @media(max-width:767px) {

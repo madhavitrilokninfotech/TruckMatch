@@ -851,6 +851,9 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 991.98px) {
+.fleet-mana-hr-tc-main .fleet-mana-hr-wp img {
+    width: 22px;
+}
 .status-legend {
     margin: 14px 0 10px;
 }
@@ -1336,18 +1339,37 @@ Extra small devices (portrait phones, less than 576px)
 .fleet-mana-ft-img {
     width: 46px;
 }
-.fleet-mana-hr-tc-main {
-    flex-direction: column;
-    align-items: start;
+.fleet-mana-hr-wp{
+    flex-wrap: nowrap !important;
 }
-.fleet-mana-hr-wrap {
-    padding-right: 0;
-    border-right: none;
+.fleet-mana-hr-tc-main .fleet-mana-hr-wp img {
+    margin-right: 4px !important;
 }
-
-.fleet-mana-hr-tc-main {
-    gap: 12px;
-} 
+.fleet-mana-hr-wrap .fs-20 {
+    font-size: 13px !important;
+}
+.fleet-mana-hr-wrap .fs-16 {
+    font-size: 12px !important;
+}
+.fleet-mana-bx-wp .cp-15 {
+    padding: 10px;
+}
+.fleet-rt-et-wrap .btn {
+    margin-right: 4px;
+}
+.cp-15 {
+    padding: 10px;
+}
+.cp-0815 {
+    padding: 8px 10px;
+}
+.search-njob .form-control.border::placeholder{font-size:13px;}
+.search-njob .form-control.border{font-size:13px;}
+.search-njob .form-control.border {
+    background-position: 7px center;
+    background-size: 22px;
+    padding-left: 32px!important;
+}
 
 h1,.h1 { font-size:22px; }
 h2,.h2 { font-size:20px; }
