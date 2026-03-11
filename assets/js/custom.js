@@ -472,3 +472,9 @@ $(document).ready(function(){
     ],
   });
 });
+
+
+// Remove selected document 
+$(document).on("click", ".close-doc", function () {
+    $(this).closest(".green-box").remove();
+});

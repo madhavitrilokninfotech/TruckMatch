@@ -613,7 +613,9 @@ h6,.h6 { font-size:14px; }
 .fleet-mana-ft-img-txt {
     width: calc(100% - 110px);
 }
-
+.flet-des-img-bx img {
+    border-radius: 10px !important;
+}
 
 h1,.h1 { font-size:30px; }
 h2,.h2 { font-size:22px; }
@@ -737,10 +739,6 @@ h6,.h6 { font-size:14px; }
 .attachmentpill {
     padding: 8px 14px;
 }
-.flet-des-img-bx img {
-    border-radius: 10px !important;
-}
-
 .w-240 {
     width: 160px;
 }
@@ -1356,6 +1354,9 @@ Extra small devices (portrait phones, less than 576px)
 }
 .fleet-rt-et-wrap .btn {
     margin-right: 4px;
+}
+.fleet-mana-bx-wp .fleet-mana-ft-txt .fs-20 {
+    font-size: 13px !important;
 }
 .cp-15 {
     padding: 10px;
