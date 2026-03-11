@@ -1585,6 +1585,10 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
     gap: 4px 16px;
     /* padding-right: 50px; */
 }
+.assign-opp-item {
+    display: inline-flex;
+    align-items: center;
+}
 .assi-fdriver-chat {
     position: absolute;
     right: 0;
@@ -2063,8 +2067,8 @@ img.completeicon{
 }
 .dot{
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -2083,11 +2087,20 @@ img.completeicon{
 .dgreen{
     background-color: #15994B;
 }
+.dgreen-op{
+    background-color: rgba(0, 186, 52, 0.1);
+}
 .dred{
     background-color: #EF4444;
 }
+.dred-op{
+    background-color: rgba(255, 59, 59, 0.1);
+}
 .dblue{
     background-color: #3B82F6;
+}
+.dblue-op{
+    background-color: rgba(0, 133, 255, 0.1);
 }
 .dgreentext{
     color: #15994B;
@@ -2116,7 +2129,7 @@ img.completeicon{
     border-left: 3px solid #3B82F6;
 }
 .h-temp{
-    max-height: 310px;
+    max-height: 246px;
     overflow-y: scroll;
 }
 .dbooking-card .btn-underline{
@@ -2151,6 +2164,69 @@ img.completeicon{
 .close-doc{
     cursor: pointer;
 }
+/* calendar */
+.calendar-wrapper .nav-btn{
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+}
+.cal-month-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.cal-month-nav .nav-arrow-icon{
+    margin-bottom: 2px;
+}
+.weekday{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+.cal-day{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+.cal-cell{
+    cursor: pointer;
+    min-height: 80px;
+    padding: 3px 8px;
+    border: 1px solid #E8E8E8;
+}
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 1px solid #E8E8E8;
+}
+.week-cell {
+    background-color: #FDC3B1;
+    border: 1px solid #E8E8E8;
+    padding: 10px 8px;
+}
+.cal-cell.other{
+    opacity: 50%;
+}
+.calendar-wrapper .gray-box{
+    padding: 4px 8px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: none;
+    font-size: 12px;
+    margin: 10px 0 0 0;
+}
+.cal-cell.active {
+    background-color: #FFEBE6;
+}
+/* .cal-cell:focus-visible,
+.cal-cell{
+    border-color: #D74315;
+} */
+/* end */
 /* ------ Media CSS  ------- */
 
 @media(max-width:767px) {

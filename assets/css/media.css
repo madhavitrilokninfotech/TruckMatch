@@ -52,6 +52,17 @@ Large devices
 
 
 @media (max-width:1599px) { 
+.calendar-wrapper .gray-box {
+    padding: 4px 6px;
+    font-size: 10px;
+    margin: 8px 0 0 0;
+}
+.cal-day {
+    font-size: 14px;
+}
+.weekday {
+    font-size: 12px;
+}
 .wh-236 {
     width: 200px;
 }
