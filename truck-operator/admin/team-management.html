@@ -5328,7 +5328,7 @@
 
 
 <!-- Add Team Member Form -->
-<div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasEditTeamMemda" aria-labelledby="offcanvasEditTeamMemdaLabel">
+<div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasAddTeamMemda" aria-labelledby="offcanvasAddTeamMemdaLabel">
     <div class="offcanvas-header-cm">
     <div class="offcanvas-header">
         <div class="offcanvas-title" id="offcanvasAddTeamMemdaLabel">Add a Team Member</div>
@@ -5501,10 +5501,10 @@
     </form>
 </div>
 
-<div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasAddTeamMemda" aria-labelledby="offcanvasAddTeamMemdaLabel">
+<div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasEditTeamMemda" aria-labelledby="offcanvasEditTeamMemdaLabel">
     <div class="offcanvas-header-cm">
         <div class="offcanvas-header">
-            <div class="offcanvas-title" id="offcanvasEditTeamMemberLabel">Edit Team Member Details</div>
+            <div class="offcanvas-title" id="offcanvasEditTeamMemdaLabel">Edit Team Member Details</div>
             <p class="offcanvas-tl-p">Edit and manage this team member’s information to ensure records stay up to date.
             </p>
             <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
@@ -8025,6 +8025,128 @@
 
                                     </div>
                                 </div>
+                            </div>
+
+                            <!-- Budget Details -->
+                            <div class="content-bbox-wrap border2-gray br14 overflow-hidden mbot16 bg-white mb-3">
+                                <div class="content-bbox-ht borderb2-gray d-flex flex-wrap justify-content-between align-items-center py-3">
+                                    <div class="content-bbox-tl fs-16 cblack m-0">
+                                        Budget Details
+                                    </div>
+                                </div>
+                                <div class="content-bbox-cn">
+                                    <div class="table-responsive">
+                                        <div class="custom-table-main custom-table-main-v1 jm-table">
+                                            <table class="table budget-detail-table mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <th colspan="2">
+                                                            <div class="assi-fdriver-details d-flex flex-wrap align-items-center">
+                                                                <div class="d-flex flex-wrap assi-fdriver-wp align-items-center">
+                                                                    <div class="wh-60 wh-custom">
+                                                                    <img src="../../assets/images/ass-fdriver-con-img.png" alt="Image"> 
+                                                                    </div>
+                                                                    <div class="ps-2 wh-60-txt">
+                                                                    <div class="fs-16 text-primary mb-1 ellipsis-1">
+                                                                        Concreate Line Pump
+                                                                    </div>
+                                                                    <div class="assi-fdriver-ass-flets-dri fs-14 fw-medium cgray d-flex flex-wrap align-items-center">
+                                                                        $50/Hours 
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                                <button class="btn-underline m-0 content-bbox-hl d-inline-flex align-items-center gap-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasInpbdDetails" type="button">
+                                                                    <span>View Details</span>
+                                                                </button>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="width-p-45 min-width-210 border-bottom-0 fw-normal pt-3 fs-16">9 Hours x $50/hr</th>
+                                                        <td class="width-p-10 min-width-100 border-bottom-0 pt-3 fs-16">$450</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="width-p-45 min-width-210 border-bottom-0 fw-normal fs-16">Travel Charges</th>
+                                                        <td class="width-p-10 min-width-100 border-bottom-0 fs-16">$100</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <th class="width-p-45 min-width-210 border-bottom-0 fw-normal fs-16">Extra charges</th>
+                                                        <td class="width-p-10 min-width-100 border-bottom-0 fs-16">$100</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <th class="width-p-45 min-width-210 text-primary border-bottom-0 fs-16">Truck Total</th>
+                                                        <td class="width-p-10 min-width-100 text-primary border-bottom-0 fs-16">$650</td>
+                                                    </tr>                            
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="custom-table-main custom-table-main-v1 jm-table">
+                                            <table class="table budget-detail-table mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <th colspan="2">
+                                                        <div class="assi-fdriver-details d-flex flex-wrap align-items-center">
+                                                            <div class="d-flex flex-wrap assi-fdriver-wp align-items-center">
+                                                                <div class="wh-60 wh-custom">
+                                                                <img src="../../assets/images/ass-fdriver-con-img.png" alt="Image"> 
+                                                                </div>
+                                                                <div class="ps-2 wh-60-txt">
+                                                                <div class="fs-16 text-primary mb-1 ellipsis-1">
+                                                                    Tripper Truck
+                                                                </div>
+                                                                <div class="assi-fdriver-ass-flets-dri fs-14 fw-medium cgray d-flex flex-wrap align-items-center">
+                                                                    $50/Hours 
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <button class="btn-underline m-0 content-bbox-hl d-inline-flex align-items-center gap-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasInpbdDetails" type="button">
+                                                                <span>View Details</span>
+                                                            </button>
+                                                        </div>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="width-p-45 min-width-210 border-bottom-0 fw-normal pt-3 fs-16">9 Hours x $50/hr</th>
+                                                        <td class="width-p-10 min-width-100 border-bottom-0 pt-3 fs-16">$450</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="width-p-45 min-width-210 border-bottom-0 fw-normal fs-16">Travel Charges</th>
+                                                        <td class="width-p-10 min-width-100 border-bottom-0 fs-16">$100</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <th class="width-p-45 min-width-210 border-bottom-0 fw-normal fs-16">Extra charges</th>
+                                                        <td class="width-p-10 min-width-100 border-bottom-0 fs-16">$100</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <th class="width-p-45 min-width-210 text-primary border-bottom-0 fs-16">Truck Total</th>
+                                                        <td class="width-p-10 min-width-100 text-primary border-bottom-0 fs-16">$650</td>
+                                                    </tr>                                  
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- for sub total & platform fee -->   
+                                        <div class="custom-table-main custom-table-main-v1 bg-red3 totalAmountPayable-main">
+                                            <table class="table budget-detail-table mb-0 ">
+                                            <tbody>
+                                                <tr>   
+                                                    <th class="min-width-210 border-bottom-0 bg-red3 fw-bold cblack pt-3 pb-1 fs-16">Subtotal</th>
+                                                    <td class="width-p-10 min-width-100 border-bottom-0 bg-red3 fw-bold cblack pt-3 pb-1 fs-16">$2,190</td>
+                                                </tr>
+                                                <tr>    
+                                                    <th class="width-p-45 min-width-210 border-bottom-0 bg-red3 fw-bold cblack pt-1 pb-2 fs-16">Platform Fee (6%)</th>
+                                                    <td class="width-p-10 min-width-100 border-bottom-0 bg-red3 fw-bold cblack pt-1 pb-2 fs-16">$131.40</td>
+                                                </tr>
+                                            
+                                                <tr>
+                                                    <th class="hr_line border-primary width-p-45 min-width-210 text-primary bg-red3 fw-medium pt-2 fs-16">Total Payable</th>
+                                                    <td class="hr_line border-primary width-p-10 min-width-100 text-primary bg-red3 fw-medium pt-2 fs-16">$2,321.40</td>
+                                                </tr>                            
+                                            </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- end -->    
+                                    </div>
+                                </div>                                                                                               
                             </div>
                         
                         </div>
