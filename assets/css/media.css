@@ -1195,6 +1195,13 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.exp-hwye-wrap .checkbox-round-wrap .checkbox + label {
+    font-size: 12px;
+}
+.checkbox-round-main .checkbox-round-wrap {
+    padding-right: 5px;
+    padding-bottom: 8px;
+}
 .ja-d-parent .td-details-tdtxt .t-name {
     padding-right: 80px;
 }
@@ -1558,6 +1565,10 @@ p { font-size: 14px; }
 }
 .assign-work-row .assi-fdriver-wp{
     padding-right: 0;
+}
+.jm-days .srdays-d {
+    font-size: 11px;
+    padding: 7px 11px;
 }
 	/*=== Login ===*/
 
