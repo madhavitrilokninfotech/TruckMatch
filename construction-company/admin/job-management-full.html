@@ -269,7 +269,7 @@
                                                 <div class="search-njob">
                                                     <input type="search" class="form-control border" placeholder="Search Jobs Here...">
                                                 </div>
-                                                <button type="button" class="search-set">
+                                                <button type="button" class="search-set" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSelectFilter" aria-controls="offcanvasSelectFilterLabel">
                                                     <img src="../../assets/images/search-set-icon.png" alt="Image">
                                                 </button>
                                             </div>
@@ -11117,6 +11117,472 @@
   </form>
 </div>
 
+<!-- Search-side Filter -->
+<div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasSelectFilter" aria-labelledby="offcanvasSelectFilterLabel">
+    <div class="offcanvas-header-cm">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="offcanvas-title" id="offcanvasSelectFleetLabel">Filter Jobs</div>
+            <button type="button" class="btn-cancel btn btn-outline" data-bs-dismiss="offcanvas" aria-label="Close">
+                Reset Filter
+            </button>
+        </div>
+    </div>
+    <form class="offcanvas-form">
+        <div class="offcanvas-body">
+            <div class="offcanvas-form-main">
+                <div class="form-group mb-0">
+                    <div class="offcanvas-body-title">
+                        Date
+                    </div>
+                    <div class="row gx-3">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <label class="form-label">Start Date</label>
+                            <div class="form-group">
+                                <input type="text" class="form-control border datepicker_icon" id="cele-sd" name="cele-sd" placeholder="Select Date">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 recurr-timing-content mt-0">
+                            <label class="form-label">End Date</label>
+                            <div class="form-group">
+                                <input type="text" class="form-control border datepicker_icon" id="cele-ed" name="cele-ed" placeholder="Select Date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="offcanvas-body-title">Operator Companies</label>
+                    
+                    <div class="custom-multiselect" id="companySelect">
+                        <div class="form-control border selected-items" id="selectedItems">
+                            <span class="placeholderfilter">Select Company</span>
+                            <div class="dropdown-arrow">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M7 10l5 5 5-5z"/>
+                                </svg>
+                            </div>
+                        </div>
+         
+                        <!-- Dropdown List -->
+                        <div class="dropdown-list" id="dropdownList">
+                            <div class="dropdown-item-custom" data-value="fast-truck">
+                                <div class="wh-40 wh-custom">
+                                    <img src="../../assets/images/rc-fpl.png" alt="Image"> 
+                                </div>
+                                <span class="item-text">Fast Truck Pvt. Ltd.</span>
+                                <div class="custom-checkbox">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                    </svg>
+                                </div>
+                            </div>
+         
+                            <div class="dropdown-item-custom" data-value="speedy-logistics">
+                                <div class="wh-40 wh-custom">
+                                    <img src="../../assets/images/rc-fpl.png" alt="Image"> 
+                                </div>
+                                <span class="item-text">Speedy Logistics Inc.</span>
+                                <div class="custom-checkbox">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                    </svg>
+                                </div>
+                            </div>
+         
+                            <div class="dropdown-item-custom" data-value="global-express">
+                                <div class="wh-40 wh-custom">
+                                    <img src="../../assets/images/rc-fpl.png" alt="Image"> 
+                                </div>
+                                <span class="item-text">Global Express Services</span>
+                                <div class="custom-checkbox">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                    </svg>
+                                </div>
+                            </div>
+         
+                            <div class="dropdown-item-custom" data-value="efficient-transport">
+                                <div class="wh-40 wh-custom">
+                                    <img src="../../assets/images/rc-fpl.png" alt="Image"> 
+                                </div>
+                                <span class="item-text">Efficient Transport Solutions</span>
+                                <div class="custom-checkbox">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                    </svg>
+                                </div>
+                            </div>
+         
+                            <div class="dropdown-item-custom" data-value="quick-delivery">
+                                <div class="wh-40 wh-custom">
+                                    <img src="../../assets/images/rc-fpl.png" alt="Image"> 
+                                </div>
+                                <span class="item-text">Quick Delivery Services Co.</span>
+                                <div class="custom-checkbox">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas-body-inner">
+                    <div class="offcanvas-body-title">
+                        Select Equipment Type
+                    </div>
+                    <div class="row gx-2 gx-xxl-3">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype1" name="multytype1">
+                                        <label for="multytype1" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/concrete-line-pump.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                Concrete Line Pump
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype2" name="multytype2">
+                                        <label for="multytype2" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/concrete-boom-pump.png" class="img-fluid"
+                                                alt="Image">
+                                            <p>
+                                                Concrete Boom Pump
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype3" name="multytype3">
+                                        <label for="multytype3" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/tipper-truck.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                Tipper Truck
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype4" name="multytype4">
+                                        <label for="multytype4" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/water-truck.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                Water Truck
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype5" name="multytype5">
+                                        <label for="multytype5" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/flatbed-truck.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                Flatbed Truck
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype6" name="multytype6">
+                                        <label for="multytype6" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/flatbed-with-forklift.png" class="img-fluid"
+                                                alt="Image">
+                                            <p>
+                                                Flatbed with Forklift
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype7" name="multytype7">
+                                        <label for="multytype7" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/tilt-tray-truck.png" class="img-fluid"
+                                                alt="Image">
+                                            <p>
+                                                Tilt Tray Truck
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype8" name="multytype8">
+                                        <label for="multytype8" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/hiab-crane.png" class="img-fluid"
+                                                alt="Image">
+                                            <p>
+                                                Hiab Crane
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype9" name="multytype9">
+                                        <label for="multytype9" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/tipper-excavator.png" class="img-fluid"
+                                                alt="Image">
+                                            <p>
+                                                Tipper + Excavator
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype10" name="multytype10">
+                                        <label for="multytype10" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/tipper-skid.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                Tipper + Skid 
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype11" name="multytype11">
+                                        <label for="multytype11" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/tipper-excavator-and-skid-steer.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                Tipper + Excavator and Skid Steer
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype12" name="multytype12">
+                                        <label for="multytype12" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/vacuum-truck.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                Vacuum Truck
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype13" name="multytype13">
+                                        <label for="multytype13" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/woodchipper&truck-combo.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                Woodchipper & Truck Combo
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype14" name="multytype14">
+                                        <label for="multytype14" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/concrete-agitator.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                Concrete Agitator
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype15" name="multytype15">
+                                        <label for="multytype15" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/semi-tilt-tray.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                SEMI Tilt tray
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype16" name="multytype16">
+                                        <label for="multytype16" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/beavertail-truck.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                Beavertail Truck
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype17" name="multytype17">
+                                        <label for="multytype17" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/beavertail-trailer.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                Beavertail Trailer
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype18" name="multytype18">
+                                        <label for="multytype18" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/low-loader.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                Low-Loader
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype19" name="multytype19">
+                                        <label for="multytype19" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/excavator.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                Excavator
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype20" name="multytype20">
+                                        <label for="multytype20" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/skid-steer.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                Skid Steer
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                            <div class="radio-square-main">
+                                <div class="radio-square-wrap">
+                                    <div class="form-group mb-0">
+                                        <input type="radio" class="radio-st-sq" id="multytype21" name="multytype21">
+                                        <label for="multytype21" class="radio-square-label">
+                                            <img src="../../assets/images/truckimgs/excavator-and-skid.png"
+                                                class="img-fluid" alt="Image">
+                                            <p>
+                                                Excavator and Skid 
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-op-btn text-end">
+            <div class="offcanvas-btn-wrap d-inline-block">
+                <button type="button" class="btn-cancel btn btn-outline" data-bs-dismiss="offcanvas" aria-label="Close">
+                    Close
+                </button>
+                <button type="button" class="btn">Apply FIlters</button>
+            </div>
+        </div>
+    </form>
+</div>
+
 <!-- Modal -->
 <div class="modal modal-cm fade rate-review" id="RateYJEXpModal" tabindex="-1" aria-labelledby="RateYJEXpModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -12624,6 +13090,116 @@
 
   <!-- =================== /WEB JS BOC ==================== -->
 
+<script>
+    class MultiSelect {
+        constructor(containerId) {
+            this.container = document.getElementById(containerId);
+            this.selectedItems = this.container.querySelector('#selectedItems');
+            this.dropdownList = this.container.querySelector('#dropdownList');
+            this.items = this.container.querySelectorAll('.dropdown-item-custom');
+            this.selectedValues = [];
+
+            this.init();
+        }
+
+        init() {
+
+            // toggle dropdown
+            this.selectedItems.addEventListener('click', () => {
+                this.dropdownList.classList.toggle('show');
+                this.selectedItems.classList.toggle('open');
+            });
+
+            // close outside click
+            document.addEventListener('click', (e) => {
+                if (!this.container.contains(e.target)) {
+                    this.dropdownList.classList.remove('show');
+                    this.selectedItems.classList.remove('open');
+                }
+            });
+
+            // item click
+            this.items.forEach(item => {
+                item.addEventListener('click', () => {
+                    this.toggleItem(item);
+                });
+            });
+        }
+
+        toggleItem(item) {
+
+            const value = item.dataset.value;
+            const text = item.querySelector('.item-text').textContent;
+
+            if (item.classList.contains('selected')) {
+
+                item.classList.remove('selected');
+                this.selectedValues = this.selectedValues.filter(v => v.value !== value);
+
+            } else {
+
+                item.classList.add('selected');
+                this.selectedValues.push({ value, text });
+            }
+
+            this.renderSelected();
+        }
+
+        renderSelected() {
+
+            this.selectedItems.innerHTML = '';
+
+            if (this.selectedValues.length === 0) {
+
+                const placeholder = document.createElement('span');
+                placeholder.className = 'placeholderfilter';
+                placeholder.innerText = 'Select Company';
+                this.selectedItems.appendChild(placeholder);
+
+            } else {
+
+                this.selectedValues.forEach(item => {
+
+                    const tag = document.createElement('div');
+                    tag.className = 'selected-tag';
+
+                    tag.innerHTML = `<div class="company-icon"><img src="../../assets/images/rc-fpl.png"></div><span>${item.text}</span><button class="remove-btn">×</button>`;
+
+                    tag.querySelector('.remove-btn').onclick = (e) => {
+                        e.stopPropagation();
+                        this.removeTag(item.value);
+                    };
+
+                    this.selectedItems.appendChild(tag);
+
+                });
+
+            }
+
+            const arrow = document.createElement('div');
+            arrow.className = 'dropdown-arrow';
+            arrow.innerHTML = '<svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>';
+
+            this.selectedItems.appendChild(arrow);
+        }
+
+        removeTag(value) {
+
+            const item = this.container.querySelector(`[data-value="${value}"]`);
+
+            if (item) {
+                item.classList.remove('selected');
+            }
+
+            this.selectedValues = this.selectedValues.filter(v => v.value !== value);
+
+            this.renderSelected();
+        }
+
+    }
+
+    new MultiSelect("companySelect");
+</script>
 
 <script>
     // Review Rating Click JS
@@ -12637,28 +13213,17 @@
 </script>
 
 <script>
-    $(function () {            
-    /* setting datetime */
-    $("#form-sd").datetimepicker({
-        format : "DD-MM-YYYY"
-    });
-    $("#form-ed").datetimepicker({
-        format : "DD-MM-YYYY"
-    });                        
-    }); 
-
-    $(document).on('focus', '.date-picker', function () {
-    if (!$(this).data("DateTimePicker")) {
-        $(this).datetimepicker({
+    $(function () {
+        /* setting datetime */
+        $("#cele-sd").datetimepicker({
             format: "DD-MM-YYYY"
         });
-    }
-
-    
-});
+        $("#cele-ed").datetimepicker({
+            format: "DD-MM-YYYY"
+        });
+    });
 
 </script>
-
 
 
 <script>

@@ -2247,3 +2247,202 @@ img.completeicon{
 /*===============================================================================
     for Incoming Job Feed
 =================================================================================*/
+/* Custom Multi-Select Container */
+.custom-multiselect {
+    position: relative;
+    width: 100%;
+}
+
+.selected-items.open {
+    /* border-color: #86b7fe; */
+    /* box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); */
+}
+
+/* Placeholder */
+.placeholderfilter {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* Selected Item Tag/Chip */
+.selected-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 4px 8px 4px 12px;
+    font-size: 13px;
+    color: var(--text-dark);
+}
+
+/* Company Icon */
+.company-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+
+/* Remove Button */
+.remove-btn {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    color: var(--text-dark);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Dropdown Arrow */
+.dropdown-arrow {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: transform 0.2s ease;
+}
+
+.dropdown-arrow svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--text-muted);
+}
+
+.selected-items.open .dropdown-arrow {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Dropdown List */
+.dropdown-list {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+}
+
+.dropdown-list.show {
+    display: block;
+}
+
+/* Dropdown Item */
+.dropdown-item-custom {
+    padding: 10px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.2s ease;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-item-custom:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item-custom:hover {
+    background-color: #f8f9fa;
+}
+
+.dropdown-item-custom.selected {
+    background-color: #e7f3ff;
+}
+
+/* Checkbox */
+.custom-checkbox {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item-custom.selected .custom-checkbox {
+    background-color: #D74315;
+    border-color: #D74315;
+}
+
+.custom-checkbox svg {
+    width: 15px;
+    height: 15px;
+    fill: white;
+    display: none;
+}
+
+.dropdown-item-custom.selected .custom-checkbox svg {
+    display: block;
+}
+
+/* Item Text */
+.item-text {
+    font-size: 14px;
+    color: var(--text-dark);
+    flex: 1;
+}
+
+/* Search Box */
+.search-box {
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Scrollbar Styling */
+.dropdown-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dropdown-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
