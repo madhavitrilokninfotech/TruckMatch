@@ -190,6 +190,12 @@
 
 
 @media(max-width:767px) {
+.mobilelogomain .sidebar-top-toggle{
+    z-index: 999;
+    position: fixed;
+    top: 28px;
+    left: 10px;
+}
 .sidebar-show-hide .content-wrapper {
     margin-left: calc(45px + 5px);
 }
