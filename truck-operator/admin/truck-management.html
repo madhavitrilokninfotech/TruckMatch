@@ -270,11 +270,11 @@
                                         </div>
                                     </div>
                                     <div class="btn-outline-btnbs-wrap cp-15">
-                                        <button class="btn btn-outline-bs" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddFleet" aria-controls="offcanvasAddFleet">
+                                        <button class="btn btn-outline-bs" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSelectFleet" aria-controls="offcanvasSelectFleet">
                                           <div class="post-njob-icon">
                                               <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M12.8874 4.33949L12.9997 4.33301C13.4935 4.33301 13.9005 4.70475 13.9562 5.18367L13.9626 5.29597V12.0367H20.7034C21.1972 12.0367 21.6042 12.4085 21.6599 12.8874L21.6663 12.9997C21.6663 13.4935 21.2946 13.9005 20.8157 13.9562L20.7034 13.9626H13.9626V20.7034C13.9626 21.1972 13.5909 21.6042 13.112 21.6599L12.9997 21.6663C12.5058 21.6663 12.0988 21.2946 12.0432 20.8157L12.0367 20.7034V13.9626H5.29597C4.80213 13.9626 4.39511 13.5909 4.33949 13.112L4.33301 12.9997C4.33301 12.5058 4.70475 12.0988 5.18367 12.0432L5.29597 12.0367H12.0367V5.29597C12.0367 4.80213 12.4085 4.39511 12.8874 4.33949L12.9997 4.33301L12.8874 4.33949Z" fill="#D74315"/> </svg>
                                           </div>
-                                          Add to Fleet
+                                          Add to Truck
                                         </button>
                                     </div>
                                     <div class="cp-15 py-0">
@@ -687,7 +687,7 @@
                                                 <button class="btn btn-primary offcanvas-btn1 btn-gray1 fs-14 fw-normal px-3" type="button" data-bs-toggle="modal" data-bs-target="#RemTeamMemModal">
                                                    Remove <span class="d-sm-inline-block d-none">Truck</span>
                                                 </button>
-                                                <button class="btn btn-primary offcanvas-btn1 fs-14 fw-normal px-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEditFleet" aria-controls="offcanvasEditFleet">
+                                                <button class="btn btn-primary offcanvas-btn1 fs-14 fw-normal px-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSelectFleet" aria-controls="offcanvasSelectFleet">
                                                    Edit <span class="d-sm-inline-block d-none">Truck</span>
                                                 </button>
                                            </div>
@@ -1098,7 +1098,217 @@
 
 
 
+<div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasSelectFleet" aria-labelledby="offcanvasSelectFleetLabel">
+<div class="offcanvas-header-cm">
+  <div class="offcanvas-header">
+    <div class="offcanvas-title" id="offcanvasSelectFleetLabel">Select Truck</div>
+    <p class="offcanvas-tl-p">Browse available trucks and select the right one for your job requirements.</p>
+    <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+  </div>
+</div>
+<form class="offcanvas-form">
+  <div class="offcanvas-body">
+     <div class="offcanvas-form-main">        
+        <div class="offcanvas-body-inner">
+            <div class="offcanvas-body-title">
+                Select Equipment Type
+            </div> 
+            <div class="row gx-2 gx-xxl-3">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype1" name="etype">
+                                <label for="etype1" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/tipper-truck.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Tipper Truck
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype2" name="etype">
+                                <label for="etype2" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/flatbed-truck.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Flatbed Truck
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype3" name="etype">
+                                <label for="etype3" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/tilt-tray.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Tilt Tray
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype4" name="etype">
+                                <label for="etype4" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/water-truck.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Water Truck
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype5" name="etype">
+                                <label for="etype5" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/truck-combo.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Truck Combo
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype6" name="etype">
+                                <label for="etype6" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/float.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Float
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype7" name="etype">
+                                <label for="etype7" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/boom-pump.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Boom Pump
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype8" name="etype">
+                                <label for="etype8" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/line-pump.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Line Pump
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype9" name="etype">
+                                <label for="etype9" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/vacuum-truck.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Vacuum Truck
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype10" name="etype">
+                                <label for="etype10" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/hiab-crane.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Hiab Crane
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype11" name="etype">
+                                <label for="etype11" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/concreate-agitator.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Concrete Agitator
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="radio-square-main">
+                        <div class="radio-square-wrap">
+                            <div class="form-group mb-0">
+                                <input type="radio" class="radio-st-sq" id="etype12" name="etype">
+                                <label for="etype12" class="radio-square-label">
+                                    <img src="../../assets/images/select-fleet/skid-steer-combo.png" class="img-fluid" alt="Image">
+                                    <p>
+                                        Skid Steer Combo
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                                                                                                                                                                              
 
+            </div>
+        </div>     
+     </div>
+  </div>
+  <div class="offcanvas-op-btn">
+      <div class="offcanvas-btn-wrap">
+        <button type="button" class="btn-cancel btn btn-outline" data-bs-dismiss="offcanvas" aria-label="Close">
+            Cancel
+        </button>
+        <button type="button" class="btn" data-offcanvas-next="#offcanvasAddFleet">Continue</button>
+      </div>
+   </div>
+  </form>
+</div>
 
 <div class="offcanvas offcanvas-end offcanvas-cm" tabindex="-1" id="offcanvasAddFleet" aria-labelledby="offcanvasAddFleetLabel">
     <div class="offcanvas-header-cm">
@@ -1113,18 +1323,72 @@
              <div class="offcanvas-form-main">        
                 <div class="offcanvas-body-inner">
                     <div class="form-group">
-                        <label class="form-label cblack1 fw-medium">Truck Type</label>
-                        <select id="form-trucktype" class="form-select form-control border" placeholder="Select Truck Type">
-                          <option disabled hidden selected>Select Truck Type</option>
-                          <option>2 - 3 meter</option>
-                          <option>4 - 6 meter</option>
-                          <option>8 - 10 meter</option>
-                          <option>Twin Steer</option>
-                          <option>10 Wheeler</option>
-                        </select>
+                        <div class="selected-fleet-wrap">
+                            <div class="selected-fleet-tl form-label cblack1 fw-medium">
+                                Selected Fleet
+                            </div>
+                            <div class="selected-fleet-nm">
+                                <img src="../../assets/images/selected-fleet-icon.png" class="img-fluid" alt="Image">
+                                <span class="selected-fleet-nm-t">
+                                    Concrete Line Pump
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="form-group">
+                        <div class="edit-attachment-group d-flex align-items-center justify-content-between">
+                            <label class="form-label cblack1 fw-medium">Attachments</label>
+                            <button class="btn-primary-hover border-0 bg-white fs-16 text-primary fw-medium mb-2 mt-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddNewAttachment">
+                                <span class="d-inline-block">Edit Attachment</span>
+                            </button>
+                        </div>
+                        <div class="available-lengths-group">
+                            <div class="mb-3">
+                                <label class="form-label fs-14 fw-normal cgray">Available Line Lengths</label>
+                                <div class="wrap-attachmentpill d-flex flex-wrap align-items-center gap-2">
+                                
+                                    <div class="attachmentpill fs-14 cgray fw-normal border1-gray br50">
+                                        10 - 30m <span>$250</span>
+                                    </div>
+                                    <div class="attachmentpill fs-14 cgray fw-normal border1-gray br50">
+                                        50 - 70m <span>$250</span>
+                                    </div>
+                                    <div class="attachmentpill fs-14 cgray fw-normal border1-gray br50">
+                                        90m+ <span>$250</span>
+                                    </div>
+                                    <!-- Add more btn -->
+                                    <button class="attachmentpill fs-14 cgray fw-normal border1-gray br50 bg-transparent" type="button">
+                                        5 more
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fs-14 fw-normal cgray">Available Aggregates</label>
+                                <div class="wrap-attachmentpill d-flex flex-wrap align-items-center gap-2">
+                                
+                                    <div class="attachmentpill fs-14 cgray fw-normal border1-gray br50">
+                                        10 mm <span>$250</span>
+                                    </div>
+                                    <div class="attachmentpill fs-14 cgray fw-normal border1-gray br50">
+                                        Exposed Aggregate <span>$250</span>
+                                    </div>
+
+                                    <!-- Add more btn -->
+                                    <!-- <button class="attachmentpill fs-14 cgray fw-normal border1-gray br50 bg-transparent" type="button">
+                                        5 more
+                                    </button> -->
+                                </div>
+                            </div>
+                        </div>
+
+                      <button type="button" class="border-0 bg-transparent d-flex flex-wrap align-items-center text-primary fw-medium fs-14" 
+                      data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddNewAttachment" aria-controls="offcanvasAddNewAttachment">
+                          <img src="../../assets/images/add-att-icon.png" alt="Image" class="pe-1">Add Attachment
+                      </button>
                     </div>
                     <div class="form-group">
-                      <label class="form-label cblack1 fw-medium">Fleet Images</label>
+                      <label class="form-label cblack1 fw-medium">Truck Images</label>
                       <div class="fs-14 cgray">Only support .jpg, .jpeg, and .png files</div>
                     </div>                     
                       <div class="truck-img-wrap d-flex flex-wrap">
@@ -1162,26 +1426,34 @@
                       <div class="row gx-3">
                           <div class="col-sm-6">
                             <div class="form-group">
+                              <label for="form-tnum" class="form-label cblack1 fw-medium">Truck Number</label>
+                              <input type="text" class="form-control border cblack1-placeholder" id="form-tnum" name="form-tnum"
+                                placeholder="Enter Truck Number">
+                            </div>                              
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
                               <label for="form-hrate" class="form-label cblack1 fw-medium">Hourly Rate</label>
-                              <input type="text" class="form-control border cblack1-placeholder" id="form-hrate" name="form-hrate"
-                                value="$50">
+                              <input type="number" class="form-control border cblack1-placeholder" id="form-hrate" name="form-hrate"
+                                placeholder="Enter Hourly Rate">
                             </div>                              
                           </div>
                           <div class="col-sm-6">
                             <div class="form-group">
                               <label for="form-tchr" class="form-label cblack1 fw-medium">Travel Charge</label>
-                              <input type="text" class="form-control border cblack1-placeholder" id="form-tchr" name="form-tchr"
-                                value="$520">
+                              <input type="number" class="form-control border cblack1-placeholder" id="form-tchr" name="form-tchr"
+                                placeholder="Enter Travel Charge">
                             </div>                              
                           </div>
-                          <div class="col-sm-12">
+                          <div class="col-sm-6">
                             <div class="form-group">
-                              <label for="form-mhire" class="form-label cblack1 fw-medium">Minimum Hire</label>
-                              <input type="text" class="form-control border cblack1-placeholder" id="form-mhire" name="form-mhire"
-                                value="6 Hours">
+                              <label for="form-minhire" class="form-label cblack1 fw-medium">Minimum Hire</label>
+                              <input type="number" class="form-control border cblack1-placeholder" id="form-minhire" name="form-minhire"
+                                placeholder="Minimum hire is 4 hours">
                             </div>                              
                           </div>
                       </div>
+                     
                       <hr class="my-3"></hr>
                       <div class="fs-18 fw-medium cblack mb-3">
                           Upload Required Documents
@@ -1193,27 +1465,45 @@
                           <p class="fs-14 cgray mb-2 pb-1 lh-sm">
                               Please provide the essential documents that confirm your truck’s registration, insurance, and maintenance status.
                           </p>
-                           <div class="green-box-main mt-1">
-                               <div class="green-box-wrap">
-                                   <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                           <div class="gray-box-main mt-1">
+                               <div class="gray-box-wrap">
+                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
+                                      <img src="../../assets/images/upl-re-doc.png" alt="Image">
                                       Vehicle/Plant Registration Certificate
-                                      <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
                                    </div>
-                                   
-                                   <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
+                                      <img src="../../assets/images/upl-re-doc.png" alt="Image">
                                       Public Liability Insurance
-                                      <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
-                                   </div>
-                                   <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                   </div>                                    
+                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
+                                      <img src="../../assets/images/upl-re-doc.png" alt="Image">
                                       Maintenance & Service Records
-                                      <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
                                    </div>
-                                   <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
+                                      <img src="../../assets/images/upl-re-doc.png" alt="Image">
                                       Truck/Equipment Insurance
-                                      <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
-                                   </div>                                                                                         
+                                   </div>                                                                                        
                                </div>                                                                     
-                           </div>                                                     
+                           </div>         
+                           <div class="green-box-wrap">
+                                <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                    Vehicle/Plant Registration Certificate
+                                    <img src="../../assets/images/close-gicon.png" class="ms-1 close-doc" alt="Image">
+                                </div>
+                                
+                                <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                    Public Liability Insurance
+                                    <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                </div>
+                                <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                    Maintenance &amp; Service Records
+                                    <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                </div>
+                                <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                    Truck/Equipment Insurance
+                                    <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
+                                </div>                                                                                         
+                            </div>                                            
                       </div>
                       <div class="up-doc-wrap mb-2">
                           <div class="up-doc-sh mb-1 fs-16 cblack fw-medium">
@@ -1224,20 +1514,22 @@
                           </p>
                            <div class="green-box-main mt-1">
                                <div class="green-box-wrap">
-                                   <div class="green-box border-green cb-sm-box br18 fs-14 bg-green3 cgreen2">
+                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
+                                      <img src="../../assets/images/upl-re-doc.png" alt="Image">
                                       Vehicle Registration Certificate
-                                      <img src="../../assets/images/close-gicon.png" class="ms-1" alt="Image">
                                    </div>
-                                   <div class="orange-box border-orange cb-sm-box br18 fs-14 bg-orange4 corange2">
-                                      SWMS Document
-                                      <img src="../../assets/images/close-oicon.png" class="ms-1" alt="Image">
-                                   </div>
-                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray">
+                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
+                                      <img src="../../assets/images/upl-re-doc.png" alt="Image">
                                       Vehicle Insurance Document
-                                   </div>                                                                                        
+                                   </div>                                    
+                                   <div class="gray-box-sm border-gray cb-sm-box br18 fs-14 bg-gray1 cgray cursor-pointer" data-bs-toggle="modal" data-bs-target="#UploadDocModal">
+                                      <img src="../../assets/images/upl-re-doc.png" alt="Image">
+                                      SWMS Document
+                                   </div>                                                                                       
                                </div>                                                                     
                            </div>                                                                               
-                      </div>                                                                                                 
+                      </div>    
+
                 </div>     
              </div>
           </div>
@@ -1252,8 +1544,338 @@
       </form>
 </div>
 
+<div class="offcanvas offcanvas-end offcanvas-cm addnewattachment" tabindex="-1" id="offcanvasAddNewAttachment"
+        aria-labelledby="offcanvasAddFleetLabel">
+    <div class="offcanvas-header-cm">
+        <div class="offcanvas-header">
+            <div class="offcanvas-title" id="offcanvasAddFleetLabel">Add New Attachment</div>
+            <p class="offcanvas-tl-p">Add the name and price of the attachment you want to include with this truck.</p>
+        </div>
+    </div>
+    <form class="offcanvas-form">
+        <div class="offcanvas-body">
+            <div class="offcanvas-form-main">
+                <div class="offcanvas-body-inner">
+                    <!-- row 1 -->
+                    <div class="available-line-lengths">
+                        <h6 class="text-primary fw-medium fs-18">Available Line Lengths</h6>
+                        <hr class="my-3 borderwh-1">
+                        <div class="radio-rounded-main">
+                            <div class="radio-rounded-wrap">
+                                <div class="form-group">
+                                    <input type="radio" class="radio" id="line_10_30" name="line_10_30">
+                                    <label for="line_10_30" class="mb-0 cblack1 fw-medium fs-16">10 - 30m</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                                <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                                name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="line_30_50" name="line_30_50" checked>
+                                    <label for="line_30_50" class="mb-0 cblack1 fw-medium fs-16">30 - 50m</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                                <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                                name="form-tnum" placeholder="Enter price" value="$250">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="line_50_70" name="line_50_70">
+                                    <label for="line_50_70" class="mb-0 cblack1 fw-medium fs-16">50 - 70m</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="line_90_plus" name="line_90_plus">
+                                    <label for="line_90_plus" class="mb-0 cblack1 fw-medium fs-16">90m+</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- row 2 -->
+                    <div class="available-line-lengths">
+                        <h6 class="text-primary fw-medium fs-18">Available Aggregates</h6>
+                        <hr class="my-3 borderwh-1">
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="line_10_mm" name="line_10_mm" checked>
+                                    <label for="line_10_mm" class="mb-0 cblack1 fw-medium fs-16">10 mm</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price" value="$250">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="line_20_mm" name="line_20_mm">
+                                    <label for="line_20_mm" class="mb-0 cblack1 fw-medium fs-16">20 mm</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                                <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                                name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="" name="">
+                                    <label for="" class="mb-0 cblack1 fw-medium fs-16">Long Line MIx</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="line_90_plus" name="line_90_plus">
+                                    <label for="line_90_plus" class="mb-0 cblack1 fw-medium fs-16">Exposed Aggregate</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="line_90_plus" name="line_90_plus">
+                                    <label for="line_90_plus" class="mb-0 cblack1 fw-medium fs-16">Early Strength</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- row 3 -->
+                    <div class="available-line-lengths">
+                        <h6 class="text-primary fw-medium fs-18">Available Washout Options</h6>
+                        <hr class="my-3 borderwh-1">
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="supply_washout_bag" name="supply_washout_bag" checked>
+                                    <label for="supply_washout_bag" class="mb-0 cblack1 fw-medium fs-16">Supply washout bag</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price" value="$250">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="off_site_washout" name="off_site_washout">
+                                    <label for="off_site_washout" class="mb-0 cblack1 fw-medium fs-16">Off-site washout</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                       
+                    </div>
 
+                    <!-- row 4 -->
+                    <div class="available-line-lengths">
+                        <h6 class="text-primary fw-medium fs-18">Available Job Details</h6>
+                        <hr class="my-3 borderwh-1">
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="supply_washout_bag" name="supply_washout_bag" checked>
+                                    <label for="supply_washout_bag" class="mb-0 cblack1 fw-medium fs-16">Ground slab</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price" value="$250">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="suspended_slab" name="suspended_slab">
+                                    <label for="suspended_slab" class="mb-0 cblack1 fw-medium fs-16">Suspended slab</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="tight_access_long_line" name="tight_access_long_line">
+                                    <label for="tight_access_long_line" class="mb-0 cblack1 fw-medium fs-16">Tight access / long line</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="retaining_walls" name="retaining_walls" checked>
+                                    <label for="retaining_walls" class="mb-0 cblack1 fw-medium fs-16">Retaining walls</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price" value="$250">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="lift_shaf" name="lift_shaf">
+                                    <label for="lift_shaf" class="mb-0 cblack1 fw-medium fs-16">Lift Shaf</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="stairs" name="stairs">
+                                    <label for="stairs" class="mb-0 cblack1 fw-medium fs-16">Stairs</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="footings" name="footings">
+                                    <label for="footings" class="mb-0 cblack1 fw-medium fs-16">Footings</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="columns" name="columns">
+                                    <label for="columns" class="mb-0 cblack1 fw-medium fs-16">Columns</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="driveway" name="driveway">
+                                    <label for="driveway" class="mb-0 cblack1 fw-medium fs-16">Driveway</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- row 5 -->
+                    <div class="available-line-lengths">
+                        <h6 class="text-primary fw-medium fs-18">Other Attachment</h6>
+                        <hr class="my-3 borderwh-1">
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="pump_primer_charge" name="pump_primer_charge" checked>
+                                    <label for="pump_primer_charge" class="mb-0 cblack1 fw-medium fs-16">Pump Primer Charge</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price" value="$250">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="additional_lines_man_charge" name="additional_lines_man_charge">
+                                    <label for="additional_lines_man_charge" class="mb-0 cblack1 fw-medium fs-16">Additional Lines Man Charge</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                        <div class="checkbox-square-main">
+                            <div class="checkbox-square-wrap">
+                                <div class="form-group">
+                                    <input type="checkbox" class="checkbox" id="washout_bag_charges" name="washout_bag_charges">
+                                    <label for="washout_bag_charges" class="mb-0 cblack1 fw-medium fs-16">Washout Bag Charges</label>
+                                </div>
+                            </div>
+                            <div class="position-relative dollar_symbol">
+                            <input type="text" class="form-control border cblack1-placeholder w-150" id="form-tnum"
+                            name="form-tnum" placeholder="Enter price">
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-op-btn text-end">
+            <div class="offcanvas-btn-wrap d-inline-block">
+                <button type="button" class="btn-cancel btn btn-outline" data-offcanvas-prev="#offcanvasAddFleet">
+                    Cancel
+                </button>
+                <button type="submit" class="btn">Add Attachments</button>
+            </div>
+        </div>
+    </form>
+</div>
 
 <!-- Modal -->
 <div class="modal modal-cm fade" id="AddNewAttModal" tabindex="-1" aria-labelledby="AddNewAttModalLabel" aria-hidden="true">
