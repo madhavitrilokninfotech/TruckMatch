@@ -26,9 +26,11 @@
 .sidebar-show-hide .main-sidebar .sb-nav-item .sb-nav-link p{padding-left:0px;visibility:hidden;opacity:0;position:absolute;}
 .sidebar-show-hide .main-sidebar .sb-nav-item .sb-nav-link{padding:15px 15px;justify-content: center;}
 .sidebar-show-hide .main-header nav.main-header{margin-left:100px;}
-.sidebar-show-hide .sidebar-toggle i {transform: rotate(180deg); }
-
-
+/* .sidebar-show-hide .sidebar-toggle i {transform: rotate(180deg); } */
+.sidebar-toggle i.fa-bars{font-style: normal;}
+.sidebar-show-hide .headera-logo-wrap {
+    width: 90px;
+}
 
 @media(max-width:1799px) {
 
