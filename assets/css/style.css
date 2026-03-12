@@ -2222,7 +2222,9 @@ img.completeicon{
 .cal-cell.active {
     background-color: #FFEBE6;
 }
-
+.tm-attachments .available-lengths-group>div:last-child.mb-3{
+    margin-bottom: 0 !important;
+}
 /* ------ Media CSS  ------- */
 
 @media(max-width:767px) {
