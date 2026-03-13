@@ -4641,7 +4641,7 @@
                                             </div>
                                         </div>
 
-                                        <!--  <div class="tab-pane fade" id="child-pane-3" role="tabpanel">
+                                         <!-- <div class="tab-pane fade" id="child-pane-3" role="tabpanel">
                                             <div class="job-details-wp">
                                                 <div class="job-details-main">
                                                 <div class="job-details-wrap bg-white border2-gray br14 mbot16">
@@ -11178,80 +11178,31 @@
                 </div>
                 <div class="form-group">
                     <label class="offcanvas-body-title">Operator Companies</label>
-                    
-                    <div class="custom-multiselect" id="companySelect">
-                        <div class="form-control border selected-items" id="selectedItems">
-                            <span class="placeholderfilter">Select Company</span>
-                            <div class="dropdown-arrow">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z"/>
-                                </svg>
-                            </div>
-                        </div>
-         
-                        <!-- Dropdown List -->
-                        <div class="dropdown-list" id="dropdownList">
-                            <div class="dropdown-item-custom" data-value="fast-truck">
-                                <div class="wh-40 wh-custom">
-                                    <img src="../../assets/images/rc-fpl.png" alt="Image"> 
-                                </div>
-                                <span class="item-text">Fast Truck Pvt. Ltd.</span>
-                                <div class="custom-checkbox">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                    </svg>
-                                </div>
-                            </div>
-         
-                            <div class="dropdown-item-custom" data-value="speedy-logistics">
-                                <div class="wh-40 wh-custom">
-                                    <img src="../../assets/images/rc-fpl.png" alt="Image"> 
-                                </div>
-                                <span class="item-text">Speedy Logistics Inc.</span>
-                                <div class="custom-checkbox">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                    </svg>
-                                </div>
-                            </div>
-         
-                            <div class="dropdown-item-custom" data-value="global-express">
-                                <div class="wh-40 wh-custom">
-                                    <img src="../../assets/images/rc-fpl.png" alt="Image"> 
-                                </div>
-                                <span class="item-text">Global Express Services</span>
-                                <div class="custom-checkbox">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                    </svg>
-                                </div>
-                            </div>
-         
-                            <div class="dropdown-item-custom" data-value="efficient-transport">
-                                <div class="wh-40 wh-custom">
-                                    <img src="../../assets/images/rc-fpl.png" alt="Image"> 
-                                </div>
-                                <span class="item-text">Efficient Transport Solutions</span>
-                                <div class="custom-checkbox">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                    </svg>
-                                </div>
-                            </div>
-         
-                            <div class="dropdown-item-custom" data-value="quick-delivery">
-                                <div class="wh-40 wh-custom">
-                                    <img src="../../assets/images/rc-fpl.png" alt="Image"> 
-                                </div>
-                                <span class="item-text">Quick Delivery Services Co.</span>
-                                <div class="custom-checkbox">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
+                    <select id="teamSelect" name="company" multiple>
+                        <option value="1" data-img="/assets/images/rc-fpl.png">Fast Truck Pvt. Ltd.</option>
+                        <option value="2" data-img="/assets/images/rc-fpl.png">Speedy Logistics Inc.</option>
+                        <option value="3" data-img="/assets/images/rc-fpl.png">Global Express Services</option>
+                        <option value="4" data-img="/assets/images/rc-fpl.png">Efficient Transport Solutions</option>
+                        <option value="5" data-img="/assets/images/rc-fpl.png">Quick Delivery Services Co.</option>
+                    </select>
+
+                    <!-- Trigger button -->
+                    <div id="ms-trigger" class="ms-trigger">
+                        <span class="placeholderfilter" id="ms-placeholder">Select Company</span>
+                        <span class="arrow">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 6L8 10L12 6" stroke="#555" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </span>
                     </div>
+
+                    <!-- Dropdown list -->
+                    <div id="ms-dropdown" class="ms-dropdown">
+                        <div class="ms-list" id="ms-list"></div>
+                    </div>
+
+                    <!-- Selected tags -->
+                    <div class="ms-tags" id="ms-tags"></div>
                 </div>
                 <div class="offcanvas-body-inner">
                     <div class="offcanvas-body-title">
@@ -11262,7 +11213,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype1" name="multytype1">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype1" name="multytype1">
                                         <label for="multytype1" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/concrete-line-pump.png"
                                                 class="img-fluid" alt="Image">
@@ -11278,7 +11229,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype2" name="multytype2">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype2" name="multytype2">
                                         <label for="multytype2" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/concrete-boom-pump.png" class="img-fluid"
                                                 alt="Image">
@@ -11294,7 +11245,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype3" name="multytype3">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype3" name="multytype3">
                                         <label for="multytype3" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/tipper-truck.png"
                                                 class="img-fluid" alt="Image">
@@ -11310,7 +11261,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype4" name="multytype4">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype4" name="multytype4">
                                         <label for="multytype4" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/water-truck.png"
                                                 class="img-fluid" alt="Image">
@@ -11326,7 +11277,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype5" name="multytype5">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype5" name="multytype5">
                                         <label for="multytype5" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/flatbed-truck.png"
                                                 class="img-fluid" alt="Image">
@@ -11342,7 +11293,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype6" name="multytype6">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype6" name="multytype6">
                                         <label for="multytype6" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/flatbed-with-forklift.png" class="img-fluid"
                                                 alt="Image">
@@ -11358,7 +11309,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype7" name="multytype7">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype7" name="multytype7">
                                         <label for="multytype7" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/tilt-tray-truck.png" class="img-fluid"
                                                 alt="Image">
@@ -11374,7 +11325,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype8" name="multytype8">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype8" name="multytype8">
                                         <label for="multytype8" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/hiab-crane.png" class="img-fluid"
                                                 alt="Image">
@@ -11390,7 +11341,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype9" name="multytype9">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype9" name="multytype9">
                                         <label for="multytype9" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/tipper-excavator.png" class="img-fluid"
                                                 alt="Image">
@@ -11406,7 +11357,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype10" name="multytype10">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype10" name="multytype10">
                                         <label for="multytype10" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/tipper-skid.png"
                                                 class="img-fluid" alt="Image">
@@ -11422,7 +11373,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype11" name="multytype11">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype11" name="multytype11">
                                         <label for="multytype11" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/tipper-excavator-and-skid-steer.png"
                                                 class="img-fluid" alt="Image">
@@ -11438,7 +11389,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype12" name="multytype12">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype12" name="multytype12">
                                         <label for="multytype12" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/vacuum-truck.png"
                                                 class="img-fluid" alt="Image">
@@ -11454,7 +11405,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype13" name="multytype13">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype13" name="multytype13">
                                         <label for="multytype13" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/woodchipper&truck-combo.png"
                                                 class="img-fluid" alt="Image">
@@ -11470,7 +11421,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype14" name="multytype14">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype14" name="multytype14">
                                         <label for="multytype14" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/concrete-agitator.png"
                                                 class="img-fluid" alt="Image">
@@ -11486,7 +11437,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype15" name="multytype15">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype15" name="multytype15">
                                         <label for="multytype15" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/semi-tilt-tray.png"
                                                 class="img-fluid" alt="Image">
@@ -11502,7 +11453,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype16" name="multytype16">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype16" name="multytype16">
                                         <label for="multytype16" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/beavertail-truck.png"
                                                 class="img-fluid" alt="Image">
@@ -11518,7 +11469,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype17" name="multytype17">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype17" name="multytype17">
                                         <label for="multytype17" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/beavertail-trailer.png"
                                                 class="img-fluid" alt="Image">
@@ -11534,7 +11485,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype18" name="multytype18">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype18" name="multytype18">
                                         <label for="multytype18" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/low-loader.png"
                                                 class="img-fluid" alt="Image">
@@ -11550,7 +11501,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype19" name="multytype19">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype19" name="multytype19">
                                         <label for="multytype19" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/excavator.png"
                                                 class="img-fluid" alt="Image">
@@ -11566,7 +11517,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype20" name="multytype20">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype20" name="multytype20">
                                         <label for="multytype20" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/skid-steer.png"
                                                 class="img-fluid" alt="Image">
@@ -11582,7 +11533,7 @@
                             <div class="radio-square-main">
                                 <div class="radio-square-wrap">
                                     <div class="form-group mb-0">
-                                        <input type="radio" class="radio-st-sq" id="multytype21" name="multytype21">
+                                        <input type="checkbox" class="radio-st-sq" id="multytype21" name="multytype21">
                                         <label for="multytype21" class="radio-square-label">
                                             <img src="../../assets/images/truckimgs/excavator-and-skid.png"
                                                 class="img-fluid" alt="Image">
@@ -13117,116 +13068,98 @@
 
   <!-- =================== /WEB JS BOC ==================== -->
 
-<script>
-    class MultiSelect {
-        constructor(containerId) {
-            this.container = document.getElementById(containerId);
-            this.selectedItems = this.container.querySelector('#selectedItems');
-            this.dropdownList = this.container.querySelector('#dropdownList');
-            this.items = this.container.querySelectorAll('.dropdown-item-custom');
-            this.selectedValues = [];
-
-            this.init();
-        }
-
-        init() {
-
-            // toggle dropdown
-            this.selectedItems.addEventListener('click', () => {
-                this.dropdownList.classList.toggle('show');
-                this.selectedItems.classList.toggle('open');
-            });
-
-            // close outside click
-            document.addEventListener('click', (e) => {
-                if (!this.container.contains(e.target)) {
-                    this.dropdownList.classList.remove('show');
-                    this.selectedItems.classList.remove('open');
-                }
-            });
-
-            // item click
-            this.items.forEach(item => {
-                item.addEventListener('click', () => {
-                    this.toggleItem(item);
-                });
-            });
-        }
-
-        toggleItem(item) {
-
-            const value = item.dataset.value;
-            const text = item.querySelector('.item-text').textContent;
-
-            if (item.classList.contains('selected')) {
-
-                item.classList.remove('selected');
-                this.selectedValues = this.selectedValues.filter(v => v.value !== value);
-
-            } else {
-
-                item.classList.add('selected');
-                this.selectedValues.push({ value, text });
-            }
-
-            this.renderSelected();
-        }
-
-        renderSelected() {
-
-            this.selectedItems.innerHTML = '';
-
-            if (this.selectedValues.length === 0) {
-
-                const placeholder = document.createElement('span');
-                placeholder.className = 'placeholderfilter';
-                placeholder.innerText = 'Select Company';
-                this.selectedItems.appendChild(placeholder);
-
-            } else {
-
-                this.selectedValues.forEach(item => {
-
-                    const tag = document.createElement('div');
-                    tag.className = 'selected-tag';
-
-                    tag.innerHTML = `<div class="company-icon"><img src="../../assets/images/rc-fpl.png"></div><span>${item.text}</span><button class="remove-btn">×</button>`;
-
-                    tag.querySelector('.remove-btn').onclick = (e) => {
-                        e.stopPropagation();
-                        this.removeTag(item.value);
-                    };
-
-                    this.selectedItems.appendChild(tag);
-
-                });
-
-            }
-
-            const arrow = document.createElement('div');
-            arrow.className = 'dropdown-arrow';
-            arrow.innerHTML = '<svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>';
-
-            this.selectedItems.appendChild(arrow);
-        }
-
-        removeTag(value) {
-
-            const item = this.container.querySelector(`[data-value="${value}"]`);
-
-            if (item) {
-                item.classList.remove('selected');
-            }
-
-            this.selectedValues = this.selectedValues.filter(v => v.value !== value);
-
-            this.renderSelected();
-        }
-
+  <script>
+    const selectEl    = document.getElementById('teamSelect');
+    const trigger     = document.getElementById('ms-trigger');
+    const dropdown    = document.getElementById('ms-dropdown');
+    const listEl      = document.getElementById('ms-list');
+    const placeholder = document.getElementById('ms-placeholder');
+    const tagsEl      = document.getElementById('ms-tags');
+  
+    const options = Array.from(selectEl.options).map(o => ({
+      value: o.value,
+      name:  o.text,
+      img:   o.dataset.img,
+      selected: false
+    }));
+  
+    /* ── Render dropdown list ── */
+    function renderList() {
+      listEl.innerHTML = '';
+      options.forEach(opt => {
+        const div = document.createElement('div');
+        div.className = 'ms-option' + (opt.selected ? ' selected' : '');
+        div.innerHTML = `
+          <img class="opt-logo" src="${opt.img}" alt="${opt.name}"/>
+          <span class="opt-name">${opt.name}</span>
+          <div class="opt-cb">
+            <svg width="11" height="9" viewBox="0 0 11 9" fill="none">
+              <path d="M1 4.5L4 7.5L10 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        `;
+        div.addEventListener('click', () => toggle(opt.value));
+        listEl.appendChild(div);
+      });
     }
-
-    new MultiSelect("companySelect");
-</script>
+  
+    /* ── Render pill tags below ── */
+    function renderTags() {
+      tagsEl.innerHTML = '';
+      const selected = options.filter(o => o.selected);
+      if (!selected.length) { placeholder.style.display = ''; return; }
+  
+      selected.forEach(opt => {
+        const tag = document.createElement('div');
+        tag.className = 'ms-tag';
+        tag.innerHTML = `
+          ${opt.name}
+          <button class="tag-remove" title="Remove">&#x2715;</button>
+        `;
+        tag.querySelector('.tag-remove').addEventListener('click', e => {
+          e.stopPropagation();
+          toggle(opt.value);
+        });
+        tagsEl.appendChild(tag);
+      });
+    }
+  
+    /* ── Toggle selection ── */
+    function toggle(value) {
+      const opt = options.find(o => o.value === value);
+      if (!opt) return;
+      opt.selected = !opt.selected;
+      syncNative();
+      renderList();
+      renderTags();
+    }
+  
+    /* ── Sync native select ── */
+    function syncNative() {
+      Array.from(selectEl.options).forEach(o => {
+        o.selected = options.find(opt => opt.value === o.value)?.selected || false;
+      });
+    }
+  
+    /* ── Toggle dropdown open/close ── */
+    trigger.addEventListener('click', () => {
+      const isOpen = dropdown.classList.contains('open');
+      dropdown.classList.toggle('open', !isOpen);
+      trigger.classList.toggle('open', !isOpen);
+    });
+  
+    /* ── Close on outside click ── */
+    document.addEventListener('click', e => {
+      if (!trigger.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove('open');
+        trigger.classList.remove('open');
+      }
+    });
+  
+    /* ── Init ── */
+    renderList();
+    renderTags();  
+  </script>
 
 <script>
     // Review Rating Click JS
