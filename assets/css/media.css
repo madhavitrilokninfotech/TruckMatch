@@ -95,7 +95,7 @@ Large devices
     left: 12px;
 }
 .addnewattachment .checkbox-square-wrap .checkbox:checked + label:after{
-    left: 1px;
+    left: 1.5px;
 }
 .assign-opp {
     flex: 0 0 auto;
@@ -360,7 +360,7 @@ label.form-label{font-size:14px;margin-bottom:8px;}
 
 
 .checkbox-square-wrap .checkbox + label{font-size:13px;padding:8px 12px 8px 35px;}
-.checkbox-square-wrap .checkbox + label::before{left:12px;width:16px;height:16px;top:9px;}
+.checkbox-square-wrap .checkbox + label::before{left:12px;width:16px;height:16px;top:9px;border-radius: 4px;}
 .checkbox-square-wrap .checkbox:checked + label:after {left: 14px; width: 13px; height: 13px; top: 10px; font-size: 9px; }
 
 
@@ -1327,9 +1327,11 @@ Extra small devices (portrait phones, less than 576px)
     flex: 1;
 }
 .countbadge {
-    width: 18px;
+    min-width: 18px;
     height: 18px;
     font-size: 9px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 .payment-summary .doc-up-suc-wrap {
     gap: 0;

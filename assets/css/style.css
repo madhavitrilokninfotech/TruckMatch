@@ -1535,13 +1535,13 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 }
 .countbadge{
     background-color: #D74315;
-    width: 20px;
+    min-width: 20px;
     height: 20px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1549,6 +1549,9 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
     font-size: 11px;
     line-height: 1;
     margin-left: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
 }
 
 /* inprogress screen */
@@ -2225,7 +2228,11 @@ img.completeicon{
 .tm-attachments .available-lengths-group>div:last-child.mb-3{
     margin-bottom: 0 !important;
 }
-/* ------ Media CSS  ------- */
+.truck-op-row .job-card-main .job-card-title-t{
+    display: inline-flex;
+    align-items: center;
+}
+ /* ------ Media CSS  ------- */
 
 @media(max-width:767px) {
 
