@@ -1942,6 +1942,13 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .ratingstar input:checked + label ~ label {
     color: #FFA500;
 }
+.filled-rating-star .star{
+    color: #E8E8E8;
+    padding-right: 1px;
+}
+.filled-rating-star .star.filled{
+    color: #FFA500;
+}
 .backarrow_main_layout {
     display: flex;
     align-items: center;
@@ -2233,6 +2240,11 @@ img.completeicon{
     align-items: center;
 }
 .otherinput input:disabled { background:#f5f5f5; cursor:not-allowed; }
+.otherinput input:focus-visible {
+  outline: 2px solid #D74315;
+  border-color: #D74315;
+}
+
  /* ------ Media CSS  ------- */
 
 @media(max-width:767px) {

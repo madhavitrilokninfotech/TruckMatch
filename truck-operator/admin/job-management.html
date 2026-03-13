@@ -5457,7 +5457,13 @@
                                                                                
                                                                             </div>
                                                                             <hr class="my-2">
-                                                                            <img src="../../assets/images/com-de-re-rat.png" class="img-fluid mt-1 mb-2" alt="Image">
+                                                                            <div class="filled-rating-star mt-1 mb-2">
+                                                                                <span class="star filled">★</span>
+                                                                                <span class="star filled">★</span>
+                                                                                <span class="star filled">★</span>
+                                                                                <span class="star filled">★</span>
+                                                                                <span class="star">★</span>
+                                                                            </div>
                                                                             <p class="fs-14 cblack1">
                                                                                 The truck operator was highly professional. Delivery was on time, the driver was cooperative, and communication was smooth throughout. We’re satisfied with the service and would happily work together again.
                                                                             </p> 
@@ -8550,7 +8556,13 @@
                                                                                
                                                                             </div>
                                                                             <hr class="my-2">
-                                                                            <img src="../../assets/images/com-de-re-rat.png" class="img-fluid mt-1 mb-2" alt="Image">
+                                                                            <div class="filled-rating-star mt-1 mb-2">
+                                                                                <span class="star filled">★</span>
+                                                                                <span class="star filled">★</span>
+                                                                                <span class="star filled">★</span>
+                                                                                <span class="star filled">★</span>
+                                                                                <span class="star">★</span>
+                                                                            </div>
                                                                             <p class="fs-14 cblack1">
                                                                                 The truck operator was highly professional. Delivery was on time, the driver was cooperative, and communication was smooth throughout. We’re satisfied with the service and would happily work together again.
                                                                             </p> 
@@ -10669,7 +10681,13 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="../../assets/images/com-de-re-rat.png" class="img-fluid mt-1 mb-2" alt="Image">
+                        <div class="filled-rating-star mt-1 mb-2">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
                         <p class="fs-14 cblack1">
                             The truck operator was highly professional. Delivery was on time, the driver was cooperative, and communication was smooth throughout. We’re satisfied with the service and would happily work together again.
                         </p> 
@@ -10700,7 +10718,13 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="../../assets/images/com-de-re-rat.png" class="img-fluid mt-1 mb-2" alt="Image">
+                        <div class="filled-rating-star mt-1 mb-2">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
                         <p class="fs-14 cblack1">
                             The truck operator was highly professional. Delivery was on time, the driver was cooperative, and communication was smooth throughout. We’re satisfied with the service and would happily work together again.
                         </p> 
@@ -10730,7 +10754,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <img src="../../assets/images/com-de-re-rat.png" class="img-fluid mt-1 mb-2" alt="Image">
+                            <div class="filled-rating-star mt-1 mb-2">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                            </div>
                             <p class="fs-14 cblack1">
                                 Exceptional service! The tech support was knowledgeable and resolved our issues quickly. We appreciated their quick response time and expertise.                     
                                 </p> 
@@ -11636,15 +11666,19 @@
 
 
 <script>
-    $(function () {
-        const otherRadio = document.getElementById('radio-checkbox-flagg-rev-fgtsrw5');
-        const otherText  = document.getElementById('other-text');
+$(function () {
+  const $otherInput = $('.otherinput input').prop('disabled', true);
 
-        // keep disabled until the radio is chosen
-        otherRadio.addEventListener('change', () => {
-            otherText.disabled = !otherRadio.checked;
-        });
-    });
+  $('input[name="radio-checkbox-flagg-rev-fgtsrw"]').on('change', function () {
+    const isOther = $('#radio-checkbox-flagg-rev-fgtsrw5').prop('checked');
+
+    $otherInput.prop('disabled', !isOther);
+
+    if (isOther) {
+      $otherInput.focus(); // add focus when enabled
+    }
+  });
+});
 </script>
 
 <script>
