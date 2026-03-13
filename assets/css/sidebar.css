@@ -31,6 +31,9 @@
 .sidebar-show-hide .headera-logo-wrap {
     width: 90px;
 }
+body.sidebar-show-hide {
+    overflow: hidden;
+}
 
 @media(max-width:1799px) {
 
