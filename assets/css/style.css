@@ -2255,38 +2255,20 @@ img.completeicon{
     for Incoming Job Feed
 =================================================================================*/
 /* Custom Multi-Select Container */
-.card-wrap {
-    width: 100%;
-    max-width: 620px;
-    background: #fff;
-    border-radius: 16px;
-    padding: 28px 28px 32px;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
-}
-
-.field-label {
-    font-size: 15px;
-    font-weight: 700;
-    color: #CD1F38;
-    margin-bottom: 14px;
-}
-
-/* Hidden native select */
 #teamSelect {
     display: none;
 }
 
-/* ── Trigger ── */
 .ms-trigger {
-    /* background: #f7f7f8; */
+    background: transparent;
     border: 2px solid #ECECEC;
     border-radius: 10px;
-    padding: 13px 16px;
+    padding: 10px 15px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 50px;
+    height: 52px;
     transition: border-color 0.2s, border-radius 0.15s;
     user-select: none;
 }
@@ -2312,7 +2294,6 @@ img.completeicon{
     line-height: 2;
 }
 
-/* chevron SVG */
 .ms-trigger .arrow {
     color: #797979;
     flex-shrink: 0;
@@ -2325,7 +2306,6 @@ img.completeicon{
     transform: rotate(180deg);
 }
 
-/* ── Dropdown ── */
 .ms-dropdown {
     background: #f7f7f8;
     border: 1.5px solid #e0e0e6;
@@ -2341,7 +2321,6 @@ img.completeicon{
     display: block;
 }
 
-/* ── List ── */
 .ms-list {
     max-height: 320px;
     overflow-y: auto;
@@ -2369,12 +2348,11 @@ img.completeicon{
     background: #fdf5f1;
 }
 
-/* Company logo */
 .ms-option .opt-logo {
-    width: 38px;
-    height: 38px;
-    border-radius: 8px;
-    object-fit: contain;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    object-fit: cover;
     flex-shrink: 0;
 }
 
@@ -2385,7 +2363,6 @@ img.completeicon{
     color: #000;
 }
 
-/* Checkbox — right side */
 .ms-option .opt-cb {
     width: 20px;
     height: 20px;
@@ -2404,23 +2381,14 @@ img.completeicon{
     border-color: #d4500a;
 }
 
-.ms-option .opt-cb svg {
+/* .ms-option .opt-cb svg {
     display: none;
-}
+} */
 
-.ms-option.selected .opt-cb svg {
+/* .ms-option.selected .opt-cb svg {
     display: block;
-}
+} */
 
-/* Empty */
-.ms-empty {
-    text-align: center;
-    padding: 24px;
-    color: #aaa;
-    font-size: 13px;
-}
-
-/* ── Tags below trigger ── */
 .ms-tags {
     display: flex;
     flex-wrap: wrap;
@@ -2433,12 +2401,12 @@ img.completeicon{
     align-items: center;
     gap: 7px;
     background: transparent;
-    border: 1px solid #ECECEC;
+    border: 2px solid #ECECEC;
     border-radius: 50px;
     padding: 8px 12px;
     font-size: 13px;
     font-weight: 500;
-    color: #000;
+    color: #797979;
     animation: tagIn 0.15s ease;
 }
 

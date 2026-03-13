@@ -121,7 +121,7 @@ h6,.h6 { font-size:14px; }
 .fs-26{font-size:24px !important;}
 
 
-.form-control.border, .ms-trigger{height:45px;font-size: 13px;padding: 8px 12px;}
+.form-control.border {height:45px;font-size: 13px;padding: 8px 12px;}
 .form-control.border::placeholder { font-size: 13px;}
 .form-control.border::-moz-placeholder { font-size: 13px;}
 .form-control.border:-ms-input-placeholder { font-size: 13px;}
@@ -425,7 +425,11 @@ label.form-label{font-size:14px;margin-bottom:8px;}
 .asign-supp-op-wrap button{width:16px;}
 .wh-28{width:24px;height:24px;font-size:11px!important;}
 
-
+/* Search-side Filter */
+.ms-trigger{height:45px;padding: 8px 12px;}
+.ms-tag,
+.ms-tag .tag-remove,
+.ms-trigger .placeholderfilter{font-size: 13px;}
 }
 
 
@@ -1077,7 +1081,7 @@ h5,.h5 { font-size:16px; }
 h6,.h6 { font-size:14px; }
 
 
-.form-control.border, .ms-trigger{height:42px;padding: 8px 12px;font-size: 12px;}
+.form-control.border {height:42px;padding: 8px 12px;font-size: 12px;}
 .form-control.border::placeholder { font-size: 12px;}
 .form-control.border::-moz-placeholder { font-size: 12px;}
 .form-control.border:-ms-input-placeholder { font-size: 12px;}
@@ -1185,7 +1189,11 @@ h6,.h6 { font-size:14px; }
 .schedule-days-box{border-radius:10px;}
 .schedule-days-cal-icon{border-radius:8px;}
 
-
+/* Search-side Filter */
+.ms-trigger{height:42px;padding: 8px 12px;}
+.ms-tag,
+.ms-tag .tag-remove,
+.ms-trigger .placeholderfilter{font-size: 12px;}
 }
 
 
