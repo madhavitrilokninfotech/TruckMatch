@@ -11596,16 +11596,14 @@
             </div>
 
             <div class="radio-checkbox-flagg-rev-fgtsrw-wrap mb-3">
-                <input type="radio" class="flagg-rev-fgtsrw" id="radio-checkbox-flagg-rev-fgtsrw5" name="radio-checkbox-flagg-rev-fgtsrw">
+                <input type="radio" class="flagg-rev-fgtsrw other-r" id="radio-checkbox-flagg-rev-fgtsrw5" name="radio-checkbox-flagg-rev-fgtsrw">
                 <label for="radio-checkbox-flagg-rev-fgtsrw5" class="row gx-2 align-items-center radio-checkbox-flagg-rev-fgtsrw-label flagg-rev-wrap bg-gray1 border2-gray bg-gray1 fs-14 cgray br10 flag-review-box" id="radio-checkbox-flagg-rev-fgtsrw" name="radio-checkbox-flagg-rev-fgtsrw">
                    Other Reason
                 </label>                
+                <div class="form-group otherinput mt-3">
+                    <input type="text" id="other-text" class="form-control border bg-gray1" placeholder="Please specify why you’re flagging this review…" disabled>              
+                </div>  
             </div>
-
-            <div class="form-group">
-                <input type="text" class="form-control border bg-gray1" placeholder="Please specify why you’re flagging this review…">              
-            </div>                 
-
           </div>
           <div class="modal-footer pt-0 cp-20 border-0 rounded-0">
             <div class="row w-100 gx-2">
@@ -11637,6 +11635,17 @@
     <!-- =================== /WEB JS BOC ==================== -->
 
 
+<script>
+    $(function () {
+        const otherRadio = document.getElementById('radio-checkbox-flagg-rev-fgtsrw5');
+        const otherText  = document.getElementById('other-text');
+
+        // keep disabled until the radio is chosen
+        otherRadio.addEventListener('change', () => {
+            otherText.disabled = !otherRadio.checked;
+        });
+    });
+</script>
 
 <script>
 

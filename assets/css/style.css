@@ -2232,6 +2232,7 @@ img.completeicon{
     display: inline-flex;
     align-items: center;
 }
+.otherinput input:disabled { background:#f5f5f5; cursor:not-allowed; }
  /* ------ Media CSS  ------- */
 
 @media(max-width:767px) {
