@@ -361,7 +361,7 @@ label.form-label{font-size:14px;margin-bottom:8px;}
 
 .checkbox-square-wrap .checkbox + label{font-size:13px;padding:8px 12px 8px 35px;}
 .checkbox-square-wrap .checkbox + label::before{left:12px;width:16px;height:16px;top:9px;border-radius: 4px;}
-.checkbox-square-wrap .checkbox:checked + label:after {left: 14px; width: 13px; height: 13px; top: 10px; font-size: 9px; }
+.checkbox-square-wrap .checkbox:checked + label:after {left: 14px; width: 13px; height: 14px; top: 10px; font-size: 9px; }
 
 
 .apple-toggle-wrap label{width:50px;height:26px;}
