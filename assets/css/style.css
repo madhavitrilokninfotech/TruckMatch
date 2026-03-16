@@ -1063,7 +1063,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .border-gray-top{border-top:1px solid #ECECEC;}
 .borderb2-top{border-top:2px solid #ECECEC;}
 .gray-box-sm:last-child{margin-right:0px;}
-.cb-sm-box{margin-right:4px;margin-bottom:7px;padding:6px 10px;display:inline-flex;flex-wrap:wrap;align-items:center;}
+.cb-sm-box{margin-right:4px;margin-bottom:7px;padding:8px 10px;display:inline-flex;flex-wrap:wrap;align-items:center;}
 .cursor-pointer{cursor:pointer!important;}
 
 
