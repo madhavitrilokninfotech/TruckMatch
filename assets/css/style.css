@@ -2071,6 +2071,8 @@ img.completeicon{
     bottom: 0;
     right: 0;
     left: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 8px;
 }
 .certi-doc-item{
     cursor: pointer;
