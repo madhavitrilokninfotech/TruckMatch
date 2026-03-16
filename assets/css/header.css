@@ -184,7 +184,7 @@
 
 .ha-dropdown-click .user-menu .h-admin-info{display:none;}
 .offcanvas-btn.btn{padding:7px 12px;}
-.ha-dropdown-main ul.dropdown-menu {
+.ha-dropdown-main ul.dropdown-menu.notification-main {
     transform: translateX(50px);
     -webkit-transform: translateX(50px);
     -moz-transform: translateX(50px);
