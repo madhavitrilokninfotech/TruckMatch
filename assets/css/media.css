@@ -429,6 +429,7 @@ label.form-label{font-size:14px;margin-bottom:8px;}
 .ms-trigger{height:45px;padding: 8px 12px;}
 .ms-tag,
 .ms-tag .tag-remove,
+.ms-option .opt-name,
 .ms-trigger .placeholderfilter{font-size: 13px;}
 }
 
@@ -1200,6 +1201,7 @@ h6,.h6 { font-size:14px; }
 .ms-trigger{height:42px;padding: 8px 12px;}
 .ms-tag,
 .ms-tag .tag-remove,
+.ms-option .opt-name,
 .ms-trigger .placeholderfilter{font-size: 12px;}
 }
 
@@ -1548,6 +1550,11 @@ p { font-size: 14px; }
 .assi-dri-sdriver-col{width:100%;margin-bottom:15px;}
 .assi-dri-sdriver-col:last-child{margin-bottom:0px;}
 
+
+.ms-tags{max-height: 120px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
 
 }
 
