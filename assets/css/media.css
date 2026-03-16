@@ -1228,6 +1228,11 @@ Extra small devices (portrait phones, less than 576px)
 .modal-dialog {
     margin-right: auto;
     margin-left: auto;
+    width: 100%;
+    max-width: 100%;
+}
+.modal-content {
+    margin: 0 10px;
 }
 .reason-wrap {
     flex-wrap: wrap;

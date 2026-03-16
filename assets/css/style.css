@@ -2178,6 +2178,9 @@ img.completeicon{
     cursor: pointer;
 }
 /* calendar */
+.calendar-wrapper{
+    overflow: hidden;
+}
 .calendar-wrapper .nav-btn{
     background-color: transparent;
     border: none;
