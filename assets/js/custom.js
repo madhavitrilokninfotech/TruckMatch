@@ -478,3 +478,14 @@ $(document).ready(function(){
 $(document).on("click", ".close-doc", function () {
     $(this).closest(".green-box").remove();
 });
+
+// Add class in main header when open notification panel
+$(document).on("click", ".ha-dropdown-click.h-notification-click", function () {
+    $(".main-header").addClass("notification-open");
+});
+
+$(document).on("click", function (e) {
+    if (!$(e.target).closest(".h-notification-main").length) {
+        $(".main-header").removeClass("notification-open");
+    }
+});

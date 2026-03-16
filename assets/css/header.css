@@ -18,7 +18,7 @@
 
 .h-notification-main .h-notification-click{width:60px;height:60px;padding:5px;text-align:center;display:flex;align-items:center;justify-content:center;margin-right:10px;position:relative;border-radius:50%;background-color: #fff;}
 
-
+.main-header.notification-open{z-index: 9999;}
 .main-header-right{align-items:center;}
 
 
@@ -184,7 +184,13 @@
 
 .ha-dropdown-click .user-menu .h-admin-info{display:none;}
 .offcanvas-btn.btn{padding:7px 12px;}
-
+.ha-dropdown-main ul.dropdown-menu {
+    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    -o-transform: translateX(50px);
+}
 
 }
 
@@ -231,7 +237,7 @@
 
 .headera-logo-wrap{width: 120px;}
 .sidebar-toggle-mob{/*display:block;right:-35px;bottom:-2px;width:25px;height:25px;font-size:16px;line-height:26px;*/}
-.sidebar-toggle-mob{display:block;font-size:16px;line-height:28px;position:fixed;top:28px;left:60px;z-index:999;}
+.sidebar-toggle-mob{display:block;font-size:16px;line-height:28px;position:fixed;top:28px;left:60px;z-index:99999;}
 .dash-txt-desk{display:none;}
 .dash-txt-mob{display:block;padding-right:10px;margin:5px 0px;}
 .dashboard-tl-mob .offcanvas-btn.btn{margin:5px 0px;}

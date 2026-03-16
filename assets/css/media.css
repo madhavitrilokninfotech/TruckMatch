@@ -254,7 +254,7 @@ label.form-label{font-size:14px;margin-bottom:8px;}
 .offcanvas-btn1.btn{padding:6px 25px;}
 .search-set{width:45px;height:45px;}
 .search-njob{width:calc(100% - 45px);padding-right:10px;}
-.btn.btn-outline-bs{font-size:16px;padding: 10px;}
+.btn.btn-outline-bs{font-size:16px;padding: 7px 10px;}
 .custom-tabs .nav-link{font-size:14px;padding:8px 20px;}
 .custom-tabs .nav-item{margin-right:5px;}
 .wh60{width:50px;height:50px;}
@@ -1050,6 +1050,9 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 767.98px) {  
+.search-njob .form-control.border {
+    height: 45px;
+}
 .in-close {
     padding: 1px 6px;
     width: 10px;
@@ -1363,6 +1366,7 @@ Extra small devices (portrait phones, less than 576px)
 }
 .fleet-mana-hr-tc-main .fleet-mana-hr-wp img {
     margin-right: 4px !important;
+    width: 16px;
 }
 .fleet-mana-hr-wrap .fs-20 {
     font-size: 13px !important;
@@ -1388,8 +1392,8 @@ Extra small devices (portrait phones, less than 576px)
 .search-njob .form-control.border::placeholder{font-size:13px;}
 .search-njob .form-control.border{font-size:13px;}
 .search-njob .form-control.border {
-    background-position: 7px center;
-    background-size: 22px;
+    background-position: 8px center;
+    background-size: 20px;
     padding-left: 32px!important;
 }
 
