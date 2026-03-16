@@ -2244,7 +2244,20 @@ img.completeicon{
   outline: 2px solid #D74315;
   border-color: #D74315;
 }
-
+.in-close{
+    padding: 0px 20px;
+    background-size: auto;
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}
+.in-close:focus,
+.in-close:focus-visible,
+.in-close:active{
+    box-shadow: none;
+    outline: none;
+    opacity: 0.6;
+}
  /* ------ Media CSS  ------- */
 
 @media(max-width:767px) {
