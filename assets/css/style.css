@@ -941,7 +941,8 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .modal-cm .modal-body{overflow-y:auto;flex:1 1 auto;scrollbar-width:thin;}
 .modal-dialog{max-width:550px;}
 .modal-footer>*{margin:0;}
-
+.modal-cm{z-index: 999999;}
+.modal-backdrop{z-index: 99999;}
 
 
 .schedule-days-box.completed{border-color:#15994B;background-color:#15994B;}
