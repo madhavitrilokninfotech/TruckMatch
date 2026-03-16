@@ -1051,9 +1051,8 @@ h6,.h6 { font-size:14px; }
 
 @media (max-width: 767.98px) {  
 .in-close {
-    width: 8px;
-    height: 20px;
-    padding: 8px 8px;
+    padding: 1px 6px;
+    width: 10px;
 }
 .ja-d-parent .stacat-wrap{
     position: initial;
