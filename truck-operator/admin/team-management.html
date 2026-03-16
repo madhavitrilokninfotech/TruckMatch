@@ -908,7 +908,7 @@
                                                         </div>     
                                                         
                                                         <!-- Completed Activity -->
-                                                        <div class="tm-card-act-content infocard job-card-content position-relative overflow-hidden bg-white border2-gray br14 mb-sm-3 card-click">
+                                                        <div class="tm-card-act-content infocard job-card-content position-relative overflow-hidden bg-white border2-gray br14 mb-sm-3 card-click" data-status="completed">
                                                             <div class="cp-20 borderb2-gray">
                                                                 <div class="stacat-wrap">
                                                                     <div class="stacat complete bg-green2 cgreen1 rounded-tr-0 fs-14 px-2 py-2">
@@ -1487,7 +1487,7 @@
                                                         </div>     
                                                         
                                                         <!-- Completed Activity -->
-                                                        <div class="tm-card-act-content infocard job-card-content position-relative overflow-hidden bg-white border2-gray br14 mb-sm-3 card-click">
+                                                        <div class="tm-card-act-content infocard job-card-content position-relative overflow-hidden bg-white border2-gray br14 mb-sm-3 card-click" data-status="completed">
                                                             <div class="cp-20 borderb2-gray">
                                                                 <div class="stacat-wrap">
                                                                     <div class="stacat complete bg-green2 cgreen1 rounded-tr-0 fs-14 px-2 py-2">
@@ -10580,14 +10580,22 @@
 
   <!-- =================== /WEB JS BOC ==================== -->
 <script>
-$(document).on("click", ".card-click", function () {
+$(document).on("click", ".card-click", function (event) {
 
     // ignore clicks on buttons or modal triggers
-    if($(event.target).closest(".flag-btn").length){
+    if ($(event.target).closest(".flag-btn").length) {
         return;
     }
 
-    var offcanvas = new bootstrap.Offcanvas(document.getElementById("offcanvasJobDetailsCom"));
+    // get card status
+    var status = $(this).data("status");
+
+    // set dropdown value
+    $("#statusDropdown").val(status);
+
+    var offcanvas = new bootstrap.Offcanvas(
+        document.getElementById("offcanvasJobDetailsCom")
+    );
     offcanvas.show();
 });
 </script>
