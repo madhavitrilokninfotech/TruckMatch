@@ -2270,6 +2270,10 @@ img.completeicon{
     outline: none;
     opacity: 1;
 }
+.box-count-main,
+.box-count-wrap{
+    height: 100%;
+}
  /* ------ Media CSS  ------- */
 
 @media(max-width:767px) {
