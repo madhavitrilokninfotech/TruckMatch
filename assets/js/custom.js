@@ -489,3 +489,38 @@ $(document).on("click", function (e) {
         $(".main-header").removeClass("notification-open");
     }
 });
+
+
+// ignore clicks on buttons or modal triggers
+$(document).on("click", ".card-click", function (event) {
+
+    if ($(event.target).closest(".flag-btn").length) {
+        return;
+    }
+
+    // get card status
+    var status = $(this).data("status");
+
+    // set dropdown value
+    $("#statusDropdown").val(status);
+
+    var offcanvas = new bootstrap.Offcanvas(
+        document.getElementById("offcanvasJobDetailsCom")
+    );
+    offcanvas.show();
+});
+
+// Add enabled when click input
+$(function () {
+  const $otherInput = $('.otherinput input').prop('disabled', true);
+
+  $('input[name="radio-checkbox-flagg-rev-fgtsrw"]').on('change', function () {
+    const isOther = $('#radio-checkbox-flagg-rev-fgtsrw5').prop('checked');
+
+    $otherInput.prop('disabled', !isOther);
+
+    if (isOther) {
+      $otherInput.focus(); // add focus when enabled
+    }
+  });
+});
