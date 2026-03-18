@@ -169,7 +169,6 @@
 .dash-txt{font-size:16px;}
 .headera-logo-wrap{width:180px;}
 .headera-mlogo {
-    width: 22px;
     margin-right: 2px;
 }
 .headera-logo img {
@@ -210,15 +209,15 @@
     height: 30px;
 }
 .h-notification-main .h-notification-click {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     padding: 2px;
 }
 .headera-mlogo {
     width: 26px;
 }
 .headera-logo {
-    display: none;
+    /* display: none; */
 }
 .sidebar-show-hide .headera-logo-wrap {
     width: auto;
@@ -226,7 +225,7 @@
 .sidebar-show-hide .headera-logo {
     opacity: 1;
 }
-.main-header{padding:15px 10px;}
+.main-header{padding:15px 10px;min-height: 72px;}
 
 .sidebar-top-toggle .sidebar-toggle-desk{display:none;}
 .h-notification-main .h-notification-click img{width:20px;height:20px;}

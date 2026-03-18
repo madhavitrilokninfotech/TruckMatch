@@ -1412,11 +1412,11 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 }
 
 .info-action-icon{
-    transform: rotate(-40.9deg) translateZ(0);
-    -webkit-transform: rotate(-40.9deg) translateZ(0);
-    -moz-transform: rotate(-40.9deg) translateZ(0);
-    -ms-transform: rotate(-40.9deg) translateZ(0);
-    -o-transform: rotate(-40.9deg) translateZ(0);
+    transform: rotate(-40.9deg);
+    -webkit-transform: rotate(-40.9deg);
+    -moz-transform: rotate(-40.9deg);
+    -ms-transform: rotate(-40.9deg);
+    -o-transform: rotate(-40.9deg);
 }
 .info-card-footer {
     display: flex;
