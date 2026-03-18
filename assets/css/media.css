@@ -714,6 +714,9 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 1199.98px) { 
+.offcanvas-btn-wrap .btn{
+    margin: 10px 0 16px !important;
+}
 .driverstatusmodal .radio-checkbox-flagg-rev-fgtsrw-label::after {
     width: 12px;
     height: 12px;
@@ -882,10 +885,6 @@ h6,.h6 { font-size:14px; }
 }
 .selectedTruckSlider{ 
     margin: 0 -4px;
-}
-
-.fleet-mana-ft-img {
-    width: auto;
 }
 
 
