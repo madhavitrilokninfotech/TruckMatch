@@ -163,6 +163,39 @@ hr{border-bottom:2px dashed #ECECEC;margin-top:20px;margin-bottom:20px;width:100
 .btn.btn-blu2{background-color:#D9ECFF; color: #1E88E5;}
 
 
+.btn:disabled,
+.btn.disabled {
+    color: #ffffff !important;
+    background-color: #D74315 !important;
+    border-color: #D74315 !important;
+}
+.btn.btn-outline.disabled{
+    color: #161212 !important;
+    background-color: transparent !important;
+    border-color: #797979 !important;
+}
+.btn.btn-gray.disabled{
+    color: #161212 !important;
+    background-color: #ECECEC !important;
+    border-color: #ECECEC !important;
+}
+.btn.btn-blu1.disabled{
+    background-color: #D9ECFF !important;
+}
+.btn.btn-blu2.disabled{
+    color: #1E88E5 !important;
+    background-color: #D9ECFF !important;
+}
+.btn.btn-orange1.disabled{
+    color: #E6620A !important;
+    background-color: #FFD7C0 !important;
+}
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+    pointer-events: none !important;
+    opacity: 0.5 !important;
+}
 
 .btn.btn-outline-bs:hover,.btn.btn-outline-bs:focus,.btn.btn-outline-bs:active{background-color:#D74315!important;border-color:#D74315!important;}
 .btn.btn-gray:hover,.btn.btn-gray:focus,.btn.btn-gray:active{background-color:#161212;border-color:#161212;color:#fff;}
@@ -2486,3 +2519,18 @@ img.completeicon{
 .loc-de-stet-col {width: auto;max-width: 40%;}
 .fleet-mana-ft-img {width: 64px;}
 
+
+.selected-truck-slidewrap.selectedTruckSlider {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selected-truck-slidewrap.selectedTruckSlider .selected-truck-slide {
+    width: 33.33%;
+}
+
+.selected-truck-slidewrap.selectedTruckSlider .selected-truck-slide img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}

@@ -498,7 +498,7 @@ h6,.h6 { font-size:14px; }
 
 /*== Dashboard ==*/
 
-.content-wrapper{padding-left:15px;padding-right:15px;margin-left:calc(230px + 20px);min-height:calc(100vh - 82px);margin-top:82px;}
+.content-wrapper{padding-left:15px;padding-right:15px;margin-left:calc(230px + 20px);min-height:calc(100vh - 82px);margin-top:72px;}
 .box-count-head{font-size:22px;}
 .box-count-bottom a{font-size:14px;}
 .job-card-title-t{font-size:15px;}
@@ -1043,6 +1043,9 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 767.98px) {  
+.cert-doc-his-wrap button {
+    padding: 4px 8px;
+}
 .search-njob .form-control.border {
     height: 45px;
 }
@@ -1204,6 +1207,9 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.cert-doc-hist-main .custom-table-main th {
+    padding: 10px 14px;
+}
 .exp-hwye-wrap .checkbox-round-wrap .checkbox + label {
     font-size: 12px;
 }
