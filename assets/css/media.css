@@ -715,7 +715,8 @@ h6,.h6 { font-size:14px; }
 
 @media (max-width: 1199.98px) { 
 .offcanvas-btn-wrap .btn{
-    margin: 10px 0 16px !important;
+    margin-top: 10px !important;
+    margin-bottom: 16px !important;
 }
 .driverstatusmodal .radio-checkbox-flagg-rev-fgtsrw-label::after {
     width: 12px;
@@ -857,6 +858,9 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 991.98px) {
+.content-wrapper {
+    overflow: hidden;
+}
 .fleet-mana-hr-tc-main .fleet-mana-hr-wp img {
     width: 22px;
 }
@@ -983,50 +987,39 @@ h6,.h6 { font-size:14px; }
     left: 0px;
     right: 0px;
     background-color: #fff;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1);
     width: 0;
     height: 0;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: transform 0.3s ease-in-out;
-    -moz-transition: transform 0.3s ease-in-out;
-    -ms-transition: transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
+    -webkit-transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    -moz-transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    -ms-transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    -o-transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .team-member-de-act-wrp.active .team-member-de-act-cl-right,
 .jobd-dash-act-wrp.onclick .jobd-right {
-    transform: translate(0%);
     width: 100%;
     height: 100%;
     opacity: 1;
     visibility: visible;
-    -webkit-transform: translate(0%);
-    -moz-transform: translate(0%);
-    -ms-transform: translate(0%);
-    -o-transform: translate(0%);
 }
 
 .team-member-de-act-wrp .jobd-left,
 .jobd-dash-act-wrp .jobd-left {
-    transform: translateX(0%);
-    transition: transform 0.3s ease-in-out;
-    -webkit-transition: transform 0.3s ease-in-out;
-    -moz-transition: transform 0.3s ease-in-out;
-    -ms-transition: transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+    transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    -webkit-transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    -moz-transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    -ms-transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    -o-transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .team-member-de-act-wrp.active .jobd-left,
 .jobd-dash-act-wrp.onclick .jobd-left {
-    transform: translateX(100%);
-    width: 0px;
-    height: 0px;
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
+  width: 0px;
+  height: 0px;
 }
 
 .team-member-de-act-wrp.active .jobd-left .new-post-jwrap,
