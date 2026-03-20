@@ -51,7 +51,24 @@ Large devices
 
 
 
-@media (max-width:1599px) { 
+@media (max-width:1599px) {
+.rc-calendar-wrap .cal-event-badge {
+    font-size: 9px;
+}
+.rc-calendar-wrap .react-calendar__tile {
+    font-size: 11px;
+    padding: 6px;
+    gap: 6px;
+}
+.rc-calendar-wrap .react-calendar__month-view__weekdays__weekday abbr{
+    font-size: 11px;
+}
+.notify_badge{
+    min-width: 22px;
+    height: 22px;
+    font-size: 10px;
+    padding: 0 5px;
+} 
 .calendar-wrapper .gray-box {
     padding: 4px 6px;
     font-size: 10px;
@@ -437,6 +454,11 @@ label.form-label{font-size:14px;margin-bottom:8px;}
 
 
 @media(max-width:1499px) {
+.notify_badge{
+    min-width: 20px;
+    height: 20px;
+    right: 3px;
+} 
 .certi-doc-overlay {
     padding: 14px 12px;
 }
@@ -498,7 +520,7 @@ h6,.h6 { font-size:14px; }
 
 /*== Dashboard ==*/
 
-.content-wrapper{padding-left:15px;padding-right:15px;margin-left:calc(230px + 20px);min-height:calc(100vh - 82px);margin-top:72px;}
+.content-wrapper{padding-left:15px;padding-right:15px;margin-left:calc(230px + 20px);min-height:calc(100vh - 82px);margin-top:82px;}
 .box-count-head{font-size:22px;}
 .box-count-bottom a{font-size:14px;}
 .job-card-title-t{font-size:15px;}
@@ -858,6 +880,16 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 991.98px) {
+.rc-calendar-wrap .react-calendar__navigation button {
+    font-size: 14px;
+}
+.rc-calendar-wrap .react-calendar__navigation {
+    margin-bottom: 14px;
+    padding-top: 4px;
+}
+.rc-calendar-wrap .cal-event-badge {
+    padding: 2px 6px;
+}
 .content-wrapper {
     overflow: hidden;
 }
@@ -1043,6 +1075,12 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 767.98px) {  
+.notify_badge{
+    min-width: 18px;
+    height: 18px;
+    font-size: 9px;
+    padding: 0 4px;
+} 
 .cert-doc-his-wrap button {
     padding: 4px 8px;
 }
