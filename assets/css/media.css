@@ -1075,6 +1075,9 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 767.98px) {  
+.loc-de-box-wrap {
+    flex-wrap: wrap;
+}
 .notify_badge{
     min-width: 18px;
     height: 18px;
