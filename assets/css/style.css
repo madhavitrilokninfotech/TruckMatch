@@ -715,7 +715,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .notification-rd{padding:5px 0px;}
 .notification-here.notification-here-njr{background-color:#FFEFEA;}
 .notification-here-tl{font-size:16px;color:#161212;font-weight:600;margin-bottom:5px;}
-.notification-here-txt{font-size:12px;color:#797979;line-height:1.5;}
+.notification-here-txt{font-size:12px;color:#797979;line-height:1.5;font-weight: normal;}
 .notification-here-b{font-weight:600;color:#D74315;}
 .notification-here-wrapt{padding-left:10px;position:relative;padding-right:40px;width:calc(100% - 40px);}
 .notification-here-tm{font-size:12px;color:#797979;font-weight:500;position:absolute;right:0px;top:10px;}
@@ -2577,7 +2577,7 @@ img.completeicon{
 .rc-calendar-wrap .react-calendar__month-view__weekdays { text-align: center; }
 .rc-calendar-wrap .react-calendar__month-view__weekdays__weekday {
     font-size: 0.7rem;
-    font-weight: 700;
+    font-weight: 500;
     color: #6b7280;
     padding: 0.35rem 0;
     text-transform: uppercase;
@@ -2618,8 +2618,8 @@ img.completeicon{
     background:  #FFEBE6 !important;
     color: #d74315 !important;
 }
-.rc-calendar-wrap .react-calendar__tile--active,
-.rc-calendar-wrap .react-calendar__tile--active:hover {
+.rc-calendar-wrap .react-calendar__tile--active:not(.react-calendar__tile--now),
+.rc-calendar-wrap .react-calendar__tile--active:not(.react-calendar__tile--now):hover{
     background: #fff !important;
     border-color: #d74315 !important;
 }

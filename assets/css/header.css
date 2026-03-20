@@ -92,7 +92,8 @@
     -o-border-radius: 6px;
 }
 .sidebar-toggle i.fa-bars {
-    font-size: 17px;
+    font-size: 18px;
+    vertical-align: middle;
 }
 .headera-mlogo {
     width: 26px;
@@ -196,9 +197,9 @@
 
 @media(max-width:767px) {
 .mobilelogomain .sidebar-top-toggle{
-    z-index: 999;
+    z-index: 99999;
     position: fixed;
-    top: 28px;
+    top: 23px;
     left: 10px;
 }
 .sidebar-show-hide .content-wrapper {
@@ -214,7 +215,7 @@
     padding: 2px;
 }
 .headera-mlogo {
-    width: 26px;
+    width: 28px;
 }
 .headera-logo {
     /* display: none; */
@@ -236,7 +237,7 @@
 
 .headera-logo-wrap{width: 120px;}
 .sidebar-toggle-mob{/*display:block;right:-35px;bottom:-2px;width:25px;height:25px;font-size:16px;line-height:26px;*/}
-.sidebar-toggle-mob{display:block;font-size:16px;line-height:28px;position:fixed;top:28px;left:60px;z-index:99999;}
+.sidebar-toggle-mob{display:block;font-size:16px;line-height:28px;position:fixed;top:21px;left:60px;z-index:99999;width: 30px;height: 30px;}
 .dash-txt-desk{display:none;}
 .dash-txt-mob{display:block;padding-right:10px;margin:5px 0px;}
 .dashboard-tl-mob .offcanvas-btn.btn{margin:5px 0px;}

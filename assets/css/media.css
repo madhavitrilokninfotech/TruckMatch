@@ -1245,6 +1245,37 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.rc-calendar-wrap .react-calendar__navigation__arrow.react-calendar__navigation__prev-button, .rc-calendar-wrap .react-calendar__navigation__arrow.react-calendar__navigation__next-button {
+    font-size: 22px;
+    padding: 5px 12px 8px 12px;
+}
+.rc-calendar-wrap .react-calendar__tile {
+    min-height: 42px;
+    gap: 2px;
+    border-color: transparent;
+}
+.rc-calendar-wrap .cal-event-badge {
+    font-size: 0;
+    background: #fff;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+.rc-calendar-wrap .cal-event-badge.dgreentext{
+    background-color: #15994B;
+}
+.rc-calendar-wrap .cal-event-badge.dbluetext{
+    background-color: #3B82F6;
+}
+.rc-calendar-wrap .cal-event-badge.dredtext{
+    background-color: #EF4444;
+}
 .cert-doc-hist-main .custom-table-main th {
     padding: 10px 14px;
 }
