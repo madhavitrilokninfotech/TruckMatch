@@ -24,7 +24,7 @@
 .sidebar-show-hide .main-sidebar{width:84px;}
 .main-sidebar li.sb-nav-item .sb-nav-link p{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex-grow:1;line-height: normal;   /* transition: color 0.3s; */}
 .sidebar-show-hide .main-sidebar .sb-nav-item .sb-nav-link p{padding-left:0px;visibility:hidden;opacity:0;position:absolute;}
-.sidebar-show-hide .main-sidebar .sb-nav-item .sb-nav-link{padding:15px 15px;justify-content: center;}
+.sidebar-show-hide .main-sidebar .sb-nav-item .sb-nav-link{padding:15px 15px;justify-content: start;}
 .sidebar-show-hide .main-header nav.main-header{margin-left:100px;}
 /* .sidebar-show-hide .sidebar-toggle i {transform: rotate(180deg); } */
 .sidebar-toggle i.fa-bars{font-style: normal;}

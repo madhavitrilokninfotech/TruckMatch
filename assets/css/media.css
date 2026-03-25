@@ -19,7 +19,10 @@ Large devices
 
 
 @media(max-width:1799px) {
-
+.flet-des-img-bx img{
+    min-height: 130px;
+    max-height: 130px;
+}
 .td-details-box-main .td-details-box-wp .td-details-box.td-details-box-btn .red-btn1{font-size:10px!important;right:10px;}
 .td-details-box-main .td-details-box-wp .td-details-box.td-details-box-btn{padding:10px;padding-right:105px;}
 .box-count-top-wrap{padding:12px;}
@@ -52,6 +55,12 @@ Large devices
 
 
 @media (max-width:1599px) {
+.assign-letter {
+    min-width: auto;
+}
+.mt-15 {
+    margin: 10px;
+}
 .rc-calendar-wrap .cal-event-badge {
     font-size: 9px;
 }
@@ -454,6 +463,9 @@ label.form-label{font-size:14px;margin-bottom:8px;}
 
 
 @media(max-width:1499px) {
+.wrap-trucknames .trucknames::after {
+    height: 12px;
+}
 .notify_badge{
     min-width: 20px;
     height: 20px;
@@ -642,6 +654,8 @@ h6,.h6 { font-size:14px; }
 }
 .flet-des-img-bx img {
     border-radius: 10px !important;
+    min-height: 90px;
+    max-height: 90px;
 }
 
 h1,.h1 { font-size:30px; }
@@ -736,6 +750,27 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 1199.98px) { 
+.notify-icon {
+    font-size: 16px;
+}
+.notify-text {
+    font-size: 14px;
+}
+.notify-time {
+    font-size: 12px;
+}
+.notification-item {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.notification-page {
+    padding: 20px 15px;
+}
+.wrap-trucknames .trucknames {
+    margin-right: 6px;
+    padding-right: 6px;
+}
 .offcanvas-btn-wrap .btn{
     margin-top: 10px !important;
     margin-bottom: 16px !important;
@@ -880,6 +915,9 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 991.98px) {
+.order2{
+    order: 2;
+}
 .rc-calendar-wrap .react-calendar__navigation button {
     font-size: 14px;
 }
@@ -1075,6 +1113,10 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 767.98px) {  
+.profile_edit_img {
+    width: 100px;
+    height: 100px;
+}
 .loc-de-box-wrap {
     flex-wrap: wrap;
 }
@@ -1248,6 +1290,44 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.btn.btn-lg-cm {
+    min-width: 120px;
+    font-size: 13px;
+}
+label.form-label {
+    font-size: 13px;
+}
+.profile_edit_img {
+    width: 80px;
+    height: 80px;
+}
+.notify-icon {
+    font-size: 14px;
+    margin-right: 10px;
+}
+.notification-item {
+    padding: 12px;
+    margin-bottom: 16px;
+}
+.notification-page {
+    padding: 16px 10px;
+}
+.notify-time {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 1px;
+}
+.info-row-wrap .srdays-d{
+    font-size: 11px;
+    padding: 7px 11px;
+}
+.info-row-wrap .jp-booking-details hr.my-3{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+.wrap-trucknames {
+    width: 100%;
+}
 .rc-calendar-wrap .react-calendar__navigation__arrow.react-calendar__navigation__prev-button, .rc-calendar-wrap .react-calendar__navigation__arrow.react-calendar__navigation__next-button {
     font-size: 22px;
     padding: 5px 12px 8px 12px;
@@ -1466,6 +1546,9 @@ Extra small devices (portrait phones, less than 576px)
 .cp-0815 {
     padding: 8px 10px;
 }
+.cp-2015 {
+    padding: 15px 10px;
+}
 .search-njob .form-control.border::placeholder{font-size:13px;}
 .search-njob .form-control.border{font-size:13px;}
 .search-njob .form-control.border {
@@ -1600,6 +1683,7 @@ p { font-size: 14px; }
     -moz-border-radius: 4px !important;
     -ms-border-radius: 4px !important;
     -o-border-radius: 4px !important;
+    min-height: auto;
 }
 .fleet-de-rt-et-main{
     gap: 10px 0;
@@ -1637,6 +1721,9 @@ p { font-size: 14px; }
 
 
 @media (max-width:399px) {
+.jp-booking-details .font-14 {
+    font-size: 12px!important;
+}
 .dbooking-card .btn-underline {
     font-size: 11px !important;
 }

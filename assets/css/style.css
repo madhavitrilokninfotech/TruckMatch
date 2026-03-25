@@ -131,7 +131,7 @@ img { margin-bottom:0; } /*margin-bottom:5px*/
 hr{border-bottom:2px dashed #ECECEC;margin-top:20px;margin-bottom:20px;width:100%;border-top:0;opacity:1;}
 
 .hr{border-bottom:2px dashed #ECECEC;margin-top:20px;margin-bottom:20px;width:100%;border-top:0;opacity:1;}
-
+.hr-fill{margin-right: -16px; margin-left: -16px;}
 
 .br5{border-radius:5px;}        
 .br10{border-radius:10px;}
@@ -726,7 +726,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .notification-here-btn{padding-left:70px;padding-bottom:20px;}
 .btn.notification-here-btn-link{font-size:14px;padding:5px 16px;min-width:auto;font-weight:500;}
 .notification-all-link{font-size:16px;font-weight:600;padding:13px 20px;text-align:center;border-top:1px solid #ECECEC;display:block;color:#D74315;}
-.notification-view{max-height:450px;overflow-y:auto;height: calc(83vh - 100px);}
+.notification-view{max-height:450px;overflow-y:auto;height: calc(83vh - 100px);scrollbar-width: thin;}
 
 
 
@@ -875,6 +875,9 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .gray-box.fs-14 span{margin-left:2px;}
 .loc-de-box-wrapl .loc-de-hr-col{width:38%;}
 .new-post-tabbing-top{padding-bottom:5px;}
+.mt-15{
+    margin: 15px;
+}
 
 
 
@@ -908,6 +911,10 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .wh-30{width:30px;height:30px;}
 .wh-20{width:20px;height:20px;}
 .wh-50-txt{width:calc(100% - 50px);}
+.wh-80-txt {
+    width: calc(100% - 80px);
+}
+.min-w-max{min-width: max-content;}
 .wh-40-txt{width:calc(100% - 40px);}
 .com-de-review-ex{margin-right:5px;padding:7px 12px;}
 .com-de-review-ex:last-child{margin-right:0px;}
@@ -1067,6 +1074,18 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .wh-90-txt{width:calc(100% - 90px);}
 .profile-sets{border-bottom:none!important;display:flex;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;width:100%;scrollbar-width:thin;margin-bottom:10px;}
 .profile-set-psmp-wrap{margin-bottom:20px;}
+.profile_edit_img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 
 
 
@@ -1334,6 +1353,8 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
     height: 100%;
     object-fit: cover;
     object-position: center;
+    min-height: 160px;
+    max-height: 160px;
 }
 .flet-des-img-bx:last-child {
     margin-right: 0px;
@@ -2662,3 +2683,78 @@ img.completeicon{
     right: 0;
     left: auto;
 }
+
+/* Time Date picker css */
+.react-datepicker__day--keyboard-selected, .react-datepicker__month-text--keyboard-selected, .react-datepicker__quarter-text--keyboard-selected, .react-datepicker__year-text--keyboard-selected {
+    border-radius: 50px;
+    background-color: #D74315;
+    color: #fff;
+}
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range {
+    border-radius: 50px;
+    background-color: #D74315;
+    color: #fff;
+}
+.react-datepicker__day--selected:not([aria-disabled=true]):hover, .react-datepicker__day--in-selecting-range:not([aria-disabled=true]):hover, .react-datepicker__day--in-range:not([aria-disabled=true]):hover, .react-datepicker__month-text--selected:not([aria-disabled=true]):hover, .react-datepicker__month-text--in-selecting-range:not([aria-disabled=true]):hover, .react-datepicker__month-text--in-range:not([aria-disabled=true]):hover, .react-datepicker__quarter-text--selected:not([aria-disabled=true]):hover, .react-datepicker__quarter-text--in-selecting-range:not([aria-disabled=true]):hover, .react-datepicker__quarter-text--in-range:not([aria-disabled=true]):hover, .react-datepicker__year-text--selected:not([aria-disabled=true]):hover, .react-datepicker__year-text--in-selecting-range:not([aria-disabled=true]):hover, .react-datepicker__year-text--in-range:not([aria-disabled=true]):hover {
+    background-color: #D74315;
+}
+.react-datepicker__header {
+    border-bottom: 0;
+}
+.react-datepicker__day:not([aria-disabled=true]):hover, .react-datepicker__month-text:not([aria-disabled=true]):hover, .react-datepicker__quarter-text:not([aria-disabled=true]):hover, .react-datepicker__year-text:not([aria-disabled=true]):hover {
+    border-radius: 50px;
+}
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected {
+    background-color: #D74315;
+    color: white;
+    font-weight: bold;
+}
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected:hover {
+     background-color: #D74315;
+}
+.react-datepicker__day--keyboard-selected:not([aria-disabled=true]):hover, .react-datepicker__month-text--keyboard-selected:not([aria-disabled=true]):hover, .react-datepicker__quarter-text--keyboard-selected:not([aria-disabled=true]):hover, .react-datepicker__year-text--keyboard-selected:not([aria-disabled=true]):hover {
+    background-color: #D74315;
+}
+.react-datepicker__header {
+    background-color: #FEEFEB;
+}
+/* end */
+
+/*===============================================================================
+    Construction - Rating & Reviews
+=================================================================================*/
+.wrap-trucknames{
+    width: calc(100% - 100px);
+}
+.wrap-trucknames .trucknames{
+    margin-right: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+.wrap-trucknames .trucknames::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 16px;
+    background-color: #000;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.wrap-trucknames .trucknames:last-child::after {
+    display: none;
+}
+.wrap-trucknames .trucknames:last-child{
+    margin-right: 0;
+    padding-right: 0;
+}
+.rating-rv-pending .filled-rating-star .star {
+    font-size: 10px;
+}
+.btn.rate-now-btn{ padding: 6px 14px; font-size: 12px; min-width: auto; border-radius:8px ; -webkit-border-radius:8px ; -moz-border-radius:8px ; -ms-border-radius:8px ; -o-border-radius:8px ; }
+
+/* end */
