@@ -55,6 +55,9 @@ Large devices
 
 
 @media (max-width:1599px) {
+.col-truck-type .content-bbox-img {
+    width: 50px;
+}
 .assign-letter {
     min-width: auto;
 }
@@ -345,6 +348,9 @@ label.form-label{font-size:14px;margin-bottom:8px;}
 .profile-sets .nav-link{font-size:14px;padding:9px 12px;}
 .btn.btn-primary1{padding:6px 14px 5px 14px;}
 .cp-2015{padding:15px;}
+.cp-1020 {
+    padding: 10px 15px;
+}
 .wh-90{width:70px;height:70px;}
 .wh-90-txt{width:calc(100% - 70px);}
 .btn.btn-lg-cm{min-width:200px;}

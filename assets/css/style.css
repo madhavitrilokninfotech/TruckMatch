@@ -2719,6 +2719,9 @@ img.completeicon{
     background-color: #FEEFEB;
 }
 /* end */
+.col-location .loc-de-full .loc-de-stet-colb::before {
+    left: 9.5px;
+}
 
 /*===============================================================================
     Construction - Rating & Reviews
