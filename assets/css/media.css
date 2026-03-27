@@ -161,11 +161,13 @@ h6,.h6 { font-size:14px; }
 .form-control.border::-o-input-placeholder { font-size: 13px;}
 
 
-.custom-table-main th{padding:15px 15px 10px;font-size:15px;}
-.custom-table-main td{padding:15px 15px;font-size:13px;}
-.custom-table-main tr:last-child td{font-size:15px;}
-.custom-table-main tr:last-child td:last-child{font-size:19px;}
-
+.custom-table-main th,
+.custom-table-main td{
+    font-size: 14px;
+}
+.totalAmountPayable-main th, .totalAmountPayable-main td {
+    padding: 16px 0;
+}
 
 .min-width-210{min-width:180px;}
 .min-width-100{min-width:80px;}
@@ -517,9 +519,7 @@ h6,.h6 { font-size:14px; }
 .fs-22{font-size:20px !important;}
 .fs-26{font-size:23px !important;}
 
-.custom-table-main th{font-size:14px;padding:12px;}
-.custom-table-main td{padding:12px;}
-.custom-table-main tr:last-child td:last-child{font-size:18px;}
+
 
 
 .btn{padding:8px 10px 7px 10px;}
@@ -1299,6 +1299,22 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.custom-table-main th, .custom-table-main td {
+    font-size: 13px;
+}
+.totalAmountPayable-main th, .totalAmountPayable-main td {
+    padding: 14px 0;
+}
+.min-width-210 {
+    min-width: 130px;
+}
+.min-width-100 {
+    min-width: 60px;
+}
+.custom-table-main th.min-width-210,
+.custom-table-main th.min-width-100 {
+    white-space: pre-wrap !important;
+}
 .btn.btn-lg-cm {
     min-width: 120px;
     font-size: 13px;

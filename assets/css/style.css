@@ -93,6 +93,8 @@ html{scrollbar-color:#D74315 #fff;scrollbar-width:thin;scrollbar-border-radius:3
 .bg-primary{background-color:#D74315 !important;}
 .bg-red2{background-color:#FFEFEE;}
 .bg-red3{background-color:#FEEFEB !important;}
+.bg-cancel{background-color:rgba(239, 68, 68, 0.2);}
+
 .bg-yellow1{background-color:#FFF4E0;}
 .bg-red4{background-color:#FFEBEA;}
 .bg-green5{background-color:#E7F6E7;}
@@ -298,15 +300,15 @@ textarea.form-control.border{height:90px;}
 
 
 .custom-table-main td,.custom-table-main th{vertical-align:middle;font-size:14px;font-weight:500;box-shadow:none;border-bottom:2px dashed #ECECEC;text-align: center;}
-.custom-table-main td{padding:17px 20px;font-size:14px;color:#161212;}
+.custom-table-main td{padding:17px 20px;font-size:16px;color:#797979;}
 .custom-table-main th{font-size:16px;color:#797979;padding:20px 20px 10px;}
 .custom-table-main td:first-child,.custom-table-main th:first-child{text-align:left;}
-.custom-table-main tr:last-child td{font-size:16px;color:#797979;}
-.custom-table-main tr:last-child td:last-child{font-size:20px;font-weight:600;color:#D74315;}
+/* .custom-table-main tr:last-child td{font-size:16px;color:#797979;} */
+/* .custom-table-main tr:last-child td:last-child{font-size:20px;font-weight:600;color:#D74315;} */
 /*.custom-table-main td:first-child,.custom-table-main th:first-child{padding-left:0px;}
 .custom-table-main tr td:last-child,.custom-table-main tr th:last-child{padding-right:0px;}
 .custom-table-main td{border-bottom:0;}*/
-.custom-table-main tr:last-child td{border-bottom:0px;}
+/* .custom-table-main tr:last-child td{border-bottom:0px;} */
 
 
 
@@ -1362,9 +1364,9 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 }
 
 
-.custom-table-main.custom-table-main-v1 td,.custom-table-main.custom-table-main-v1 th{border-bottom:1px solid #ECECEC;}
+.custom-table-main.custom-table-main-v1 td,.custom-table-main.custom-table-main-v1 th{border-bottom:1px dashed #ECECEC;}
 .custom-table-main.custom-table-main-v1 tr:last-child td,.custom-table-main.custom-table-main-v1 tr:last-child th{border-bottom:none;}
-.custom-table-main.custom-table-main-v1 th{padding-left:0px; padding-bottom: 20px;}
+/* .custom-table-main.custom-table-main-v1 th{padding-left:0px; padding-bottom: 20px;} */
 .custom-table-main.custom-table-main-v1 td{padding-right:0px;text-align:right;white-space: nowrap;}
 .custom-table-main.custom-table-main-v1{padding-left:20px;padding-right:20px;border-bottom:1px solid #ECECEC;}
 .custom-table-main.custom-table-main-v1:last-child{border-bottom:none;}
@@ -1541,31 +1543,35 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .jm-table.custom-table-main tbody td{
     padding: 6px 0;
 }
-.jm-table.custom-table-main.custom-table-main-v1 tr:last-child th,
+/* .jm-table.custom-table-main.custom-table-main-v1 tr:last-child th,
 .jm-table.custom-table-main.custom-table-main-v1 tr:last-child td{
     padding: 10px 0;
     border-top: 1px solid #ECECEC;
-}
+} */
 .assi-fdriver-details{
     justify-content: space-between;
     gap: 10px;
 }
-.bd-details-offcanvas .custom-table-main.custom-table-main-v1{
+/* .bd-details-offcanvas .custom-table-main.custom-table-main-v1{
     padding: 0;
 }
 .bd-details-offcanvas .jm-table.custom-table-main tbody th, 
 .bd-details-offcanvas .jm-table.custom-table-main tbody td {
     padding: 8px 20px;
-}
-.bd-details-offcanvas .jm-table.custom-table-main.custom-table-main-v1 tr:last-child th, 
+} */
+/* .bd-details-offcanvas .jm-table.custom-table-main.custom-table-main-v1 tr:last-child th, 
 .bd-details-offcanvas .jm-table.custom-table-main.custom-table-main-v1 tr:last-child td {
     padding: 10px 20px;
     border-top: 0;
-    /* background-color: #D743151A; */
-}
-.bd-details-offcanvas .jm-table.custom-table-main.custom-table-main-v1 tr:nth-last-child(2) th,
+} */
+/* .bd-details-offcanvas .jm-table.custom-table-main.custom-table-main-v1 tr:nth-last-child(2) th,
 .bd-details-offcanvas .jm-table.custom-table-main.custom-table-main-v1 tr:nth-last-child(2) td{
     padding-bottom: 20px;
+} */
+ 
+.totalAmountPayable-main th,
+.totalAmountPayable-main td{
+    padding: 20px 0;
 }
 .payment-summary .doc-up-suc-wrap{
     justify-content: space-between;
@@ -2727,6 +2733,10 @@ img.completeicon{
     background-color: #797979;
     vertical-align: middle;
     margin: 0 4px;
+}
+.text-disabled {
+    opacity: 0.6;
+    pointer-events: none;
 }
 /*===============================================================================
     Construction - Rating & Reviews
