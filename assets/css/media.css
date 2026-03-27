@@ -55,6 +55,9 @@ Large devices
 
 
 @media (max-width:1599px) {
+.dotseparator {
+    margin: 0 2px;
+}
 .col-truck-type .content-bbox-img {
     width: 50px;
 }
