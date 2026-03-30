@@ -2773,7 +2773,90 @@ img.completeicon{
     top: 0;
     margin: 2px;
 }
+.re_status_tab{
+    gap: 5px;
+    padding-bottom: 18px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+.re_status_tab.nav-pills .nav-link {
+    border-radius: 10px;
+    padding: 6px 12px;
+    text-align: start;
+    min-width: auto;
+    line-height: normal;
+}
+.re_status_tab.nav-pills .nav-link{
+    background-color: #F5F7F9;
+    border: 1px solid #E4E4E4;
+}
+.re_status_tab.nav-pills .nav-link:focus-visible{
+    box-shadow: none;
+}
+.re_status_tab.nav-pills .nav-link h5{
+    color: #555555;
+}
 
+.re_status_tab.nav-pills .completed.active,
+.re_status_tab.nav-pills .completed:hover,
+.re_status_tab.nav-pills .completed:focus-visible{
+    background-color: rgba(46, 125, 50, 0.1);
+    border-color: #EA580C;
+}
+.re_status_tab.nav-pills .completed .re-statustext{
+    color: #2E7D32;
+}
+
+.re_status_tab.nav-pills .inprogress.active,
+.re_status_tab.nav-pills .inprogress:hover,
+.re_status_tab.nav-pills .inprogress:focus-visible{
+    background-color: rgba(33, 150, 243, 0.1);
+    border-color: #EA580C;
+}
+.re_status_tab.nav-pills .inprogress .re-statustext{
+    color: #2196F3;
+}
+
+.re_status_tab.nav-pills .upcoming.active,
+.re_status_tab.nav-pills .upcoming:hover,
+.re_status_tab.nav-pills .upcoming:focus-visible{
+    background-color: rgba(249, 168, 37, 0.1);
+    border-color: #EA580C;
+}
+.re_status_tab.nav-pills .upcoming .re-statustext{
+    color: #F9A825;
+}
+
+.re_status_tab.nav-pills .pending.active,
+.re_status_tab.nav-pills .pending:hover,
+.re_status_tab.nav-pills .pending:focus-visible{
+    background-color: rgba(232, 89, 60, 0.1);
+    border-color: #EA580C;
+}
+.re_status_tab.nav-pills .pending .re-statustext{
+    color: #E8593C;
+}
+
+.re_status_tab.nav-pills .cancelled.active,
+.re_status_tab.nav-pills .cancelled:hover,
+.re_status_tab.nav-pills .cancelled:focus-visible{
+    background-color: rgba(232, 89, 60, 0.1);
+    border-color: #EA580C;
+}
+.re_status_tab.nav-pills .cancelled .re-statustext{
+    color: #E8593C;
+}
+.re_status_tab_content{
+    min-height: 200px;
+    padding: 0 !important;
+}
+.tc-com .re_status_text{
+    background-color: rgba(46, 125, 50, 0.1);
+    border-color: #2E7D32;
+    color: #2E7D32;
+}
 
 /*===============================================================================
     Construction - Rating & Reviews

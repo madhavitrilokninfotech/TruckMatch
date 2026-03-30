@@ -1309,6 +1309,12 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.re_status_tab.nav-pills .nav-link {
+    border-radius: 6px;
+}
+.re_status_tab.nav-pills .nav-link h5 {
+    margin-bottom: 2px !important;
+}
 .redays-pill .day_count {
     width: fit-content;
     height: auto;
