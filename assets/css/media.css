@@ -636,6 +636,13 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 1399px) { 
+.redays-pill .day_count {
+    width: 24px;
+    height: 24px;
+}
+.redays-pill .srdays-d {
+    padding: 7px 32px 7px 12px;
+}
 .certi-doc-item {
     border-radius: 10px;
 }
@@ -924,6 +931,9 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 991.98px) {
+.redays-pill .srdays-d {
+    padding: 7px 32px 7px 10px;
+}
 .order2{
     order: 2;
 }
@@ -1299,6 +1309,20 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.redays-pill .day_count {
+    width: fit-content;
+    height: auto;
+    position: static;
+    border-radius: 10px;
+    padding: 3px 6px;
+    margin: 4px auto 0;
+    text-align: center;
+}
+.redays-pill .srdays-d {
+    padding: 7px 12px;
+    border-radius: 10px;
+    font-size: 11px;
+}
 .custom-table-main th, .custom-table-main td {
     font-size: 13px;
 }
