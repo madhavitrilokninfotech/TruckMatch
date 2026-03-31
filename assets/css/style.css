@@ -2789,6 +2789,7 @@ img.completeicon{
     overflow-x: auto;
     flex-wrap: nowrap;
     white-space: nowrap;
+    scrollbar-width: thin;
 }
 .re_status_tab.nav-pills .nav-link {
     border-radius: 10px;
@@ -2867,6 +2868,16 @@ img.completeicon{
     color: #2E7D32;
 }
 .tc-inp .re_status_text{
+    background-color: #FEEFEB;
+    border-color: #D74315;
+    color: #D74315;
+}
+.tc-can .re_status_text{
+    background-color: #FEEFEB;
+    border-color: #D74315;
+    color: #D74315;
+}
+.tc-pen .re_status_text{
     background-color: #FEEFEB;
     border-color: #D74315;
     color: #D74315;
