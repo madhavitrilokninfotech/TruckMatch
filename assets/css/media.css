@@ -55,6 +55,9 @@ Large devices
 
 
 @media (max-width:1599px) {
+.rating-rv-pending .filled-rating-star .star {
+    font-size: 14px;
+} 
 .dotseparator {
     margin: 0 2px;
 }
@@ -769,6 +772,12 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 1199.98px) { 
+.custom-pagination .page-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+    min-height: 32px;
+    min-width: 32px;
+}
 .notify-icon {
     font-size: 16px;
 }
@@ -1134,7 +1143,8 @@ h6,.h6 { font-size:14px; }
 ===========================================================*/
 
 
-@media (max-width: 767.98px) {  
+@media (max-width: 767.98px) { 
+
 .profile_edit_img {
     width: 100px;
     height: 100px;
@@ -1312,6 +1322,15 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.custom-pagination .page-btn {
+    padding: 6px 8px;
+    min-height: 28px;
+    min-width: 28px;
+    border-radius: 5px;
+}
+.btn.rate-now-btn {
+    width: 100%;
+}
 .bl-view .paybtn{
     padding-right: 10px;
     padding-left: 10px;

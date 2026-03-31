@@ -94,14 +94,14 @@ html{scrollbar-color:#D74315 #fff;scrollbar-width:thin;scrollbar-border-radius:3
 .bg-red2{background-color:#FFEFEE;}
 .bg-red3{background-color:#FEEFEB !important;}
 .bg-cancel{background-color:rgba(239, 68, 68, 0.2);}
-
-.bg-yellow1{background-color:#FFF4E0;}
 .bg-red4{background-color:#FFEBEA;}
 .bg-green5{background-color:#E7F6E7;}
 .bg-green6{background-color:#E8F5E9;}
 .bg-green7{background-color:#F0FDF4;}
 
+.bg-yellow3{background-color:#FFF7EF;}
 .bg-yellow2{background-color:#FBF6E1;}
+.bg-yellow1{background-color:#FFF4E0;}
 
 /* Background Color Style CSS BOF */
 
@@ -889,6 +889,11 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 }
 .mt-1020{
     margin: 10px 20px;
+}
+.hr_center{
+    width: calc(100% - 40px);
+    text-align: center;
+    margin: 0 auto;
 }
 
 
@@ -2943,7 +2948,49 @@ img.completeicon{
     padding-right: 0;
 }
 .rating-rv-pending .filled-rating-star .star {
-    font-size: 10px;
+    font-size: 18px;
+}
+.rating-rv-pending .infocard{
+    background-color: #fff;
+}
+.rating-rv-pending .infocard:nth-child(odd){
+    background-color: #F8F8F8;
+}
+.rating-rv-pending{
+    overflow: hidden;
+}
+.custom-pagination .page-btn{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    color: #797979;
+    background-color: #fff;
+    padding: 6px 12px;
+    border: 1px solid #ECECEC;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    min-height: 34px;
+    min-width: 34px;
+}
+.custom-pagination .page-btn.active{
+    background-color: #D74315;
+    border-color: transparent;
+    color: #fff;
+}
+.custom-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #F8F8F8;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    column-gap: 10px;
+}
+.custom-pagination .page-btn.prev.disabled{
+    opacity: 0.4;
 }
 .btn.rate-now-btn{ padding: 6px 14px; font-size: 12px; min-width: auto; border-radius:8px ; -webkit-border-radius:8px ; -moz-border-radius:8px ; -ms-border-radius:8px ; -o-border-radius:8px ; }
 
