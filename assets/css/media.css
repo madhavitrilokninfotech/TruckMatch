@@ -67,6 +67,9 @@ Large devices
 .mt-15 {
     margin: 10px;
 }
+.mt-1020{
+    margin: 8px 15px;
+}
 .rc-calendar-wrap .cal-event-badge {
     font-size: 9px;
 }
@@ -1309,6 +1312,19 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.bl-view .paybtn{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.paybtn {
+    width: 100%;
+    margin-top: 4px;
+    border-radius: 6px;
+    padding: 12px 10px;
+}
+.mt-1020{
+    margin: 8px 10px;
+}
 .re_status_tab.nav-pills .nav-link {
     border-radius: 6px;
 }
@@ -1343,7 +1359,7 @@ Extra small devices (portrait phones, less than 576px)
 }
 .custom-table-main th.min-width-210,
 .custom-table-main th.min-width-100 {
-    white-space: pre-wrap !important;
+    white-space: normal;
 }
 .btn.btn-lg-cm {
     min-width: 120px;
@@ -1532,9 +1548,6 @@ label.form-label {
 .job-details-pb-jobst-wp .com-de-review-bx .wh-50-txt{
     width: 100% !important;
 }
-.payment-summary button{
-    padding: 8px 12px;
-}
 .assigned-status .completed {
     padding: 6px 8px 6px 9px !important;
     font-size: 10px !important;
@@ -1565,7 +1578,7 @@ label.form-label {
     padding: 10px;
 }
 .payment-summary .payment-summary-text {
-    width: calc(100% - 106px);
+    font-size: 13px !important;
 }
 .attachmentpill {
     padding: 6px 10px;

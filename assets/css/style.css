@@ -98,6 +98,9 @@ html{scrollbar-color:#D74315 #fff;scrollbar-width:thin;scrollbar-border-radius:3
 .bg-yellow1{background-color:#FFF4E0;}
 .bg-red4{background-color:#FFEBEA;}
 .bg-green5{background-color:#E7F6E7;}
+.bg-green6{background-color:#E8F5E9;}
+.bg-green7{background-color:#F0FDF4;}
+
 .bg-yellow2{background-color:#FBF6E1;}
 
 /* Background Color Style CSS BOF */
@@ -688,8 +691,12 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .border1-gray{border:1px solid #ECECEC;}
 .border2-gray{border:2px solid #ECECEC;}
 .border2-green1{border:2px solid #15D739;}
-.borderb2-gray{border-bottom:2px solid #ECECEC;}
+.border2-green2{border:2px solid #BBF7D0;}
+
+.borderb2-gray{border-bottom:2px solid #ECECEC !important;}
 .border-primary{border-color: #D74315 !important;}
+.border2-primary2{border: 2px solid #FFDCCC !important;}
+
 .radio-square-b{border:2px solid #ECECEC;}
 .box-count-icon{width:70px;height:70px;border-radius:50%;border:2px solid #ECECEC;display:flex;align-items:center;justify-content:center;}
 .box-count-head{font-size:26px;color:#161212;font-weight:500;}
@@ -880,7 +887,9 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .mt-15{
     margin: 15px;
 }
-
+.mt-1020{
+    margin: 10px 20px;
+}
 
 
 /* Tab Buttons */
@@ -2857,7 +2866,39 @@ img.completeicon{
     border-color: #2E7D32;
     color: #2E7D32;
 }
+.tc-inp .re_status_text{
+    background-color: #FEEFEB;
+    border-color: #D74315;
+    color: #D74315;
+}
+.ex-time-status {
+    display: flex;
+    align-items: center;
+}
+.paybtn{
+    cursor: pointer;
+    color: #fff;
+    line-height: 1.2;
+    padding: 12px 66px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(90deg, #E8500A 0%, #FF7A40 100%);
+    box-shadow: 0px 3px 14px rgba(232, 80, 10, 0.30);
+    transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    -webkit-transition: all .3s ease-in-out 0s;
+    -ms-transition: all .3s ease-in-out 0s;
+    -o-transition: all .3s ease-in-out 0s;
+}
 
+.paybtn:hover,
+.paybtn:active {
+    opacity: 0.9;
+}
+.bl-view .paybtn{
+    padding-right: 30px;
+    padding-left: 30px;
+}
 /*===============================================================================
     Construction - Rating & Reviews
 =================================================================================*/
