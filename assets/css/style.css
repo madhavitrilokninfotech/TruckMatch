@@ -917,7 +917,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .rcl-wrap-link{cursor:pointer;position:absolute;left:0;right:0;bottom:0;top:0;z-index: 1;}
 .rcl-re-acc-wrap{position:relative;z-index:1;}
 .wh-70-txt{width:calc(100% - 70px);}
-.com-detynum-wrap{padding-right:8%;}
+.com-detynum-wrap{padding-right:8%; padding-bottom: 0;}
 .com-detynum-wrap:last-child{padding-right:0;}
 .wh-90{width:90px;height:90px;}
 .wh-70{width:70px;height:70px;}
@@ -1646,8 +1646,8 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
     border: 1px solid #D74315; 
     font-weight: 500;
 }
-.assign-work-row{
-    /* padding-right: 44px; */
+.assign-work-row .row {
+    align-items: start !important;
 }
 .assign-chat-btn.info-action{
     width: 40px;
@@ -2848,7 +2848,7 @@ img.completeicon{
 .re_status_tab.nav-pills .pending:hover,
 .re_status_tab.nav-pills .pending:focus-visible{
     background-color: rgba(232, 89, 60, 0.1);
-    border-color: #EA580C;
+    border-color: #E8593C;
 }
 .re_status_tab.nav-pills .pending .re-statustext{
     color: #E8593C;
@@ -2885,7 +2885,7 @@ img.completeicon{
 .tc-pen .re_status_text{
     background-color: #FEEFEB;
     border-color: #D74315;
-    color: #D74315;
+    color: #E8593C;
 }
 .ex-time-status {
     display: flex;

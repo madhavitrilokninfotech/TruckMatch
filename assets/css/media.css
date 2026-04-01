@@ -64,9 +64,6 @@ Large devices
 .col-truck-type .content-bbox-img {
     width: 50px;
 }
-.assign-letter {
-    min-width: auto;
-}
 .mt-15 {
     margin: 10px;
 }
@@ -135,12 +132,7 @@ Large devices
 .addnewattachment .checkbox-square-wrap .checkbox:checked + label:after{
     left: 1.5px;
 }
-.assign-opp {
-    flex: 0 0 auto;
-}
-.assign-opp {
-    margin-top: 14px;
-}
+
 
 
 h1,.h1 { font-size:34px; }
@@ -480,6 +472,18 @@ label.form-label{font-size:14px;margin-bottom:8px;}
 
 
 @media(max-width:1499px) {
+.assign-letter {
+    min-width: auto;
+}
+.assign-opp {
+    flex: 0 0 auto;
+}
+.assign-opp {
+    margin-top: 14px;
+}
+.assign-work-row .assi-fdriver-ww.w-150 {
+    width: 100%;
+}
 .wrap-trucknames .trucknames::after {
     height: 12px;
 }
@@ -1322,6 +1326,9 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.payment-summary h5{
+    margin-bottom: 0;
+}
 .custom-pagination .page-btn {
     padding: 6px 8px;
     min-height: 28px;
@@ -1378,7 +1385,7 @@ Extra small devices (portrait phones, less than 576px)
 }
 .custom-table-main th.min-width-210,
 .custom-table-main th.min-width-100 {
-    white-space: normal;
+    white-space: normal !important;
 }
 .btn.btn-lg-cm {
     min-width: 120px;
@@ -1516,7 +1523,7 @@ label.form-label {
     width: 100%;
 }
 .assign-letter {
-    margin-right: 2px;
+    margin-right: 4px;
 }
 .team-member-de-act-cl-right-wrap,
 .jobd-dash-act-wrp .jobd-right .tab-content {
