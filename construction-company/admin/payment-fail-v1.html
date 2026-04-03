@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+
+  <title>TruckMatch | Notification</title>
+
+  <!-- ================ /FONT Family =================== -->
+  <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="../../assets/font/font-family/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/font/font-awesome/css/font-awesome.min.css">
+  <!-- ================ /FONT Family =================== -->
+
+  <!-- =================== /WEB CSS BOC ==================== -->
+
+  <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap-datetimepicker.min.css"> 
+  <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/media.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/header.css">
+
+  <!-- =================== /WEB CSS EOC ==================== -->
+
+  <style type="text/css">
+        
+    .payment-card-wrap{background:#f8f9fb;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:30px 10px;}
+    .payment-card{background:#fff;border-radius:16px;padding:30px 25px;max-width:520px;width:100%;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.08);}
+    .icon-circle{width:70px;height:70px;border-radius:50%;background:#fdecec;border:6px solid #fee2e2;display:flex;align-items:center;justify-content:center;margin:0 auto 15px;}
+    .icon-circle span{color:#dc3545;font-size:25px;font-weight:bold;}
+    .status-badge{display:inline-block;padding:5px 12px;font-size:12px;border-radius:50px;background:#fdecec;color:#dc3545;font-weight:600;letter-spacing:1px;margin-bottom:10px;}
+    .status-s-badge{display:inline-block;padding:5px 12px;font-size:12px;border-radius:50px;color:#16a34a;background:#f0fdf4;border:1px solid #16a34a;font-weight:600;letter-spacing:1px;margin-bottom:10px;}
+    .title{font-size:24px;font-weight:600;margin-bottom:10px;}
+    .desc{font-size:15px;color:#6c757d;max-width:350px;margin:25px auto;line-height:1.4;}
+    .reason-box{background:#ececec;border-radius:10px;padding:12px;font-size:13px;color:#555;display:flex;align-items:center;text-align:left;gap:8px;margin-bottom:20px;}
+    .reason-dot{width:8px;height:8px;background:#D74315;border-radius:50%;flex:0 0 auto;}
+    .reason-s-dot{width:8px;height:8px;background:#16a34a;border-radius:50%;flex:0 0 auto;}
+    .btn-custom{border-radius:10px;padding:10px;font-weight:500;}
+    .help-text{font-size:13px;margin-top:15px;color:#6c757d;}
+    .help-text a{color:#D74315;text-decoration:none;font-weight:500;}
+    .payment-card-info-logo{text-align:center;margin-bottom:30px;}
+    .payment-card-info-logo img{display:inline-block;max-width:280px;width:100%;height:auto;}
+
+    /* ── ICON ── */
+    .icon-wrap{width:72px;height:72px;border-radius:50%;background:#f0fdf4; /* green-light */border:6px solid #dcfce7; /* green-ring */display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;animation:popIn .5s .2s cubic-bezier(.34,1.56,.64,1) both;}
+    @keyframes popIn{
+        from{opacity:0;transform:scale(.4);}
+        to{opacity:1;transform:scale(1);}
+    }
+    .icon-wrap svg{width:30px;height:30px;stroke:#16a34a; /* green */stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round;fill:none;}
+    .checkmark-path{stroke-dasharray:50;stroke-dashoffset:50;animation:drawCheck .45s .65s ease forwards;}
+    @keyframes drawCheck{
+        to{stroke-dashoffset:0;}
+    }
+    @media (max-width:576px){
+        .payment-card{padding:35px 20px;}
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+
+<div class="payment-card-wrap">
+
+    <div class="payment-card-info">
+        <div class="payment-card-info-logo">
+            <a href="#"> <img src="../../assets/images/header-logo.svg" class="img-fluid" alt="Image"> </a>
+        </div>
+    
+
+        <div class="payment-card">
+        
+            <div class="icon-circle">
+                <span>✕</span>
+            </div>
+
+            <div class="status-badge">TRANSACTION DECLINED</div>
+
+            <div class="title">Payment Failed</div>
+
+            <div class="desc">
+                Your payment could not be processed. Please check your details and try again.
+            </div>
+
+            <div class="reason-box">
+                <div class="reason-dot"></div>
+                <div>Reason: Insufficient funds or card declined by issuer.</div>
+            </div>
+
+            <div class="d-flex gap-2">
+                <button class="btn w-50  btn-outline">Try Again</button>
+                <button class="btn w-50">Go to Dashboard</button>
+            </div>
+
+            
+
+        </div>
+
+    </div>        
+</div>
+
+
+
+
+
+
+
+  <!-- =================== /WEB JS BOC ==================== -->
+  <script src="../../assets/js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/moment.min.js"></script>
+  <script src="../../assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/bootstrap-datetimepicker.min.js"></script> 
+  <script src="../../assets/js/custom.js" type="text/javascript"></script>
+
+  <!-- =================== /WEB JS BOC ==================== -->
+
+
+
+
+
+
+
+</body>
+
+</html>
