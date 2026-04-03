@@ -3073,11 +3073,6 @@ img.completeicon{
     background: #fff;
 }
 
-.payemnt-table-wrapper .table-responsive{
-    border-top-right-radius: 0 !important;
-    border-top-left-radius: 0 !important;
-}
-
 .billing-table  td,
 .billing-table th  {
     vertical-align: middle;
