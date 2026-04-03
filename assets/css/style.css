@@ -2976,7 +2976,17 @@ img.completeicon{
     -o-border-radius: 6px;
     min-height: 34px;
     min-width: 34px;
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
 }
+
+.custom-pagination .page-btn:hover {
+    background-color: #ececec;
+}
+
 .custom-pagination .page-btn.active{
     background-color: #D74315;
     border-color: transparent;
