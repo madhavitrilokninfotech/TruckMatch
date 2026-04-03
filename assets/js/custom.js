@@ -491,22 +491,30 @@ $(document).on("click", function (e) {
 });
 
 
-// ignore clicks on buttons or modal triggers
+
+// ignore clicks on buttons or modal triggers 
 $(document).on("click", ".card-click", function (event) {
 
+    // ignore flag button click
     if ($(event.target).closest(".flag-btn").length) {
         return;
     }
 
-    // get card status
+    // get status
     var status = $(this).data("status");
 
     // set dropdown value
     $("#statusDropdown").val(status);
 
+    // check accepter class
+    var offcanvasId = $(this).hasClass("accepter")
+        ? "offcanvasJobAccepterCom"
+        : "offcanvasJobDetailsCom";
+
     var offcanvas = new bootstrap.Offcanvas(
-        document.getElementById("offcanvasJobDetailsCom")
+        document.getElementById(offcanvasId)
     );
+
     offcanvas.show();
 });
 
