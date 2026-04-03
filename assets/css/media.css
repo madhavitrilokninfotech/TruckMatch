@@ -55,6 +55,47 @@ Large devices
 
 
 @media (max-width:1599px) {
+.billing-table .content-bbox-img {
+    width: 50px;
+}
+.billing-table .ru-job-posted-icon.wh-40 {
+    width: 35px;
+    height: 35px;
+}
+.billing-table .wh250 {
+    min-width: 230px;
+}
+.stat-label {
+    font-size: 12px;
+}
+.stat-value {
+    font-size: 22px;
+}
+.stat-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+}
+.badge-status {
+    padding: 6px 12px;
+    min-width: 80px;
+}
+.action-btn {
+    width: 40px;
+    height: 40px;
+}
+.action-btn img {
+    width: 14px;
+}
+.stat-card {
+    padding: 15px;
+}
+.billing-table  td, .billing-table th {
+    padding: 12px 15px;
+}
+.payemnt-table-wrapper {
+    margin-top: 15px;
+}
 .rating-rv-pending .filled-rating-star .star {
     font-size: 14px;
 } 
@@ -646,6 +687,15 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 1399px) { 
+.billing-table  td, .billing-table th {
+    font-size: 12px;
+}
+.badge-status {
+    font-size: 11px;
+}
+.billing-table .wh250 {
+    min-width: 200px;
+}
 .redays-pill .day_count {
     width: 24px;
     height: 24px;
@@ -776,11 +826,27 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 1199.98px) { 
+.stat-value {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+.stat-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+}
+.action-btn {
+    width: 32px;
+    height: 32px;
+}
+.action-btn img {
+    width: 12px;
+}
 .custom-pagination .page-btn {
     font-size: 12px;
     padding: 6px 10px;
-    min-height: 32px;
-    min-width: 32px;
+    min-height: auto;
+    min-width: auto;
 }
 .notify-icon {
     font-size: 16px;
@@ -1148,7 +1214,9 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 767.98px) { 
-
+.stat-icon img{
+    width: 20px;
+}
 .profile_edit_img {
     width: 100px;
     height: 100px;
@@ -1326,6 +1394,41 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.payemnt-table-wrapper .custom-pagination.cp-1020{
+    padding: 15px 15px ;
+    justify-content: center;
+}
+.billing-table th {
+    line-height: 1;
+}
+.billing-table .wh250 {
+    min-width: 170px;
+}
+.billing-table .ru-job-posted-icon.wh-40 {
+    width: 30px;
+    height: 30px;
+}
+.billing-table .content-bbox-img {
+    width: 44px;
+}
+.action-btn {
+    width: 26px;
+    height: 26px;
+}
+.action-btn img {
+    width: 10px;
+}
+.badge-status {
+    padding: 5px 12px;
+}
+
+.billing-table .content-bbox-imgtxt {
+    flex-direction: row;
+    align-items: center !important;
+}
+.stat-value {
+    font-size: 18px;
+}
 .avg-score {
     font-size: 28px !important;
 }
@@ -1818,6 +1921,9 @@ p { font-size: 14px; }
 
 
 @media (max-width:399px) {
+.billing-page .col_xs_12{
+    width: 100%;
+}
 .jp-booking-details .font-14 {
     font-size: 12px!important;
 }
