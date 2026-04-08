@@ -816,7 +816,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .loc-de-hr-col::before{content:"";border-bottom:2px dashed #E4E4E4;width:100%;left:0;right:0;position:absolute;top:50%;}
 .content-bbox-wrap{margin-bottom:25px;}
 .srdays-tl{font-size:16px;color:#161212;font-weight:600;margin-bottom:15px;}
-.srdays-d{font-size:16px;background-color:#FFDBD0;padding:7px 22px;color:#161212;border-radius:50px;display:inline-block;margin-bottom:7px;margin-right:7px;}
+.srdays-d{font-size:16px;background-color: #FFF2EE; border: 1px solid rgba(215, 67, 21, 0.2);;padding:7px 22px;color:#161212;border-radius:50px;display:inline-block;margin-bottom:7px;margin-right:7px;}
 
 
 /*===============================================================================
