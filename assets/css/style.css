@@ -749,7 +749,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .offcanvas-title{font-size:24px;color:#D74315;font-weight:bold;}
 .offcanvas-tl-p{font-size:18px;color:#555555;margin-bottom:0;}
 .offcanvas-body-title{font-size:20px;color:#D74315;font-weight:bold;margin-bottom:25px;}
-.offcanvas-cm .offcanvas-body{padding:20px;overflow-y:auto;flex-grow:1;}
+.offcanvas-cm .offcanvas-body{padding:20px;overflow-y:auto;flex-grow:1; scrollbar-width: thin;}
 .offcanvas-op-btn{padding:20px 20px 20px 20px;}
 .offcanvas-btn-wrap{display:flex;flex-wrap:wrap;justify-content:space-between;}
 .offcanvas-btn-wrap .btn{margin:10px 5px;}
