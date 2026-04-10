@@ -55,6 +55,10 @@ Large devices
 
 
 @media (max-width:1599px) {
+.cert-doc-hist-main .custom-table-main tr td {
+    padding: 10px 20px;
+    font-size: 14px;
+}
 .billing-table .content-bbox-img {
     width: 50px;
 }
@@ -1408,6 +1412,12 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.cert-doc-hist-main .custom-table-main tr td {
+    padding: 12px 14px;
+    font-size: 12px;
+}
+.assi-fdriver-ant-box .assi-fdriver-wp img{ border-radius:8px; -webkit-border-radius:8px; -moz-border-radius:8px; -ms-border-radius:8px; -o-border-radius:8px; }
+
 .payemnt-table-wrapper .custom-pagination.cp-1020{
     padding: 15px 15px ;
     justify-content: center;

@@ -1281,7 +1281,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .wh-56-txt{width:calc(100% - 56px);}
 .add-ntruck-wrap .btn.btn-outline-bs{width:183px;height:52px;padding:10px 15px;}
 .add-ntruck-wrap .search-njob{width:calc(100% - 183px);}
-.assi-fdriver-ant-box .assi-fdriver-wp img{border-radius:10px;}
+.assi-fdriver-ant-box .assi-fdriver-wp img{border-radius:10px; object-fit: cover;}
 .assi-fdriver-ant-box .assi-fdriver-ww{width:44%;margin-bottom:0px;}
 .assi-fdriver-ant-box .assi-fdriver-ant-ww{width:12%;text-align:right;}
 
@@ -1928,8 +1928,10 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
     align-items: center;
 }
 .cert-doc-hist-main .custom-table-main tr:last-child td {
-    font-size: inherit;
-    color: inherit;
+    border-bottom: 0;
+}
+.cert-doc-hist-main .custom-table-main tr td{
+    color: #121212;
 }
 .cert-doc-hist-main .table-responsive {
     width: 100%;
@@ -1970,10 +1972,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
     display: inline-flex;
     align-items: center;
 }
-.cert-doc-hist-main .custom-table-main tr:last-child td {
-    font-size: inherit;
-    color: inherit;
-}
+
 .cert-doc-hist-main .table-responsive {
     width: 100%;
     border-collapse: collapse;
