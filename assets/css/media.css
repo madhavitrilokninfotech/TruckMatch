@@ -826,6 +826,16 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 1199.98px) { 
+.notification-page h2 {
+    font-size: 16px;
+}
+.unread-label {
+    font-size: 11px;
+    padding: 4px 8px;
+}
+.notification-title {
+    gap: 6px;
+}
 .stat-value {
     font-size: 20px;
     margin-bottom: 2px;
@@ -850,6 +860,7 @@ h6,.h6 { font-size:14px; }
 }
 .notify-icon {
     font-size: 16px;
+    margin-right: 8px;
 }
 .notify-text {
     font-size: 14px;
@@ -1214,6 +1225,9 @@ h6,.h6 { font-size:14px; }
 
 
 @media (max-width: 767.98px) { 
+.notification-item.unread{
+    border-width: 3px;
+}
 .stat-icon img{
     width: 20px;
 }
@@ -1504,13 +1518,25 @@ label.form-label {
     width: 80px;
     height: 80px;
 }
+.notify-text2 {
+    font-size: 12px;
+}
+.markread-text {
+    font-weight: 400;
+    font-size: 13px;
+}
+.notification-page h2 {
+    font-size: 14px;
+}
 .notify-icon {
     font-size: 14px;
-    margin-right: 10px;
+    width: 26px;
+    height: 26px;
 }
 .notification-item {
     padding: 12px;
     margin-bottom: 16px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 .notification-page {
     padding: 16px 10px;
