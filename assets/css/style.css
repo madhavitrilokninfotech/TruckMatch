@@ -1942,6 +1942,11 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .fleet-de-main{
     margin-bottom: 20px;
 }
+.cert-doc-his-wrap button:focus {
+    background-color: #d9ecff !important;
+    color: #1e88e5 !important;
+    border: none;
+}
 /* end */
 
 
