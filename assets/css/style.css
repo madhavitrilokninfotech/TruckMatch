@@ -1208,13 +1208,13 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .notify-icon {
     font-size: 20px;
     margin-right: 10px;
-    width: 30px;
+    /* width: 30px;
     height: 30px;
     object-fit: contain;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 50%; */
 }
 .notify-title-wrap {
     display: flex;
@@ -2225,11 +2225,11 @@ img.completeicon{
     bottom: 0;
     right: 0;
     left: 0;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 8px;
+    border-radius: 0 0 7px 7px;
 }
 .certi-doc-item{
     cursor: pointer;
+    display: block;
 }
 .dot{
     display: inline-block;

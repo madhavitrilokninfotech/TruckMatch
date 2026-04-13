@@ -866,7 +866,7 @@ h6,.h6 { font-size:14px; }
     min-width: auto;
 }
 .notify-icon {
-    font-size: 16px;
+    font-size: 14px;
     margin-right: 8px;
 }
 .notify-text {
@@ -1542,9 +1542,7 @@ label.form-label {
     font-size: 14px;
 }
 .notify-icon {
-    font-size: 14px;
-    width: 26px;
-    height: 26px;
+    font-size: 12px;
 }
 .notification-item {
     padding: 12px;
