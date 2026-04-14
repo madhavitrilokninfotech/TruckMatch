@@ -1380,7 +1380,7 @@ h6,.h6 { font-size:14px; }
 .select2-container--default .select2-selection--single .select2-selection__arrow b::before{right:-5px;}
 
 
-.add-ntruck-wrap .btn.btn-outline-bs{width:140px;height:40px;padding:8px;}
+.add-ntruck-wrap .btn.btn-outline-bs{width:140px;height:43px;padding:8px;}
 .post-njob-icon svg{width:20px;}
 .add-ntruck-wrap .search-njob{width:calc(100% - 140px);}
 
@@ -1415,6 +1415,9 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.jp-booking-details-row .srdays-tl, .jp-booking-details-row .content-bbox-txt-sh, .jp-booking-details-row .content-bbox-txt--mh, .jp-booking-details .srdays-tl {
+    font-size: 11px !important;
+}
 .cert-doc-hist-main .custom-table-main tr td {
     padding: 12px 14px;
     font-size: 12px;
@@ -1958,11 +1961,11 @@ p { font-size: 14px; }
 
 
 @media (max-width:399px) {
+.jp-booking-details-row .srdays-tl, .jp-booking-details-row .content-bbox-txt-sh, .jp-booking-details-row .content-bbox-txt--mh, .jp-booking-details .srdays-tl {
+    font-size: 10px !important;
+}
 .billing-page .col_xs_12{
     width: 100%;
-}
-.jp-booking-details .font-14 {
-    font-size: 12px!important;
 }
 .dbooking-card .btn-underline {
     font-size: 11px !important;
