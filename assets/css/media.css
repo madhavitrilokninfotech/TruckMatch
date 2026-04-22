@@ -1415,6 +1415,9 @@ Extra small devices (portrait phones, less than 576px)
 
 
 @media (max-width: 575.98px) { 
+.selected-truck-slidewrap.selectedTruckSlider .selected-truck-slide img {
+    height: 90px;
+}
 .jp-booking-details-row .srdays-tl, .jp-booking-details-row .content-bbox-txt-sh, .jp-booking-details-row .content-bbox-txt--mh, .jp-booking-details .srdays-tl {
     font-size: 11px !important;
 }

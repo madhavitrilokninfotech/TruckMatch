@@ -736,7 +736,7 @@ input::-webkit-autofill,input::-webkit-autofill:hover,input::-webkit-autofill:fo
 .notification-here-btn{padding-left:70px;padding-bottom:20px;}
 .btn.notification-here-btn-link{font-size:14px;padding:5px 16px;min-width:auto;font-weight:500;}
 .notification-all-link{font-size:16px;font-weight:600;padding:13px 20px;text-align:center;border-top:1px solid #ECECEC;display:block;color:#D74315;}
-.notification-view{max-height:450px;overflow-y:auto;height: calc(83vh - 100px);scrollbar-width: thin;}
+.notification-view{max-height:450px;overflow-y:auto;height: calc(83vh - 100px);scrollbar-width: thin;display: flex; flex-direction: column;}
 
 
 
@@ -2652,7 +2652,8 @@ img.completeicon{
 .selected-truck-slidewrap.selectedTruckSlider .selected-truck-slide img {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 150px;
+    object-fit: cover;
 }
 /* React Calendar */
 .rc-calendar-wrap .react-calendar {
